@@ -142,7 +142,7 @@
           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 search-padding">
             <?php echo $search; ?>
           </div>
-          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 div-media-width">
+          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 div-media-width" style="padding-right: 0">
             <div class="col-sm-6 col-md-6 col-lg-6 no-padding">
               <div class="col-sm-4 col-md-4 col-lg-4 graph-icon-padding">
                 <img src="../../../admin/view/image/graphic.png">
@@ -157,8 +157,8 @@
                   <ul class="list-inline">
                     <li><a href="<?php echo $contact; ?>"><img src="../../../admin/view/image/phoneIcon.png"></a>
                 </div>
-                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding">
-                      <span style="color: #008fd1" class=""><?php echo $telephone; ?></span></li>
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding" >
+                      <span style="" class="email-style"><?php echo $telephone; ?></span></li>
                   </ul>
                 </div>
               </div>
