@@ -1,9 +1,15 @@
+@import "../fonts/bebas/bebasneue.css";
+/*
+	Bebas Neue, 100, 200, 300, 400, 700
+*/
+@import"../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr.css";
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: #666;
 	font-size: 12px;
-	line-height: 20px;
+	/*line-height: 20px;*/
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -686,6 +692,333 @@ h2.price {
 .thumbnails .image-additional {
 	float: left;
 	margin-left: 20px;
+}
+.no-padding{
+	padding: 0 0 0 0 !important;
+}
+.no-margin{
+	margin: 0 !important;
+}
+.inner{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.logo-padding{
+	padding: 16px 0;
+}
+.search-padding{
+	padding-right: 0;
+	padding-top: 14px;
+}
+.graph-icon-padding{
+	padding-top: 13px;
+}
+.graph-padding{
+	padding-top: 8px!important;
+	padding-left: 0;
+}
+.phone-padding{
+	padding-right: 0;
+	padding-top: 10px;
+}
+.phone-icon-padding{
+	padding-top: 5px !important;
+}
+.btn-color:hover{
+	background-color: transparent;
+	color: #f8c828;
+	border: 1px solid;
+}
+.btn-color{
+	background-color: transparent;
+	color: #f8c828;
+	border: 1px solid;
+}
+.btn-padding{
+	padding-top: 14px;
+	padding-left: 35px;
+
+}
+.a-color{
+	color: #000000 !important;
+}
+.mobile-logo-padding{
+	padding-top: 9%;
+	padding-bottom: 9%;
+	padding-left: 13px;
+}
+.mobile-email-padding{
+	padding-left: 46px;
+}
+.mobile-phone-padding{
+	padding-right: 46px;
+}
+.mobile-phone-style{
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 50px;
+	color: #008fd1;
+	display: block;
+	height: 115px;
+	line-height: 115px;
+}
+.mobile-email-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	font-size: 33px;
+	color: #ffffffff;
+	display: block;
+	height: 115px;
+	line-height: 115px;
+}
+.dropdown-position{
+	width: 50%;
+	position: absolute;
+	background-color: #008fd1;
+	top: 0;
+	right: 0;
+	text-align: center;
+	z-index: 100;
+}
+.dropdown-no-padding{
+	padding-left: 0;
+}
+.email-color{
+	color: #ffffff;
+}
+.email-position{
+	position: absolute;
+	top: 70px;
+	z-index: 100;
+}
+.email-padding{
+	padding-left: 20px;
+	padding-top: 5px;
+}
+.email-icon-padding{
+	padding-left: 30px;
+}
+.width-btn{
+	width: 100%;
+}
+.slider-style{
+	box-shadow: none !important;
+	opacity: 1;
+	margin: 0 !important;
+	border-radius:0;
+}
+.ul-position{
+	width: 100%;
+}
+.li-text-style{
+	text-align: center;
+	font-size: 13px;
+}
+.div-li-border-right{
+	border-right: 1px solid #999999;
+}
+.div-li-position{
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}
+.div-email-style{
+	background-color: #26272a;
+	padding: 0 !important;
+	height: 115px;
+}
+.span-width{
+	height: 3px !important;
+}
+.mobile-background-image {
+	background-image: url(/../../admin/view/image/banner.png);
+	background-size: 100% 100%;
+}
+.banner-text-style{
+	font-size: 19px;
+	line-height: 30px;
+	color: #0b0b0b;
+}
+.banner-text-padding{
+	padding-top: 25px;
+	padding-left: 25px;
+}
+.div-banner-border{
+	/*border-bottom: 1px solid #f8c828;*/
+	border-bottom: 1px solid #0b0b0b;
+	padding-top: 47px;
+	transform: translateX(20px);
+}
+.navbar-toggle span{
+	width: 100% !important;
+	display: block !important;
+	margin-top: 24% !important;
+}
+.mobile-btn-padding{
+	padding-top: 7% !important;
+	padding-bottom: 7% !important;
+	width: 15% !important;
+}
+.mobile-navbar-height{
+	height: 15% !important;
+}
+@media (max-width: 900px) and (min-width: 768px )   {
+	.search-padding{
+		display: none;
+	}
+	.div-media-width{
+		width: 100%;
+	}
+}
+@media (max-width: 707px) and (min-width: 650px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 80px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 20px;
+		color: #ffffffff;
+		display: block;
+		height: 80px;
+		line-height: 80px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 30px;
+		color: #008fd1;
+		display: block;
+		height: 80px;
+		line-height: 80px;
+	}
+}
+@media (max-width: 479px) and (min-width: 367px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 50px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 15px;
+		color: #ffffffff;
+		display: block;
+		height: 50px;
+		line-height: 50px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 20px;
+		color: #008fd1;
+		display: block;
+		height: 50px;
+		line-height: 50px;
+	}
+}
+@media (max-width: 366px) and (min-width: 310px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 30px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 10px;
+		color: #ffffffff;
+		display: block;
+		height: 30px;
+		line-height: 30px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 15px;
+		color: #008fd1;
+		display: block;
+		height: 30px;
+		line-height: 30px;
+	}
+}
+@media (max-width: 309px) and (min-width: 253px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 20px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 8px;
+		color: #ffffffff;
+		display: block;
+		height: 20px;
+		line-height: 20px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 10px;
+		color: #008fd1;
+		display: block;
+		height: 20px;
+		line-height: 20px;
+	}
+}
+@media (max-width: 649px) and (min-width: 550px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 55px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 30px;
+		color: #ffffffff;
+		display: block;
+		height: 55px;
+		line-height: 55px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 30px;
+		color: #008fd1;
+		display: block;
+		height: 55px;
+		line-height: 55px;
+	}
+}
+@media (max-width: 549px) and (min-width: 480px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 40px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 20px;
+		color: #ffffffff;
+		display: block;
+		height: 40px;
+		line-height: 40px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 20px;
+		color: #008fd1;
+		display: block;
+		height: 40px;
+		line-height: 40px;
+	}
 }
 
 /* fixed colum left + content + right*/
