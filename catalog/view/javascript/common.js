@@ -23,6 +23,20 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
+    $('#showallprem').on('click', function(){
+        if(document.getElementById("prem").className == 'prema'){
+         document.getElementById("prem").className = 'prem';
+         document.getElementById("prem_opaciti").className = 'prem_opaciti';
+            document.getElementById("showallprem").innerHTML="Развернуть все преимущества";
+         
+        }else{
+   document.getElementById("prem").className = 'prema';
+   document.getElementById("prem_opaciti").className = 'prem_opacitia';
+   document.getElementById("showallprem").innerHTML="Свернуть все преимущества";
+        }
+	})
+
+
 	// Adding the clear Fix
 	cols1 = $('#column-right, #column-left').length;
 	
@@ -92,6 +106,18 @@ $(document).ready(function() {
 		}
 	});
 
+		$(document).on('click','.clickParentMenu',function(){
+		$(this).parent().find('.dropDownSubMenu').toggle();
+		
+		if($(this).parent().find('.fa-angle-up').length){
+			$(this).parent().find('.fa-angle-up').addClass('fa-angle-down');
+			$(this).parent().find('.fa-angle-down').removeClass('fa-angle-up');
+		}else{
+			$(this).parent().find('.fa-angle-down').addClass('fa-angle-up');
+			$(this).parent().find('.fa-angle-up').removeClass('fa-angle-down');
+		}
+	});
+	
 	// Product List
 	$('#list-view').click(function() {
 		$('#content .product-layout > .clearfix').remove();
@@ -453,3 +479,5 @@ $(document).delegate('.agree', 'click', function(e) {
 		});
 	}
 })(window.jQuery);
+
+
