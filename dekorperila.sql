@@ -2,10 +2,10 @@
 -- version 4.4.15.5
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Oct 25, 2016 at 03:17 PM
--- Server version: 5.6.29
--- PHP Version: 5.5.33
+-- Хост: 127.0.0.1:3306
+-- Время создания: Окт 28 2016 г., 17:35
+-- Версия сервера: 5.7.11
+-- Версия PHP: 7.0.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dekorperila`
+-- База данных: `dekorperila`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_address`
+-- Структура таблицы `oc_address`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_address` (
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `oc_address` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate`
+-- Структура таблицы `oc_affiliate`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_affiliate` (
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `oc_affiliate` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate_activity`
+-- Структура таблицы `oc_affiliate_activity`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_affiliate_activity` (
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `oc_affiliate_activity` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate_login`
+-- Структура таблицы `oc_affiliate_login`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_affiliate_login` (
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `oc_affiliate_login` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_affiliate_transaction`
+-- Структура таблицы `oc_affiliate_transaction`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_affiliate_transaction` (
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `oc_affiliate_transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_api`
+-- Структура таблицы `oc_api`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_api` (
@@ -144,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `oc_api` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_api`
+-- Дамп данных таблицы `oc_api`
 --
 
 INSERT INTO `oc_api` (`api_id`, `username`, `firstname`, `lastname`, `password`, `status`, `date_added`, `date_modified`) VALUES
@@ -153,7 +153,7 @@ INSERT INTO `oc_api` (`api_id`, `username`, `firstname`, `lastname`, `password`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute`
+-- Структура таблицы `oc_attribute`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_attribute` (
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `oc_attribute` (
 ) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute`
+-- Дамп данных таблицы `oc_attribute`
 --
 
 INSERT INTO `oc_attribute` (`attribute_id`, `attribute_group_id`, `sort_order`) VALUES
@@ -182,7 +182,7 @@ INSERT INTO `oc_attribute` (`attribute_id`, `attribute_group_id`, `sort_order`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute_description`
+-- Структура таблицы `oc_attribute_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_attribute_description` (
@@ -192,7 +192,7 @@ CREATE TABLE IF NOT EXISTS `oc_attribute_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute_description`
+-- Дамп данных таблицы `oc_attribute_description`
 --
 
 INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) VALUES
@@ -222,7 +222,7 @@ INSERT INTO `oc_attribute_description` (`attribute_id`, `language_id`, `name`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute_group`
+-- Структура таблицы `oc_attribute_group`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_attribute_group` (
@@ -231,7 +231,7 @@ CREATE TABLE IF NOT EXISTS `oc_attribute_group` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute_group`
+-- Дамп данных таблицы `oc_attribute_group`
 --
 
 INSERT INTO `oc_attribute_group` (`attribute_group_id`, `sort_order`) VALUES
@@ -243,7 +243,7 @@ INSERT INTO `oc_attribute_group` (`attribute_group_id`, `sort_order`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_attribute_group_description`
+-- Структура таблицы `oc_attribute_group_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_attribute_group_description` (
@@ -253,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `oc_attribute_group_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_attribute_group_description`
+-- Дамп данных таблицы `oc_attribute_group_description`
 --
 
 INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id`, `name`) VALUES
@@ -269,28 +269,29 @@ INSERT INTO `oc_attribute_group_description` (`attribute_group_id`, `language_id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_banner`
+-- Структура таблицы `oc_banner`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_banner` (
   `banner_id` int(11) NOT NULL,
   `name` varchar(64) NOT NULL,
   `status` tinyint(1) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_banner`
+-- Дамп данных таблицы `oc_banner`
 --
 
 INSERT INTO `oc_banner` (`banner_id`, `name`, `status`) VALUES
 (6, 'HP Products', 1),
 (7, 'Home Page Slideshow', 1),
-(8, 'Manufacturers', 1);
+(8, 'Manufacturers', 1),
+(9, 'галерея', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_banner_image`
+-- Структура таблицы `oc_banner_image`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_banner_image` (
@@ -299,10 +300,10 @@ CREATE TABLE IF NOT EXISTS `oc_banner_image` (
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=99 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=123 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_banner_image`
+-- Дамп данных таблицы `oc_banner_image`
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`, `sort_order`) VALUES
@@ -319,12 +320,24 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`, 
 (90, 8, '', 'catalog/demo/manufacturer/disney.png', 0),
 (80, 7, '', 'catalog/demo/banners/MacBookAir.jpg', 0),
 (97, 8, '', 'catalog/demo/manufacturer/starbucks.png', 0),
-(98, 8, '', 'catalog/demo/manufacturer/nintendo.png', 0);
+(98, 8, '', 'catalog/demo/manufacturer/nintendo.png', 0),
+(122, 9, '', 'catalog/robotu.png', 0),
+(121, 9, '', 'catalog/robotu.png', 0),
+(120, 9, '', 'catalog/robotu.png', 0),
+(119, 9, '', 'catalog/robotu.png', 0),
+(118, 9, '', 'catalog/robotu.png', 0),
+(117, 9, '', 'catalog/robotu.png', 0),
+(116, 9, '', 'catalog/robotu.png', 0),
+(115, 9, '', 'catalog/robotu.png', 0),
+(114, 9, '', 'catalog/robotu.png', 0),
+(113, 9, '', 'catalog/robotu.png', 0),
+(112, 9, '', 'catalog/robotu.png', 0),
+(111, 9, '', 'catalog/robotu.png', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_banner_image_description`
+-- Структура таблицы `oc_banner_image_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_banner_image_description` (
@@ -335,7 +348,7 @@ CREATE TABLE IF NOT EXISTS `oc_banner_image_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_banner_image_description`
+-- Дамп данных таблицы `oc_banner_image_description`
 --
 
 INSERT INTO `oc_banner_image_description` (`banner_image_id`, `language_id`, `banner_id`, `title`) VALUES
@@ -366,12 +379,36 @@ INSERT INTO `oc_banner_image_description` (`banner_image_id`, `language_id`, `ba
 (95, 2, 8, 'RedBull'),
 (96, 2, 8, 'Sony'),
 (97, 2, 8, 'Starbucks'),
-(98, 2, 8, 'Nintendo');
+(98, 2, 8, 'Nintendo'),
+(122, 1, 9, 'img12'),
+(122, 2, 9, 'img12'),
+(121, 1, 9, 'img11'),
+(121, 2, 9, 'img11'),
+(120, 1, 9, 'img10'),
+(120, 2, 9, 'img10'),
+(119, 1, 9, 'img9'),
+(119, 2, 9, 'img9'),
+(118, 1, 9, 'img8'),
+(118, 2, 9, 'img8'),
+(117, 1, 9, 'img7'),
+(117, 2, 9, 'img7'),
+(116, 1, 9, 'img6'),
+(116, 2, 9, 'img6'),
+(115, 1, 9, 'img5'),
+(115, 2, 9, 'img5'),
+(114, 1, 9, 'img4'),
+(114, 2, 9, 'img4'),
+(113, 1, 9, 'img3'),
+(113, 2, 9, 'img3'),
+(112, 1, 9, 'img2'),
+(112, 2, 9, 'img2'),
+(111, 1, 9, 'img1'),
+(111, 2, 9, 'img1');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category`
+-- Структура таблицы `oc_category`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_category` (
@@ -384,24 +421,26 @@ CREATE TABLE IF NOT EXISTS `oc_category` (
   `status` tinyint(1) NOT NULL,
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category`
+-- Дамп данных таблицы `oc_category`
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(20, 'catalog/demo/compaq_presario.jpg', 0, 1, 1, 1, 1, '2009-01-05 21:49:43', '2016-10-13 16:11:08'),
-(24, '', 0, 1, 1, 5, 1, '2009-01-20 02:36:26', '2016-10-14 17:06:16'),
-(59, '', 0, 1, 1, 8, 1, '2016-10-14 17:07:44', '2016-10-14 17:09:01'),
-(17, '', 0, 1, 1, 4, 1, '2009-01-03 21:08:57', '2016-10-14 17:04:16'),
-(34, 'catalog/demo/ipod_touch_4.jpg', 0, 1, 4, 7, 1, '2009-02-03 14:18:11', '2016-10-14 17:07:10'),
-(57, '', 0, 1, 1, 3, 1, '2011-04-26 08:53:16', '2016-10-14 17:03:17');
+(64, 'catalog/perila.png', 0, 0, 1, 4, 1, '2016-10-26 12:36:49', '2016-10-26 17:16:35'),
+(63, 'catalog/porychni.png', 0, 0, 1, 3, 1, '2016-10-26 12:36:18', '2016-10-26 12:37:00'),
+(62, 'catalog/ogradu.png', 0, 0, 1, 2, 1, '2016-10-26 12:35:26', '2016-10-26 12:35:26'),
+(61, 'catalog/perila.png', 0, 1, 1, 1, 1, '2016-10-26 12:31:32', '2016-10-26 12:34:32'),
+(65, 'catalog/kozurku.png', 0, 0, 1, 5, 1, '2016-10-26 12:37:36', '2016-10-26 12:37:36'),
+(66, 'catalog/stoiku.png', 0, 0, 1, 6, 1, '2016-10-26 12:38:05', '2016-10-26 12:38:05'),
+(67, 'catalog/robotu.png', 61, 0, 1, 0, 1, '2016-10-27 22:58:54', '2016-10-27 23:15:10'),
+(68, 'catalog/robotu.png', 61, 0, 1, 0, 1, '2016-10-28 09:40:53', '2016-10-28 09:40:53');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_description`
+-- Структура таблицы `oc_category_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_category_description` (
@@ -415,27 +454,31 @@ CREATE TABLE IF NOT EXISTS `oc_category_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_description`
+-- Дамп данных таблицы `oc_category_description`
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(20, 1, 'Desktops', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Главная', 'Example of category description', ''),
-(17, 2, 'Новости', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'news', '', ''),
-(24, 2, 'Нашы работы', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', ' our work', '', ''),
-(20, 2, 'Главная', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Главная', 'Example of category description', ''),
-(34, 2, 'Доставка и оплата', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;\r\n', ' Delivery', '', ''),
-(34, 1, ' Delivery', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;\r\n', ' Delivery', '', ''),
-(59, 2, 'Контакты', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'contacts', '', ''),
-(59, 1, 'Contacts', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'contacts', '', ''),
-(57, 1, 'About', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'About', '', ''),
-(17, 1, 'News', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'news', '', ''),
-(24, 1, ' Our work', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', ' our work', '', ''),
-(57, 2, 'О компании', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'About', '', '');
+(65, 1, 'Козырьки', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Козырьки', '', ''),
+(66, 2, 'Стойки', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Стойки', '', ''),
+(63, 2, 'Поручни', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Поручни', '', ''),
+(63, 1, 'Поручни', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Поручни', '', ''),
+(64, 2, 'Пандусы', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Пандусы', '', ''),
+(64, 1, 'Пандусы', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Пандусы', '', ''),
+(65, 2, 'Козырьки', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Козырьки', '', ''),
+(62, 2, 'Лестничные ограждения', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Лестничные ограждения', '', ''),
+(62, 1, 'Лестничные ограждения', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Лестничные ограждения', '', ''),
+(61, 2, 'Перила', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Перила', '', ''),
+(61, 1, 'Перила', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Перила', '', ''),
+(66, 1, 'Стойки', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Стойки', '', ''),
+(67, 2, 'хромирование', '&lt;p&gt;vdfdgfdgfdg&lt;/p&gt;', 'хромирование', '', ''),
+(67, 1, 'хромирование', '&lt;p&gt;gfdgfdgfdgfdg&lt;/p&gt;', 'хромирование', '', ''),
+(68, 2, 'металичиские', '&lt;p&gt;металичиские&lt;/p&gt;', 'металичиские', '', ''),
+(68, 1, 'металичиские', '&lt;p&gt;металичиские&lt;/p&gt;', 'металичиские', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_filter`
+-- Структура таблицы `oc_category_filter`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_category_filter` (
@@ -446,7 +489,7 @@ CREATE TABLE IF NOT EXISTS `oc_category_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_path`
+-- Структура таблицы `oc_category_path`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_category_path` (
@@ -456,21 +499,25 @@ CREATE TABLE IF NOT EXISTS `oc_category_path` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_path`
+-- Дамп данных таблицы `oc_category_path`
 --
 
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
-(20, 20, 0),
-(24, 24, 0),
-(59, 59, 0),
-(17, 17, 0),
-(34, 34, 0),
-(57, 57, 0);
+(66, 66, 0),
+(63, 63, 0),
+(64, 64, 0),
+(62, 62, 0),
+(65, 65, 0),
+(61, 61, 0),
+(67, 61, 0),
+(67, 67, 1),
+(68, 61, 0),
+(68, 68, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_to_layout`
+-- Структура таблицы `oc_category_to_layout`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_category_to_layout` (
@@ -480,21 +527,23 @@ CREATE TABLE IF NOT EXISTS `oc_category_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_to_layout`
+-- Дамп данных таблицы `oc_category_to_layout`
 --
 
 INSERT INTO `oc_category_to_layout` (`category_id`, `store_id`, `layout_id`) VALUES
-(20, 0, 1),
-(57, 0, 0),
-(17, 0, 0),
-(24, 0, 0),
-(34, 0, 0),
-(59, 0, 0);
+(66, 0, 0),
+(61, 0, 0),
+(62, 0, 0),
+(63, 0, 0),
+(65, 0, 0),
+(64, 0, 0),
+(67, 0, 0),
+(68, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_category_to_store`
+-- Структура таблицы `oc_category_to_store`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_category_to_store` (
@@ -503,21 +552,23 @@ CREATE TABLE IF NOT EXISTS `oc_category_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_category_to_store`
+-- Дамп данных таблицы `oc_category_to_store`
 --
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
-(17, 0),
-(20, 0),
-(24, 0),
-(34, 0),
-(57, 0),
-(59, 0);
+(61, 0),
+(62, 0),
+(63, 0),
+(64, 0),
+(65, 0),
+(66, 0),
+(67, 0),
+(68, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_country`
+-- Структура таблицы `oc_country`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_country` (
@@ -531,7 +582,7 @@ CREATE TABLE IF NOT EXISTS `oc_country` (
 ) ENGINE=MyISAM AUTO_INCREMENT=258 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_country`
+-- Дамп данных таблицы `oc_country`
 --
 
 INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `address_format`, `postcode_required`, `status`) VALUES
@@ -792,7 +843,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon`
+-- Структура таблицы `oc_coupon`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_coupon` (
@@ -813,7 +864,7 @@ CREATE TABLE IF NOT EXISTS `oc_coupon` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_coupon`
+-- Дамп данных таблицы `oc_coupon`
 --
 
 INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logged`, `shipping`, `total`, `date_start`, `date_end`, `uses_total`, `uses_customer`, `status`, `date_added`) VALUES
@@ -824,7 +875,7 @@ INSERT INTO `oc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logge
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon_category`
+-- Структура таблицы `oc_coupon_category`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_coupon_category` (
@@ -835,7 +886,7 @@ CREATE TABLE IF NOT EXISTS `oc_coupon_category` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon_history`
+-- Структура таблицы `oc_coupon_history`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_coupon_history` (
@@ -850,7 +901,7 @@ CREATE TABLE IF NOT EXISTS `oc_coupon_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_coupon_product`
+-- Структура таблицы `oc_coupon_product`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_coupon_product` (
@@ -862,7 +913,7 @@ CREATE TABLE IF NOT EXISTS `oc_coupon_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_currency`
+-- Структура таблицы `oc_currency`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_currency` (
@@ -878,18 +929,18 @@ CREATE TABLE IF NOT EXISTS `oc_currency` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_currency`
+-- Дамп данных таблицы `oc_currency`
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.81699997, 1, '2016-10-20 18:10:17'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2016-10-20 18:13:35'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.91540003, 1, '2016-10-20 18:10:17');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.82209998, 1, '2016-10-27 19:38:01'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2016-10-28 17:23:38'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.91820002, 1, '2016-10-27 19:38:01');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer`
+-- Структура таблицы `oc_customer`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer` (
@@ -919,7 +970,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_activity`
+-- Структура таблицы `oc_customer_activity`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_activity` (
@@ -934,7 +985,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_activity` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_ban_ip`
+-- Структура таблицы `oc_customer_ban_ip`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_ban_ip` (
@@ -945,7 +996,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_ban_ip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_group`
+-- Структура таблицы `oc_customer_group`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_group` (
@@ -955,7 +1006,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_group` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_customer_group`
+-- Дамп данных таблицы `oc_customer_group`
 --
 
 INSERT INTO `oc_customer_group` (`customer_group_id`, `approval`, `sort_order`) VALUES
@@ -964,7 +1015,7 @@ INSERT INTO `oc_customer_group` (`customer_group_id`, `approval`, `sort_order`) 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_group_description`
+-- Структура таблицы `oc_customer_group_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_group_description` (
@@ -975,7 +1026,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_group_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_customer_group_description`
+-- Дамп данных таблицы `oc_customer_group_description`
 --
 
 INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`, `name`, `description`) VALUES
@@ -985,7 +1036,7 @@ INSERT INTO `oc_customer_group_description` (`customer_group_id`, `language_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_history`
+-- Структура таблицы `oc_customer_history`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_history` (
@@ -998,7 +1049,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_ip`
+-- Структура таблицы `oc_customer_ip`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_ip` (
@@ -1011,7 +1062,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_ip` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_login`
+-- Структура таблицы `oc_customer_login`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_login` (
@@ -1026,7 +1077,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_login` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_online`
+-- Структура таблицы `oc_customer_online`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_online` (
@@ -1040,7 +1091,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_online` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_reward`
+-- Структура таблицы `oc_customer_reward`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_reward` (
@@ -1055,7 +1106,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_reward` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_customer_transaction`
+-- Структура таблицы `oc_customer_transaction`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_customer_transaction` (
@@ -1070,7 +1121,7 @@ CREATE TABLE IF NOT EXISTS `oc_customer_transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field`
+-- Структура таблицы `oc_custom_field`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_custom_field` (
@@ -1085,7 +1136,7 @@ CREATE TABLE IF NOT EXISTS `oc_custom_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_customer_group`
+-- Структура таблицы `oc_custom_field_customer_group`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_custom_field_customer_group` (
@@ -1097,7 +1148,7 @@ CREATE TABLE IF NOT EXISTS `oc_custom_field_customer_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_description`
+-- Структура таблицы `oc_custom_field_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_custom_field_description` (
@@ -1109,7 +1160,7 @@ CREATE TABLE IF NOT EXISTS `oc_custom_field_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_value`
+-- Структура таблицы `oc_custom_field_value`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_custom_field_value` (
@@ -1121,7 +1172,7 @@ CREATE TABLE IF NOT EXISTS `oc_custom_field_value` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_custom_field_value_description`
+-- Структура таблицы `oc_custom_field_value_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_custom_field_value_description` (
@@ -1134,7 +1185,7 @@ CREATE TABLE IF NOT EXISTS `oc_custom_field_value_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_download`
+-- Структура таблицы `oc_download`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_download` (
@@ -1147,7 +1198,7 @@ CREATE TABLE IF NOT EXISTS `oc_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_download_description`
+-- Структура таблицы `oc_download_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_download_description` (
@@ -1159,7 +1210,7 @@ CREATE TABLE IF NOT EXISTS `oc_download_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_event`
+-- Структура таблицы `oc_event`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_event` (
@@ -1172,7 +1223,7 @@ CREATE TABLE IF NOT EXISTS `oc_event` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_extension`
+-- Структура таблицы `oc_extension`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_extension` (
@@ -1182,7 +1233,7 @@ CREATE TABLE IF NOT EXISTS `oc_extension` (
 ) ENGINE=MyISAM AUTO_INCREMENT=428 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_extension`
+-- Дамп данных таблицы `oc_extension`
 --
 
 INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
@@ -1209,7 +1260,7 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter`
+-- Структура таблицы `oc_filter`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_filter` (
@@ -1221,7 +1272,7 @@ CREATE TABLE IF NOT EXISTS `oc_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter_description`
+-- Структура таблицы `oc_filter_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_filter_description` (
@@ -1234,7 +1285,7 @@ CREATE TABLE IF NOT EXISTS `oc_filter_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter_group`
+-- Структура таблицы `oc_filter_group`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_filter_group` (
@@ -1245,7 +1296,7 @@ CREATE TABLE IF NOT EXISTS `oc_filter_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_filter_group_description`
+-- Структура таблицы `oc_filter_group_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_filter_group_description` (
@@ -1257,7 +1308,7 @@ CREATE TABLE IF NOT EXISTS `oc_filter_group_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_geo_zone`
+-- Структура таблицы `oc_geo_zone`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_geo_zone` (
@@ -1269,7 +1320,7 @@ CREATE TABLE IF NOT EXISTS `oc_geo_zone` (
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_geo_zone`
+-- Дамп данных таблицы `oc_geo_zone`
 --
 
 INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`, `date_added`) VALUES
@@ -1279,7 +1330,7 @@ INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information`
+-- Структура таблицы `oc_information`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_information` (
@@ -1287,22 +1338,25 @@ CREATE TABLE IF NOT EXISTS `oc_information` (
   `bottom` int(1) NOT NULL DEFAULT '0',
   `sort_order` int(3) NOT NULL DEFAULT '0',
   `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_information`
+-- Дамп данных таблицы `oc_information`
 --
 
 INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`) VALUES
 (3, 1, 3, 1),
 (4, 1, 1, 1),
 (5, 1, 4, 1),
-(6, 1, 2, 1);
+(6, 1, 2, 1),
+(7, 0, 0, 1),
+(8, 0, 0, 1),
+(9, 0, 0, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information_description`
+-- Структура таблицы `oc_information_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_information_description` (
@@ -1316,23 +1370,29 @@ CREATE TABLE IF NOT EXISTS `oc_information_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_information_description`
+-- Дамп данных таблицы `oc_information_description`
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(4, 1, 'About Us', '&lt;p&gt;\r\n	About Us&lt;/p&gt;\r\n', '', '', ''),
 (5, 1, 'Terms &amp; Conditions', '&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n', '', '', ''),
 (3, 1, 'Privacy Policy', '&lt;p&gt;\r\n	Privacy Policy&lt;/p&gt;\r\n', '', '', ''),
 (6, 1, 'Delivery Information', '&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n', '', '', ''),
-(4, 2, 'About Us', '&lt;p&gt;\r\n	About Us&lt;/p&gt;\r\n', '', '', ''),
 (5, 2, 'Terms &amp; Conditions', '&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n', '', '', ''),
 (3, 2, 'Privacy Policy', '&lt;p&gt;\r\n	Privacy Policy&lt;/p&gt;\r\n', '', '', ''),
-(6, 2, 'Delivery Information', '&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n', '', '', '');
+(6, 2, 'Delivery Information', '&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n', '', '', ''),
+(4, 2, 'About Us', '&lt;ul style=&quot;font-size: medium; line-height: 22.8571px;&quot;&gt;&lt;li&gt;аівавіавіаві&lt;/li&gt;&lt;li&gt;авіаіваів&lt;/li&gt;&lt;li&gt;аві&lt;/li&gt;&lt;li&gt;аіваіваіваів&lt;/li&gt;&lt;li&gt;аівавіа&lt;/li&gt;&lt;li&gt;віавіаві&lt;/li&gt;&lt;li&gt;авіаіва&lt;/li&gt;&lt;li&gt;івавіавіа&lt;/li&gt;&lt;/ul&gt;&lt;table class=&quot;table table-bordered&quot;&gt;&lt;tbody&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;span class=&quot;tag&quot; style=&quot;font-family: ''Courier New'', Courier, mono; color: rgb(0, 102, 153); font-size: 14px; font-weight: bold; line-height: normal; white-space: pre; background-color: rgb(248, 247, 242);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;', 'About Us', '', ''),
+(4, 1, 'About Us', '&lt;p&gt;\r\n	About Us&lt;/p&gt;\r\n', 'About Us', '', ''),
+(7, 2, 'такого количества преимуществ вы еще не видели!', '&lt;div class=&quot;row&quot;&gt;\r\n    &lt;div class=&quot;col-md-6 text-left&quot;&gt;&lt;ul&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;/ul&gt; &lt;/div&gt;\r\n    &lt;div class=&quot;col-md-6 text-left&quot;&gt;&lt;ul&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;li&gt;Только сертифицированные материалы&lt;/li&gt;\r\n&lt;/ul&gt; &lt;/div&gt;\r\n    \r\n&lt;/div&gt;', 'такого количества преимуществ вы еще не видели!', '', ''),
+(7, 1, 'такого количества преимуществ вы еще не видели!', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'такого количества преимуществ вы еще не видели!', '', ''),
+(8, 1, 'Главные направления работы предприятия:', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Главные направления работы предприятия:', '', ''),
+(8, 2, 'Главные направления работы предприятия:', '&lt;p&gt;Мы изготавливаем Ваши заказы на наших производственных площадках, которые имеют станочный парк. Наше предприятие располагает большим разнообразием&lt;/p&gt;&lt;p&gt;различных видов металлопроката, которые находятся на собственном складе, а также развитой технологической базой. Мы открыты для взаимовыгодного&lt;/p&gt;&lt;p&gt;сотрудничества с частными лицами и предприятиями, у которых имеются интересные идеи и творческий потенциал.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Благодаря наличию профессионального обрабатывающего оборудования для работы с листовым прокатом, профильными и крупными трубами, мы изготавливаем&lt;/p&gt;&lt;p&gt;высококачественные изделия из нержавейки почти любой сложности.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Также мы проводим доставку деталей будущего изделия к месту их сборки. У нас имеется для этих целей личный транспортный участок, который позволяет в срок&lt;/p&gt;&lt;p&gt;доставлять изделия на объект, что исключает вероятность их повреждения во время транспортировки.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;В работе с клиентами мы используем комплексный подход, который помогает экономить время и силы наших заказчиков, а также значительно сократить срок&lt;/p&gt;&lt;p&gt;выполнения имеющихся задач с учетом всех предъявленных к изделиям требований (как во время разработки дизайн-проекта, так и во время изготовления и монтажа&lt;/p&gt;&lt;p&gt;на объекте).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Кроме того, мы проектируем и самостоятельно разрабатываем конструкторскую и технологическую документацию. Конструкторская документация является&lt;/p&gt;&lt;p&gt;наиважнейшей частью производства изделий из нержавеющей стали. Наши опытные сотрудники самостоятельно подготовят всю необходимую конструкторскую&lt;/p&gt;&lt;p&gt;документацию на Ваше будущее изделие, на основе прототипа или технического задания. В комплект конструкторских документов включаются сборные чертежи,&lt;/p&gt;&lt;p&gt;деталировка и спецификация.&lt;/p&gt;', 'Главные направления работы предприятия:', '', ''),
+(9, 2, 'CEO ТЕКСТ', '&lt;p&gt;Также мы проводим доставку деталей будущего изделия к месту их сборки. У нас имеется для этих целей личный транспортный участок, который позволяет в срок&lt;/p&gt;&lt;p&gt;доставлять изделия на объект, что исключает вероятность их повреждения во время транспортировки.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;В работе с клиентами мы используем комплексный подход, который помогает экономить время и силы наших заказчиков, а также значительно сократить срок&lt;/p&gt;&lt;p&gt;выполнения имеющихся задач с учетом всех предъявленных к изделиям требований (как во время разработки дизайн-проекта, так и во время изготовления и монтажа&lt;/p&gt;&lt;p&gt;на объекте).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Кроме того, мы проектируем и самостоятельно разрабатываем конструкторскую и технологическую документацию. Конструкторская документация является&lt;/p&gt;&lt;p&gt;наиважнейшей частью производства изделий из нержавеющей стали. Наши опытные сотрудники самостоятельно подготовят всю необходимую конструкторскую&lt;/p&gt;&lt;p&gt;документацию на Ваше будущее изделие, на основе прототипа или технического задания. В комплект конструкторских документов включаются сборные чертежи,&lt;/p&gt;&lt;p&gt;деталировка и спецификация.&lt;/p&gt;', 'CEO ТЕКСТ', '', ''),
+(9, 1, 'CEO ТЕКСТ', '&lt;p&gt;Также мы проводим доставку деталей будущего изделия к месту их сборки. У нас имеется для этих целей личный транспортный участок, который позволяет в срок&lt;/p&gt;&lt;p&gt;доставлять изделия на объект, что исключает вероятность их повреждения во время транспортировки.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;В работе с клиентами мы используем комплексный подход, который помогает экономить время и силы наших заказчиков, а также значительно сократить срок&lt;/p&gt;&lt;p&gt;выполнения имеющихся задач с учетом всех предъявленных к изделиям требований (как во время разработки дизайн-проекта, так и во время изготовления и монтажа&lt;/p&gt;&lt;p&gt;на объекте).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Кроме того, мы проектируем и самостоятельно разрабатываем конструкторскую и технологическую документацию. Конструкторская документация является&lt;/p&gt;&lt;p&gt;наиважнейшей частью производства изделий из нержавеющей стали. Наши опытные сотрудники самостоятельно подготовят всю необходимую конструкторскую&lt;/p&gt;&lt;p&gt;документацию на Ваше будущее изделие, на основе прототипа или технического задания. В комплект конструкторских документов включаются сборные чертежи,&lt;/p&gt;&lt;p&gt;деталировка и спецификация.&lt;/p&gt;', 'CEO ТЕКСТ', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information_to_layout`
+-- Структура таблицы `oc_information_to_layout`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_information_to_layout` (
@@ -1341,10 +1401,20 @@ CREATE TABLE IF NOT EXISTS `oc_information_to_layout` (
   `layout_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `oc_information_to_layout`
+--
+
+INSERT INTO `oc_information_to_layout` (`information_id`, `store_id`, `layout_id`) VALUES
+(4, 0, 0),
+(7, 0, 0),
+(8, 0, 0),
+(9, 0, 0);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_information_to_store`
+-- Структура таблицы `oc_information_to_store`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_information_to_store` (
@@ -1353,19 +1423,22 @@ CREATE TABLE IF NOT EXISTS `oc_information_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_information_to_store`
+-- Дамп данных таблицы `oc_information_to_store`
 --
 
 INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 (3, 0),
 (4, 0),
 (5, 0),
-(6, 0);
+(6, 0),
+(7, 0),
+(8, 0),
+(9, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_language`
+-- Структура таблицы `oc_language`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_language` (
@@ -1380,7 +1453,7 @@ CREATE TABLE IF NOT EXISTS `oc_language` (
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_language`
+-- Дамп данных таблицы `oc_language`
 --
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
@@ -1390,7 +1463,7 @@ INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `di
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_layout`
+-- Структура таблицы `oc_layout`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_layout` (
@@ -1399,7 +1472,7 @@ CREATE TABLE IF NOT EXISTS `oc_layout` (
 ) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_layout`
+-- Дамп данных таблицы `oc_layout`
 --
 
 INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
@@ -1421,7 +1494,7 @@ INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_layout_module`
+-- Структура таблицы `oc_layout_module`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_layout_module` (
@@ -1430,29 +1503,28 @@ CREATE TABLE IF NOT EXISTS `oc_layout_module` (
   `code` varchar(64) NOT NULL,
   `position` varchar(14) NOT NULL,
   `sort_order` int(3) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=79 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=91 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_layout_module`
+-- Дамп данных таблицы `oc_layout_module`
 --
 
 INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `position`, `sort_order`) VALUES
-(2, 4, '0', 'content_top', 0),
-(3, 4, '0', 'content_top', 1),
+(88, 4, 'category', 'column_left', 0),
 (20, 5, '0', 'column_left', 2),
 (69, 10, 'affiliate', 'column_right', 1),
 (68, 6, 'account', 'column_right', 1),
-(67, 1, 'carousel.29', 'content_top', 3),
-(66, 1, 'slideshow.27', 'content_top', 1),
-(65, 1, 'featured.28', 'content_top', 2),
-(72, 3, 'category', 'column_left', 1),
-(73, 3, 'banner.30', 'column_left', 2),
-(78, 14, 'banner.30', 'content_top', 0);
+(86, 1, 'slideshow.27', 'content_top', 1),
+(87, 11, 'category', 'column_left', 0),
+(90, 2, 'category', 'column_left', 0),
+(89, 3, 'category', 'column_left', 1),
+(78, 14, 'banner.30', 'content_top', 0),
+(85, 1, 'category', 'column_left', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_layout_route`
+-- Структура таблицы `oc_layout_route`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_layout_route` (
@@ -1460,23 +1532,23 @@ CREATE TABLE IF NOT EXISTS `oc_layout_route` (
   `layout_id` int(11) NOT NULL,
   `store_id` int(11) NOT NULL,
   `route` varchar(255) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=68 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_layout_route`
+-- Дамп данных таблицы `oc_layout_route`
 --
 
 INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `route`) VALUES
 (38, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
-(44, 3, 0, 'product/category'),
-(42, 1, 0, 'common/home'),
-(20, 2, 0, 'product/product'),
-(24, 11, 0, 'information/information'),
+(66, 3, 0, 'product/category'),
+(63, 1, 0, 'common/home'),
+(67, 2, 0, 'product/product'),
+(64, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
 (31, 8, 0, 'information/contact'),
 (32, 9, 0, 'information/sitemap'),
-(34, 4, 0, ''),
+(65, 4, 0, ''),
 (45, 5, 0, 'product/manufacturer'),
 (52, 12, 0, 'product/compare'),
 (53, 13, 0, 'product/search'),
@@ -1485,7 +1557,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_length_class`
+-- Структура таблицы `oc_length_class`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_length_class` (
@@ -1494,7 +1566,7 @@ CREATE TABLE IF NOT EXISTS `oc_length_class` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_length_class`
+-- Дамп данных таблицы `oc_length_class`
 --
 
 INSERT INTO `oc_length_class` (`length_class_id`, `value`) VALUES
@@ -1505,7 +1577,7 @@ INSERT INTO `oc_length_class` (`length_class_id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_length_class_description`
+-- Структура таблицы `oc_length_class_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_length_class_description` (
@@ -1516,7 +1588,7 @@ CREATE TABLE IF NOT EXISTS `oc_length_class_description` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_length_class_description`
+-- Дамп данных таблицы `oc_length_class_description`
 --
 
 INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `title`, `unit`) VALUES
@@ -1530,7 +1602,7 @@ INSERT INTO `oc_length_class_description` (`length_class_id`, `language_id`, `ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_location`
+-- Структура таблицы `oc_location`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_location` (
@@ -1548,7 +1620,7 @@ CREATE TABLE IF NOT EXISTS `oc_location` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_manufacturer`
+-- Структура таблицы `oc_manufacturer`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_manufacturer` (
@@ -1559,7 +1631,7 @@ CREATE TABLE IF NOT EXISTS `oc_manufacturer` (
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_manufacturer`
+-- Дамп данных таблицы `oc_manufacturer`
 --
 
 INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `sort_order`) VALUES
@@ -1573,7 +1645,7 @@ INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `sort_order`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_manufacturer_to_store`
+-- Структура таблицы `oc_manufacturer_to_store`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_manufacturer_to_store` (
@@ -1582,7 +1654,7 @@ CREATE TABLE IF NOT EXISTS `oc_manufacturer_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_manufacturer_to_store`
+-- Дамп данных таблицы `oc_manufacturer_to_store`
 --
 
 INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
@@ -1596,7 +1668,7 @@ INSERT INTO `oc_manufacturer_to_store` (`manufacturer_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_marketing`
+-- Структура таблицы `oc_marketing`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_marketing` (
@@ -1611,7 +1683,7 @@ CREATE TABLE IF NOT EXISTS `oc_marketing` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_modification`
+-- Структура таблицы `oc_modification`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_modification` (
@@ -1629,7 +1701,7 @@ CREATE TABLE IF NOT EXISTS `oc_modification` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_module`
+-- Структура таблицы `oc_module`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_module` (
@@ -1640,7 +1712,7 @@ CREATE TABLE IF NOT EXISTS `oc_module` (
 ) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_module`
+-- Дамп данных таблицы `oc_module`
 --
 
 INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
@@ -1652,7 +1724,7 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option`
+-- Структура таблицы `oc_option`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_option` (
@@ -1662,7 +1734,7 @@ CREATE TABLE IF NOT EXISTS `oc_option` (
 ) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_option`
+-- Дамп данных таблицы `oc_option`
 --
 
 INSERT INTO `oc_option` (`option_id`, `type`, `sort_order`) VALUES
@@ -1681,7 +1753,7 @@ INSERT INTO `oc_option` (`option_id`, `type`, `sort_order`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option_description`
+-- Структура таблицы `oc_option_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_option_description` (
@@ -1691,7 +1763,7 @@ CREATE TABLE IF NOT EXISTS `oc_option_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_option_description`
+-- Дамп данных таблицы `oc_option_description`
 --
 
 INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
@@ -1721,7 +1793,7 @@ INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option_value`
+-- Структура таблицы `oc_option_value`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_option_value` (
@@ -1732,7 +1804,7 @@ CREATE TABLE IF NOT EXISTS `oc_option_value` (
 ) ENGINE=MyISAM AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_option_value`
+-- Дамп данных таблицы `oc_option_value`
 --
 
 INSERT INTO `oc_option_value` (`option_value_id`, `option_id`, `image`, `sort_order`) VALUES
@@ -1754,7 +1826,7 @@ INSERT INTO `oc_option_value` (`option_value_id`, `option_id`, `image`, `sort_or
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_option_value_description`
+-- Структура таблицы `oc_option_value_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_option_value_description` (
@@ -1765,7 +1837,7 @@ CREATE TABLE IF NOT EXISTS `oc_option_value_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_option_value_description`
+-- Дамп данных таблицы `oc_option_value_description`
 --
 
 INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `option_id`, `name`) VALUES
@@ -1801,7 +1873,7 @@ INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `op
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order`
+-- Структура таблицы `oc_order`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order` (
@@ -1871,7 +1943,7 @@ CREATE TABLE IF NOT EXISTS `oc_order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_custom_field`
+-- Структура таблицы `oc_order_custom_field`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_custom_field` (
@@ -1888,7 +1960,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_custom_field` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_fraud`
+-- Структура таблицы `oc_order_fraud`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_fraud` (
@@ -1950,7 +2022,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_fraud` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_history`
+-- Структура таблицы `oc_order_history`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_history` (
@@ -1965,7 +2037,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_option`
+-- Структура таблицы `oc_order_option`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_option` (
@@ -1982,7 +2054,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_option` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_product`
+-- Структура таблицы `oc_order_product`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_product` (
@@ -2001,7 +2073,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_recurring`
+-- Структура таблицы `oc_order_recurring`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_recurring` (
@@ -2030,7 +2102,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_recurring` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_recurring_transaction`
+-- Структура таблицы `oc_order_recurring_transaction`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_recurring_transaction` (
@@ -2045,7 +2117,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_recurring_transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_status`
+-- Структура таблицы `oc_order_status`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_status` (
@@ -2055,7 +2127,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_status` (
 ) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_order_status`
+-- Дамп данных таблицы `oc_order_status`
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
@@ -2091,7 +2163,7 @@ INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_total`
+-- Структура таблицы `oc_order_total`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_total` (
@@ -2106,7 +2178,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_total` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_order_voucher`
+-- Структура таблицы `oc_order_voucher`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_order_voucher` (
@@ -2127,7 +2199,7 @@ CREATE TABLE IF NOT EXISTS `oc_order_voucher` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product`
+-- Структура таблицы `oc_product`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product` (
@@ -2165,7 +2237,7 @@ CREATE TABLE IF NOT EXISTS `oc_product` (
 ) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product`
+-- Дамп данных таблицы `oc_product`
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
@@ -2180,19 +2252,19 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (36, 'Product 9', '', '', '', '', '', '', '', 994, 6, 'catalog/demo/ipod_nano_1.jpg', 8, 0, '100.0000', 100, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 18:09:19', '2011-09-30 01:07:12'),
 (40, 'product 11', '', '', '', '', '', '', '', 970, 5, 'catalog/demo/iphone_1.jpg', 8, 1, '101.0000', 0, 9, '2009-02-03', '10.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 3, '2009-02-03 21:07:12', '2011-09-30 01:06:53'),
 (41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/demo/imac_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:26', '2011-09-30 01:06:44'),
-(42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/apple_cinema_30.jpg', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, 0, '2009-02-03 21:07:37', '2011-09-30 00:46:19'),
+(42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/apple_cinema_30.jpg', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, 104, '2009-02-03 21:07:37', '2016-10-28 12:44:29'),
 (43, 'Product 16', '', '', '', '', '', '', '', 929, 5, 'catalog/demo/macbook_1.jpg', 8, 0, '500.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:07:49', '2011-09-30 01:05:46'),
 (44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/macbook_air_1.jpg', 8, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:00', '2011-09-30 01:05:53'),
 (45, 'Product 18', '', '', '', '', '', '', '', 998, 5, 'catalog/demo/macbook_pro_1.jpg', 8, 1, '2000.0000', 0, 100, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:17', '2011-09-15 22:22:01'),
 (46, 'Product 19', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/sony_vaio_1.jpg', 10, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:29', '2011-09-30 01:06:39'),
 (47, 'Product 21', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/hp_1.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 0, '2009-02-03 21:08:40', '2011-09-30 01:05:28'),
 (48, 'product 20', 'test 1', '', '', '', '', '', 'test 2', 995, 5, 'catalog/demo/ipod_classic_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-08', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-08 17:21:51', '2011-09-30 01:07:06'),
-(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 55, '2011-04-26 08:57:34', '2011-09-30 01:06:23');
+(49, 'SAM1', '', '', '', '', '', '', '', 0, 8, 'catalog/demo/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 1, 1, 56, '2011-04-26 08:57:34', '2011-09-30 01:06:23');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_attribute`
+-- Структура таблицы `oc_product_attribute`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_attribute` (
@@ -2203,7 +2275,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_attribute` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_attribute`
+-- Дамп данных таблицы `oc_product_attribute`
 --
 
 INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`, `text`) VALUES
@@ -2221,7 +2293,7 @@ INSERT INTO `oc_product_attribute` (`product_id`, `attribute_id`, `language_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_description`
+-- Структура таблицы `oc_product_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_description` (
@@ -2236,7 +2308,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_description`
+-- Дамп данных таблицы `oc_product_description`
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
@@ -2257,7 +2329,6 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (43, 1, 'MacBook', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', '', ''),
 (31, 1, 'Nikon D300', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon&amp;#39;s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Similar to the D3, the D300 features Nikon&amp;#39;s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera&amp;#39;s new features. The D300 features a new 51-point autofocus system with Nikon&amp;#39;s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera&amp;#39;s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon&amp;#39;s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', '', ''),
 (49, 1, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n', '', '', '', ''),
-(42, 1, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there&amp;#39;s no limit to what you can achieve. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it&amp;#39;s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple&amp;#39;s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br /&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170&amp;deg; horizontal; 170&amp;deg; vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br /&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br /&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50&amp;deg; to 95&amp;deg; F (10&amp;deg; to 35&amp;deg; C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40&amp;deg; to 116&amp;deg; F (-40&amp;deg; to 47&amp;deg; C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO &amp;#39;03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br /&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', '', '', ''),
 (30, 1, 'Canon EOS 5D', '&lt;p&gt;\r\n	Canon''s press material for the EOS 5D states that it ''defines (a) new D-SLR category'', while we''re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably ''chunkier''). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR''s, an important difference when compared to the latter is that the EOS 5D doesn''t have any environmental seals. While Canon don''t specifically refer to the EOS 5D as a ''professional'' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they''ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', '', '', ''),
 (35, 2, 'Product 8', '&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n', '', '', '', ''),
 (48, 2, 'iPod Classic', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', '', ''),
@@ -2275,15 +2346,16 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (34, 2, 'iPod Shuffle', '&lt;div&gt;\r\n	&lt;strong&gt;Born to be worn.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to make your musical fashion statement.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Random meets rhythm.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With iTunes autofill, iPod shuffle can deliver a new musical experience every time you sync. For more randomness, you can shuffle songs during playback with the slide of a switch.&lt;/p&gt;\r\n	&lt;strong&gt;Everything is easy.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Charge and sync with the included USB dock. Operate the iPod shuffle controls with one hand. Enjoy up to 12 hours straight of skip-free music playback.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', '', ''),
 (43, 2, 'MacBook', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', '', ''),
 (31, 2, 'Nikon D300', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon&amp;#39;s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Similar to the D3, the D300 features Nikon&amp;#39;s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera&amp;#39;s new features. The D300 features a new 51-point autofocus system with Nikon&amp;#39;s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera&amp;#39;s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon&amp;#39;s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', '', ''),
-(49, 2, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n', '', '', '', '');
+(49, 2, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n', '', '', '', ''),
+(42, 2, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there''s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it''s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple''s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO ''03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Apple Cinema 30&quot;', '', '');
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(42, 2, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there&amp;#39;s no limit to what you can achieve. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it&amp;#39;s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple&amp;#39;s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br /&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170&amp;deg; horizontal; 170&amp;deg; vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br /&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br /&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50&amp;deg; to 95&amp;deg; F (10&amp;deg; to 35&amp;deg; C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40&amp;deg; to 116&amp;deg; F (-40&amp;deg; to 47&amp;deg; C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO &amp;#39;03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br /&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', '', '', ''),
+(42, 1, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there''s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it''s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple''s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO ''03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Apple Cinema 30&quot;', '', ''),
 (30, 2, 'Canon EOS 5D', '&lt;p&gt;\r\n	Canon''s press material for the EOS 5D states that it ''defines (a) new D-SLR category'', while we''re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably ''chunkier''). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR''s, an important difference when compared to the latter is that the EOS 5D doesn''t have any environmental seals. While Canon don''t specifically refer to the EOS 5D as a ''professional'' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they''ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_discount`
+-- Структура таблицы `oc_product_discount`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_discount` (
@@ -2295,21 +2367,21 @@ CREATE TABLE IF NOT EXISTS `oc_product_discount` (
   `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `date_start` date NOT NULL DEFAULT '0000-00-00',
   `date_end` date NOT NULL DEFAULT '0000-00-00'
-) ENGINE=MyISAM AUTO_INCREMENT=441 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=447 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_discount`
+-- Дамп данных таблицы `oc_product_discount`
 --
 
 INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(440, 42, 1, 30, 1, '66.0000', '0000-00-00', '0000-00-00'),
-(439, 42, 1, 20, 1, '77.0000', '0000-00-00', '0000-00-00'),
-(438, 42, 1, 10, 1, '88.0000', '0000-00-00', '0000-00-00');
+(446, 42, 1, 30, 1, '66.0000', '0000-00-00', '0000-00-00'),
+(445, 42, 1, 20, 1, '77.0000', '0000-00-00', '0000-00-00'),
+(444, 42, 1, 10, 1, '88.0000', '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_filter`
+-- Структура таблицы `oc_product_filter`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_filter` (
@@ -2320,7 +2392,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_filter` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_image`
+-- Структура таблицы `oc_product_image`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_image` (
@@ -2328,10 +2400,10 @@ CREATE TABLE IF NOT EXISTS `oc_product_image` (
   `product_id` int(11) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=2352 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2363 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_image`
+-- Дамп данных таблицы `oc_product_image`
 --
 
 INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
@@ -2391,16 +2463,17 @@ INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort
 (2324, 49, 'catalog/demo/samsung_tab_4.jpg', 0),
 (2323, 49, 'catalog/demo/samsung_tab_3.jpg', 0),
 (2322, 49, 'catalog/demo/samsung_tab_2.jpg', 0),
-(2317, 42, 'catalog/demo/canon_logo.jpg', 0),
-(2316, 42, 'catalog/demo/hp_1.jpg', 0),
-(2315, 42, 'catalog/demo/compaq_presario.jpg', 0),
-(2314, 42, 'catalog/demo/canon_eos_5d_1.jpg', 0),
-(2313, 42, 'catalog/demo/canon_eos_5d_2.jpg', 0);
+(2361, 42, 'catalog/demo/canon_eos_5d_2.jpg', 0),
+(2360, 42, 'catalog/demo/canon_logo.jpg', 0),
+(2359, 42, 'catalog/demo/hp_1.jpg', 0),
+(2358, 42, 'catalog/demo/compaq_presario.jpg', 0),
+(2357, 42, 'catalog/demo/canon_eos_5d_1.jpg', 0),
+(2362, 42, 'catalog/demo/canon_eos_5d_1.jpg', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_option`
+-- Структура таблицы `oc_product_option`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_option` (
@@ -2412,27 +2485,27 @@ CREATE TABLE IF NOT EXISTS `oc_product_option` (
 ) ENGINE=MyISAM AUTO_INCREMENT=227 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_option`
+-- Дамп данных таблицы `oc_product_option`
 --
 
 INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `value`, `required`) VALUES
 (224, 35, 11, '', 1),
 (225, 47, 12, '2011-04-22', 1),
+(221, 42, 9, '22:25', 1),
 (223, 42, 2, '', 1),
 (217, 42, 5, '', 1),
 (209, 42, 6, '', 1),
 (218, 42, 1, '', 1),
 (208, 42, 4, 'test', 1),
+(226, 30, 5, '', 1),
 (219, 42, 8, '2011-02-20', 1),
 (222, 42, 7, '', 1),
-(221, 42, 9, '22:25', 1),
-(220, 42, 10, '2011-02-20 22:25', 1),
-(226, 30, 5, '', 1);
+(220, 42, 10, '2011-02-20 22:25', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_option_value`
+-- Структура таблицы `oc_product_option_value`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_option_value` (
@@ -2452,31 +2525,31 @@ CREATE TABLE IF NOT EXISTS `oc_product_option_value` (
 ) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_option_value`
+-- Дамп данных таблицы `oc_product_option_value`
 --
 
 INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
 (1, 217, 42, 5, 41, 100, 0, '1.0000', '+', 0, '+', '1.00000000', '+'),
-(6, 218, 42, 1, 31, 146, 1, '20.0000', '+', 2, '-', '20.00000000', '+'),
-(7, 218, 42, 1, 43, 300, 1, '30.0000', '+', 3, '+', '30.00000000', '+'),
-(5, 218, 42, 1, 32, 96, 1, '10.0000', '+', 1, '+', '10.00000000', '+'),
 (4, 217, 42, 5, 39, 92, 1, '4.0000', '+', 0, '+', '4.00000000', '+'),
 (2, 217, 42, 5, 42, 200, 1, '2.0000', '+', 0, '+', '2.00000000', '+'),
 (3, 217, 42, 5, 40, 300, 0, '3.0000', '+', 0, '+', '3.00000000', '+'),
-(8, 223, 42, 2, 23, 48, 1, '10.0000', '+', 0, '+', '10.00000000', '+'),
-(10, 223, 42, 2, 44, 2696, 1, '30.0000', '+', 0, '+', '30.00000000', '+'),
-(9, 223, 42, 2, 24, 194, 1, '20.0000', '+', 0, '+', '20.00000000', '+'),
-(11, 223, 42, 2, 45, 3998, 1, '40.0000', '+', 0, '+', '40.00000000', '+'),
+(6, 218, 42, 1, 31, 146, 1, '20.0000', '+', 2, '-', '20.00000000', '+'),
+(7, 218, 42, 1, 43, 300, 1, '30.0000', '+', 3, '+', '30.00000000', '+'),
+(5, 218, 42, 1, 32, 96, 1, '10.0000', '+', 1, '+', '10.00000000', '+'),
 (12, 224, 35, 11, 46, 0, 1, '5.0000', '+', 0, '+', '0.00000000', '+'),
 (13, 224, 35, 11, 47, 10, 1, '10.0000', '+', 0, '+', '0.00000000', '+'),
 (14, 224, 35, 11, 48, 15, 1, '15.0000', '+', 0, '+', '0.00000000', '+'),
 (16, 226, 30, 5, 40, 5, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(15, 226, 30, 5, 39, 2, 1, '0.0000', '+', 0, '+', '0.00000000', '+');
+(15, 226, 30, 5, 39, 2, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
+(11, 223, 42, 2, 45, 3998, 1, '40.0000', '+', 0, '+', '40.00000000', '+'),
+(9, 223, 42, 2, 24, 194, 1, '20.0000', '+', 0, '+', '20.00000000', '+'),
+(10, 223, 42, 2, 44, 2696, 1, '30.0000', '+', 0, '+', '30.00000000', '+'),
+(8, 223, 42, 2, 23, 48, 1, '10.0000', '+', 0, '+', '10.00000000', '+');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_recurring`
+-- Структура таблицы `oc_product_recurring`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_recurring` (
@@ -2488,7 +2561,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_recurring` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_related`
+-- Структура таблицы `oc_product_related`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_related` (
@@ -2497,7 +2570,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_related` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_related`
+-- Дамп данных таблицы `oc_product_related`
 --
 
 INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
@@ -2509,7 +2582,7 @@ INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_reward`
+-- Структура таблицы `oc_product_reward`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_reward` (
@@ -2517,14 +2590,14 @@ CREATE TABLE IF NOT EXISTS `oc_product_reward` (
   `product_id` int(11) NOT NULL DEFAULT '0',
   `customer_group_id` int(11) NOT NULL DEFAULT '0',
   `points` int(8) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=546 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=548 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_reward`
+-- Дамп данных таблицы `oc_product_reward`
 --
 
 INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(515, 42, 1, 100),
+(547, 42, 1, 100),
 (519, 47, 1, 300),
 (379, 28, 1, 400),
 (329, 43, 1, 600),
@@ -2547,7 +2620,7 @@ INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_gr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_special`
+-- Структура таблицы `oc_product_special`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_special` (
@@ -2558,21 +2631,21 @@ CREATE TABLE IF NOT EXISTS `oc_product_special` (
   `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `date_start` date NOT NULL DEFAULT '0000-00-00',
   `date_end` date NOT NULL DEFAULT '0000-00-00'
-) ENGINE=MyISAM AUTO_INCREMENT=440 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=442 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_special`
+-- Дамп данных таблицы `oc_product_special`
 --
 
 INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(419, 42, 1, 1, '90.0000', '0000-00-00', '0000-00-00'),
+(441, 42, 1, 1, '90.0000', '0000-00-00', '0000-00-00'),
 (439, 30, 1, 2, '90.0000', '0000-00-00', '0000-00-00'),
 (438, 30, 1, 1, '80.0000', '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_category`
+-- Структура таблицы `oc_product_to_category`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_to_category` (
@@ -2581,35 +2654,16 @@ CREATE TABLE IF NOT EXISTS `oc_product_to_category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_to_category`
+-- Дамп данных таблицы `oc_product_to_category`
 --
 
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
-(28, 20),
-(28, 24),
-(29, 20),
-(29, 24),
-(30, 20),
-(32, 34),
-(33, 20),
-(34, 34),
-(35, 20),
-(36, 34),
-(40, 20),
-(40, 24),
-(42, 20),
-(43, 20),
-(44, 20),
-(46, 20),
-(47, 20),
-(48, 20),
-(48, 34),
-(49, 57);
+(42, 67);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_download`
+-- Структура таблицы `oc_product_to_download`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_to_download` (
@@ -2620,7 +2674,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_to_download` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_layout`
+-- Структура таблицы `oc_product_to_layout`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_to_layout` (
@@ -2629,10 +2683,17 @@ CREATE TABLE IF NOT EXISTS `oc_product_to_layout` (
   `layout_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `oc_product_to_layout`
+--
+
+INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUES
+(42, 0, 0);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_product_to_store`
+-- Структура таблицы `oc_product_to_store`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_product_to_store` (
@@ -2641,7 +2702,7 @@ CREATE TABLE IF NOT EXISTS `oc_product_to_store` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_product_to_store`
+-- Дамп данных таблицы `oc_product_to_store`
 --
 
 INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
@@ -2668,7 +2729,7 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_recurring`
+-- Структура таблицы `oc_recurring`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_recurring` (
@@ -2689,7 +2750,7 @@ CREATE TABLE IF NOT EXISTS `oc_recurring` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_recurring_description`
+-- Структура таблицы `oc_recurring_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_recurring_description` (
@@ -2701,7 +2762,7 @@ CREATE TABLE IF NOT EXISTS `oc_recurring_description` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return`
+-- Структура таблицы `oc_return`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_return` (
@@ -2729,7 +2790,7 @@ CREATE TABLE IF NOT EXISTS `oc_return` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_action`
+-- Структура таблицы `oc_return_action`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_return_action` (
@@ -2739,7 +2800,7 @@ CREATE TABLE IF NOT EXISTS `oc_return_action` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_return_action`
+-- Дамп данных таблицы `oc_return_action`
 --
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
@@ -2753,7 +2814,7 @@ INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_history`
+-- Структура таблицы `oc_return_history`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_return_history` (
@@ -2768,7 +2829,7 @@ CREATE TABLE IF NOT EXISTS `oc_return_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_reason`
+-- Структура таблицы `oc_return_reason`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_return_reason` (
@@ -2778,7 +2839,7 @@ CREATE TABLE IF NOT EXISTS `oc_return_reason` (
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_return_reason`
+-- Дамп данных таблицы `oc_return_reason`
 --
 
 INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUES
@@ -2796,7 +2857,7 @@ INSERT INTO `oc_return_reason` (`return_reason_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_return_status`
+-- Структура таблицы `oc_return_status`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_return_status` (
@@ -2806,7 +2867,7 @@ CREATE TABLE IF NOT EXISTS `oc_return_status` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_return_status`
+-- Дамп данных таблицы `oc_return_status`
 --
 
 INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUES
@@ -2820,7 +2881,7 @@ INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_review`
+-- Структура таблицы `oc_review`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_review` (
@@ -2838,7 +2899,7 @@ CREATE TABLE IF NOT EXISTS `oc_review` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_setting`
+-- Структура таблицы `oc_setting`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_setting` (
@@ -2851,7 +2912,7 @@ CREATE TABLE IF NOT EXISTS `oc_setting` (
 ) ENGINE=MyISAM AUTO_INCREMENT=834 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_setting`
+-- Дамп данных таблицы `oc_setting`
 --
 
 INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `serialized`) VALUES
@@ -3002,7 +3063,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_stock_status`
+-- Структура таблицы `oc_stock_status`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_stock_status` (
@@ -3012,7 +3073,7 @@ CREATE TABLE IF NOT EXISTS `oc_stock_status` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_stock_status`
+-- Дамп данных таблицы `oc_stock_status`
 --
 
 INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
@@ -3028,7 +3089,7 @@ INSERT INTO `oc_stock_status` (`stock_status_id`, `language_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_store`
+-- Структура таблицы `oc_store`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_store` (
@@ -3041,7 +3102,7 @@ CREATE TABLE IF NOT EXISTS `oc_store` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_class`
+-- Структура таблицы `oc_tax_class`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_tax_class` (
@@ -3053,7 +3114,7 @@ CREATE TABLE IF NOT EXISTS `oc_tax_class` (
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_class`
+-- Дамп данных таблицы `oc_tax_class`
 --
 
 INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`, `date_modified`) VALUES
@@ -3063,7 +3124,7 @@ INSERT INTO `oc_tax_class` (`tax_class_id`, `title`, `description`, `date_added`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_rate`
+-- Структура таблицы `oc_tax_rate`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_tax_rate` (
@@ -3077,7 +3138,7 @@ CREATE TABLE IF NOT EXISTS `oc_tax_rate` (
 ) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_rate`
+-- Дамп данных таблицы `oc_tax_rate`
 --
 
 INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`, `date_added`, `date_modified`) VALUES
@@ -3087,7 +3148,7 @@ INSERT INTO `oc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_rate_to_customer_group`
+-- Структура таблицы `oc_tax_rate_to_customer_group`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_tax_rate_to_customer_group` (
@@ -3096,7 +3157,7 @@ CREATE TABLE IF NOT EXISTS `oc_tax_rate_to_customer_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_rate_to_customer_group`
+-- Дамп данных таблицы `oc_tax_rate_to_customer_group`
 --
 
 INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`) VALUES
@@ -3106,7 +3167,7 @@ INSERT INTO `oc_tax_rate_to_customer_group` (`tax_rate_id`, `customer_group_id`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_tax_rule`
+-- Структура таблицы `oc_tax_rule`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_tax_rule` (
@@ -3118,7 +3179,7 @@ CREATE TABLE IF NOT EXISTS `oc_tax_rule` (
 ) ENGINE=MyISAM AUTO_INCREMENT=129 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_tax_rule`
+-- Дамп данных таблицы `oc_tax_rule`
 --
 
 INSERT INTO `oc_tax_rule` (`tax_rule_id`, `tax_class_id`, `tax_rate_id`, `based`, `priority`) VALUES
@@ -3130,7 +3191,7 @@ INSERT INTO `oc_tax_rule` (`tax_rule_id`, `tax_class_id`, `tax_rate_id`, `based`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_upload`
+-- Структура таблицы `oc_upload`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_upload` (
@@ -3144,29 +3205,27 @@ CREATE TABLE IF NOT EXISTS `oc_upload` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_url_alias`
+-- Структура таблицы `oc_url_alias`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_url_alias` (
   `url_alias_id` int(11) NOT NULL,
   `query` varchar(255) NOT NULL,
   `keyword` varchar(255) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=850 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=867 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_url_alias`
+-- Дамп данных таблицы `oc_url_alias`
 --
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (824, 'product_id=48', 'ipod-classic'),
-(844, 'category_id=20', 'Главная'),
+(856, 'category_id=66', ''),
 (730, 'manufacturer_id=8', 'apple'),
-(772, 'information_id=4', 'about_us'),
-(768, 'product_id=42', 'test'),
-(848, 'category_id=34', 'mp3-players'),
-(845, 'category_id=57', 'tablet'),
-(846, 'category_id=17', 'software'),
-(847, 'category_id=24', 'smartphone'),
+(859, 'information_id=4', 'about_us'),
+(863, 'product_id=42', 'test'),
+(852, 'category_id=62', ''),
+(855, 'category_id=65', ''),
 (809, 'product_id=30', 'canon-eos-5d'),
 (840, 'product_id=47', 'hp-lp3065'),
 (811, 'product_id=28', 'htc-touch-hd'),
@@ -3191,12 +3250,14 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (832, 'manufacturer_id=10', 'sony'),
 (841, 'information_id=6', 'delivery'),
 (842, 'information_id=3', 'privacy'),
-(843, 'information_id=5', 'terms');
+(843, 'information_id=5', 'terms'),
+(862, 'category_id=68', ''),
+(866, 'information_id=9', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_user`
+-- Структура таблицы `oc_user`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_user` (
@@ -3216,7 +3277,7 @@ CREATE TABLE IF NOT EXISTS `oc_user` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_user`
+-- Дамп данных таблицы `oc_user`
 --
 
 INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt`, `firstname`, `lastname`, `email`, `image`, `code`, `ip`, `status`, `date_added`) VALUES
@@ -3225,7 +3286,7 @@ INSERT INTO `oc_user` (`user_id`, `user_group_id`, `username`, `password`, `salt
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_user_group`
+-- Структура таблицы `oc_user_group`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_user_group` (
@@ -3235,7 +3296,7 @@ CREATE TABLE IF NOT EXISTS `oc_user_group` (
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_user_group`
+-- Дамп данных таблицы `oc_user_group`
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
@@ -3245,7 +3306,7 @@ INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher`
+-- Структура таблицы `oc_voucher`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_voucher` (
@@ -3266,7 +3327,7 @@ CREATE TABLE IF NOT EXISTS `oc_voucher` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher_history`
+-- Структура таблицы `oc_voucher_history`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_voucher_history` (
@@ -3280,7 +3341,7 @@ CREATE TABLE IF NOT EXISTS `oc_voucher_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher_theme`
+-- Структура таблицы `oc_voucher_theme`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_voucher_theme` (
@@ -3289,7 +3350,7 @@ CREATE TABLE IF NOT EXISTS `oc_voucher_theme` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_voucher_theme`
+-- Дамп данных таблицы `oc_voucher_theme`
 --
 
 INSERT INTO `oc_voucher_theme` (`voucher_theme_id`, `image`) VALUES
@@ -3300,7 +3361,7 @@ INSERT INTO `oc_voucher_theme` (`voucher_theme_id`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_voucher_theme_description`
+-- Структура таблицы `oc_voucher_theme_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_voucher_theme_description` (
@@ -3310,7 +3371,7 @@ CREATE TABLE IF NOT EXISTS `oc_voucher_theme_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_voucher_theme_description`
+-- Дамп данных таблицы `oc_voucher_theme_description`
 --
 
 INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `name`) VALUES
@@ -3324,7 +3385,7 @@ INSERT INTO `oc_voucher_theme_description` (`voucher_theme_id`, `language_id`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_weight_class`
+-- Структура таблицы `oc_weight_class`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_weight_class` (
@@ -3333,7 +3394,7 @@ CREATE TABLE IF NOT EXISTS `oc_weight_class` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_weight_class`
+-- Дамп данных таблицы `oc_weight_class`
 --
 
 INSERT INTO `oc_weight_class` (`weight_class_id`, `value`) VALUES
@@ -3345,7 +3406,7 @@ INSERT INTO `oc_weight_class` (`weight_class_id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_weight_class_description`
+-- Структура таблицы `oc_weight_class_description`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_weight_class_description` (
@@ -3356,7 +3417,7 @@ CREATE TABLE IF NOT EXISTS `oc_weight_class_description` (
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_weight_class_description`
+-- Дамп данных таблицы `oc_weight_class_description`
 --
 
 INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `title`, `unit`) VALUES
@@ -3372,7 +3433,7 @@ INSERT INTO `oc_weight_class_description` (`weight_class_id`, `language_id`, `ti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_zone`
+-- Структура таблицы `oc_zone`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_zone` (
@@ -3384,7 +3445,7 @@ CREATE TABLE IF NOT EXISTS `oc_zone` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4225 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_zone`
+-- Дамп данных таблицы `oc_zone`
 --
 
 INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
@@ -7493,7 +7554,7 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_zone_to_geo_zone`
+-- Структура таблицы `oc_zone_to_geo_zone`
 --
 
 CREATE TABLE IF NOT EXISTS `oc_zone_to_geo_zone` (
@@ -7506,7 +7567,7 @@ CREATE TABLE IF NOT EXISTS `oc_zone_to_geo_zone` (
 ) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `oc_zone_to_geo_zone`
+-- Дамп данных таблицы `oc_zone_to_geo_zone`
 --
 
 INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id`, `geo_zone_id`, `date_added`, `date_modified`) VALUES
@@ -7621,30 +7682,30 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (109, 222, 3972, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `oc_address`
+-- Индексы таблицы `oc_address`
 --
 ALTER TABLE `oc_address`
   ADD PRIMARY KEY (`address_id`),
   ADD KEY `customer_id` (`customer_id`);
 
 --
--- Indexes for table `oc_affiliate`
+-- Индексы таблицы `oc_affiliate`
 --
 ALTER TABLE `oc_affiliate`
   ADD PRIMARY KEY (`affiliate_id`);
 
 --
--- Indexes for table `oc_affiliate_activity`
+-- Индексы таблицы `oc_affiliate_activity`
 --
 ALTER TABLE `oc_affiliate_activity`
   ADD PRIMARY KEY (`activity_id`);
 
 --
--- Indexes for table `oc_affiliate_login`
+-- Индексы таблицы `oc_affiliate_login`
 --
 ALTER TABLE `oc_affiliate_login`
   ADD PRIMARY KEY (`affiliate_login_id`),
@@ -7652,179 +7713,179 @@ ALTER TABLE `oc_affiliate_login`
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_affiliate_transaction`
+-- Индексы таблицы `oc_affiliate_transaction`
 --
 ALTER TABLE `oc_affiliate_transaction`
   ADD PRIMARY KEY (`affiliate_transaction_id`);
 
 --
--- Indexes for table `oc_api`
+-- Индексы таблицы `oc_api`
 --
 ALTER TABLE `oc_api`
   ADD PRIMARY KEY (`api_id`);
 
 --
--- Indexes for table `oc_attribute`
+-- Индексы таблицы `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
   ADD PRIMARY KEY (`attribute_id`);
 
 --
--- Indexes for table `oc_attribute_description`
+-- Индексы таблицы `oc_attribute_description`
 --
 ALTER TABLE `oc_attribute_description`
   ADD PRIMARY KEY (`attribute_id`,`language_id`);
 
 --
--- Indexes for table `oc_attribute_group`
+-- Индексы таблицы `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
   ADD PRIMARY KEY (`attribute_group_id`);
 
 --
--- Indexes for table `oc_attribute_group_description`
+-- Индексы таблицы `oc_attribute_group_description`
 --
 ALTER TABLE `oc_attribute_group_description`
   ADD PRIMARY KEY (`attribute_group_id`,`language_id`);
 
 --
--- Indexes for table `oc_banner`
+-- Индексы таблицы `oc_banner`
 --
 ALTER TABLE `oc_banner`
   ADD PRIMARY KEY (`banner_id`);
 
 --
--- Indexes for table `oc_banner_image`
+-- Индексы таблицы `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
   ADD PRIMARY KEY (`banner_image_id`);
 
 --
--- Indexes for table `oc_banner_image_description`
+-- Индексы таблицы `oc_banner_image_description`
 --
 ALTER TABLE `oc_banner_image_description`
   ADD PRIMARY KEY (`banner_image_id`,`language_id`);
 
 --
--- Indexes for table `oc_category`
+-- Индексы таблицы `oc_category`
 --
 ALTER TABLE `oc_category`
   ADD PRIMARY KEY (`category_id`),
   ADD KEY `parent_id` (`parent_id`);
 
 --
--- Indexes for table `oc_category_description`
+-- Индексы таблицы `oc_category_description`
 --
 ALTER TABLE `oc_category_description`
   ADD PRIMARY KEY (`category_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_category_filter`
+-- Индексы таблицы `oc_category_filter`
 --
 ALTER TABLE `oc_category_filter`
   ADD PRIMARY KEY (`category_id`,`filter_id`);
 
 --
--- Indexes for table `oc_category_path`
+-- Индексы таблицы `oc_category_path`
 --
 ALTER TABLE `oc_category_path`
   ADD PRIMARY KEY (`category_id`,`path_id`);
 
 --
--- Indexes for table `oc_category_to_layout`
+-- Индексы таблицы `oc_category_to_layout`
 --
 ALTER TABLE `oc_category_to_layout`
   ADD PRIMARY KEY (`category_id`,`store_id`);
 
 --
--- Indexes for table `oc_category_to_store`
+-- Индексы таблицы `oc_category_to_store`
 --
 ALTER TABLE `oc_category_to_store`
   ADD PRIMARY KEY (`category_id`,`store_id`);
 
 --
--- Indexes for table `oc_country`
+-- Индексы таблицы `oc_country`
 --
 ALTER TABLE `oc_country`
   ADD PRIMARY KEY (`country_id`);
 
 --
--- Indexes for table `oc_coupon`
+-- Индексы таблицы `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   ADD PRIMARY KEY (`coupon_id`);
 
 --
--- Indexes for table `oc_coupon_category`
+-- Индексы таблицы `oc_coupon_category`
 --
 ALTER TABLE `oc_coupon_category`
   ADD PRIMARY KEY (`coupon_id`,`category_id`);
 
 --
--- Indexes for table `oc_coupon_history`
+-- Индексы таблицы `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   ADD PRIMARY KEY (`coupon_history_id`);
 
 --
--- Indexes for table `oc_coupon_product`
+-- Индексы таблицы `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   ADD PRIMARY KEY (`coupon_product_id`);
 
 --
--- Indexes for table `oc_currency`
+-- Индексы таблицы `oc_currency`
 --
 ALTER TABLE `oc_currency`
   ADD PRIMARY KEY (`currency_id`);
 
 --
--- Indexes for table `oc_customer`
+-- Индексы таблицы `oc_customer`
 --
 ALTER TABLE `oc_customer`
   ADD PRIMARY KEY (`customer_id`);
 
 --
--- Indexes for table `oc_customer_activity`
+-- Индексы таблицы `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
   ADD PRIMARY KEY (`activity_id`);
 
 --
--- Indexes for table `oc_customer_ban_ip`
+-- Индексы таблицы `oc_customer_ban_ip`
 --
 ALTER TABLE `oc_customer_ban_ip`
   ADD PRIMARY KEY (`customer_ban_ip_id`),
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_customer_group`
+-- Индексы таблицы `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   ADD PRIMARY KEY (`customer_group_id`);
 
 --
--- Indexes for table `oc_customer_group_description`
+-- Индексы таблицы `oc_customer_group_description`
 --
 ALTER TABLE `oc_customer_group_description`
   ADD PRIMARY KEY (`customer_group_id`,`language_id`);
 
 --
--- Indexes for table `oc_customer_history`
+-- Индексы таблицы `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   ADD PRIMARY KEY (`customer_history_id`);
 
 --
--- Indexes for table `oc_customer_ip`
+-- Индексы таблицы `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   ADD PRIMARY KEY (`customer_ip_id`),
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_customer_login`
+-- Индексы таблицы `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
   ADD PRIMARY KEY (`customer_login_id`),
@@ -7832,496 +7893,496 @@ ALTER TABLE `oc_customer_login`
   ADD KEY `ip` (`ip`);
 
 --
--- Indexes for table `oc_customer_online`
+-- Индексы таблицы `oc_customer_online`
 --
 ALTER TABLE `oc_customer_online`
   ADD PRIMARY KEY (`ip`);
 
 --
--- Indexes for table `oc_customer_reward`
+-- Индексы таблицы `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   ADD PRIMARY KEY (`customer_reward_id`);
 
 --
--- Indexes for table `oc_customer_transaction`
+-- Индексы таблицы `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   ADD PRIMARY KEY (`customer_transaction_id`);
 
 --
--- Indexes for table `oc_custom_field`
+-- Индексы таблицы `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   ADD PRIMARY KEY (`custom_field_id`);
 
 --
--- Indexes for table `oc_custom_field_customer_group`
+-- Индексы таблицы `oc_custom_field_customer_group`
 --
 ALTER TABLE `oc_custom_field_customer_group`
   ADD PRIMARY KEY (`custom_field_id`,`customer_group_id`);
 
 --
--- Indexes for table `oc_custom_field_description`
+-- Индексы таблицы `oc_custom_field_description`
 --
 ALTER TABLE `oc_custom_field_description`
   ADD PRIMARY KEY (`custom_field_id`,`language_id`);
 
 --
--- Indexes for table `oc_custom_field_value`
+-- Индексы таблицы `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   ADD PRIMARY KEY (`custom_field_value_id`);
 
 --
--- Indexes for table `oc_custom_field_value_description`
+-- Индексы таблицы `oc_custom_field_value_description`
 --
 ALTER TABLE `oc_custom_field_value_description`
   ADD PRIMARY KEY (`custom_field_value_id`,`language_id`);
 
 --
--- Indexes for table `oc_download`
+-- Индексы таблицы `oc_download`
 --
 ALTER TABLE `oc_download`
   ADD PRIMARY KEY (`download_id`);
 
 --
--- Indexes for table `oc_download_description`
+-- Индексы таблицы `oc_download_description`
 --
 ALTER TABLE `oc_download_description`
   ADD PRIMARY KEY (`download_id`,`language_id`);
 
 --
--- Indexes for table `oc_event`
+-- Индексы таблицы `oc_event`
 --
 ALTER TABLE `oc_event`
   ADD PRIMARY KEY (`event_id`);
 
 --
--- Indexes for table `oc_extension`
+-- Индексы таблицы `oc_extension`
 --
 ALTER TABLE `oc_extension`
   ADD PRIMARY KEY (`extension_id`);
 
 --
--- Indexes for table `oc_filter`
+-- Индексы таблицы `oc_filter`
 --
 ALTER TABLE `oc_filter`
   ADD PRIMARY KEY (`filter_id`);
 
 --
--- Indexes for table `oc_filter_description`
+-- Индексы таблицы `oc_filter_description`
 --
 ALTER TABLE `oc_filter_description`
   ADD PRIMARY KEY (`filter_id`,`language_id`);
 
 --
--- Indexes for table `oc_filter_group`
+-- Индексы таблицы `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   ADD PRIMARY KEY (`filter_group_id`);
 
 --
--- Indexes for table `oc_filter_group_description`
+-- Индексы таблицы `oc_filter_group_description`
 --
 ALTER TABLE `oc_filter_group_description`
   ADD PRIMARY KEY (`filter_group_id`,`language_id`);
 
 --
--- Indexes for table `oc_geo_zone`
+-- Индексы таблицы `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   ADD PRIMARY KEY (`geo_zone_id`);
 
 --
--- Indexes for table `oc_information`
+-- Индексы таблицы `oc_information`
 --
 ALTER TABLE `oc_information`
   ADD PRIMARY KEY (`information_id`);
 
 --
--- Indexes for table `oc_information_description`
+-- Индексы таблицы `oc_information_description`
 --
 ALTER TABLE `oc_information_description`
   ADD PRIMARY KEY (`information_id`,`language_id`);
 
 --
--- Indexes for table `oc_information_to_layout`
+-- Индексы таблицы `oc_information_to_layout`
 --
 ALTER TABLE `oc_information_to_layout`
   ADD PRIMARY KEY (`information_id`,`store_id`);
 
 --
--- Indexes for table `oc_information_to_store`
+-- Индексы таблицы `oc_information_to_store`
 --
 ALTER TABLE `oc_information_to_store`
   ADD PRIMARY KEY (`information_id`,`store_id`);
 
 --
--- Indexes for table `oc_language`
+-- Индексы таблицы `oc_language`
 --
 ALTER TABLE `oc_language`
   ADD PRIMARY KEY (`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_layout`
+-- Индексы таблицы `oc_layout`
 --
 ALTER TABLE `oc_layout`
   ADD PRIMARY KEY (`layout_id`);
 
 --
--- Indexes for table `oc_layout_module`
+-- Индексы таблицы `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
   ADD PRIMARY KEY (`layout_module_id`);
 
 --
--- Indexes for table `oc_layout_route`
+-- Индексы таблицы `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
   ADD PRIMARY KEY (`layout_route_id`);
 
 --
--- Indexes for table `oc_length_class`
+-- Индексы таблицы `oc_length_class`
 --
 ALTER TABLE `oc_length_class`
   ADD PRIMARY KEY (`length_class_id`);
 
 --
--- Indexes for table `oc_length_class_description`
+-- Индексы таблицы `oc_length_class_description`
 --
 ALTER TABLE `oc_length_class_description`
   ADD PRIMARY KEY (`length_class_id`,`language_id`);
 
 --
--- Indexes for table `oc_location`
+-- Индексы таблицы `oc_location`
 --
 ALTER TABLE `oc_location`
   ADD PRIMARY KEY (`location_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_manufacturer`
+-- Индексы таблицы `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   ADD PRIMARY KEY (`manufacturer_id`);
 
 --
--- Indexes for table `oc_manufacturer_to_store`
+-- Индексы таблицы `oc_manufacturer_to_store`
 --
 ALTER TABLE `oc_manufacturer_to_store`
   ADD PRIMARY KEY (`manufacturer_id`,`store_id`);
 
 --
--- Indexes for table `oc_marketing`
+-- Индексы таблицы `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   ADD PRIMARY KEY (`marketing_id`);
 
 --
--- Indexes for table `oc_modification`
+-- Индексы таблицы `oc_modification`
 --
 ALTER TABLE `oc_modification`
   ADD PRIMARY KEY (`modification_id`);
 
 --
--- Indexes for table `oc_module`
+-- Индексы таблицы `oc_module`
 --
 ALTER TABLE `oc_module`
   ADD PRIMARY KEY (`module_id`);
 
 --
--- Indexes for table `oc_option`
+-- Индексы таблицы `oc_option`
 --
 ALTER TABLE `oc_option`
   ADD PRIMARY KEY (`option_id`);
 
 --
--- Indexes for table `oc_option_description`
+-- Индексы таблицы `oc_option_description`
 --
 ALTER TABLE `oc_option_description`
   ADD PRIMARY KEY (`option_id`,`language_id`);
 
 --
--- Indexes for table `oc_option_value`
+-- Индексы таблицы `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
   ADD PRIMARY KEY (`option_value_id`);
 
 --
--- Indexes for table `oc_option_value_description`
+-- Индексы таблицы `oc_option_value_description`
 --
 ALTER TABLE `oc_option_value_description`
   ADD PRIMARY KEY (`option_value_id`,`language_id`);
 
 --
--- Indexes for table `oc_order`
+-- Индексы таблицы `oc_order`
 --
 ALTER TABLE `oc_order`
   ADD PRIMARY KEY (`order_id`);
 
 --
--- Indexes for table `oc_order_custom_field`
+-- Индексы таблицы `oc_order_custom_field`
 --
 ALTER TABLE `oc_order_custom_field`
   ADD PRIMARY KEY (`order_custom_field_id`);
 
 --
--- Indexes for table `oc_order_fraud`
+-- Индексы таблицы `oc_order_fraud`
 --
 ALTER TABLE `oc_order_fraud`
   ADD PRIMARY KEY (`order_id`);
 
 --
--- Indexes for table `oc_order_history`
+-- Индексы таблицы `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
   ADD PRIMARY KEY (`order_history_id`);
 
 --
--- Indexes for table `oc_order_option`
+-- Индексы таблицы `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   ADD PRIMARY KEY (`order_option_id`);
 
 --
--- Indexes for table `oc_order_product`
+-- Индексы таблицы `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
   ADD PRIMARY KEY (`order_product_id`);
 
 --
--- Indexes for table `oc_order_recurring`
+-- Индексы таблицы `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   ADD PRIMARY KEY (`order_recurring_id`);
 
 --
--- Indexes for table `oc_order_recurring_transaction`
+-- Индексы таблицы `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   ADD PRIMARY KEY (`order_recurring_transaction_id`);
 
 --
--- Indexes for table `oc_order_status`
+-- Индексы таблицы `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   ADD PRIMARY KEY (`order_status_id`,`language_id`);
 
 --
--- Indexes for table `oc_order_total`
+-- Индексы таблицы `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
   ADD PRIMARY KEY (`order_total_id`),
   ADD KEY `order_id` (`order_id`);
 
 --
--- Indexes for table `oc_order_voucher`
+-- Индексы таблицы `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   ADD PRIMARY KEY (`order_voucher_id`);
 
 --
--- Indexes for table `oc_product`
+-- Индексы таблицы `oc_product`
 --
 ALTER TABLE `oc_product`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Indexes for table `oc_product_attribute`
+-- Индексы таблицы `oc_product_attribute`
 --
 ALTER TABLE `oc_product_attribute`
   ADD PRIMARY KEY (`product_id`,`attribute_id`,`language_id`);
 
 --
--- Indexes for table `oc_product_description`
+-- Индексы таблицы `oc_product_description`
 --
 ALTER TABLE `oc_product_description`
   ADD PRIMARY KEY (`product_id`,`language_id`),
   ADD KEY `name` (`name`);
 
 --
--- Indexes for table `oc_product_discount`
+-- Индексы таблицы `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
   ADD PRIMARY KEY (`product_discount_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_product_filter`
+-- Индексы таблицы `oc_product_filter`
 --
 ALTER TABLE `oc_product_filter`
   ADD PRIMARY KEY (`product_id`,`filter_id`);
 
 --
--- Indexes for table `oc_product_image`
+-- Индексы таблицы `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
   ADD PRIMARY KEY (`product_image_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_product_option`
+-- Индексы таблицы `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   ADD PRIMARY KEY (`product_option_id`);
 
 --
--- Indexes for table `oc_product_option_value`
+-- Индексы таблицы `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   ADD PRIMARY KEY (`product_option_value_id`);
 
 --
--- Indexes for table `oc_product_recurring`
+-- Индексы таблицы `oc_product_recurring`
 --
 ALTER TABLE `oc_product_recurring`
   ADD PRIMARY KEY (`product_id`,`recurring_id`,`customer_group_id`);
 
 --
--- Indexes for table `oc_product_related`
+-- Индексы таблицы `oc_product_related`
 --
 ALTER TABLE `oc_product_related`
   ADD PRIMARY KEY (`product_id`,`related_id`);
 
 --
--- Indexes for table `oc_product_reward`
+-- Индексы таблицы `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
   ADD PRIMARY KEY (`product_reward_id`);
 
 --
--- Indexes for table `oc_product_special`
+-- Индексы таблицы `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
   ADD PRIMARY KEY (`product_special_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_product_to_category`
+-- Индексы таблицы `oc_product_to_category`
 --
 ALTER TABLE `oc_product_to_category`
   ADD PRIMARY KEY (`product_id`,`category_id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- Indexes for table `oc_product_to_download`
+-- Индексы таблицы `oc_product_to_download`
 --
 ALTER TABLE `oc_product_to_download`
   ADD PRIMARY KEY (`product_id`,`download_id`);
 
 --
--- Indexes for table `oc_product_to_layout`
+-- Индексы таблицы `oc_product_to_layout`
 --
 ALTER TABLE `oc_product_to_layout`
   ADD PRIMARY KEY (`product_id`,`store_id`);
 
 --
--- Indexes for table `oc_product_to_store`
+-- Индексы таблицы `oc_product_to_store`
 --
 ALTER TABLE `oc_product_to_store`
   ADD PRIMARY KEY (`product_id`,`store_id`);
 
 --
--- Indexes for table `oc_recurring`
+-- Индексы таблицы `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   ADD PRIMARY KEY (`recurring_id`);
 
 --
--- Indexes for table `oc_recurring_description`
+-- Индексы таблицы `oc_recurring_description`
 --
 ALTER TABLE `oc_recurring_description`
   ADD PRIMARY KEY (`recurring_id`,`language_id`);
 
 --
--- Indexes for table `oc_return`
+-- Индексы таблицы `oc_return`
 --
 ALTER TABLE `oc_return`
   ADD PRIMARY KEY (`return_id`);
 
 --
--- Indexes for table `oc_return_action`
+-- Индексы таблицы `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   ADD PRIMARY KEY (`return_action_id`,`language_id`);
 
 --
--- Indexes for table `oc_return_history`
+-- Индексы таблицы `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   ADD PRIMARY KEY (`return_history_id`);
 
 --
--- Indexes for table `oc_return_reason`
+-- Индексы таблицы `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   ADD PRIMARY KEY (`return_reason_id`,`language_id`);
 
 --
--- Indexes for table `oc_return_status`
+-- Индексы таблицы `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   ADD PRIMARY KEY (`return_status_id`,`language_id`);
 
 --
--- Indexes for table `oc_review`
+-- Индексы таблицы `oc_review`
 --
 ALTER TABLE `oc_review`
   ADD PRIMARY KEY (`review_id`),
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `oc_setting`
+-- Индексы таблицы `oc_setting`
 --
 ALTER TABLE `oc_setting`
   ADD PRIMARY KEY (`setting_id`);
 
 --
--- Indexes for table `oc_stock_status`
+-- Индексы таблицы `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   ADD PRIMARY KEY (`stock_status_id`,`language_id`);
 
 --
--- Indexes for table `oc_store`
+-- Индексы таблицы `oc_store`
 --
 ALTER TABLE `oc_store`
   ADD PRIMARY KEY (`store_id`);
 
 --
--- Indexes for table `oc_tax_class`
+-- Индексы таблицы `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   ADD PRIMARY KEY (`tax_class_id`);
 
 --
--- Indexes for table `oc_tax_rate`
+-- Индексы таблицы `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   ADD PRIMARY KEY (`tax_rate_id`);
 
 --
--- Indexes for table `oc_tax_rate_to_customer_group`
+-- Индексы таблицы `oc_tax_rate_to_customer_group`
 --
 ALTER TABLE `oc_tax_rate_to_customer_group`
   ADD PRIMARY KEY (`tax_rate_id`,`customer_group_id`);
 
 --
--- Indexes for table `oc_tax_rule`
+-- Индексы таблицы `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   ADD PRIMARY KEY (`tax_rule_id`);
 
 --
--- Indexes for table `oc_upload`
+-- Индексы таблицы `oc_upload`
 --
 ALTER TABLE `oc_upload`
   ADD PRIMARY KEY (`upload_id`);
 
 --
--- Indexes for table `oc_url_alias`
+-- Индексы таблицы `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
   ADD PRIMARY KEY (`url_alias_id`),
@@ -8329,506 +8390,506 @@ ALTER TABLE `oc_url_alias`
   ADD KEY `keyword` (`keyword`);
 
 --
--- Indexes for table `oc_user`
+-- Индексы таблицы `oc_user`
 --
 ALTER TABLE `oc_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Indexes for table `oc_user_group`
+-- Индексы таблицы `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   ADD PRIMARY KEY (`user_group_id`);
 
 --
--- Indexes for table `oc_voucher`
+-- Индексы таблицы `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   ADD PRIMARY KEY (`voucher_id`);
 
 --
--- Indexes for table `oc_voucher_history`
+-- Индексы таблицы `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   ADD PRIMARY KEY (`voucher_history_id`);
 
 --
--- Indexes for table `oc_voucher_theme`
+-- Индексы таблицы `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   ADD PRIMARY KEY (`voucher_theme_id`);
 
 --
--- Indexes for table `oc_voucher_theme_description`
+-- Индексы таблицы `oc_voucher_theme_description`
 --
 ALTER TABLE `oc_voucher_theme_description`
   ADD PRIMARY KEY (`voucher_theme_id`,`language_id`);
 
 --
--- Indexes for table `oc_weight_class`
+-- Индексы таблицы `oc_weight_class`
 --
 ALTER TABLE `oc_weight_class`
   ADD PRIMARY KEY (`weight_class_id`);
 
 --
--- Indexes for table `oc_weight_class_description`
+-- Индексы таблицы `oc_weight_class_description`
 --
 ALTER TABLE `oc_weight_class_description`
   ADD PRIMARY KEY (`weight_class_id`,`language_id`);
 
 --
--- Indexes for table `oc_zone`
+-- Индексы таблицы `oc_zone`
 --
 ALTER TABLE `oc_zone`
   ADD PRIMARY KEY (`zone_id`);
 
 --
--- Indexes for table `oc_zone_to_geo_zone`
+-- Индексы таблицы `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   ADD PRIMARY KEY (`zone_to_geo_zone_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `oc_address`
+-- AUTO_INCREMENT для таблицы `oc_address`
 --
 ALTER TABLE `oc_address`
   MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_affiliate`
+-- AUTO_INCREMENT для таблицы `oc_affiliate`
 --
 ALTER TABLE `oc_affiliate`
   MODIFY `affiliate_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_affiliate_activity`
+-- AUTO_INCREMENT для таблицы `oc_affiliate_activity`
 --
 ALTER TABLE `oc_affiliate_activity`
   MODIFY `activity_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_affiliate_login`
+-- AUTO_INCREMENT для таблицы `oc_affiliate_login`
 --
 ALTER TABLE `oc_affiliate_login`
   MODIFY `affiliate_login_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_affiliate_transaction`
+-- AUTO_INCREMENT для таблицы `oc_affiliate_transaction`
 --
 ALTER TABLE `oc_affiliate_transaction`
   MODIFY `affiliate_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_api`
+-- AUTO_INCREMENT для таблицы `oc_api`
 --
 ALTER TABLE `oc_api`
   MODIFY `api_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `oc_attribute`
+-- AUTO_INCREMENT для таблицы `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
   MODIFY `attribute_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
--- AUTO_INCREMENT for table `oc_attribute_group`
+-- AUTO_INCREMENT для таблицы `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
   MODIFY `attribute_group_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `oc_banner`
+-- AUTO_INCREMENT для таблицы `oc_banner`
 --
 ALTER TABLE `oc_banner`
-  MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT for table `oc_banner_image`
+-- AUTO_INCREMENT для таблицы `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=99;
+  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=123;
 --
--- AUTO_INCREMENT for table `oc_category`
+-- AUTO_INCREMENT для таблицы `oc_category`
 --
 ALTER TABLE `oc_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
 --
--- AUTO_INCREMENT for table `oc_country`
+-- AUTO_INCREMENT для таблицы `oc_country`
 --
 ALTER TABLE `oc_country`
   MODIFY `country_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=258;
 --
--- AUTO_INCREMENT for table `oc_coupon`
+-- AUTO_INCREMENT для таблицы `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   MODIFY `coupon_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `oc_coupon_history`
+-- AUTO_INCREMENT для таблицы `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   MODIFY `coupon_history_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_coupon_product`
+-- AUTO_INCREMENT для таблицы `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   MODIFY `coupon_product_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_currency`
+-- AUTO_INCREMENT для таблицы `oc_currency`
 --
 ALTER TABLE `oc_currency`
   MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `oc_customer`
+-- AUTO_INCREMENT для таблицы `oc_customer`
 --
 ALTER TABLE `oc_customer`
   MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_activity`
+-- AUTO_INCREMENT для таблицы `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
   MODIFY `activity_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_ban_ip`
+-- AUTO_INCREMENT для таблицы `oc_customer_ban_ip`
 --
 ALTER TABLE `oc_customer_ban_ip`
   MODIFY `customer_ban_ip_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_group`
+-- AUTO_INCREMENT для таблицы `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   MODIFY `customer_group_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `oc_customer_history`
+-- AUTO_INCREMENT для таблицы `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_ip`
+-- AUTO_INCREMENT для таблицы `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_login`
+-- AUTO_INCREMENT для таблицы `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
   MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_reward`
+-- AUTO_INCREMENT для таблицы `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   MODIFY `customer_reward_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_customer_transaction`
+-- AUTO_INCREMENT для таблицы `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   MODIFY `customer_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_custom_field`
+-- AUTO_INCREMENT для таблицы `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   MODIFY `custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_custom_field_value`
+-- AUTO_INCREMENT для таблицы `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   MODIFY `custom_field_value_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_download`
+-- AUTO_INCREMENT для таблицы `oc_download`
 --
 ALTER TABLE `oc_download`
   MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_event`
+-- AUTO_INCREMENT для таблицы `oc_event`
 --
 ALTER TABLE `oc_event`
   MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_extension`
+-- AUTO_INCREMENT для таблицы `oc_extension`
 --
 ALTER TABLE `oc_extension`
   MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=428;
 --
--- AUTO_INCREMENT for table `oc_filter`
+-- AUTO_INCREMENT для таблицы `oc_filter`
 --
 ALTER TABLE `oc_filter`
   MODIFY `filter_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_filter_group`
+-- AUTO_INCREMENT для таблицы `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   MODIFY `filter_group_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_geo_zone`
+-- AUTO_INCREMENT для таблицы `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   MODIFY `geo_zone_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `oc_information`
+-- AUTO_INCREMENT для таблицы `oc_information`
 --
 ALTER TABLE `oc_information`
-  MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT for table `oc_language`
+-- AUTO_INCREMENT для таблицы `oc_language`
 --
 ALTER TABLE `oc_language`
   MODIFY `language_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `oc_layout`
+-- AUTO_INCREMENT для таблицы `oc_layout`
 --
 ALTER TABLE `oc_layout`
   MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 --
--- AUTO_INCREMENT for table `oc_layout_module`
+-- AUTO_INCREMENT для таблицы `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=91;
 --
--- AUTO_INCREMENT for table `oc_layout_route`
+-- AUTO_INCREMENT для таблицы `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=68;
 --
--- AUTO_INCREMENT for table `oc_length_class`
+-- AUTO_INCREMENT для таблицы `oc_length_class`
 --
 ALTER TABLE `oc_length_class`
   MODIFY `length_class_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `oc_length_class_description`
+-- AUTO_INCREMENT для таблицы `oc_length_class_description`
 --
 ALTER TABLE `oc_length_class_description`
   MODIFY `length_class_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `oc_location`
+-- AUTO_INCREMENT для таблицы `oc_location`
 --
 ALTER TABLE `oc_location`
   MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_manufacturer`
+-- AUTO_INCREMENT для таблицы `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   MODIFY `manufacturer_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT for table `oc_marketing`
+-- AUTO_INCREMENT для таблицы `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   MODIFY `marketing_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_modification`
+-- AUTO_INCREMENT для таблицы `oc_modification`
 --
 ALTER TABLE `oc_modification`
   MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_module`
+-- AUTO_INCREMENT для таблицы `oc_module`
 --
 ALTER TABLE `oc_module`
   MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
 --
--- AUTO_INCREMENT for table `oc_option`
+-- AUTO_INCREMENT для таблицы `oc_option`
 --
 ALTER TABLE `oc_option`
   MODIFY `option_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
--- AUTO_INCREMENT for table `oc_option_value`
+-- AUTO_INCREMENT для таблицы `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
   MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 --
--- AUTO_INCREMENT for table `oc_order`
+-- AUTO_INCREMENT для таблицы `oc_order`
 --
 ALTER TABLE `oc_order`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_custom_field`
+-- AUTO_INCREMENT для таблицы `oc_order_custom_field`
 --
 ALTER TABLE `oc_order_custom_field`
   MODIFY `order_custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_history`
+-- AUTO_INCREMENT для таблицы `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
   MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_option`
+-- AUTO_INCREMENT для таблицы `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_product`
+-- AUTO_INCREMENT для таблицы `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
   MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_recurring`
+-- AUTO_INCREMENT для таблицы `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   MODIFY `order_recurring_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_recurring_transaction`
+-- AUTO_INCREMENT для таблицы `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_status`
+-- AUTO_INCREMENT для таблицы `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
--- AUTO_INCREMENT for table `oc_order_total`
+-- AUTO_INCREMENT для таблицы `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
   MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_order_voucher`
+-- AUTO_INCREMENT для таблицы `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   MODIFY `order_voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_product`
+-- AUTO_INCREMENT для таблицы `oc_product`
 --
 ALTER TABLE `oc_product`
   MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=50;
 --
--- AUTO_INCREMENT for table `oc_product_discount`
+-- AUTO_INCREMENT для таблицы `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
-  MODIFY `product_discount_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=441;
+  MODIFY `product_discount_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=447;
 --
--- AUTO_INCREMENT for table `oc_product_image`
+-- AUTO_INCREMENT для таблицы `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
-  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2352;
+  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2363;
 --
--- AUTO_INCREMENT for table `oc_product_option`
+-- AUTO_INCREMENT для таблицы `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   MODIFY `product_option_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=227;
 --
--- AUTO_INCREMENT for table `oc_product_option_value`
+-- AUTO_INCREMENT для таблицы `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   MODIFY `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
--- AUTO_INCREMENT for table `oc_product_reward`
+-- AUTO_INCREMENT для таблицы `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
-  MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=546;
+  MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=548;
 --
--- AUTO_INCREMENT for table `oc_product_special`
+-- AUTO_INCREMENT для таблицы `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
-  MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=440;
+  MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=442;
 --
--- AUTO_INCREMENT for table `oc_recurring`
+-- AUTO_INCREMENT для таблицы `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   MODIFY `recurring_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_return`
+-- AUTO_INCREMENT для таблицы `oc_return`
 --
 ALTER TABLE `oc_return`
   MODIFY `return_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_return_action`
+-- AUTO_INCREMENT для таблицы `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   MODIFY `return_action_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `oc_return_history`
+-- AUTO_INCREMENT для таблицы `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   MODIFY `return_history_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_return_reason`
+-- AUTO_INCREMENT для таблицы `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   MODIFY `return_reason_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `oc_return_status`
+-- AUTO_INCREMENT для таблицы `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   MODIFY `return_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `oc_review`
+-- AUTO_INCREMENT для таблицы `oc_review`
 --
 ALTER TABLE `oc_review`
   MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_setting`
+-- AUTO_INCREMENT для таблицы `oc_setting`
 --
 ALTER TABLE `oc_setting`
   MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=834;
 --
--- AUTO_INCREMENT for table `oc_stock_status`
+-- AUTO_INCREMENT для таблицы `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   MODIFY `stock_status_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `oc_store`
+-- AUTO_INCREMENT для таблицы `oc_store`
 --
 ALTER TABLE `oc_store`
   MODIFY `store_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_tax_class`
+-- AUTO_INCREMENT для таблицы `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   MODIFY `tax_class_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT for table `oc_tax_rate`
+-- AUTO_INCREMENT для таблицы `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   MODIFY `tax_rate_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=88;
 --
--- AUTO_INCREMENT for table `oc_tax_rule`
+-- AUTO_INCREMENT для таблицы `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   MODIFY `tax_rule_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=129;
 --
--- AUTO_INCREMENT for table `oc_upload`
+-- AUTO_INCREMENT для таблицы `oc_upload`
 --
 ALTER TABLE `oc_upload`
   MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_url_alias`
+-- AUTO_INCREMENT для таблицы `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=850;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=867;
 --
--- AUTO_INCREMENT for table `oc_user`
+-- AUTO_INCREMENT для таблицы `oc_user`
 --
 ALTER TABLE `oc_user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `oc_user_group`
+-- AUTO_INCREMENT для таблицы `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   MODIFY `user_group_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT for table `oc_voucher`
+-- AUTO_INCREMENT для таблицы `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   MODIFY `voucher_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_voucher_history`
+-- AUTO_INCREMENT для таблицы `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   MODIFY `voucher_history_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oc_voucher_theme`
+-- AUTO_INCREMENT для таблицы `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   MODIFY `voucher_theme_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `oc_weight_class`
+-- AUTO_INCREMENT для таблицы `oc_weight_class`
 --
 ALTER TABLE `oc_weight_class`
   MODIFY `weight_class_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `oc_weight_class_description`
+-- AUTO_INCREMENT для таблицы `oc_weight_class_description`
 --
 ALTER TABLE `oc_weight_class_description`
   MODIFY `weight_class_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `oc_zone`
+-- AUTO_INCREMENT для таблицы `oc_zone`
 --
 ALTER TABLE `oc_zone`
   MODIFY `zone_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4225;
 --
--- AUTO_INCREMENT for table `oc_zone_to_geo_zone`
+-- AUTO_INCREMENT для таблицы `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   MODIFY `zone_to_geo_zone_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=110;

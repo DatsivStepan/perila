@@ -338,12 +338,15 @@ footer h5 {
 	color: #fff;
 }
 .customdrop{
+    padding-left: 15px;
     list-style: none;
 }
 .dropDownSubMenu{
     list-style: none;
 }
 .menuname{
+    padding-right: 10%;
+    padding-left: 10%;
     color: #8a8a8a;
 }
 .menuname span{
@@ -356,7 +359,7 @@ footer h5 {
 }
 .menunamecat span{
     line-height: 4;
-    font-size: 140%;
+    font-size: 100%;
 }
 .product {
     padding-bottom: 2%;
@@ -372,8 +375,7 @@ footer h5 {
 }
 .listcat{
     background-color: #e0e0e0;
-    padding-right: 10%;
-    padding-left: 10%;
+   
 }
 .cat-thumb{
     box-shadow: 0px 1px 8px 0px rgba(136, 136, 136, 0.37);
@@ -442,8 +444,11 @@ footer h5 {
     min-height: 8%;
     background-color: #f8c828;
     position: relative;
-    bottom: 75px;
+    bottom: 35px;
     filter: Alpha(opacity=80);
+}
+.prem_content{
+    padding-top: 20px;
 }
 .prem  li:before {
     content: "";
