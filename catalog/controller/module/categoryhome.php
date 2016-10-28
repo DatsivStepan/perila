@@ -1,5 +1,5 @@
 <?php
-class ControllerModuleCategory extends Controller {
+class ControllerModuleCategoryhome extends Controller {
   public function index($setting) {
     $this->load->language('module/category');
 
@@ -81,17 +81,17 @@ class ControllerModuleCategory extends Controller {
       $data['categories'][] = array(
         'category_id' => $category['category_id'],
         'name'        => $category['name'],
-        'thumb'     => $this->model_tool_image->resize($category['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height')),
+        'thumb'     => $this->model_tool_image->resize($category['image'], 290, 335),
 //        'name'        => $category['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
         'children'    => $children_data,
         'href'        => $this->url->link('product/category', 'path=' . $category['category_id'])
       );
     }
 
-    if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/category.tpl')) {
-      return $this->load->view($this->config->get('config_template') . '/template/module/category.tpl', $data);
+    if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/categoryhome.tpl')) {
+      return $this->load->view($this->config->get('config_template') . '/template/module/categoryhome.tpl', $data);
     } else {
-      return $this->load->view('default/template/module/category.tpl', $data);
+      return $this->load->view('default/template/module/categoryhome.tpl', $data);
     }
   }
 }
