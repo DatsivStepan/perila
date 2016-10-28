@@ -5,7 +5,7 @@ class ControllerInformationhomesection4 extends Controller {
 
 		$this->load->model('catalog/information');
 
-		$information_id = 4;
+		$information_id = 9;
 
 		$information_info = $this->model_catalog_information->getInformation($information_id);
 
