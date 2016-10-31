@@ -1,8 +1,8 @@
 <?php echo $header; ?>
 <div class="container">
     <div class="rows">
-        <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs" ></div>
-        <div class="col-lg-10 col-md-9 col-sm-9 col-xs-12" >
+        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs" ></div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" >
             <a class="hidden-sm hidden-xs col-md-12 col-lg-12">
                 <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                 <a style="color: #3e9fd6;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -42,7 +42,7 @@
         <h2 class="сol">НАШИ ОТДЕЛЫ</h2>
     </div>
 
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="padding: 0;">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 0;">
         <img src="../../../catalog/view/theme/default/image/1.png"style="width: 100%;" >
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border" style="background-image: url(/../catalog/view/theme/default/image/2.png);">
             <p class="col-xs-12 zal" >ДЕМОКСТРАЦИОННЫЙ ЗАЛ</p>
@@ -58,9 +58,9 @@
             </p>
         </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="padding: 0;">
-        <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;height: 182px;text-align: left;">
-            <div style="margin-left: 8%;">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 0;">
+        <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0">
+            <div style="float: left;width: 50%;">
                 <h3>ОТДЕЛ ПРОДАЖ</h3>
                 <p class="hidden-xs text-od">
                     В работе с клиентами используем
@@ -68,27 +68,30 @@
                     помогает экономить время и силы
                     время и силы и силы.
                 </p>
+            </div>   
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
+                <img src="../../../catalog/view/theme/default/image/3.png"style="width: 100%;" >
+            </div>
+            
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0;"> 
+            <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
+                <img src="../../../catalog/view/theme/default/image/4.png"style="width: 100%;" > 
+            </div>   
+            <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;float: right;width: 50%;">
+                <div>
+                    <h3>ОТДЕЛ ПРОЕКТИРОВАНИЯ</h3>
+                    <p class="hidden-xs text-od">
+                        В работе с клиентами используем
+                        комплексный подход, который на
+                        помогает экономить время и силы
+                        время и силы и силы.
+                    </p>
+                </div>
             </div>
         </div>
-        <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
-            <img src="../../../catalog/view/theme/default/image/3.png"style="width: 100%;" >
-        </div>
-        <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
-            <img src="../../../catalog/view/theme/default/image/4.png"style="width: 100%;" >
-        </div>
-        <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;height: 182px;">
-            <div style="margin-left: 8%;">
-            <h3>ОТДЕЛ ПРОЕКТИРОВАНИЯ</h3>
-            <p class="hidden-xs text-od">
-                В работе с клиентами используем
-                комплексный подход, который на
-                помогает экономить время и силы
-                время и силы и силы.
-            </p>
-        </div>
-        </div>
-        <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;height: 182px;">
-            <div style="margin-left: 8%;">
+        <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0;">
+            <div style="float: left;width: 50%;">
                 <h3>ОТДЕЛ ПРОИЗВОДСТВА</h3>
                 <p class="hidden-xs text-od">
                     В работе с клиентами используем
@@ -96,10 +99,10 @@
                     помогает экономить время и силы
                     время и силы и силы.
                 </p>
+            </div>    
+            <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
+                <img src="../../../catalog/view/theme/default/image/5.png"style="width: 100%;" >
             </div>
-        </div>
-        <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
-            <img src="../../../catalog/view/theme/default/image/5.png"style="width: 100%;" >
         </div>
     </div>
     <div class="col-lg-12 col-md-12 hidden-sm hidden-xs text-end">
@@ -123,7 +126,7 @@
     </div>
 </div>
 
-        <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+<div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
         <?php echo $column_right; ?></div>
 <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
