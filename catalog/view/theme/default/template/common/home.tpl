@@ -8,7 +8,7 @@
 	<?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>">
+    <div id="content" class=" hidden-xs <?php echo $class; ?>">
 	<?php echo $content_top; ?>
 	<?php echo $categoryhome; ?>
 	<?php echo $content_bottom; ?></div>

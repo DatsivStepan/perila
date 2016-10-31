@@ -109,6 +109,8 @@ class ControllerCommonMenu extends Controller {
 		$data['affiliate'] = $this->url->link('marketing/affiliate', 'token=' . $this->session->data['token'], 'SSL');
 		$data['api'] = $this->url->link('user/api', 'token=' . $this->session->data['token'], 'SSL');
 		$data['attribute'] = $this->url->link('catalog/attribute', 'token=' . $this->session->data['token'], 'SSL');
+        $data['newsblogarticle'] = $this->url->link('newsblog/article', 'token=' . $this->session->data['token'], 'SSL');
+        $data['newsblogcategory'] = $this->url->link('newsblog/category', 'token=' . $this->session->data['token'], 'SSL');
 		$data['attribute_group'] = $this->url->link('catalog/attribute_group', 'token=' . $this->session->data['token'], 'SSL');
 		$data['backup'] = $this->url->link('tool/backup', 'token=' . $this->session->data['token'], 'SSL');
 		$data['banner'] = $this->url->link('design/banner', 'token=' . $this->session->data['token'], 'SSL');

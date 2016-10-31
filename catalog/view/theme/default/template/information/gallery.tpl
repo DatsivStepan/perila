@@ -23,6 +23,7 @@
         
     </div>
      </div>
+     
       <?php foreach ($banners as $banner) { ?>
             <div class="col-md-3 no-margin no-padding">
 
@@ -36,6 +37,7 @@
                 <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>"
                      class="img-responsive"/>
                 <?php } ?>
+                 <span id="spanprod" class="product_span" style="opacity: 0;" onmouseover="this.style.opacity = '1';" onmouseout="this.style.opacity = '0';"><?php echo  $banner['title']; ?></span>
             </div>
             <?php } ?>
         
