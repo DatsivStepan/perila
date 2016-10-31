@@ -1,62 +1,73 @@
-h1 {
-    font-family: 'Helvetica Neue Cyr';
-    font-weight: 700;
+h1{
+    font-family: 'Helvetica Neue';
+    font-weight: 800;
     font-size: 24px;
 }
-.bolt {
-    font-family: 'Helvetica Neue Cyr';
+span.bolt{
+    font-family: 'Helvetica';
     font-weight: 700;
     font-size: 18px;
 }
 .text{
-    font-family: 'Helvetica Neue Cyr';
+    font-family: 'Helvetica Neue';
     font-weight: 300;
     font-size: 18px;
-    text-align: justify;
 }
 .light{
-    font-family: 'Helvetica Neue Cyr';
-    font-weight: 300;
+    font-family: 'Helvetica Neue';
     font-weight: 300;
     font-size: 23.5px;
-    text-align: justify;
 }
 .hidden-xs{
-    font-family: 'Helvetica Neue Cyr';
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
     font-size: 18px;
-    text-align: justify;
 }
-.border {
+.border{
      background: url(/../catalog/view/theme/default/image/2.png) center no-repeat;
-     min-height: 120px;
+     min-height: 198px;
      background-size: cover;
      margin: -15px 0 0 0;
 }
-.zal {
-     font-family: 'Helvetica Neue Cyr';
-     font-weight: 300;
+.zal{
+     font-family: 'Helvetica Neue';
+     font-weight: 400;
      font-size: 20px;
      text-align: center;
      top: -7px;
-     width: 100%;
-    margin: 30px 0 0 0;
+     margin: 40px 0 0 0;
+
  }
 .text-zal{
-    font-family: 'Helvetica Neue Cyr ';
+    font-family: 'Helvetica Neue';
     font-weight: 300;
     font-size: 16px;
-    text-align: justify;
-    top: 23px;
-    left: 0;
-    width: 100%;
+    text-align: left;
 }
-h3 {
-    font-family: 'Helvetica Neue Cyr';
-    font-weight: 300;
+h3{
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
     font-size: 20px;
 }
 .text-od{
-    font-family: 'Helvetica Neue Cyr ';
+    font-family: 'Helvetica Neue';
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
+}
+.text-end{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+}
+h2{
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    font-size: 24px;
+}
+.text-fut{
+    font-family: 'Helvetica Neue';
+    font-weight: 800;
+    font-size: 24px;
+    margin: 90px 0 0 120px;
 }
