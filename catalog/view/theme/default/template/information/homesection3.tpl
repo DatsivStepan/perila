@@ -1,12 +1,12 @@
     <div  class="prem3">
-<div class="col-md-15 bluegar text-center">
+<div class="col-md-15 hidden-sm hidden-xs bluegar text-center">
 <span>наши работы</span>
    
     <p> <a href="index.php?route=information/gallery"> Посмотреть галерею </a></p>
   </div>  
    
     <?php foreach ($banners as $banner) { ?>
-            <div class="col-md-15">
+            <div class="col-md-15 col-xs-4">
 
                 <?php if ($banner['link']) { ?>
                 

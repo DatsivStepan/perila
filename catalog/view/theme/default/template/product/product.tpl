@@ -71,23 +71,24 @@
 
         <div class="col-sm-6 karttovar">
             <div class="carttov1 text-center">
-            <h3 class=" text-center orangeproduct">ЦЕНА ЗА 1 МЕТР:</h3>
+            <h3 class=" text-center no-margin">ЦЕНА ЗА 1 МЕТР:</h3>
             <div class="row">
                 <div class="col-sm-6">
-                   <div class="row"><?php echo $price; ?></div>
+                   <div class="row"><input type="text" name="quantity" value="<?php echo $price; ?>"
+                                           class="input_product text-center"/></div>
                    <div class="row">рублей</div>
                 </div>
                   <div class="col-sm-6">
-                   <div class="row"> <span class="quont-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </span>
-
-                                    <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity"
-                                           class="input_product text-center"/>
-
-                                    <span class="quont-plus">
+                   <div class="row"> 
+<span class="quont-plus">
                                         <i class="fa fa-plus"></i>
                                     </span>
+                                    <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity"
+                                           class="input_product text-center"/>
+<span class="quont-minus">
+                                        <i class="fa fa-minus"></i>
+                                    </span>
+                                    
                                     <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/></div>
                    <div class="row">метров</div>
                 </div>
@@ -100,22 +101,12 @@
             <div class="carttov2 text-center">
                       <div class="row">
                 <div class="col-sm-6">
-                   <div class="row"><?php echo $price; ?></div>
-                   <div class="row">рублей</div>
+                   <div class="row">Срок монтажа</div>
+                   <div class="row">от 3 дней</div>
                 </div>
                   <div class="col-sm-6">
-                   <div class="row"> <span class="quont-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </span>
-
-                                    <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity"
-                                           class="input_product text-center"/>
-
-                                    <span class="quont-plus">
-                                        <i class="fa fa-plus"></i>
-                                    </span>
-                                    <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/></div>
-                   <div class="row">метров</div>
+                   <div class="row">Стоимость указана:</div>
+                   <div class="row">с учетом доставки и установки</div>
                 </div>
                 
                         
@@ -125,22 +116,12 @@
             <div class="carttov3 text-center">
                       <div class="row">
                 <div class="col-sm-6">
-                   <div class="row"><?php echo $price; ?></div>
-                   <div class="row">рублей</div>
+                   <div class="row">img</div>
+                   <div class="row">вызвать замерщика</div>
                 </div>
                   <div class="col-sm-6">
-                   <div class="row"> <span class="quont-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </span>
-
-                                    <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity"
-                                           class="input_product text-center"/>
-
-                                    <span class="quont-plus">
-                                        <i class="fa fa-plus"></i>
-                                    </span>
-                                    <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/></div>
-                   <div class="row">метров</div>
+                   <div class="row"> img</div>
+                   <div class="row">проконсультироватся</div>
                 </div>
                 
                         
@@ -166,8 +147,9 @@
             <?php
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
+             <div class="col-sm-6 descriptiontitle"><h3 class=" text-center orangedescription" ><?php echo $tab_description;  ?></h3></div>
             <div class="col-sm-12 description">
-                <h3 class=" text-center orangedescription" ><?php echo $tab_description;  ?></h3>
+                
                 <?php echo $description;  ?>
             </div>
             <?php } }?>
