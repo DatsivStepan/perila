@@ -2,7 +2,7 @@
 class ControllerCommonFooter extends Controller {
 	public function index() {
 		$this->load->language('common/footer');
-
+		$this->document->addScript('catalog/view/javascript/contactForm.js');
 		$data['text_information'] = $this->language->get('text_information');
 		$data['text_service'] = $this->language->get('text_service');
 		$data['text_extra'] = $this->language->get('text_extra');
@@ -17,6 +17,19 @@ class ControllerCommonFooter extends Controller {
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_wishlist'] = $this->language->get('text_wishlist');
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
+		$data['logo'] ='image/' . $this->config->get('config_logo');
+		$data['home'] = $this->url->link('common/home');
+		$data['telephone'] = $this->config->get('config_telephone');
+		$data['email'] = $this->config->get('config_email');
+		$data['address'] = $this->config->get('config_address');
+		$data['open'] = $this->config->get('config_open');
+		$data['skype'] = $this->config->get('config_skype');
+		$data['vkontakte'] = $this->config->get('config_vkontakte');
+		$data['google'] = $this->config->get('config_google');
+		$data['facebook'] = $this->config->get('config_facebook');
+		$data['twitter'] = $this->config->get('config_twitter');
+		$data['instagram'] = $this->config->get('config_instagram');
+		$data['pinterest'] = $this->config->get('config_pinterest');
 
 		$this->load->model('catalog/information');
 
@@ -76,4 +89,44 @@ class ControllerCommonFooter extends Controller {
 			return $this->load->view('default/template/common/footer.tpl', $data);
 		}
 	}
+	public function contactForm(){
+		$user_query = $this->db->query("SELECT email FROM " . DB_PREFIX . "user WHERE username = 'admin' AND (user_group_id = '1') AND status = '1'");
+		if ($user_query->num_rows) {
+			$admin_email = $user_query->row['email'];
+		}
+		$mailContent = '
+            <table>
+                <tr>
+                    <td>Имя</td>
+                    <td>'.$_POST['userName'].'</td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td>'.$_POST['userPhone'].'</td>
+                </tr>
+            </table>
+        ';
+//		var_dump($_POST);
+		$mail = new Mail();
+		$mail->protocol = $this->config->get('config_mail')['protocol'];
+		$mail->parameter = $this->config->get('config_mail')['parameter'];
+		$mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
+		$mail->smtp_username = $this->config->get('config_mail_smtp_username');
+		$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
+		$mail->smtp_port = $this->config->get('config_mail_smtp_port');
+		$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
+
+
+//		$mail->setTo($this->config->get('config_email'));
+		$mail->setTo($admin_email);
+		$mail->setFrom('no-reply@perila.com');
+		$mail->setSender(html_entity_decode($this->request->post['userName'], ENT_QUOTES, 'UTF-8'));
+		$mail->setSubject(html_entity_decode('Обратный звонок',ENT_QUOTES, 'UTF-8'));
+		$mail->setText($mailContent);
+		$mail->send();
+		$this->response->redirect($this->url->link('information/contact/success'));
+
+
+	}
+
 }

@@ -157,7 +157,6 @@ class Mail {
 
 		if ($this->protocol == 'mail') {
 			ini_set('sendmail_from', $this->from);
-
 			if ($this->parameter) {
 				mail($to, '=?UTF-8?B?' . base64_encode($this->subject) . '?=', $message, $header, $this->parameter);
 			} else {

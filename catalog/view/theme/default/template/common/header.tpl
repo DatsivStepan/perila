@@ -46,7 +46,7 @@
   <!--Mobile header begin-->
   <div class="row hidden-md hidden-lg hidden-xl hidden-sm div-email-style" style="margin: 0;">
     <div class="col-xs-6 mobile-email-padding">
-      <span class="email-color text-left mobile-email-style">decorperila@mail.ru</span>
+      <span class="email-color text-left mobile-email-style"><?php echo $email; ?></span>
     </div>
     <div class="col-xs-6 mobile-phone-padding">
       <span style="" class="text-right mobile-phone-style"><?php echo $telephone; ?></span>
@@ -108,24 +108,30 @@
     </div>
     <div class="hidden-lg hidden-md hidden-xl hidden-sm  col-sm-12 col-xs-12 no-padding mobile-background-image" >
       <div class="container">
-        <div class="banner-text-padding" style="width: 70%">
-          <span class="banner-text-style"><b>Это опора вашего успеха</b></span>
+        <div class="">
+        <div class="col-xs-8 banner-text-padding" >
+          <span class=" banner-text-style" style="display: block">Это опора вашего<br> успеха</br></span>
         </div>
-        <div class="div-banner-border" style="width: 30%">
-          <span></span>
+        <div class="col-xs-3 div-banner-border" >
         </div>
-        <div class="co-xs-12 no-margin">
-          <button type="button" class="btn nav-bar btn-xs btn-color width-btn">Вызвать замерщика</button>
         </div>
-        <div class="co-xs-12 no-margin">
-          <button type="button" class="btn nav-bar btn-xs btn-color width-btn">Оформить заказ</button>
+        <div class="col-xs-12 mobile-text-div">
+          <span class="mobile-text-style">Проектирование</span><br>
+          <span class="mobile-text-style">и изготовление перил</span><br>
+          <span class="mobile-text-style">и лестничных ограждений</span>
+        </div>
+        <div class="no-margin mobile-btn-div">
+          <button type="button" class="btn nav-bar mobile-btn mobile-btn-style-2 ">Оформить заказ</button>
+        </div>
+        <div class="no-margin mobile-btn-div">
+          <button type="button" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>Вызвать замерщика</span></button>
         </div>
       </div>
     </div>
   </div>
   <!--Mobile header end-->
 
-  <div class=" hidden-xs  col-md-12 col-lg-12 col-xl-12 no-padding no-margin" style="background-color: #26272a">
+  <div class=" hidden-xs col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin top-header-style" style="">
     <div class="container" >
       <div class="row no-margin">
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
@@ -136,7 +142,7 @@
             <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
             <?php } ?>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin">
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin btn-header:hover">
             <button type="button" class="btn nav-bar btn-xs btn-color width-btn">Вызвать замерщика</button>
           </div>
         </div>
@@ -144,32 +150,32 @@
           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 search-padding">
             <?php echo $search; ?>
           </div>
-          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 div-media-width" style="padding-right: 0">
-            <div class="col-sm-6 col-md-6 col-lg-6 no-padding">
+          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 " style="padding-right: 0">
+            <div class="col-sm-6 col-md-6 col-lg-6 no-padding style-display-none">
               <div class="col-sm-4 col-md-4 col-lg-4 graph-icon-padding">
                 <img src="../../../admin/view/image/graphic.png">
               </div>
-              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 no-padding text-center graph-padding" style="line-height: 13px; color: #fff;">
-                Графык роботы: с 8:00 до 20:00 без выходних
+              <div class="col-sm-6 col-md-6 col-lg-6 no-padding text-center graph-padding graph-style " style="">
+                <?php echo $open; ?>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 no-margin phone-padding">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 no-margin phone-padding div-media-width">
               <div style="position: relative">
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 phone-icon-padding" style="color: #008fd1">
                   <ul class="list-inline">
                     <li><a href="<?php echo $contact; ?>"><img src="../../../admin/view/image/phoneIcon.png"></a>
                 </div>
                 <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding" >
-                      <span style="" class="email-style"><?php echo $telephone; ?></span></li>
+                      <span style="" class="phone-style"><?php echo $telephone; ?></span></li>
                   </ul>
                 </div>
               </div>
               <div class="row email-position">
-                <div class="col-lg-3 email-icon-padding" >
+                <div class="col-sm-3 col-md-3 col-lg-3 email-icon-padding" >
                   <img src="../../../admin/view/image/Email-logo.png">
                 </div>
-                <div class="col-lg-9 email-padding">
-                  dekorperila@mail.ru
+                <div class="col-sm-9 col-md-8 col-lg-9 email-padding email-style">
+                  <?php echo $email; ?>
                 </div>
               </div>
             </div>
@@ -185,15 +191,15 @@
     </div>
 
     <div class="row no-margin hidden-xs" style="background-color: #ffffff;">
-      <div class="container" >
+      <div class="container">
         <nav class="navbar" style="margin: 0; border-radius:0; border: 0;">
           <div class="navbar-default">
-            <ul class="nav navbar-nav ul-position" >
+            <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <li class="li-text-style">Главная</li>
+                <li class="li-text-style"><a href=""></a>Главная</li>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <li class="li-text-style">О компании</li>
+                <li class="li-text-style"><a href=""></a>О компании</li>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                   <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
@@ -202,10 +208,10 @@
                 <a href="index.php?route=newsblog/category&newsblog_category_id=2"><li class="li-text-style">Наши работы</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <li class="li-text-style">Доставка и оплата</li>
+                <li class="li-text-style"><a href=""></a>Доставка и оплата</li>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
-                <li class="li-text-style">Контакты</li>
+                <li class="li-text-style"><a href=""></a>Контакты</li>
               </div>
             </ul>
           </div>
