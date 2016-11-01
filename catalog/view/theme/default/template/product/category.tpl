@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div class="container">
-  <div class="row"><?php echo $column_left; ?>
+  <div class="row"><?php echo "<div class='hidden-sm'>",$column_left,"</div>"; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -13,7 +13,7 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class=" col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
      
       <?php 
            function array_random($arr, $num = 1) {
@@ -24,8 +24,11 @@
         $r[] = $arr[$i];
     }
     return $num == 1 ? $r[0] : $r;
-}$a = array("#f8c828", "#008fd1", "#9ecb3c", "#f47a2f");
-          
+}
+        $a = array(0, 1, 2, 3);
+        $b = array("#f8c828", "#008fd1", "#9ecb3c", "#f47a2f");
+        $c = array("#008fd1", "#f8c828", "#008fd1", "#f8c828");
+        $aa =array_random($a);
           if ($categories) { ?>
             <div class="row" style="    padding-bottom: 3%;">
             <div class="col-sm-1"></div>
@@ -44,7 +47,7 @@
             <div class="col-md-4 categoryshow" >
             <a href="<?php echo $category['href']; ?>">
         
-            <div class="col-md-12 cat-thumb  no-padding no-margin text-center categoryshow" style="background-color: <?php echo array_random($a); ?>">
+            <div class="col-md-12 cat-thumb  no-padding no-margin text-center categoryshow" style="background-color: <?php echo $b[$aa]; ?>">
             <diw class="row spancat">
                 <h4><?php echo $category['name']; ?></h4>
                 
@@ -90,20 +93,20 @@
     </div></div>
       <div class="row">
         <?php foreach ($products as $product) { ?>
-        <span class="ribbon"> от <?php echo $product['special']; ?></span>
-        <div class="product-layout product-list col-xs-6">
-         
-          <div class="product-thumb cat-thumb" style="background-color: <?php echo $b=array_random($a); ?>">
+        
+        <div class="product-layout product-list col-md-6 col-sm-12 col-xs-12">
+         <span class="ribbon"> от <?php echo $product['special']; ?></span>
+          <div class="product-thumb cat-thumb" style="background-color: <?php echo $b[$aa]; ?>">
             
-            <div class="row">
+            <div class="row" style="margin-left: 0;">
                 <div class="col-sm-6 prodleft"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
                 <span class="ribbonright" style="border-right: 10px solid <?php echo $b; ?>;"></span>
-                <div class="col-sm-6 prodright">
+                <div class="col-sm-6 text-center prodright">
                 <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
                 <p><?php echo $product['description']; ?></p>
                                <div class="row text-center">
-                                <button class="btncart" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');">
-                                <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span>
+                                <button style="background-color: <?php echo $c[$aa]; ?>" class="btncart" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');">
+                                <span class=""><?php echo $button_cart; ?></span>
                                 </button>
                                 </div>
                 </div>
