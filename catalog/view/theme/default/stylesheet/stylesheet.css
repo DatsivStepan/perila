@@ -577,8 +577,11 @@ padding-right: 0px;
 padding-left: 0px;
 }
 .carttov1{
+       border-left: 1px solid #008FD1;
+    border-right: 1px solid #008FD1;
     padding: 5%;
     background-color: #e0e0e0;
+    border-top: 1px solid #008FD1;
     
 }
 .carttov1 h3{
@@ -586,21 +589,44 @@ padding-left: 0px;
     
 }
 .carttov2{
-    padding: 5%;
+       border-left: 1px solid #008FD1;
+    border-right: 1px solid #008FD1;
+    border-top: 1px solid #008FD1;
+    
+    padding: 6%;
     background-color: #f0f0f0;
     
 }
 .carttov3{
-    padding: 5%;
+        border: 1px solid #008FD1;
+    padding: 6%;
     background-color: #ffffff;
     
 }
+.carttov3a{
+        margin-top: 4%;
+    font-size: 140%;
+    
+}
 .carttov4{
-    padding: 15%;
+        border: 1px solid #008FD1;
+    padding: 8%;
     background-color: #008fd1;
     
 }
+.carttov4 button{
+    background-color: #f8c828;
+    border-radius: 20px;
+    border: 0px;
+    color: black;
+}
+.cartinput{
+    color: #f47a2f;
+    padding: 2%;
+    width: 50%;
+}
 .description{
+    margin-left: -5px;
     padding: 5%;
     background-color: #ffffff;
     -webkit-column-count: 2;
@@ -610,6 +636,17 @@ padding-left: 0px;
     -moz-column-gap: 50px;
     column-gap: 50px;
    
+}
+.btnm{
+        padding: 7.5px 42px!important;
+    background-color: #9ecb3c;
+    color: #ffffff;
+}
+.padtext{
+    padding-bottom: 2%;
+}
+.orangedescription{
+    color: #008fd1;
 }
 .descriptiontitle{
     margin-top: -20px;
@@ -668,7 +705,7 @@ padding-left: 0px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
-    top: 70px;
+    top: 10px;
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
@@ -968,6 +1005,7 @@ padding-left: 0px;
 }
 }
 .product-thumb h4 {
+    padding: 5%;
 	font-weight: bold;
 }
 .product-thumb .caption {
@@ -1092,6 +1130,7 @@ h2.price {
 
 #style-1::-webkit-scrollbar-track
 {
+    
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
 	border-radius: 10px;
@@ -1099,12 +1138,14 @@ h2.price {
 
 #style-1::-webkit-scrollbar
 {
-	padding: 5%;
+     
+	
 	background-color: #F5F5F5;
 }
 
 #style-1::-webkit-scrollbar-thumb
 {
+   
     background-repeat: no-repeat ;
 	border-radius: 10px;
 	background-image: url(/../../image/catalog/scroll.png);
@@ -1112,10 +1153,33 @@ h2.price {
 .wrap li{
     padding: 15px;
 }
+.wrap {
+    margin-left: 5%;
+    width: 90%;
+}
 
-
-
+.btnp{
+        background-color: #f8c828;
+    color: #ffffff;
+}
+.formh4{
+    font-size: 85%;
+}
+.modal-content{
+     border-radius: 0px;  
+}
+.karttovar{
+        
+}
+.kartheader{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5%;
+    margin-left: -20px;
+}
 .thumbnails {
+    box-shadow: 0px 1px 8px 0px rgba(136, 136, 136, 0.37);
     background-color: #ffffff;
 	clear: both;
 	list-style: none;

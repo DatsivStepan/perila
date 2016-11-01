@@ -17,8 +17,8 @@
         </ul>
                     <div class="row" style="    padding-bottom: 3%;">
             <div class="col-sm-1"></div>
-   <div class="col-sm-4"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
-    text-transform: uppercase;"><?php echo $heading_title; ?></span></div>
+   <div class="col-sm-4"><span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
+    text-transform: uppercase;" value="<?php echo $heading_title; ?>"><?php echo $heading_title; ?></span></div>
     <div class="col-sm-7">
         <div class="col-sm-8 borderb"></div>
         <div class="col-sm-4 bordery"></div>
@@ -74,19 +74,21 @@
             <h3 class=" text-center no-margin">ЦЕНА ЗА 1 МЕТР:</h3>
             <div class="row">
                 <div class="col-sm-6">
-                   <div class="row"><input type="text" name="quantity" value="<?php echo $price; ?>"
-                                           class="input_product text-center"/></div>
+                   <div class="row">
+                                          <input class="cartinput text-center" type="text" id="quantity" name="quantityq" value="<?php echo $price; ?>"
+                                           class="input_product text-center"/>
+                                           </div>
                    <div class="row">рублей</div>
                 </div>
                   <div class="col-sm-6">
                    <div class="row"> 
 <span class="quont-plus">
-                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-plus" id="plus"></i>
                                     </span>
-                                    <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity"
+                                    <input type="text"  name="quantity" value="1" size="2" id="input-quantity"
                                            class="input_product text-center"/>
 <span class="quont-minus">
-                                        <i class="fa fa-minus"></i>
+                                        <i class="fa fa-minus" id="minus"></i>
                                     </span>
                                     
                                     <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/></div>
@@ -101,11 +103,11 @@
             <div class="carttov2 text-center">
                       <div class="row">
                 <div class="col-sm-6">
-                   <div class="row">Срок монтажа</div>
+                   <div class="row padtext"><b>Срок монтажа</b></div>
                    <div class="row">от 3 дней</div>
                 </div>
                   <div class="col-sm-6">
-                   <div class="row">Стоимость указана:</div>
+                   <div class="row padtext"><b>Стоимость указана:</b></div>
                    <div class="row">с учетом доставки и установки</div>
                 </div>
                 
@@ -116,12 +118,20 @@
             <div class="carttov3 text-center">
                       <div class="row">
                 <div class="col-sm-6">
-                   <div class="row">img</div>
-                   <div class="row">вызвать замерщика</div>
+                   <div class="row"> <img src="image/kon.png" alt=" "></div>
+                   <div class="row carttov3a">
+                   <a href="" data-toggle="modal" data-target="#modal-window-vuzvat">
+                   вызвать замерщика
+                   </a>
+                   </div>
                 </div>
                   <div class="col-sm-6">
-                   <div class="row"> img</div>
-                   <div class="row">проконсультироватся</div>
+                   <div class="row"> <img src="image/woman93.png" alt=" "></div>
+                   <div class="row carttov3a">
+                    <a href="" data-toggle="modal" data-target="#modal-window-prok">
+
+                    проконсультироватся
+                    </a></div>
                 </div>
                 
                         
@@ -131,9 +141,9 @@
             <div class="carttov4 text-center">
                 
                   <div class="row">
-                                    <button type="button" id="button-cart"
+                                    <button  data-toggle="modal" data-target="#modal-window-zakaz" type="button" id="button-cart"
                                             data-loading-text="<?php echo $text_loading; ?>"
-                                            class="btn button_cart button_cart_prod"><?php echo $button_cart; ?></button>
+                                            class="btn button_cart button_cart_prod">Оформить заказ</button>
                                 </div>
                 
             </div>
@@ -147,10 +157,16 @@
             <?php
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
-             <div class="col-sm-6 descriptiontitle"><h3 class=" text-center orangedescription" ><?php echo $tab_description;  ?></h3></div>
+             <div class="col-sm-6 " style="margin-top: -5%;">
+             <div class="row kartheader text-center">
+             <h3 class=" text-center orangedescription" >Технические характеристики</h3>
+             </div>
+             </div>
             <div class="col-sm-12 description">
                 
                 <?php echo $description;  ?>
+                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!</a>
+               
             </div>
             <?php } }?>
       </div>
@@ -160,8 +176,119 @@
     <?php echo $column_right; ?></div>
 </div>
 
-
-
+<!-- Basic modal -->
+<div id="modal-window-vuzvat" class="modal fade">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+		<div class="modal-header" style="border-bottom: none;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+   
+        </div>
+			<div class="modal-body">
+			<h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
+				
+				<div class="form-group">
+					<label>Ваше имя:</label>
+					<input id="name" class="form-control" name="name">
+				</div>
+				
+				<div class="form-group">
+					<label>Ваш телефон:</label>
+					<input id="phone" class="form-control" name="phone">
+				</div>
+			</div>
+                <div class="form-group text-center">	
+				<button type="button" class="btn btnp" id="vuzvat">ОТПРАВИТЬ</button>
+				</div>
+				<div class="form-group">
+				<h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+				</div>
+			
+		</div>
+	</div>
+</div>
+<!-- /basic modal -->
+<!-- Basic modal -->
+<div id="modal-window-prok" class="modal fade">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+		<div class="modal-header" style="border-bottom: none;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+   
+        </div>
+			<div class="modal-body">
+			<h4 class="text-center"><b>ПРОКОНСУЛЬТИРОВАТСА</b></h4>
+				
+				<div class="form-group">
+					<label>Ваше имя:</label>
+					<input id="name" class="form-control" name="name2">
+				</div>
+				
+				<div class="form-group">
+					<label>Ваш телефон:</label>
+					<input id="phone" class="form-control" name="phone2">
+				</div>
+			</div>
+                <div class="form-group text-center">	
+				<button type="button" class="btn btnp" id="prok">ОТПРАВИТЬ</button>
+				</div>
+				<div class="form-group">
+				<h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+				</div>
+			
+		</div>
+	</div>
+</div>
+<!-- /basic modal -->
+<!-- Basic modal -->
+<div id="modal-window-zakaz" class="modal fade">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+		<div class="modal-header" style="border-bottom: none;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+   
+        </div>
+			<div class="modal-body">
+			<h4 class="text-center"><b>ОФОРМИТЬ ЗАКАЗ</b></h4>
+				
+				<div class="form-group">
+					<label>Ваше имя:</label>
+					<input id="name" class="form-control" name="name3">
+				</div>
+				
+				<div class="form-group">
+					<label>Ваш Email:</label>
+					<input id="email" class="form-control" name="email">
+				</div>
+				
+				<div class="form-group">
+					<label>Ваш телефон:</label>
+					<input id="phone" class="form-control" name="phone3">
+				</div>
+				
+				<div class="form-group">
+					<label>Адрес доставки:</label>
+					<input id="adress" class="form-control" name="adress">
+				</div>
+				
+				<div class="form-group">
+					<label>Ваш заказ:</label>
+                    <textarea rows="5" cols="45" id="zakaz" class="form-control" name="zakaz" ><?php echo $heading_title; ?></textarea>
+				</div>
+				
+				<p class="text-center" style="color:#fe6100;">Общая сумма заказа:  <span id="summa"><?php echo $price; ?></span> рублей</p>
+			</div>
+                <div class="form-group text-center">	
+				<button type="button" class="btn btnm" id="zakazat">ЗАКАЗАТЬ</button>
+				</div>
+				<div class="form-group">
+				<h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+				</div>
+			
+		</div>
+	</div>
+</div>
+<!-- /basic modal -->
 
 
 
@@ -169,6 +296,139 @@
 
 
 <script type="text/javascript"><!--
+    var zakazname="<?php echo $heading_title; ?>";
+    var stoimodun="<?php echo $price; ?>";
+       $('#zakazat').on('click', function(){
+           // if ($('#create-contact-form').valid()) {
+               
+                 var data = {
+                'to': 3,
+                'name':  $('input[name=name3]').val(),
+                'phone': $('input[name=phone3]').val(),
+                'email': $('input[name=email]').val(),
+                'adress': $('input[name=adress]').val(),
+                'summa': $('input[name=quantityq]').val(),
+                'count': $('input[name=quantity]').val(),
+                'zakaz': zakazname,
+                'stoimodun': stoimodun
+            };
+     console.log(data);
+            $.ajax(
+                {
+                    type: 'post',
+                    url: 'index.php?route=email/email/send',
+                    data: data
+                })
+                .fail(function() {
+                    alert('Підключення');
+                })
+                .done(function(data) {
+               
+                     if (data.success){
+                      /*  new PNotify({
+                            title: 'Contact was updated',
+                            addclass: 'bg-success'
+                        });*/
+                       // window.history.back();
+                    }
+                 console.log(data);
+            //}
+                });
+   
+          /*  else{
+                new PNotify({
+                    title: 'You made a mistake when filling out forms',
+                    addclass: 'bg-danger'
+                });
+            }*/
+        });
+    
+    
+      $('#vuzvat').on('click', function(){
+           // if ($('#create-contact-form').valid()) {
+               
+                 var data = {
+                'to': 1,
+                'name':  $('input[name=name]').val(),
+                'phone': $('input[name=phone]').val()
+            };
+     
+            $.ajax(
+                {
+                    type: 'post',
+                    url: 'index.php?route=email/email/send',
+                    data: data
+                })
+                .fail(function() {
+                    alert('Підключення');
+                })
+                .done(function(data) {
+               
+                     if (data.success){
+                      /*  new PNotify({
+                            title: 'Contact was updated',
+                            addclass: 'bg-success'
+                        });*/
+                       // window.history.back();
+                    }
+                 console.log(data);
+            //}
+                });
+   
+          /*  else{
+                new PNotify({
+                    title: 'You made a mistake when filling out forms',
+                    addclass: 'bg-danger'
+                });
+            }*/
+        });
+
+          $('#prok').on('click', function(){
+           // if ($('#create-contact-form').valid()) {
+               
+                 var data = {
+                'to': 2,
+                'name':  $('input[name=name2]').val(),
+                'phone': $('input[name=phone2]').val()
+            };
+     
+            $.ajax(
+                {
+                    type: 'post',
+                    url: 'index.php?route=email/email/send',
+                    data: data
+                })
+                .fail(function() {
+                    alert('Підключення');
+                })
+                .done(function(data) {
+               
+                     if (data.success){
+                      /*  new PNotify({
+                            title: 'Contact was updated',
+                            addclass: 'bg-success'
+                        });*/
+                       // window.history.back();
+                    }
+                 console.log(data);
+            //}
+                });
+   
+          /*  else{
+                new PNotify({
+                    title: 'You made a mistake when filling out forms',
+                    addclass: 'bg-danger'
+                });
+            }*/
+        });
+
+    
+    
+    
+    
+    
+    
+    
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	$.ajax({
 		url: 'index.php?route=product/product/getRecurringDescription',
@@ -188,72 +448,7 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	});
 });
 //--></script>
-<script type="text/javascript"><!--
-$('#button-cart').on('click', function() {
-	$.ajax({
-		url: 'index.php?route=checkout/cart/add',
-		type: 'post',
-		data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
-		dataType: 'json',
-		beforeSend: function() {
-			$('#button-cart').button('loading');
-		},
-		complete: function() {
-			$('#button-cart').button('reset');
-		},
-		success: function(json) {
-			$('.alert, .text-danger').remove();
-			$('.form-group').removeClass('has-error');
 
-			if (json['error']) {
-				if (json['error']['option']) {
-					for (i in json['error']['option']) {
-						var element = $('#input-option' + i.replace('_', '-'));
-
-						if (element.parent().hasClass('input-group')) {
-							element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-						} else {
-							element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-						}
-					}
-				}
-
-				if (json['error']['recurring']) {
-					$('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
-				}
-
-				// Highlight any found errors
-				$('.text-danger').parent().addClass('has-error');
-			}
-
-			if (json['success']) {
-				
-				$('#cart > span').html('Ваш кошик<br> ' + json['total']+ '<img src="image/trik.png" alt="" style="    padding-bottom: 10%;">');
-
-                //$('html, body').animate({ scrollTop: 0 }, 'slow');
-                var beepOne = $("#beep-one")[0];
-                beepOne.play();
-
-
-                var add = document.getElementById('add').title;
-                if (add == 'Українська'){add='Добавлено';}
-                    if (add == 'russian'){add='Добавлено';}
-                        if (add == 'English'){add='Added';}
-
-
-                var d = document.getElementById("button-cart");
-                d.className += " added_to_cart";
-                $("#image").attr("src","image/mishok_cart.png");
-
-
-                $('#cart > ul').load('index.php?route=common/cart/info ul li');
-
-
-            }
-		}
-	});
-});
-//--></script>
 <script type="text/javascript"><!--
 $('.date').datetimepicker({
 	pickTime: false
@@ -387,5 +582,25 @@ $(document).ready(function() {
             document.getElementById('input-quantity').value++;
     });
     });
+    
+    
+ $('#plus').on('click', function() { 
+          var tp = '<?php echo $price; ?>';
+          var q_obj = $("input[name='quantity']").val();
+        q_obj++;
+            $("#quantity").val(q_obj*tp);
+     
+     document.getElementById("summa").innerHTML=q_obj*tp;
+});  
+    
+$('#minus').on('click', function() { 
+          var tp = '<?php echo $price; ?>';
+          var q_obj = $("input[name='quantity']").val();
+    q_obj--;
+    if(q_obj>0){
+            $("#quantity").val(q_obj*tp);
+        document.getElementById("summa").innerHTML=q_obj*tp;
+        }
+});   
 </script>
 <?php echo $footer; ?>

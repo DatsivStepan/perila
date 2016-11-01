@@ -117,7 +117,7 @@ $data['category_id'] = $category_id;
 					'name' 			=> $category['name'],
 					'original_image'=> $original_image,
 					'thumb'			=> $thumb,
-					'href' 			=> $this->url->link('newsblog/category', 'newsblog_path=' . $this->request->get['newsblog_path'] . '_' . $category['category_id'])
+					'href' 			=> $this->url->link('newsblog/category', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'] . '_' . $category['category_id'])
 				);
 			}
 
@@ -162,7 +162,7 @@ $data['category_id'] = $category_id;
 						'name'        		=> $result['name'],
 						'preview'     		=> html_entity_decode($result['preview'], ENT_QUOTES, 'UTF-8'),
 						'attributes'  		=> $result['attributes'],
-						'href'        		=> $this->url->link('newsblog/article', 'newsblog_path=' . $this->request->get['newsblog_path'] . '&newsblog_article_id=' . $result['article_id']),
+						'href'        		=> $this->url->link('newsblog/article', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'] . '&newsblog_article_id=' . $result['article_id']),
 						'date'		  		=> ($date_format ? date($date_format, strtotime($result['date_available'])) : false),
 						'date_modified'		=> ($date_format ? date($date_format, strtotime($result['date_modified'])) : false),
 					);
@@ -173,7 +173,7 @@ $data['category_id'] = $category_id;
 				$pagination->total = $article_total;
 				$pagination->page = $page;
 				$pagination->limit = $limit;
-				$pagination->url = $this->url->link('newsblog/category', 'newsblog_path=' . $this->request->get['newsblog_path'] . '&page={page}');
+				$pagination->url = $this->url->link('newsblog/category', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'] . '&page={page}');
 
 				$data['pagination'] = $pagination->render();
 
@@ -181,15 +181,15 @@ $data['category_id'] = $category_id;
 
 				// http://googlewebmastercentral.blogspot.com/2011/09/pagination-with-relnext-and-relprev.html
 				if ($page == 1) {
-				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_path=' . $category_info['category_id'], 'SSL'), 'canonical');
+				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_category_id=' . $category_info['category_id'], 'SSL'), 'canonical');
 				} elseif ($page == 2) {
-				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_path=' . $category_info['category_id'], 'SSL'), 'prev');
+				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_category_id=' . $category_info['category_id'], 'SSL'), 'prev');
 				} else {
-				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_path=' . $category_info['category_id'] . '&page='. ($page - 1), 'SSL'), 'prev');
+				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_category_id=' . $category_info['category_id'] . '&page='. ($page - 1), 'SSL'), 'prev');
 				}
 
 				if ($limit && ceil($article_total / $limit) > $page) {
-				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_path=' . $category_info['category_id'] . '&page='. ($page + 1), 'SSL'), 'next');
+				    $this->document->addLink($this->url->link('newsblog/category', 'newsblog_category_id=' . $category_info['category_id'] . '&page='. ($page + 1), 'SSL'), 'next');
 				}
 			}
 
