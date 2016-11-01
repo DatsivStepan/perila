@@ -3,6 +3,10 @@
 	Bebas Neue, 100, 200, 300, 400, 700
 */
 @import"../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr.css";
+/*
+	PT Sans, 400, 400 italic, 700, 700 italic
+*/
+
 
 body {
     background-color: #f4f4f4;
@@ -164,7 +168,7 @@ div.required .control-label:before {
 	text-shadow: none;
 }
 #cart.open > .btn:hover {
-	color: #444;
+	color: transparent;
 }
 #cart .dropdown-menu {
 	background: #eee;
@@ -988,6 +992,12 @@ padding-left: 0px;
 .product-grid .product-thumb .image {
 	float: none;
 }
+.menu-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	color: black;
+	font-size: 15px;
+}
 @media (min-width: 767px) {
 .product-list .product-thumb .image {
 	float: left;
@@ -1078,7 +1088,6 @@ h2.price {
 .product-list .product-thumb .button-group {
 	border-left: 1px solid #ddd;
 }
-
 @media (max-width: 768px) {
 	.product-list .product-thumb .button-group {
 		border-left: none;
@@ -1239,14 +1248,59 @@ h2.price {
 	border: 1px solid;
 }
 .btn-color{
-	background-color: transparent;
-	color: #f8c828;
-	border: 1px solid;
+	 background-color: transparent;
+	 color: #f8c828;
+	 border: 1px solid;
+}
+.mobile-text-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	font-size: 25px;
+	color: #404040;
+}
+.mobile-text-div{
+	padding-left: 25px;
+	padding-bottom: 60px;
+}
+.mobile-btn-style-1{
+	background: rgba(244, 205, 75, 0.8);
+	border-radius: 0;
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	color: #ffffff;
+	width: 80%;
+	font-size: 20px;
+	border: 0;
+}
+.mobile-btn:hover{
+	color: #ffffff !important;
+}
+.mobile-btn:focus{
+	color: #ffffff;
+}
+.mobile-btn-div{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.mobile-btn-style-2{
+	background: rgba(47, 161, 213, 0.8);
+	border-radius: 0;
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	color: #ffffff;
+	width: 80%;
+	font-size: 20px;
+	border: 0;
 }
 .btn-padding{
 	padding-top: 14px;
 	padding-left: 35px;
 
+}
+.btn-header:hover{
+	background-color: transparent;
+	color: #f8c828;
+	border: 1px solid;
 }
 .a-color{
 	color: #000000 !important;
@@ -1303,7 +1357,7 @@ h2.price {
 }
 .email-padding{
 	padding-left: 20px;
-	padding-top: 5px;
+	padding-top: 6px;
 }
 .email-icon-padding{
 	padding-left: 35px;
@@ -1322,7 +1376,8 @@ h2.price {
 }
 .li-text-style{
 	text-align: center;
-	font-size: 13px;
+	background-color: transparent !important;
+
 }
 .div-li-border-right{
 	border-right: 1px solid #999999;
@@ -1344,19 +1399,23 @@ h2.price {
 	background-size: 100% 100%;
 }
 .banner-text-style{
-	font-size: 19px;
-	line-height: 30px;
+	font-size: 30px;
+	line-height: 40px;
 	color: #0b0b0b;
+	padding-bottom: 40px;
+	padding-left: 0;
+	font-family: 'Helvetica Neue';
+	font-weight: 700;
 }
 .banner-text-padding{
 	padding-top: 25px;
 	padding-left: 25px;
 }
 .div-banner-border{
-	/*border-bottom: 1px solid #f8c828;*/
-	border-bottom: 1px solid #0b0b0b;
-	padding-top: 47px;
-	transform: translateX(20px);
+	border-bottom: 1px solid #f8c828;
+	/*border-bottom: 1px solid #0b0b0b;*/
+	padding-top: 55px;
+	transform: translateX(60px) !important;
 }
 .navbar-toggle span{
 	width: 100% !important;
@@ -1372,13 +1431,222 @@ h2.price {
 	height: 15% !important;
 }
 .email-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	color: #000000;
+}
+.phone-style{
 	font-family: 'Bebas Neue' !important;
 	font-weight: 400;
 	color: #008fd1;
 	font-size: 18px;
 }
+.graph-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 300;
+	line-height: 15px;
+	font-size: 10px;
+	color: #fff;
+}
+.top-header-style{
+	position: absolute !important;
+	z-index: 100 !important;
+	background: rgba(19,20,24,0.9) !important;
+}
+
+.footer-img{
+	background-image: url(/../../catalog/view/theme/default/image/footerFone.png);
+	background-size: 100% 100%;
+	border-bottom: 3px solid #008fd1;
+}
+.footer-img-bottom{
+	background-image: url(/../../catalog/view/theme/default/image/footerFone1.png);
+	background-size: 100% 100%;
+	border-bottom: 6px solid #000000;
+}
+.footer-padding{
+	padding-top: 5% !important;
+	padding-bottom: 5% !important;
+	padding-left: 0;
+}
+.footer-text-style{
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+}
+.footer-tex-color-1{
+	color: #cccccc;
+}
+.footer-tex-color-2{
+	color: #ffffff;
+}
+.footer-tex-color-3{
+	color: #e6ba2d;
+}
+.input-style{
+	background: rgba(200,200,200,0.8);
+}
+.form-text-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	color: #ffffff;
+}
+.footer-btn-text-style{
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 18px;
+	color: #ffffff;
+}
+.footer-btn-style{
+	background-color: #008fd1 !important;
+	background-image: none !important;
+	text-shadow: none !important;
+	width: 80% !important;
+	right: 0;
+}
+.footer-btn-div{
+	padding-top: 14px;
+	text-align: right;
+}
+.footer-form-div{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.footer-div-logo{
+	padding-left: 0;
+}
+.footer-div-border{
+	border-right: 1px solid #d0d0d0;
+}
+.footer-div-middle{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.footer-phone-style{
+	text-align: right;
+	padding-top: 7px !important;
+}
+.footer-email-style{
+	text-align: right;
+	padding-top: 7px !important;
+}
+.footer-div-address{
+	text-align: right;
+	padding-bottom: 40px;
+}
+.footer-address-style{
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 7px;
+}
+.footer-icon-padding{
+	padding-top: 16px;
+	padding-left: 0;
+}
+.footer-a-padding{
+	padding-right: 5px;
+
+}
+.footer-menu-style{
+	font-size: 12px;
+}
+.footer-a-style{
+	padding-left: 0 !important;
+	padding-right: 30px !important;
+	background-color: transparent !important;
+}
+.footer-text-reklama{
+	padding: 16px 0 0;
+	text-align: right;
+}
+.footer-reklama-logo{
+	padding-top: 10px;
+}
+.foofter-last-text-style{
+	padding: 6px 0 0;
+}
+.footer-mobile-img{
+	background-image: url(/../../catalog/view/theme/default/image/mobile-footer-img.png);
+	background-size: 100% 100%;
+	border-top: 6px solid #008fd1;
+	border-bottom: 6px solid #f8c828;
+}
+.footer-mobile-padding{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.footer-btn-mobile{
+	background-color: #008fd1 !important;
+	background-image: none !important;
+	text-shadow: none !important;
+	width: 95% !important;
+	right: 0;
+}
+.footer-btn-mobile-div{
+	padding-top: 14px;
+	text-align: center;
+}
+.footer-mobile-form-div{
+	padding-top: 0;
+	padding-bottom: 45px;
+}
+.footer-mobile-text-style{
+	font-family: 'Bebas Neue';
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+}
+.form-mobile-text-style{
+	font-family: 'Helvetica Neue';
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 15px;
+}
+.input-footer-padding{
+	padding-bottom: 15px;
+}
+.footer-mobile-icon-style{
+	width: 9%;
+	padding-right: 10px;
+}
+.mobile-footer-icon-position{
+	text-align: center;
+}
+.mobile-footer-and-text{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.md-footer-padding{
+	padding: 8px 0 0;
+}
+.icon-footer-padding{
+	padding-bottom: 3px;
+}
+.sm-footer-middle-padding{
+	padding-bottom: 15px;
+}
+.footer-right-icon-padding{
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-left: 0;
+	padding-bottom: 0;
+}
+.error-style{
+	background: rgba(249, 242, 244, 0.6);
+	font-size: 100%;
+}
+@media (max-width: 991px) and (min-width: 768px )   {
+	.footer-btn-text-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 13px;
+		color: #ffffff;
+	}
+}
 @media (max-width: 1199px) and (min-width: 1050px )   {
-	.email-style{
+	.phone-style{
 		font-family: 'Bebas Neue' !important;
 		font-weight: 400;
 		color: #008fd1;
@@ -1392,7 +1660,7 @@ h2.price {
 	}
 }
 @media (max-width: 1049px) and (min-width: 992px )   {
-	.email-style{
+	.phone-style{
 		font-family: 'Bebas Neue' !important;
 		font-weight: 400;
 		color: #008fd1;
@@ -1405,14 +1673,41 @@ h2.price {
 		padding-left: 0;
 	}
 }
-@media (max-width: 900px) and (min-width: 768px )   {
-	.search-padding{
+@media (max-width: 991px) and (min-width: 768px )   {
+	.style-display-none{
 		display: none;
 	}
 	.div-media-width{
-		width: 100%;
+		width: 85%;
 	}
 }
+
+@media (max-width: 767px) and (min-width: 708px )   {
+	.div-email-style{
+		background-color: #26272a;
+		padding: 0 !important;
+		height: 80px;
+	}
+	.mobile-email-style{
+		font-family: 'Helvetica Neue';
+		font-weight: 400;
+		font-size: 30px;
+		color: #ffffffff;
+		display: block;
+		height: 80px;
+		line-height: 80px;
+	}
+	.mobile-phone-style{
+		font-family: 'Bebas Neue';
+		font-weight: 400;
+		font-size: 40px;
+		color: #008fd1;
+		display: block;
+		height: 80px;
+		line-height: 80px;
+	}
+}
+
 @media (max-width: 707px) and (min-width: 650px )   {
 	.div-email-style{
 		background-color: #26272a;
@@ -1522,7 +1817,7 @@ h2.price {
 	.mobile-email-style{
 		font-family: 'Helvetica Neue';
 		font-weight: 400;
-		font-size: 30px;
+		font-size: 20px;
 		color: #ffffffff;
 		display: block;
 		height: 55px;

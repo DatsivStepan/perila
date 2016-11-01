@@ -100,6 +100,73 @@
                   <input type="text" name="config_fax" value="<?php echo $config_fax; ?>" placeholder="<?php echo $entry_fax; ?>" id="input-fax" class="form-control" />
                 </div>
               </div>
+
+<!-- wfqwfqwfwfwfwq-->
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-skype"><?php echo $entry_skype; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_skype" value="<?php echo $config_skype; ?>" placeholder="<?php echo $entry_skype; ?>" id="input-skype" class="form-control" />
+                  <?php if ($error_skype) { ?>
+                  <div class="text-danger"><?php echo $error_skype; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-vkontakte"><?php echo $entry_vkontakte; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_vkontakte" value="<?php echo $config_vkontakte; ?>" placeholder="<?php echo $entry_vkontakte; ?>" id="input-vkontakte" class="form-control" />
+                  <?php if ($error_vkontakte) { ?>
+                  <div class="text-danger"><?php echo $error_vkontakte; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-google"><?php echo $entry_google; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_google" value="<?php echo $config_google; ?>" placeholder="<?php echo $entry_google; ?>" id="input-google" class="form-control" />
+                  <?php if ($error_google) { ?>
+                  <div class="text-danger"><?php echo $error_google; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-facebook"><?php echo $entry_facebook; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_facebook" value="<?php echo $config_facebook; ?>" placeholder="<?php echo $entry_facebook; ?>" id="input-facebook" class="form-control" />
+                  <?php if ($error_facebook) { ?>
+                  <div class="text-danger"><?php echo $error_facebook; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-twitter"><?php echo $entry_twitter; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_twitter" value="<?php echo $config_twitter; ?>" placeholder="<?php echo $entry_twitter; ?>" id="input-twitter" class="form-control" />
+                  <?php if ($error_twitter) { ?>
+                  <div class="text-danger"><?php echo $error_twitter; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-instagram"><?php echo $entry_instagram; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_instagram" value="<?php echo $config_instagram; ?>" placeholder="<?php echo $entry_instagram; ?>" id="input-instagram" class="form-control" />
+                  <?php if ($error_instagram) { ?>
+                  <div class="text-danger"><?php echo $error_instagram; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-pinterest"><?php echo $entry_pinterest; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_pinterest" value="<?php echo $config_pinterest; ?>" placeholder="<?php echo $entry_pinterest; ?>" id="input-pinterest" class="form-control" />
+                  <?php if ($error_pinterest) { ?>
+                  <div class="text-danger"><?php echo $error_pinterest; ?></div>
+                  <?php } ?>
+                </div>
+              </div>
+<!-- wfqwfqwfwfwfwq-->
+
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-image"><?php echo $entry_image; ?></label>
                 <div class="col-sm-10"><a href="" id="thumb-image" data-toggle="image" class="img-thumbnail"><img src="<?php echo $thumb; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>

@@ -28,6 +28,15 @@ $_['entry_geocode']                    = 'Geocode';
 $_['entry_email']                      = 'E-Mail';
 $_['entry_telephone']                  = 'Телефон';
 $_['entry_fax']                        = 'Факс';
+//fqwfqwfwqf
+$_['entry_skype']                      = 'Скайп';
+$_['entry_vkontakte']                  = 'Вконтакте';
+$_['entry_google']                     = 'Google+';
+$_['entry_facebook']                   = 'Facebook';
+$_['entry_twitter']                    = 'Twitter';
+$_['entry_instagram']                  = 'Instagram';
+$_['entry_pinterest']                  = 'Pinterest';
+//qwfwqfwfwqfwq
 $_['entry_image']                      = 'Изображение';
 $_['entry_open']                       = 'Режим работы';
 $_['entry_comment']                    = 'Дополнительная информация';
@@ -205,6 +214,15 @@ $_['error_owner']                      = 'Имя владельца магази
 $_['error_address']                    = 'Адрес магазина должен быть от 10 до 256 символов!';
 $_['error_email']                      = 'E-Mail адрес введен неверно!';
 $_['error_telephone']                  = 'Телефон должен быть от 3 до 32 символов!';
+//wqdfwqdwqd
+$_['error_skype']                      = 'Скайп должен быть от 3 до 32 символов!';
+$_['error_vkontakte']                  = 'Вконтакте должен быть от 3 до 32 символов!';
+$_['error_google']                     = 'Google+ должен быть от 3 до 32 символов!';
+$_['error_facebook']                   = 'Фейсбок должен быть от 3 до 32 символов!';
+$_['error_twitter']                    = 'Твитер должен быть от 3 до 32 символов!';
+$_['error_instagram']                  = 'Инстаграм должен быть от 3 до 32 символов!';
+$_['error_pinterest']                  = 'Pinterest должен быть от 3 до 32 символов!';
+//wqdwqdwqdwd
 $_['error_meta_title']                 = 'Title должен быть от 3 до 32 символов!';
 $_['error_limit']       	           = 'Укажите лимит!';
 $_['error_customer_group_display']     = 'Вы должны добавить группу клиентов по умолчанию, если собираетесь использовать эту возможность!';

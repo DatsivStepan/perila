@@ -1,4 +1,9 @@
-<div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style">
+<!--<div class="container" style="position: absolute; padding-top: 10%; z-index: 100;">
+    <div style=" background: rgba(153,153,153,0.3);padding-left: 20px;  ">
+        <span>qwfwqf</span>
+    </div>
+</div>-->
+<div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style" style="height: 445px">
   <?php foreach ($banners as $banner) { ?>
   <div class="item">
     <?php if ($banner['link']) { ?>
