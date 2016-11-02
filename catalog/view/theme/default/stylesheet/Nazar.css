@@ -3,6 +3,10 @@ h1{
     font-weight: 800;
     font-size: 24px;
 }
+.col-sm-3{
+    width: 100%;
+    margin: 40px 0 0 0;
+}
 span.bolt{
     font-family: 'Helvetica';
     font-weight: 700;
@@ -13,7 +17,7 @@ span.bolt{
     font-weight: 300;
     font-size: 18px;
 }
-.light{
+.text_light{
     font-family: 'Helvetica Neue';
     font-weight: 300;
     font-size: 23.5px;
@@ -24,10 +28,23 @@ span.bolt{
     font-size: 18px;
 }
 .border{
-     background: url(/../catalog/view/theme/default/image/2.png) center no-repeat;
-     min-height: 198px;
+     background: url(/../catalog/view/theme/default/image/2.png)center no-repeat;
+     min-height: 180px;
      background-size: cover;
-     margin: -15px 0 0 0;
+     margin: -2.59% 0 0 0;
+     background-position: 50% 0%;
+}
+.gol{
+    background: url(/../catalog/view/theme/default/image/9.png)right no-repeat;
+    position: absolute;
+    z-index: 100;
+    background-size: contain;
+}
+.ged{
+    background: url(/../catalog/view/theme/default/image/11.png)left no-repeat;
+    position: absolute;
+    z-index: 100;
+    background-size: contain;
 }
 .zal{
      font-family: 'Helvetica Neue';
@@ -44,15 +61,18 @@ span.bolt{
     font-size: 16px;
     text-align: left;
 }
-h3{
+.text-h3{
     font-family: 'Helvetica Neue';
     font-weight: 400;
     font-size: 20px;
+    margin: -7% 0px 1% -6%;
 }
+
 .text-od{
     font-family: 'Helvetica Neue';
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
+    padding: 0px 0px 36px 0px;
 }
 .text-end{
     font-family: 'Helvetica Neue';
@@ -69,5 +89,19 @@ h2{
     font-family: 'Helvetica Neue';
     font-weight: 800;
     font-size: 24px;
-    margin: 90px 0 0 120px;
+    margin: 24% 0 0 0;
+}
+.text_h3 {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 13% 0 0 0;
+}
+@media (max-width: 992px) and (min-width: 560px )   {
+    .text_h3{
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        font-size: 31px;
+        margin: 15% 0 0 0;
+    }
 }

@@ -3,7 +3,7 @@ class ControllerInformationAbout extends Controller {
     private $error = array();
 
     public function index() {
-        $this->load->language('information/contact');
+        $this->load->language('information/about');
 
         $this->document->setTitle($this->language->get('heading_title'));
 
@@ -18,7 +18,7 @@ class ControllerInformationAbout extends Controller {
             $mail->setText(strip_tags($this->request->post['enquiry']));
             $mail->send();
 
-            $this->response->redirect($this->url->link('information/contact/success'));
+            $this->response->redirect($this->url->link('information/about/success'));
         }
 
         $data['breadcrumbs'] = array();
