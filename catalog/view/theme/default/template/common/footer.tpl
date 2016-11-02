@@ -1,4 +1,4 @@
-<footer>
+<footer style="padding-top: 0; border: 0">
   <div class="hidden-xs footer-img">
     <div class="container hidden-xs">
       <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-padding" style="line-height: 20px">
@@ -26,9 +26,9 @@
       </div>
     </div>
   </div>
-  <div class="hidden-xs" style="width: 100%">
+  <div class="hidden-xs" style="width: 100%; background-color: #ffffff">
     <div class="container footer-div-middle">
-      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-div-border">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-div-border" style="padding-bottom: 22px; padding-left: 0">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 footer-div-logo ">
           <?php if ($logo) { ?>
           <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -68,7 +68,7 @@
             <img src="../../../catalog/view/theme/default/image/email.png">
           </div>
           <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 no-padding footer-email-style">
-            <span class="footer-address-style">Email: </span><span><?php echo $email; ?></span>
+            <span class="">Email: </span><span><?php echo $email; ?></span>
           </div>
         </div>
         <!--md footer email begin-->
@@ -109,7 +109,7 @@
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 footer-right-icon-padding">
           <img src="../../../catalog/view/theme/default/image/grafic.png">
         </div>
-        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 footer-address-style">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 footer-grafic-style">
           <span>Адресс: </span><span><?php echo $open;?></span>
         </div>
       </div>
@@ -137,7 +137,7 @@
           <img src="../../../catalog/view/theme/default/image/logo-reklama.png">
         </div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-top: 10px">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding-top: 10px; font-size: 10px">
         <span>&#169; 2016. Все права защищены.</span>
       </div>
     </div>
@@ -152,8 +152,7 @@
       <div class=" footer-mobile-form-div">
         <form action="" id="contactForm-1" method="post">
           <ul id="errorMasege" style="padding-left: 15px" >
-            <code style="display: none" class="userName error-style">Некоректно заполнено Имя</code>
-            <code style="display: none" class="userPhone error-style">Некоректно заполнен номер</code>
+            <code style="display: none" class="error error-style">Некоректно заполненна информация</code>
           </ul>
           <div class="input-footer-padding">
             <span class="form-mobile-text-style">Ваше имя:</span>
@@ -170,7 +169,7 @@
       </div>
     </div>
   </div>
-  <div>
+  <div class="footer-bottom-div">
     <div class="hidden-md hidden-lg hidden-xl hidden-sm footer-icon-padding mobile-footer-icon-position">
       <a href="<?php echo $skype; ?>" class="footer-a-padding"><img class="footer-mobile-icon-style" src="../../../catalog/view/theme/default/image/mobile-skype.png"></a>
       <a href="<?php echo $instagram; ?>" class="footer-a-padding"><img class="footer-mobile-icon-style" src="../../../catalog/view/theme/default/image/mobile-instagram.png"></a>
