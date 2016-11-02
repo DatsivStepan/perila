@@ -27,7 +27,7 @@
         <div class="product-wrapper">
         <div class="col-sm-6">
             <?php if ($thumb || $images) { ?>
-                <ul class="thumbnails text-center">
+                <ul class="thumbnails text-center" style="border: 1px solid #999999;">
                     <?php if ($thumb) { ?>
                         <li style="overflow-y: hidden;">
                             <a class="product-img" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>">
@@ -158,11 +158,24 @@
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
              <div class="col-sm-6 " style="margin-top: -5%;">
-             <div class="row kartheader text-center">
+             <div class="row kartheader text-center" style="border-left: 1px solid #999999;    border-right: 1px solid #999999;
+    border-top: 1px solid #999999;">
+            
              <h3 class=" text-center orangedescription" >Технические характеристики</h3>
              </div>
              </div>
-            <div class="col-sm-12 description">
+             <div class="col-sm-6 " style="    padding-right: 5px;
+    padding-left: 0;">
+                 <div style="    border-bottom: 1px solid #999999;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-left: -16px;"></div>
+             </div>
+           
+            
+               <div class="col-sm-12 description">
+                
                 
                 <?php echo $description;  ?>
                 <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!</a>
