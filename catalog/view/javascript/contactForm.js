@@ -85,8 +85,11 @@ $(document).ready(function () {
 
     });
 
+
+    
     $('#btn-contact-1').on('click', function (even) {
         even.preventDefault();
+        $('#errorMasege > .error').hide();
         var res = $('#contactForm-1').serializeArray();
         var arr = {};
         $.each(res, function (result) {
@@ -104,7 +107,6 @@ $(document).ready(function () {
                 //$('form#contactForm').trigger('reset');
             }
         });
-
     });
 
 });
