@@ -4,10 +4,11 @@ $_['heading_title']  = 'Связаться с нами';
 
 // Text
 $_['text_location']  = 'Наше местонахождение';
-$_['text_store']     = 'Наши магазины';
-$_['text_contact']   = 'Написать нам';
+$_['text_store']     = 'Адрес:';
+$_['text_contact']   = 'Есть вопрос?';
 $_['text_address']   = 'Адрес';
-$_['text_telephone'] = 'Телефон';
+$_['text_telephone'] = 'Телефон:';
+$_['text_email']     = 'Email:';
 $_['text_fax']       = 'Факс';
 $_['text_open']      = 'Режим работы';
 $_['text_comment']   = 'Дополнительная информация';
@@ -15,8 +16,8 @@ $_['text_success']   = '<p>Ваше сообщение успешно отпра
 
 // Entry
 $_['entry_name']     = 'Ваше имя';
-$_['entry_email']    = 'Ваш E-Mail';
-$_['entry_enquiry']  = 'Ваш вопрос или сообщение';
+$_['entry_email']    = 'Ваша електроная почта:';
+$_['entry_enquiry']  = 'Ваш вопрос:';
 $_['entry_captcha']  = 'Введите код, указанный на картинке';
 
 // Email

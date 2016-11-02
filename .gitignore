@@ -1,13 +1,13 @@
 ###################### OPENCART ####################
 
 ## Config and Htaccess Files
-/.htaccess
-/config.php
-/admin/config.php
+.htaccess
+config.php
+admin/config.php
 
 
 ## Image Cache Files
-/image/cache/*
+image/cache/*
 !/image/cache/index.html
 
 ## System Cache Files

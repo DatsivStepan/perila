@@ -51,6 +51,15 @@ class ControllerSettingSetting extends Controller {
 		$data['entry_email'] = $this->language->get('entry_email');
 		$data['entry_telephone'] = $this->language->get('entry_telephone');
 		$data['entry_fax'] = $this->language->get('entry_fax');
+//fqwfqwfwqf
+		$data['entry_skype'] = $this->language->get('entry_skype');
+		$data['entry_vkontakte'] = $this->language->get('entry_vkontakte');
+		$data['entry_google'] = $this->language->get('entry_google');
+		$data['entry_facebook'] = $this->language->get('entry_facebook');
+		$data['entry_twitter'] = $this->language->get('entry_twitter');
+		$data['entry_instagram'] = $this->language->get('entry_instagram');
+		$data['entry_pinterest'] = $this->language->get('entry_pinterest');
+//qwfwqfwfqf
 		$data['entry_image'] = $this->language->get('entry_image');
 		$data['entry_open'] = $this->language->get('entry_open');
 		$data['entry_comment'] = $this->language->get('entry_comment');
@@ -268,7 +277,43 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['error_telephone'] = '';
 		}
-
+//wqerqwrewq
+		if (isset($this->error['skype'])) {
+			$data['error_skype'] = $this->error['skype'];
+		} else {
+			$data['error_skype'] = '';
+		}
+		if (isset($this->error['vkontakte'])) {
+			$data['error_vkontakte'] = $this->error['vkontakte'];
+		} else {
+			$data['error_vkontakte'] = '';
+		}
+		if (isset($this->error['google'])) {
+			$data['error_google'] = $this->error['google'];
+		} else {
+			$data['error_google'] = '';
+		}
+		if (isset($this->error['facebook'])) {
+			$data['error_facebook'] = $this->error['facebook'];
+		} else {
+			$data['error_facebook'] = '';
+		}
+		if (isset($this->error['twitter'])) {
+			$data['error_twitter'] = $this->error['twitter'];
+		} else {
+			$data['error_twitter'] = '';
+		}
+		if (isset($this->error['instagram'])) {
+			$data['error_instagram'] = $this->error['instagram'];
+		} else {
+			$data['error_instagram'] = '';
+		}
+		if (isset($this->error['pinterest'])) {
+			$data['error_pinterest'] = $this->error['pinterest'];
+		} else {
+			$data['error_pinterest'] = '';
+		}
+//qweqwewqee
 		if (isset($this->error['meta_title'])) {
 			$data['error_meta_title'] = $this->error['meta_title'];
 		} else {
@@ -509,6 +554,44 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_fax'] = $this->config->get('config_fax');
 		}
+
+//fwqfwqfw
+		if (isset($this->request->post['config_skype'])) {
+			$data['config_skype'] = $this->request->post['config_skype'];
+		} else {
+			$data['config_skype'] = $this->config->get('config_skype');
+		}
+		if (isset($this->request->post['config_vkontakte'])) {
+			$data['config_vkontakte'] = $this->request->post['config_vkontakte'];
+		} else {
+			$data['config_vkontakte'] = $this->config->get('config_vkontakte');
+		}
+		if (isset($this->request->post['config_google'])) {
+			$data['config_google'] = $this->request->post['config_google'];
+		} else {
+			$data['config_google'] = $this->config->get('config_google');
+		}
+		if (isset($this->request->post['config_facebook'])) {
+			$data['config_facebook'] = $this->request->post['config_facebook'];
+		} else {
+			$data['config_facebook'] = $this->config->get('config_facebook');
+		}
+		if (isset($this->request->post['config_twitter'])) {
+			$data['config_twitter'] = $this->request->post['config_twitter'];
+		} else {
+			$data['config_twitter'] = $this->config->get('config_twitter');
+		}
+		if (isset($this->request->post['config_instagram'])) {
+			$data['config_instagram'] = $this->request->post['config_instagram'];
+		} else {
+			$data['config_instagram'] = $this->config->get('config_instagram');
+		}
+		if (isset($this->request->post['config_pinterest'])) {
+			$data['config_pinterest'] = $this->request->post['config_pinterest'];
+		} else {
+			$data['config_pinterest'] = $this->config->get('config_pinterest');
+		}
+//qdwqdwqdw
 
 		if (isset($this->request->post['config_image'])) {
 			$data['config_image'] = $this->request->post['config_image'];
@@ -1296,9 +1379,29 @@ class ControllerSettingSetting extends Controller {
 			$this->error['email'] = $this->language->get('error_email');
 		}
 
-		if ((utf8_strlen($this->request->post['config_telephone']) < 3) || (utf8_strlen($this->request->post['config_telephone']) > 32)) {
+		if ((utf8_strlen($this->request->post['config_telephone']) < 3) || (utf8_strlen($this->request->post['config_telephone']) > 50)) {
 			$this->error['telephone'] = $this->language->get('error_telephone');
 		}
+		//wdwqdfwqd
+		if ((utf8_strlen($this->request->post['config_skype']) < 3) || (utf8_strlen($this->request->post['config_skype']) > 32)) {
+			$this->error['skype'] = $this->language->get('error_skype');
+		}
+		if ((utf8_strlen($this->request->post['config_vkontakte']) < 3) || (utf8_strlen($this->request->post['config_vkontakte']) > 32)) {
+			$this->error['vkontakte'] = $this->language->get('error_vkontakte');
+		}
+		if ((utf8_strlen($this->request->post['config_google']) < 3) || (utf8_strlen($this->request->post['config_google']) > 32)) {
+			$this->error['google'] = $this->language->get('error_google');
+		}
+		if ((utf8_strlen($this->request->post['config_facebook']) < 3) || (utf8_strlen($this->request->post['config_facebook']) > 32)) {
+			$this->error['facebook'] = $this->language->get('error_facebook');
+		}
+		if ((utf8_strlen($this->request->post['config_twitter']) < 3) || (utf8_strlen($this->request->post['config_twitter']) > 32)) {
+			$this->error['twitter'] = $this->language->get('error_twitter');
+		}
+		if ((utf8_strlen($this->request->post['config_instagram']) < 3) || (utf8_strlen($this->request->post['config_instagram']) > 32)) {
+			$this->error['instagram'] = $this->language->get('error_instagram');
+		}
+		//qwdwqdwqdwq
 
 		if (!$this->request->post['config_meta_title']) {
 			$this->error['meta_title'] = $this->language->get('error_meta_title');
