@@ -94,33 +94,34 @@
                     </div>
 
                     <div class="form col-sm-12 col-md-5 col-lg-5" >
-                        <form action="<?=$action?>" method="post" class="email_adminy">
+                        <form action="" method="post" id="contact" class="email_adminy">
                             <p class="vopros"><?php echo $text_contact; ?></p>
                             <div class="form-group required">
-                                <label class=" col-sm-12 col-md-12 col-lg-12 email"
+
+                                <label class=" col-sm-12 col-md-12 col-lg-12 entry_email"
                                        for="input-email"><?php echo $entry_email; ?></label>
                                 <div class=" col-sm-12 col-md-12 col-lg-12">
-                                    <input type="text" name="email" value="<?php echo $email; ?>" id="input-email"
+                                    <input type="text" name="email" value="<?php echo $email; ?>" id="email"
                                            class="form-control text"/>
-                                    <?php if ($error_email) { ?>
-                                    <div class="text-danger"><?php echo $error_email; ?></div>
-                                    <?php } ?>
+                                    <ul id="errorMasege" style="padding-left: 15px">
+                                        <code style="display: none" class="email error-style">Некоректно вказана електроная почта</code>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="form-group required">
-                                <label class=" col-sm-12 col-md-12 col-lg-12 enquiry"
+                                <label class=" col-sm-12 col-md-12 col-lg-12 entry_enquiry"
                                        for="input-enquiry"><?php echo $entry_enquiry; ?></label>
                                 <div class=" col-sm-12 col-md-12 col-lg-12">
-                                <textarea name="enquiry" rows="10" id="input-enquiry"
+                                <textarea name="enquiry" rows="10" id="enquiry"
                                           class="form-control text"><?php echo $enquiry; ?></textarea>
-                                    <?php if ($error_enquiry) { ?>
-                                    <div class="text-danger"><?php echo $error_enquiry; ?></div>
-                                    <?php } ?>
+                                    <ul id="errorMasege" style="padding-left: 15px">
+                                        <code style="display: none" class="enquiry error-style">Некоректно задан вопрос </code>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="buttons">
                                 <div class="center-block">
-                                    <input class="btn otpravutu" type="submit" value="<?php echo $button_submit; ?>"/>
+                                    <input id="button_submit" name="button_submit" class="btn otpravutu" type="submit" value="<?php echo $button_submit; ?>"/>
                                 </div>
                             </div>
                         </form>
@@ -129,9 +130,6 @@
             </div>
         </div>
         <?php echo $column_right; ?></div>
-    <div class="mapa ">
-
-    </div>
 </div>
-
+<div class="mapa " id="mapa"></div>
 <?php echo $footer; ?>
