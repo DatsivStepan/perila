@@ -1231,6 +1231,7 @@ h2.price {
 	padding-top: 14px;
 }
 .graph-icon-padding{
+	padding-left: 15px;
 	padding-top: 13px;
 }
 .graph-padding{
@@ -1239,7 +1240,7 @@ h2.price {
 }
 .phone-padding{
 	padding-right: 0;
-	padding-top: 10px;
+	padding-top: 10px;	
 	text-align: right;
 }
 .phone-icon-padding{
