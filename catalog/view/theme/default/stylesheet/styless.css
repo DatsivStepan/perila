@@ -1,0 +1,48 @@
+@import"../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr.css";
+.text_dost{
+    color: #000000;
+    background-color: #f4f4f4;
+}
+.dost {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 24px;
+}
+.text_car {
+    font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 17px;
+    margin: 0px 0px 20px 0px;
+}
+.text_kach {
+    font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 17px;
+    margin: 0px 0px 10px 0px;
+}
+.text_light_money  {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 18px;
+}
+.text_mon {
+    font-weight: 700;
+}
+.text_money {
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 20px;
+    color: #008fd1;
+    font-style: italic;
+}
+.car_log {
+    position: relative;
+    top: -19px;
+    height: 241px;
+}
+.money {
+    position: relative;
+    top: 40px;
+    height: 300px;
+    width: 90%;
+}

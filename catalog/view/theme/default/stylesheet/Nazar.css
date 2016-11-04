@@ -1,44 +1,77 @@
-h1{
-    font-family: 'Helvetica Neue';
-    font-weight: 800;
-    font-size: 24px;
+
+@import"../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr.css";
+.text_body{
+    color: #000000;
+    background-color: #f4f4f4;
 }
-span.bolt{
+h1 {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+span.bolte {
     font-family: 'Helvetica';
     font-weight: 700;
     font-size: 18px;
+
 }
-.text{
-    font-family: 'Helvetica Neue';
+.text {
+    font-family: 'Helvetica';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
+
 }
+<<<<<<< HEAD
 .text_light{
     font-family: 'Helvetica Neue';
+=======
+.text_light {
+    font-family: 'Helvetica';
+>>>>>>> about and delivery page
     font-weight: 300;
     font-size: 23.5px;
+
 }
+<<<<<<< HEAD
 .border{
+=======
+.hidden-xs{
+    font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 17px;
+
+}
+.border {
+>>>>>>> about and delivery page
      background: url(/../catalog/view/theme/default/image/2.png)center no-repeat;
      min-height: 180px;
      background-size: cover;
      margin: -2.59% 0 0 0;
      background-position: 50% 0%;
 }
+<<<<<<< HEAD
 .gol{
+=======
+.gol {
+>>>>>>> about and delivery page
     background: url(/../catalog/view/theme/default/image/9.png)right no-repeat;
     position: absolute;
     z-index: 100;
     background-size: contain;
 }
+<<<<<<< HEAD
 .ged{
+=======
+.ged {
+>>>>>>> about and delivery page
     background: url(/../catalog/view/theme/default/image/11.png)left no-repeat;
     position: absolute;
     z-index: 100;
     background-size: contain;
 }
-.zal{
-     font-family: 'Helvetica Neue';
+.zal {
+     font-family: 'Helvetica';
      font-weight: 400;
      font-size: 20px;
      text-align: center;
@@ -46,13 +79,15 @@ span.bolt{
      margin: 40px 0 0 0;
 
  }
-.text-zal{
-    font-family: 'Helvetica Neue';
+.text-zal {
+    font-family: 'Helvetica';
     font-weight: 300;
     font-size: 16px;
     text-align: left;
+    font-style: normal;
 }
 .text-h3{
+<<<<<<< HEAD
     font-family: 'Helvetica Neue';
     font-weight: 400;
     font-size: 20px;
@@ -61,28 +96,41 @@ span.bolt{
 
 .text-od{
     font-family: 'Helvetica Neue';
+=======
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 20px;
+    margin: -7% 0px 1% -6%;
+    color: #000000;
+}
+
+.text-od {
+    font-family: 'Helvetica';
+>>>>>>> about and delivery page
     font-weight: 300;
     font-size: 14px;
     padding: 0px 0px 36px 0px;
 }
-.text-end{
-    font-family: 'Helvetica Neue';
+.text-end {
+    font-family: 'Helvetica';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
     color: #000000;
 }
 h2{
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
     font-weight: 700;
     font-size: 24px;
+    color: #000000;
 }
-.text-fut{
-    font-family: 'Helvetica Neue';
-    font-weight: 800;
+.text-fut {
+    font-family: 'Helvetica';
+    font-weight: 700;
     font-size: 24px;
     margin: 24% 0 0 0;
 }
 .text_h3 {
+<<<<<<< HEAD
     font-family: 'Helvetica Neue';
     font-weight: 400;
     font-size: 20px;
@@ -91,6 +139,17 @@ h2{
 @media (max-width: 992px) and (min-width: 560px )   {
     .text_h3{
         font-family: 'Helvetica Neue';
+=======
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 13% 0 0 0;
+    font-style: normal;
+}
+@media (max-width: 992px) and (min-width: 560px )   {
+    .text_h3 {
+        font-family: 'Helvetica';
+>>>>>>> about and delivery page
         font-weight: 400;
         font-size: 31px;
         margin: 15% 0 0 0;
