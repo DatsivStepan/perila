@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 100%;
+}
 .fon {
     color: #f4f4f4;
 }
@@ -6,14 +14,6 @@
     background-color: #f5f5f5;
     padding: 0;
     margin: 0;
-}
-
-#row_text {
-    font-family: 'HelveticaNeueCyr';
-    font-style: italic;
-    font-size: 17px;
-    color: #008fd1;
-    margin: 15px 38px 0 0;
 }
 
 .dani {
@@ -37,65 +37,11 @@
     margin: -30px 0 57px 15px;
 }
 
-.light {
-    font-family: HelveticaNeueCyr;
-    font-size: 23.5px;
-    color: #008fd1;
-    font-weight: 300;
-    margin: 0 0 55px 99px;
-}
-
 p.str1, p.str2, p.str3, p.str4 {
     font-family: HelveticaNeueCyr;
     font-weight: 300;
     font-size: 17px;
     color: #000000;
-
-}
-
-.border01 {
-    border-bottom: 1px solid #999999;
-    height: 24px;
-    width: 444px;
-    margin-left: 100px;
-}
-
-.border02 {
-    border-bottom: 1px solid #f8c828;
-    height: 24px;
-    width: 192px;
-    margin-left: auto;
-    margin-right: -31px;
-}
-
-.border1 {
-    border-bottom: 1px solid #f8c828;
-    height: 16px;
-    width: 275px;
-    margin-left: 15px;
-}
-
-.border2 {
-    border-bottom: 1px solid #f8c828;
-    height: 16px;
-    width: 197px;
-    margin-left: -23px;
-
-}
-
-.border3 {
-    border-bottom: 1px solid #f8c828;
-    height: 16px;
-    width: 246px;
-    margin-left: 15px;
-
-}
-
-.border4 {
-    border-bottom: 1px solid #f8c828;
-    height: 16px;
-    width: 276px;
-    margin-left: -44px;
 
 }
 
@@ -114,6 +60,13 @@ p.texs1, p.texs2, p.texs3, p.texs4 {
     display: block;
     background-color: #ffffff;
     border: 1px solid #9a9a9a;
+    position: relative;
+    z-index: 100;
+}
+
+.text-danger {
+    color: #a94442;
+    margin: 0 0 0 18px;
 }
 
 textarea.text {
@@ -159,7 +112,7 @@ p.vopros {
     margin: 22px 0 17px 0;
 }
 
-label.email, .enquiry {
+label.entry_email, label.entry_enquiry {
     font-family: HelveticaNeueCyr;
     font-weight: 300;
     font-size: 13px;
@@ -191,7 +144,50 @@ label.email, .enquiry {
     border-bottom: 5px solid #008fd1;
     border-top: 5px solid #f8c828;
 }
-@media (min-width: 320px) and (max-width: 767px){
+
+@media (min-width: 320px) and  (max-width: 499px) {
+    .row_heading_title {
+        border-bottom: 1px solid #f8c828;
+    }
+
+    .block01 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(7px);
+        background: whitesmoke;
+    }
+
+    .block1 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(1px);
+        background: whitesmoke;
+    }
+
+    .container_light {
+        margin: 0 0 45px 0;
+        padding: 0;
+    }
+
+    .light {
+        font-family: HelveticaNeueCyr;
+        font-size: 20px;
+        color: #008fd1;
+        font-weight: 300;
+        margin: 044px 0 0 36px;
+    }
+
+    .email_adminy {
+        width: 92%;
+        height: 100%;
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #9a9a9a;
+        border-radius: 3px;
+        margin: 0 0 -50px 28px;
+        padding: 0
+    }
+
     .fon {
         color: #f4f4f4;
     }
@@ -211,149 +207,87 @@ label.email, .enquiry {
     }
 
     .dani {
-        margin: 0 0 57px 86px;
+        margin: 0;
     }
 
     .bold {
         font-family: 'HelveticaNeueCyr';
         font-weight: 500;
-        font-size: 35px;
+        font-size: 25px;
         color: #000000;
-        margin: -15px 0 0 3px;
-    }
-
-    .light2 {
-        font-family: HelveticaNeueCyr;
-        font-weight: lighter;
-        font-size: 16px;
-        color: #000000;
-        margin: -30px 0 57px 15px;
-    }
-
-    .light {
-        font-family: HelveticaNeueCyr;
-        font-size: 12.5px;
-        color: #008fd1;
-        font-weight: 300;
-        margin: 13px 0px 22px 34px;
+        margin: 0 0 0 20px;
+        padding-right: 15px;
+        background: whitesmoke;
     }
 
     p.str1, p.str2, p.str3, p.str4 {
         font-family: HelveticaNeueCyr;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 20px;
         color: #000000;
-        margin: 0 0 0 -51px;
-
+        margin: 0 0 0 20px;
+        padding-right: 0;
+        background: whitesmoke;
     }
 
-    .border02 {
+    .row_text_store, .row_text_grafick, .row_text_telephone, .row_text_email {
         border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 100px;
-        margin: 0 0 0 191px;
-        position: absolute;
-    }
-
-    .border1 {
-        border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 200px;
-        margin-left: 15px;
-    }
-
-    .border2 {
-        border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 197px;
-        margin-left: -23px;
-
-    }
-
-    .border3 {
-        border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 200px;
-        margin-left: 15px;
-
-    }
-
-    .border4 {
-        border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 200px;
-        margin-left: -44px;
-
+        height: 23px;
+        width: 100%;
     }
 
     p.texs1, p.texs2, p.texs3, p.texs4 {
         font-family: HelveticaNeueCyr;
         font-weight: lighter;
-        font-size: 17px;
+        font-size: 20px;
         color: #737373;
-        margin: 6px 0 33px 0;
+        margin: 33px 0 58px 20px
     }
 
-    .email_adminy {
-        width: 290px;
-        min-height: 500px;
-        margin: 13px 0 -61px 0;
-        display: block;
-        background-color: #ffffff;
-        border: 1px solid #9a9a9a;
+    .text-danger {
+        color: #a94442;
+        font-size: 24px;
+        margin: 0 0 0 43px;
     }
 
     textarea.text {
-        width: 248px;
-        height: 248px;
-        margin: 0 17px 29px 18px;
+        width: 76%;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 25px;
         display: block;
     }
 
     input.text {
-        width: 248px;
-        height: 35px;
-        margin: 1px 0 12px 17px;
-        display: block;
-    }
+        width: 75%;
+        height: 38px;
+        margin: auto;
 
-    .breadcrumb i {
-        font-size: 15px;
-    }
-
-    .breadcrumb > li {
-        text-shadow: 0 1px 0 #FFF;
-        position: relative;
-        white-space: nowrap;
-    }
-
-    .breadcrumb li:last-child {
-        color: #b9b9b9;
     }
 
     p.vopros {
         font-family: Bebas Neue;
         font-weight: 400;
-        font-size: 28px;
+        font-size: 30px;
         color: #000000;
         text-align: center;
         padding: 0;
-        margin: 22px 0 17px 0;
+        margin: 49px 0 30px 0;
     }
 
-    label.email, .enquiry {
+    label.entry_email, label.entry_enquiry {
         font-family: HelveticaNeueCyr;
         font-weight: 300;
-        font-size: 13px;
+        font-size: 15px;
         color: #999999;
-        margin: 2px 0 5px 18px;
+        margin: 30px 0 15px 45px;
 
     }
 
     .otpravutu {
         font-family: Bebas Neue;
         font-weight: 400;
-        font-size: 23px;
+        font-size: 20px;
         color: white;
         text-align: center;
     }
@@ -362,18 +296,186 @@ label.email, .enquiry {
         background: #f8c828;
         border: 1px solid #ffffff;
         padding: 0;
-        width: 193px;
-        height: 43px;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 25px;
+        display: block;
+    }
+}
+
+@media (min-width: 500px) and  (max-width: 767px) {
+    .row_heading_title {
+        border-bottom: 1px solid #f8c828;
+    }
+
+    .block01 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(7px);
+        background: whitesmoke;
+    }
+
+    .block1 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(1px);
+        background: whitesmoke;
+    }
+
+    .container_light {
+        margin: 0 0 45px 0;
+        padding: 0;
+    }
+
+    .light {
+        font-family: HelveticaNeueCyr;
+        font-size: 31.5px;
+        color: #008fd1;
+        font-weight: 300;
+        margin: 044px 0 0 36px;
+    }
+
+    .email_adminy {
+        width: 96%;
+        height: 100%;
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #9a9a9a;
+        border-radius: 3px;
+        margin: 0 0 -144px 28px;
+        padding: 0
+    }
+
+    .fon {
+        color: #f4f4f4;
+    }
+
+    #content {
+        background-color: #f5f5f5;
+        padding: 0;
+        margin: 0;
+    }
+
+    #row_text {
+        font-family: 'HelveticaNeueCyr';
+        font-style: italic;
+        font-size: 17px;
+        color: #008fd1;
+        margin: 15px 38px 0 0;
+    }
+
+    .dani {
+        margin: 0;
+    }
+
+    .bold {
+        font-family: 'HelveticaNeueCyr';
+        font-weight: 500;
+        font-size: 36px;
+        color: #000000;
+        margin: 0 0 0 20px;
+        padding-right: 15px;
+        background: whitesmoke;
+    }
+
+    .light2 {
+        font-family: HelveticaNeueCyr;
+        font-weight: lighter;
+        font-size: 16px;
+        color: #000000;
+        margin: 0;
+    }
+
+    p.str1, p.str2, p.str3, p.str4 {
+        font-family: HelveticaNeueCyr;
+        font-weight: 300;
+        font-size: 36px;
+        color: #000000;
+        margin: 0 0 0 20px;
+        padding-right: 15px;
+        background: whitesmoke;
+    }
+
+    .row_text_store, .row_text_grafick, .row_text_telephone, .row_text_email {
+        border-bottom: 1px solid #f8c828;
+        height: 39px;
+        width: 100%;
+    }
+
+    p.texs1, p.texs2, p.texs3, p.texs4 {
+        font-family: HelveticaNeueCyr;
+        font-weight: lighter;
+        font-size: 33px;
+        color: #737373;
+        margin: 33px 0 58px 20px
+    }
+
+    .text-danger {
+        color: #a94442;
+        font-size: 24px;
+        margin: 0 0 0 43px;
+    }
+
+    textarea.text {
+        width: 86%;
+        height: 557px;
+        margin: auto;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    input.text {
+        width: 86%;
+        height: 79px;
+        margin: auto;
+
+    }
+    p.vopros {
+        font-family: Bebas Neue;
+        font-weight: 400;
+        font-size: 62px;
+        color: #000000;
+        text-align: center;
+        padding: 0;
+        margin: 49px 0 30px 0;
+    }
+
+    label.entry_email, label.entry_enquiry {
+        font-family: HelveticaNeueCyr;
+        font-weight: 300;
+        font-size: 29px;
+        color: #999999;
+        margin: 30px 0 15px 45px;
+
+    }
+
+    .otpravutu {
+        font-family: Bebas Neue;
+        font-weight: 400;
+        font-size: 52px;
+        color: white;
+        text-align: center;
+    }
+
+    .otpravutu {
+        background: #f8c828;
+        border: 1px solid #ffffff;
+        padding: 0;
+        width: 50%;
+        height: 100%;
         margin: 0 auto;
+        margin-bottom: 50px;
         display: block;
     }
 
     .mapa {
         height: 605px;
-        border-bottom: 5px solid #008fd1;
-        border-top: 5px solid #f8c828;
+        border-bottom: 10px solid #008fd1;
+        border-top: 10px solid #f8c828;
     }
 }
+
 @media (min-width: 768px) {
     .border01 {
         border-bottom: 1px solid #999999;
@@ -392,10 +494,11 @@ label.email, .enquiry {
 
     .light {
         font-family: HelveticaNeueCyr;
-        font-size: 19.5px;
+        font-size: 16.5px;
         color: #008fd1;
         font-weight: 300;
         margin: 0px 0 55px 46px;
+        padding: 0;
     }
 
     .border1 {
@@ -433,10 +536,20 @@ label.email, .enquiry {
         display: block;
         background-color: #ffffff;
         border: 1px solid #9a9a9a;
+        border-radius: 3px;
     }
 }
 
 @media (min-width: 992px) {
+    .email_adminy {
+        width: 316px;
+        min-height: 500px;
+        margin: 13px 0 -61px 0;
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #9a9a9a;
+    }
+
     .border01 {
         border-bottom: 1px solid #999999;
         height: 24px;
@@ -451,14 +564,12 @@ label.email, .enquiry {
         margin-left: auto;
     }
 
-    .fon {
-        color: #f4f4f4;
-    }
-
-    #content {
-        background-color: #f5f5f5;
-        padding: 0;
-        margin: 0;
+    #row_text {
+        font-family: 'HelveticaNeueCyr';
+        font-style: italic;
+        font-size: 17px;
+        color: #008fd1;
+        margin: 15px 38px 20px 0;
     }
 
     #row_text {
@@ -466,7 +577,7 @@ label.email, .enquiry {
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
-        margin: 15px 38px 45px 0;
+        margin: 15px 38px 20px 0px;
     }
 
     .dani {
@@ -546,125 +657,15 @@ label.email, .enquiry {
         margin: 6px 0 33px -54px;
         padding: 0;
     }
-
-    .email_adminy {
-        width: 316px;
-        min-height: 500px;
-        margin: 13px 0 -61px 0;
-        display: block;
-        background-color: #ffffff;
-        border: 1px solid #9a9a9a;
-    }
-
-    textarea.text {
-        width: 248px;
-        height: 248px;
-        margin: 0 17px 29px 18px;
-        display: block;
-    }
-
-    input.text {
-        width: 248px;
-        height: 35px;
-        margin: 1px 0 12px 17px;
-        display: block;
-    }
-
-    .breadcrumb {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .breadcrumb i {
-        font-size: 15px;
-    }
-
-    .breadcrumb > li {
-        text-shadow: 0 1px 0 #FFF;
-        position: relative;
-        white-space: nowrap;
-    }
-
-    .breadcrumb li:last-child {
-        color: #b9b9b9;
-    }
-
-    p.vopros {
-        font-family: Bebas Neue;
-        font-weight: 400;
-        font-size: 28px;
-        color: #000000;
-        text-align: center;
-        padding: 0;
-        margin: 22px 0 17px 0;
-    }
-
-    label.email, .enquiry {
-        font-family: HelveticaNeueCyr;
-        font-weight: 300;
-        font-size: 13px;
-        color: #999999;
-        margin: 2px 0 5px 18px;
-
-    }
-
-    .otpravutu {
-        font-family: Bebas Neue;
-        font-weight: 400;
-        font-size: 23px;
-        color: white;
-        text-align: center;
-    }
-
-    .otpravutu {
-        background: #f8c828;
-        border: 1px solid #ffffff;
-        padding: 0;
-        width: 193px;
-        height: 43px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .mapa {
-        height: 605px;
-        border-bottom: 5px solid #008fd1;
-        border-top: 5px solid #f8c828;
-    }
 }
 
 @media (min-width: 1200px) {
-    .border01 {
-        border-bottom: 1px solid #999999;
-        height: 24px;
-        width: 444px;
-        margin-left: 100px;
-    }
-
-    .border02 {
-        border-bottom: 1px solid #f8c828;
-        height: 24px;
-        width: 192px;
-        margin-left: auto;
-        margin-right: -31px;
-    }
-
-    .fon {
-        color: #f4f4f4;
-    }
-
-    #content {
-        background-color: #f5f5f5;
-        padding: 0;
-        margin: 0;
-    }
-
     #row_text {
         font-family: 'HelveticaNeueCyr';
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
-        margin: 15px 38px 45px 0;
+        margin: 15px 38px 20px 0;
     }
 
     .dani {
@@ -685,7 +686,7 @@ label.email, .enquiry {
         font-weight: lighter;
         font-size: 16px;
         color: #000000;
-        margin: -8px 0 57px 15px;
+        margin: -30px 0 57px 15px;
     }
 
     .light {
@@ -701,7 +702,22 @@ label.email, .enquiry {
         font-weight: 300;
         font-size: 17px;
         color: #000000;
-        margin: 0;
+
+    }
+
+    .border01 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 444px;
+        margin-left: 100px;
+    }
+
+    .border02 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 192px;
+        margin-left: auto;
+        margin-right: -31px;
     }
 
     .border1 {
@@ -740,91 +756,6 @@ label.email, .enquiry {
         font-weight: lighter;
         font-size: 17px;
         color: #737373;
-        margin: 12px 0 33px 16px;
-    }
-
-    .email_adminy {
-        width: 316px;
-        min-height: 500px;
-        margin: 13px 0 -61px 0;
-        display: block;
-        background-color: #ffffff;
-        border: 1px solid #9a9a9a;
-    }
-
-    textarea.text {
-        width: 248px;
-        height: 248px;
-        margin: 0 17px 29px 18px;
-        display: block;
-    }
-
-    input.text {
-        width: 248px;
-        height: 35px;
-        margin: 1px 0 12px 17px;
-        display: block;
-    }
-
-    .breadcrumb {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .breadcrumb i {
-        font-size: 15px;
-    }
-
-    .breadcrumb > li {
-        text-shadow: 0 1px 0 #FFF;
-        position: relative;
-        white-space: nowrap;
-    }
-
-    .breadcrumb li:last-child {
-        color: #b9b9b9;
-    }
-
-    p.vopros {
-        font-family: Bebas Neue;
-        font-weight: 400;
-        font-size: 28px;
-        color: #000000;
-        text-align: center;
-        padding: 0;
-        margin: 22px 0 17px 0;
-    }
-
-    label.email, .enquiry {
-        font-family: HelveticaNeueCyr;
-        font-weight: 300;
-        font-size: 13px;
-        color: #999999;
-        margin: 2px 0 5px 18px;
-
-    }
-
-    .otpravutu {
-        font-family: Bebas Neue;
-        font-weight: 400;
-        font-size: 23px;
-        color: white;
-        text-align: center;
-    }
-
-    .otpravutu {
-        background: #f8c828;
-        border: 1px solid #ffffff;
-        padding: 0;
-        width: 193px;
-        height: 43px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .mapa {
-        height: 605px;
-        border-bottom: 5px solid #008fd1;
-        border-top: 5px solid #f8c828;
+        margin: 6px 0 33px 0;
     }
 }

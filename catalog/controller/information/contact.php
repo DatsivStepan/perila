@@ -9,30 +9,12 @@ class ControllerInformationContact extends Controller {
 
 	public function index() {
 		$this->load->language('information/contact');
+		$this->document->addScript('catalog/view/javascript/contact.js');
+		$this->document->addScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyDLIEx9stFN74AEq0w5p11vhNZX3_6xs9s");
+		$this->document->addScript("https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.js");
+		$this->document->addStyle("https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.css");
 
 		$this->document->setTitle($this->language->get('heading_title'));
-
-		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-			$mail = new Mail();
-			$mail->protocol = $this->config->get('config_mail_protocol');
-			$mail->parameter = $this->config->get('config_mail_parameter');
-			$mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
-			$mail->smtp_username = $this->config->get('config_mail_smtp_username');
-			$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
-			$mail->smtp_port = $this->config->get('config_mail_smtp_port');
-			$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
-
-
-			$mail->setTo($this->config->get('config_email'));
-			$mail->setFrom($this->request->post['email']);
-			$mail->setSender(html_entity_decode($this->request->post['email'], ENT_QUOTES, 'UTF-8'));
-			$mail->setSubject('', ENT_QUOTES, 'UTF-8');
-			$mail->setText(strip_tags($this->request->post['enquiry']));
-			$mail->send();
-
-
-			$this->response->redirect($this->url->link('information/contact/success'));
-		}
 
 		$data['breadcrumbs'] = array();
 
@@ -75,17 +57,6 @@ class ControllerInformationContact extends Controller {
 			$data['config_email'] = $this->config->get('config_email');
 		}
 
-		if (isset($this->error['email'])) {
-			$data['error_email'] = $this->error['email'];
-		} else {
-			$data['error_email'] = '';
-		}
-
-		if (isset($this->error['enquiry'])) {
-			$data['error_enquiry'] = $this->error['enquiry'];
-		} else {
-			$data['error_enquiry'] = '';
-		}
 		$data['button_submit'] = $this->language->get('Отправить');
 
 		$data['action'] = $this->url->link('information/contact');
@@ -196,15 +167,46 @@ class ControllerInformationContact extends Controller {
 			$this->response->setOutput($this->load->view('default/template/common/success.tpl', $data));
 		}
 	}
+	public function contact(){
+		$user_query = $this->db->query("SELECT email FROM " . DB_PREFIX . "user WHERE username = 'admin' AND (user_group_id = '1') AND status = '1'");
+		if ($user_query->num_rows) {
+			$admin_email = $user_query->row['email'];
+		}
+		$mailContent = '
+            <table>
+                <tr>
+                    <td>Електроная почта:</td>
+                    <td>'.$this->request->post['email'].'</td>
+                </tr>
+                <tr>
+                    <td>Вопрос:</td>
+                    <td>'.$this->request->post['enquiry'].'</td>
+                </tr>
+            </table>
+        ';
+//		var_dump($_POST);
+		$mail = new Mail();
+		$mail->protocol = $this->config->get('config_mail')['protocol'];
+		$mail->parameter = $this->config->get('config_mail')['parameter'];
+		$mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
+		$mail->smtp_username = $this->config->get('config_mail_smtp_username');
+		$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
+		$mail->smtp_port = $this->config->get('config_mail_smtp_port');
+		$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
 
-	protected function validate() {
-		if (!preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $this->request->post['email'])) {
-			$this->error['email'] = $this->language->get('error_email');
-		}
-		if ((utf8_strlen($this->request->post['enquiry']) < 10) || (utf8_strlen($this->request->post['enquiry']) > 3000)) {
-			$this->error['enquiry'] = $this->language->get('error_enquiry');
-		}
-		return !$this->error;
+
+//		$mail->setTo($this->config->get('config_email'));
+		$mail->setTo($admin_email);
+		$mail->setFrom($this->request->post['email']);
+		$mail->setSender(html_entity_decode($this->request->post['email'], ENT_QUOTES, 'UTF-8'));
+		$mail->setSubject(html_entity_decode($this->request->post['enquiry'], ENT_QUOTES, 'UTF-8'));
+		$mail->setText($mailContent);
+		$check = $mail->send();
+		//$this->response->redirect($this->url->link('information/contact/success'));
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($check));
+
 	}
 }
 
