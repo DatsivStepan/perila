@@ -157,11 +157,12 @@
             <?php
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
-             <div class="col-sm-6 " style="margin-top: -5%;">
-             <div class="row kartheader text-center" style="border-left: 1px solid #999999;    border-right: 1px solid #999999;
+             <div class="col-sm-6 " style="margin-top: -30px;">
+             <div class="row kartheader text-center" style="border-bottom: 1px solid #FFFFFF; border-left: 1px solid #999999;    border-right: 1px solid #999999;
     border-top: 1px solid #999999;">
             
-             <h3 class=" text-center orangedescription" >Технические характеристики</h3>
+            
+             <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
              </div>
              </div>
              <div class="col-sm-6 " style="    padding-right: 5px;
@@ -178,7 +179,7 @@
                 
                 
                 <?php echo $description;  ?>
-                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!</a>
+                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
                
             </div>
             <?php } }?>

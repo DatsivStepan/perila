@@ -17,18 +17,17 @@
      
       <?php 
            function array_random($arr, $num = 1) {
-    shuffle($arr);
-    
-    $r = array();
-    for ($i = 0; $i < $num; $i++) {
-        $r[] = $arr[$i];
-    }
-    return $num == 1 ? $r[0] : $r;
+                    shuffle($arr);
+                    $r = array();
+            for ($i = 0; $i < $num; $i++) {
+                    $r[] = $arr[$i];
+                    }
+                    return $num == 1 ? $r[0] : $r;
 }
         $a = array(0, 1, 2, 3);
         $b = array("#f8c828", "#008fd1", "#9ecb3c", "#f47a2f");
         $c = array("#008fd1", "#f8c828", "#008fd1", "#f8c828");
-        $aa =array_random($a);
+
           if ($categories) { ?>
             <div class="row" style="    padding-bottom: 3%;">
             <div class="col-sm-1"></div>
@@ -39,10 +38,7 @@
         <div class="col-sm-4 bordery"></div>
         
     </div></div>
-            <?php foreach ($categories as $category) { 
-            
-
-            ?>
+            <?php foreach ($categories as $category) {  $aa =array_random($a); ?>
             
             <div class="col-md-4 categoryshow" >
             <a href="<?php echo $category['href']; ?>">
@@ -81,7 +77,7 @@
       
       
       
-      <?php if ($products) { ?>
+      <?php if ($products) {    ?>
            <div class="row" style="    padding-bottom: 3%;">
             <div class="col-sm-1"></div>
    <div class="col-sm-4"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
@@ -92,8 +88,8 @@
         
     </div></div>
       <div class="row">
-        <?php foreach ($products as $product) { ?>
-        
+        <?php foreach ($products as $product) {  $aa =array_random($a); ?>
+
         <div class="product-layout product-list col-md-6 col-sm-12 col-xs-12">
          <span class="ribbon"> от <?php echo $product['special']; ?></span>
           <div class="product-thumb cat-thumb" style="background-color: <?php echo $b[$aa]; ?>">
