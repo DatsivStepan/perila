@@ -114,7 +114,7 @@ $data['category_id'] = $category_id;
 				}
 
 				$data['categories'][] = array(
-					'name' 			=> $category['name'],
+					//'name' 			=> $category['name'],
 					'original_image'=> $original_image,
 					'thumb'			=> $thumb,
 					'href' 			=> $this->url->link('newsblog/category', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'] . '_' . $category['category_id'])
