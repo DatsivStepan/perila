@@ -203,13 +203,15 @@
                 <a href="index.php?route=information/about"><li class="li-text-style">О компании</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                  <a href=""><li class="li-text-style">Новости</li></a>
+                  <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                 <a href="index.php?route=information/gallery"><li class="li-text-style">Наши работы</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <li class="li-text-style"><a href=""></a>Доставка и оплата</li>
+                    <a href="index.php?route=information/delivery">
+                        <li class="li-text-style">Доставка и оплата</li>
+                    </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
                 <a href="index.php?route=information/contact"><li class="li-text-style">Контакты</li></a>
