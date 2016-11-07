@@ -30,11 +30,8 @@
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
   <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
   <link href="catalog/view/theme/default/stylesheet/Nazar.css" rel="stylesheet">
-<<<<<<< HEAD
   <link href="catalog/view/theme/default/stylesheet/mystels.css" rel="stylesheet">
-=======
   <link href="catalog/view/theme/default/stylesheet/styless.css" rel="stylesheet">
->>>>>>> about and delivery page
   <?php foreach ($styles as $style) { ?>
   <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
