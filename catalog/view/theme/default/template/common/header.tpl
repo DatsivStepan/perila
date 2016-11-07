@@ -31,6 +31,7 @@
   <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
   <link href="catalog/view/theme/default/stylesheet/Nazar.css" rel="stylesheet">
   <link href="catalog/view/theme/default/stylesheet/mystels.css" rel="stylesheet">
+  <link href="catalog/view/theme/default/stylesheet/styless.css" rel="stylesheet">
   <?php foreach ($styles as $style) { ?>
   <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
