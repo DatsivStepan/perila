@@ -126,8 +126,8 @@ class ControllerNewsBlogArticle extends Controller {
 
 			if ($article_info['image']) {
 				$data['original']	= HTTP_SERVER.'image/'.$article_info['image'];
-				$data['popup'] 		= $this->model_tool_image->resize($article_info['image'], $images_size_articles_big[0], $images_size_articles_big[1]);
-				$data['thumb'] 		= $this->model_tool_image->resize($article_info['image'], $images_size_articles_small[0], $images_size_articles_small[1]);
+				//$data['popup'] 		= $this->model_tool_image->resize();
+				/*$data['thumb'] 		= $this->model_tool_image->resize($article_info['image'], $images_size_articles_small[0], $images_size_articles_small[1]);*/
 			} else {
 				$data['original'] 	= '';
 				$data['popup'] 		= '';
