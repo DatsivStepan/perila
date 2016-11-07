@@ -45,8 +45,8 @@
         </div>
       </div>
       <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 footer-div-border">
-        <div class="col-sm-12 hidden-md col-lg-12 col-xl-12 sm-footer-middle-padding">
-          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 no-padding">
+        <div class="row hidden-md  sm-footer-middle-padding">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 footer-phone-icon-style">
             <img src="../../../catalog/view/theme/default/image/phone.png" style="padding-bottom: 5px">
           </div>
           <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 no-padding footer-phone-style">
@@ -54,7 +54,7 @@
           </div>
         </div>
         <!--md footer telephone begin-->
-        <div class="hidden-sm col-md-12 hidden-lg hidden-xl " style="padding-bottom: 5px;">
+        <div class="hidden-sm row hidden-lg hidden-xl " style="padding-bottom: 5px;">
           <div class="col-md-2 md-footer-padding">
             <img src="../../../catalog/view/theme/default/image/phone.png" style="padding-bottom: 5px">
           </div>
@@ -63,21 +63,21 @@
           </div>
         </div>
         <!--md footer telephone end-->
-        <div class="col-sm-12 hidden-md col-lg-12 col-xl-12 sm-footer-middle-padding">
-          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 no-padding">
+        <div class="row hidden-md  sm-footer-middle-padding">
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 footer-email-icon-style">
             <img src="../../../catalog/view/theme/default/image/email.png">
           </div>
           <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 no-padding footer-email-style">
-            <span class="">Email: </span><span><?php echo $email; ?></span>
+            <span class="footer-email-style" style="padding-right: 0 !important;">Email: </span><span><?php echo $email;?></span>
           </div>
         </div>
         <!--md footer email begin-->
-        <div class="hidden-sm col-md-12 hidden-lg hidden-xl">
+        <div class="hidden-sm row hidden-lg hidden-xl"  style="padding-bottom: 4px;">
           <div class="col-md-2 md-footer-padding">
             <img src="../../../catalog/view/theme/default/image/email.png">
           </div>
           <div class="col-md-10 no-padding footer-email-style">
-            <span class="footer-address-style">Email:</span><br><span><?php echo $email; ?></span>
+            <span class="footer-email-style" style="padding-right: 0 !important">Email:</span><br><span><?php echo $email; ?></span>
           </div>
         </div>
         <!--md footer email end-->
@@ -90,12 +90,12 @@
           <span>Адресс: </span><span><?php echo $address;?></span>
         </div>
       </div>
-      <div class="hidden-sm col-md-3 col-lg-3 col-xl-3 footer-div-address">
+      <div class="hidden-sm col-md-3 col-lg-3 col-xl-3 footer-div-graf">
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 no-padding">
           <img src="../../../catalog/view/theme/default/image/grafic.png">
         </div>
         <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 footer-address-style">
-          <span>Адресс: </span><span><?php echo $open;?></span>
+          <span><?php echo $open;?></span>
         </div>
       </div>
       <!--footer sm address and graphic begin-->
@@ -103,7 +103,7 @@
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 footer-right-icon-padding">
           <img src="../../../catalog/view/theme/default/image/address.png">
         </div>
-        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 footer-address-style">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 footer-grafic-style">
           <span>Адресс: </span><span><?php echo $address;?></span>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 footer-right-icon-padding">
@@ -121,12 +121,12 @@
       <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
         <ul class="nav navbar-nav menu-style" style="line-height: 30px">
           <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">Категории</a></li>
-          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">Главная</a></li>
-          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">О компании</a></li>
+          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="index.php?route=common/home">Главная</a></li>
+          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="index.php?route=information/about">О компании</a></li>
           <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">Новости</a></li>
-          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">Наши работы</a></li>
+          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="index.php?route=information/gallery">Наши работы</a></li>
           <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">Доставка и оплата</a></li>
-          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="">Контакты</a></li>
+          <li class="li-text-style"><a class="footer-menu-style footer-a-style" href="index.php?route=information/contact">Контакты</a></li>
         </ul>
       </div>
       <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding-left: 0">
