@@ -28,12 +28,6 @@ span.bolte {
     font-size: 23.5px;
 
 }
-.hidden-xs{
-    font-family: 'Helvetica';
-    font-weight: 300;
-    font-size: 17px;
-
-}
 .border {
     background: url(/../catalog/view/theme/default/image/2.png)center no-repeat;
     min-height: 180px;
