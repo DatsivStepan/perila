@@ -3,9 +3,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 #map {
     height: 100%;
 }
+
 .fon {
     color: #f4f4f4;
 }
@@ -302,6 +304,30 @@ label.entry_email, label.entry_enquiry {
         margin-bottom: 25px;
         display: block;
     }
+    .category_heading_title_1 {
+        font-family: 'HelveticaNeueCyr';
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 25px;
+        color: #000000;
+        margin: 0 0 49px 25px;
+        padding-right: 25px;
+        background: whitesmoke;
+    }
+    .prodright a{
+        font-family: HelveticaNeueCyr;
+        font-size: 12px;
+        font-weight: 500;
+        color: #000000;
+
+    }
+    .prodright p{
+        font-family: HelveticaNeueCyr;
+        font-size: 12px;
+        font-weight: 300;
+        color: #000000;
+
+    }
 }
 
 @media (min-width: 500px) and  (max-width: 767px) {
@@ -431,6 +457,7 @@ label.entry_email, label.entry_enquiry {
         margin: auto;
 
     }
+
     p.vopros {
         font-family: Bebas Neue;
         font-weight: 400;
@@ -474,6 +501,16 @@ label.entry_email, label.entry_enquiry {
         border-bottom: 10px solid #008fd1;
         border-top: 10px solid #f8c828;
     }
+    .category_heading_title_1 {
+        font-family: 'HelveticaNeueCyr';
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 37px;
+        color: #000000;
+        margin: 0 0 49px 25px;
+        padding-right: 25px;
+        background: whitesmoke;
+    }
 }
 
 @media (min-width: 768px) {
@@ -488,6 +525,21 @@ label.entry_email, label.entry_enquiry {
         border-bottom: 1px solid #f8c828;
         height: 24px;
         width: 116px;
+        margin-left: auto;
+        margin-right: -31px;
+    }
+
+    .bord1 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 169px;
+        margin-left: 194px;
+    }
+
+    .bord2 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 111px;
         margin-left: auto;
         margin-right: -31px;
     }
@@ -538,9 +590,26 @@ label.entry_email, label.entry_enquiry {
         border: 1px solid #9a9a9a;
         border-radius: 3px;
     }
+    .category_heading_title_1 {
+        font-family: 'HelveticaNeueCyr';
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 37px;
+        color: #000000;
+        margin: 0 0 49px 25px;
+        padding-right: 25px;
+        background: whitesmoke;
+    }
 }
 
 @media (min-width: 992px) {
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 65% 0 0 0;
+    }
+
     .email_adminy {
         width: 316px;
         min-height: 500px;
@@ -561,6 +630,20 @@ label.entry_email, label.entry_enquiry {
         border-bottom: 1px solid #f8c828;
         height: 24px;
         width: 81px;
+        margin-left: auto;
+    }
+
+    .bord1 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 300px;
+        margin-left: 170px;
+    }
+
+    .bord2 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 142px;
         margin-left: auto;
     }
 
@@ -657,9 +740,59 @@ label.entry_email, label.entry_enquiry {
         margin: 6px 0 33px -54px;
         padding: 0;
     }
+
+    .category_heading_title {
+        font-family: 'HelveticaNeueCyr';
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        margin: 0 0 57px 82px;
+    }
+    .prodright a{
+        font-family: HelveticaNeueCyr;
+        font-size: 13px;
+        font-weight: 500;
+        color: #000000;
+
+    }
+    .prodright p{
+        font-family: HelveticaNeueCyr;
+        font-size: 13px;
+        font-weight: 300;
+        color: #000000;
+
+    }
+    .border_h1 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(32px);
+        background: whitesmoke;
+    }
+    .row_border{
+        border-bottom: 1px solid #999999;
+        margin: 0 0 57px 82px;
+        padding: 0;
+    }
+    .border_2 {
+        border-bottom: 1px solid #f8c828;
+        width: 100px;
+        margin-left: 496px;
+        display: inline-block;
+        position: relative;
+        transform: translateY(8px);
+        background: whitesmoke;
+    }
 }
 
 @media (min-width: 1200px) {
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 25% 0 0 0;
+    }
+
     #row_text {
         font-family: 'HelveticaNeueCyr';
         font-style: italic;
@@ -720,6 +853,21 @@ label.entry_email, label.entry_enquiry {
         margin-right: -31px;
     }
 
+    .bord1 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 405px;
+        margin-left: 140px;
+    }
+
+    .bord2 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 192px;
+
+        margin-right: -31px;
+    }
+
     .border1 {
         border-bottom: 1px solid #f8c828;
         height: 16px;
@@ -756,6 +904,55 @@ label.entry_email, label.entry_enquiry {
         font-weight: lighter;
         font-size: 17px;
         color: #737373;
-        margin: 6px 0 33px 0;
+        margin: 6px 0 33px -52px;
+    }
+    .border_h1 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(32px);
+        background: whitesmoke;
+    }
+    .row_border{
+        border-bottom: 1px solid #999999;
+        margin: 0 0 57px 82px;
+        padding: 0;
+    }
+    .border_2{
+        border-bottom: 1px solid #f8c828;
+        width: 166px;
+        margin-left: 566px;
+        display: inline-block;
+        position: relative;
+        transform: translateY(8px);
+        background: whitesmoke;
     }
 }
+
+.category_heading_title {
+    font-family: 'HelveticaNeueCyr';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+    padding-right: 25px;
+    background: whitesmoke;
+}.border_conteiner{
+     border-bottom: 1px solid #999999;
+     border-top: 1px solid #999999;
+     border-left: 1px solid #999999;
+ }
+ h4.text_zagolovok{
+     font-family: 'HelveticaNeueCyr';
+     font-weight: 500;
+     font-size: 16px;
+     color: #000000;
+ }
+.text_breadcrumb{
+    font-family: 'HelveticaNeueCyr';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    color: #95c2e2;
+}
+

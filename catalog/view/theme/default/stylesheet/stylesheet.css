@@ -421,7 +421,7 @@ footer h5 {
     
 }
 .prodright{
-        padding: 8%;
+        padding: 3%;
 }
 .prodright h4{
     font-size: 14px;
@@ -430,12 +430,16 @@ footer h5 {
     text-transform: uppercase;
 }
 .prodright a{
-    
+	font-family: HelveticaNeueCyr;
+	font-size: 13px;
+	font-weight: 500;
     color: #000000;
     
 }
 .prodright p{
-    
+	font-family: HelveticaNeueCyr;
+	font-size: 15px;
+	font-weight: 300;
     color: #000000;
     
 }
@@ -445,8 +449,8 @@ footer h5 {
     top: 20px;
     background-color: #008fd1;
     outline: none !important;
-    max-width: 95px;
-    width: 100%;
+    width: 70%;
+	font-family: HelveticaNeueCyr;
     font-size: 15px;
     vertical-align: bottom;
     padding: 0;
@@ -454,7 +458,7 @@ footer h5 {
     line-height: 30px;
     border: 0;
     border-radius: 20px;
-    box-shadow: 0px 3px 3px 0px rgba(136, 136, 136, 0.57);
+
 }
 .prem{
 	padding-bottom: 3%;
@@ -766,13 +770,14 @@ padding-left: 0px;
     color: #000000!important;
 }
 .ribbon {
+	font-family: HelveticaNeueCyr;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
     top: 10px;
     display: inline-block;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 300;
     padding-top: 6px;
     padding-right: 10px;
     padding-bottom: 6px;
@@ -791,7 +796,7 @@ padding-left: 0px;
     /* border-bottom-right-radius: 15px; */
     position: absolute;
     top: 80px;
-    margin-left: -20px;
+    margin-left: -19px;
 }
 .prodleft{
     background-color: #ffffff;

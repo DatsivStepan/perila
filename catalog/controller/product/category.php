@@ -86,7 +86,7 @@ class ControllerProductCategory extends Controller {
 		} else {
 			$category_id = 0;
 		}
-
+		$data['parent_categorie'] = $category_info['name'];
 		$category_info = $this->model_catalog_category->getCategory($category_id);
 
 		if ($category_info) {
@@ -109,7 +109,7 @@ class ControllerProductCategory extends Controller {
 			$data['text_sort'] = $this->language->get('text_sort');
 			$data['text_limit'] = $this->language->get('text_limit');
 
-			$data['button_cart'] = $this->language->get('button_cart');
+			$data['button_cart'] = ('Оформить заказ');
 			$data['button_wishlist'] = $this->language->get('button_wishlist');
 			$data['button_compare'] = $this->language->get('button_compare');
 			$data['button_continue'] = $this->language->get('button_continue');
