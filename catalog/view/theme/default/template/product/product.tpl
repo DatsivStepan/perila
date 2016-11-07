@@ -82,25 +82,20 @@
             
             
              <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
+                 <div class="" style="    padding: 3%;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;">
+
+                     <?php echo $description;  ?>
+                     <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
+                 </div>
              </div>
              </div>
-             <div class="hidden" style="    padding-right: 0px;
-    padding-left: 0;">
-                 <div style="    border-bottom: 1px solid #999999;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 30px;
-    margin-left: -16px;"></div>
-             </div>
-           
-            
-               <div class="col-sm-12 descriptions hidden-md hidden-lg">
-                <div class="row description">
-                
-                <?php echo $description;  ?>
-                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
-               </div>
-            </div>
+
             <?php } }?>
         <div class="col-xs-12 col-sm-12 col-md-6 karttovar">
             <div class="carttov1 text-center">
