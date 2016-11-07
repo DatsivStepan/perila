@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 
 	// Adding the clear Fix
-	cols1 = $('#column-right, #column-left').length;
+	/*cols1 = $('#column-right, #column-left').length;
 	
 	if (cols1 == 2) {
 		$('#content .product-layout:nth-child(2n+2)').after('<div class="clearfix visible-md visible-sm"></div>');
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		$('#content .product-layout:nth-child(3n+3)').after('<div class="visible-lg"></div>');
 	} else {
 		$('#content .product-layout:nth-child(4n+4)').after('<div class="clearfix"></div>');
-	}
+	}*/
 	
 	// Highlight any found errors
 	$('.text-danger').each(function() {
