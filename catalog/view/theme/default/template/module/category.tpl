@@ -1,30 +1,33 @@
 <div class="listcat">
 <div class="menuname text-center"><span><?= $heading_title; ?></span></div>
 <div class="imgborder text-center"><img src="/image/catalog/linecat.png" class="img-responsive"></div>
-<ul class="customdrop">
-            <?php foreach ($categories as $category) { ?>
+  <ul class="menu-content collapse in" id="menu-content">
+                         
+             <?php foreach ($categories as $category) { ?>
                 <?php
                     $classes = '';
-                    $display = 'display:none;';
-                    $icon = ' fa-angle-down ';
+                    $classess = 'collapsed';
+                   
+                    
                     if ($category['category_id'] == $category_id) {
-                        $classes .= 'active';
-                        $display = '';
-                        $icon = ' fa-angle-up ';
+                        $classes = 'in'; 
+                        $classess = ' ';
+                       
+                       
                     }
                 ?>
-    
-                <li class='<?= $classes; ?>'>
-                    <a   class='clickParentMenu'  title="<?php echo $category['name'];?>">
-                       <i class='fa <?= $icon; ?> pull-left' style='cursor:pointer;font-size:18px;'></i>
-                       <a href="<?php echo $category['href'];?>"  class='clickParentMenu'  title="<?php echo $category['name'];?>">
-                        <span data-href="<?= $category['href']; ?>" style="cursor:pointer;" class="clickCategoryName">
-                            <?php echo $category['name']; ?>
-                        </span> </a>
-                        
-                    </a>
-                    <?php if($category['children']) { ?>
-                        <ul class="dropDownSubMenu" style='<?= $display; ?>'>
+            
+                  
+                          
+                                
+                
+                                <li class="<?php echo $classess;?>" data-target="#<?php echo $category['category_id'];?>" data-toggle="collapse">
+                                  <span class="arrow"></span> <strong><?php echo $category['name'];?></strong> 
+                                </li>
+                                
+                                <ul id="<?php echo $category['category_id'];?>" class="sub-menu collapse fade <?php echo $classes;?>">
+                                        <?php if($category['children']) { ?>
+                       
                                 <?php
                                     foreach ($category['children'] as $child)
                                     {
@@ -38,13 +41,44 @@
                                     
                                         </li>
                                 <?php } ?>
-                        </ul>
+                        
                     <?php }  ?>
-                </li>
+                                   
+                                   
+                                   
+                                </ul>
+                                
+                                
+                    
+                                  
+                           
+        
+             <!-- left menu end -->
+            
+            
+        
            
             <?php } ?>
-        </ul>
+             </ul>
 </div>
+
+         
+
+                
+                
+                
+                  
+                       
+                        
+           
+          
+                
+    
+                       
+                  
+                
+         
+
 
 
         

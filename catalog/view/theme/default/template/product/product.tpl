@@ -1,31 +1,37 @@
 <?php echo $header; ?>
 <div class="container">
     <div class="row">
-    <?php echo $column_left; ?>
+    <div class="hidden-sm hidden-xs"><?php echo $column_left; ?></div>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
-    <?php $class = 'col-sm-8 col-md-9'; ?>
+    <?php $class = 'col-sm-12 col-md-9'; ?>
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-        <ul class="breadcrumb">
+    <div id="content" class="col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
+        <ul class="breadcrumb hidden-sm hidden-xs">
             <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                 <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
             <?php } ?>
         </ul>
                     <div class="row" style="    padding-bottom: 3%;">
-            <div class="col-sm-1"></div>
-   <div class="col-sm-4"><span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
-    text-transform: uppercase;" value="<?php echo $heading_title; ?>"><?php echo $heading_title; ?></span></div>
-    <div class="col-sm-7">
+            <div class="col-sm-1 hidden-sm hidden-xs"></div>
+   <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+   <div class="row hidden-md hidden-lg"> <span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
+       text-transform: uppercase;"><?php echo $catname; ?></span></div>
+   <div class="row"> <span name="zakaz" style="font-size: 22px;   color: #666666;  font-family: "Conv_pfdindisplaypro-reg";
+    text-transform: uppercase;"><?php echo $heading_title; ?></span></div>
+  
+    
+   </div>
+    <div class="col-sm-7 hidden-sm hidden-xs">
         <div class="col-sm-8 borderb"></div>
         <div class="col-sm-4 bordery"></div>
         
     </div></div>
         <div class="product-wrapper">
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-12 col-md-6">
             <?php if ($thumb || $images) { ?>
                 <ul class="thumbnails text-center" style="border: 1px solid #999999;">
                     <?php if ($thumb) { ?>
@@ -35,9 +41,9 @@
                             </a>
                         </li>
                         <div class="row">
-                           <div class="col-sm-1"></div>
-                            <div class="col-sm-10 borderbsmal"></div>
-                            <div class="col-sm-1"></div>
+                           <div class="col-md-1 col-xs-1 col-sm-1"></div>
+                            <div class="col-md-10 col-xs-10 col-sm-10 col-sm-10 borderbsmal"></div>
+                            <div class="col-md-1 col-xs-1 col-sm-1 col-sm-1"></div>
                         </div>
                     <?php } ?>
                     <?php if ($images) { ?>
@@ -68,24 +74,51 @@
                 </ul>
             <?php } ?>
         </div>
-
-        <div class="col-sm-6 karttovar">
+            <?php
+             if (strlen($description) !== 0)  {
+            if ($description !=='<p><br></p>') { ?>
+             <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-md hidden-lg">
+             <div class="row kartheader text-center" style="">
+            
+            
+             <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
+             </div>
+             </div>
+             <div class="hidden" style="    padding-right: 0px;
+    padding-left: 0;">
+                 <div style="    border-bottom: 1px solid #999999;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-left: -16px;"></div>
+             </div>
+           
+            
+               <div class="col-sm-12 descriptions hidden-md hidden-lg">
+                <div class="row description">
+                
+                <?php echo $description;  ?>
+                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
+               </div>
+            </div>
+            <?php } }?>
+        <div class="col-xs-12 col-sm-12 col-md-6 karttovar">
             <div class="carttov1 text-center">
             <h3 class=" text-center no-margin">ЦЕНА ЗА 1 МЕТР:</h3>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-xs-6 col-sm-6 col-md-6">
                    <div class="row">
                                           <input class="cartinput text-center" type="text" id="quantity" name="quantityq" value="<?php echo $price; ?>"
                                            class="input_product text-center"/>
                                            </div>
                    <div class="row">рублей</div>
                 </div>
-                  <div class="col-sm-6">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
                    <div class="row"> 
 <span class="quont-plus">
                                         <i class="fa fa-plus" id="plus"></i>
                                     </span>
-                                    <input type="text"  name="quantity" value="1" size="2" id="input-quantity"
+                                    <input class="plusminusinp text-center" type="text"  name="quantity" value="1" size="2" id="input-quantity"
                                            class="input_product text-center"/>
 <span class="quont-minus">
                                         <i class="fa fa-minus" id="minus"></i>
@@ -157,14 +190,14 @@
             <?php
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
-             <div class="col-sm-6 " style="margin-top: -5%;">
-             <div class="row kartheader text-center" style="border-left: 1px solid #999999;    border-right: 1px solid #999999;
-    border-top: 1px solid #999999;">
+             <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-sm hidden-xs">
+             <div class="row kartheader text-center hidden-sm hidden-xs" style="">
             
-             <h3 class=" text-center orangedescription" >Технические характеристики</h3>
+            
+             <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
              </div>
              </div>
-             <div class="col-sm-6 " style="    padding-right: 5px;
+             <div class="col-sm-6 hidden-sm hidden-xs" style="    padding-right: 0px;
     padding-left: 0;">
                  <div style="    border-bottom: 1px solid #999999;
     padding: 0;
@@ -174,12 +207,12 @@
              </div>
            
             
-               <div class="col-sm-12 description">
-                
+               <div class="col-sm-12 descriptions hidden-sm hidden-xs">
+                <div class="row description">
                 
                 <?php echo $description;  ?>
-                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!</a>
-               
+                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
+               </div>
             </div>
             <?php } }?>
       </div>
