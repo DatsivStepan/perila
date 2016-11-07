@@ -408,6 +408,9 @@ footer h5 {
     background-color: #e0e0e0;
    
 }
+.prodmarg{
+    margin-top: -30px;
+}
 .cat-thumb{
     box-shadow: 0px 1px 8px 0px rgba(136, 136, 136, 0.37);
 }
@@ -630,12 +633,29 @@ padding-left: 0px;
     padding: 2%;
     width: 50%;
 }
+.kartheader{
+    border-bottom: 1px solid #FFFFFF; border-left: 1px solid #999999;    border-right: 1px solid #999999;
+    border-top: 1px solid #999999;
+}
+.quont-plus{
+    color: #008fd1;
+}
+.quont-minus{
+    color: #008fd1;
+}
+.plusminusinp{
+    color: #008fd1;
+    margin-left: 5%;
+    padding: 2%;
+    width: 20%;
+    margin-right: 5%;
+}
 .description{
 	margin-bottom: 10%;
         border-bottom: 1px solid #999999;
         border-left: 1px solid #999999;
         border-right: 1px solid #999999;
-    margin-left: -5px;
+    margin-left: -20px;
     padding: 3%;
     background-color: #ffffff;
     -webkit-column-count: 2;
@@ -1710,6 +1730,28 @@ h2.price {
 	font-size: 100%;
 }
 @media (max-width: 991px) and (min-width: 768px )   {
+    .prodmarg{
+        margin-top: 5%;
+        
+    }
+    .thumbnails{
+        margin-left: 0px;
+    }
+    .kartheader{
+       margin-left: 0px; 
+    }
+    .description{
+        margin-bottom: 0px;
+         margin-left: 0px;
+    }
+     .descriptions{
+        padding-right: 4%;
+    
+   // padding-left: 4%;
+    }
+    .kartheader{
+        border-bottom: none;
+    }
 	.footer-btn-text-style{
 		font-family: 'Bebas Neue';
 		font-weight: 400;
@@ -1755,6 +1797,23 @@ h2.price {
 }
 
 @media (max-width: 767px) and (min-width: 708px )   {
+    .prodmarg {
+    margin-top: 5%;
+}
+    .thumbnails{
+       margin-left: 0px; 
+    }
+    .kartheader{
+        margin-left: 0px; 
+    }
+    .description {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+    .descriptions {
+    padding-right: 4%;
+}
+    
 	.div-email-style{
 		background-color: #26272a;
 		padding: 0 !important;
@@ -1781,6 +1840,22 @@ h2.price {
 }
 
 @media (max-width: 707px) and (min-width: 650px )   {
+        .prodmarg {
+    margin-top: 5%;
+}
+    .thumbnails{
+       margin-left: 0px; 
+    }
+    .kartheader{
+        margin-left: 0px; 
+    }
+    .description {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+    .descriptions {
+    padding-right: 4%;
+}
 	.div-email-style{
 		background-color: #26272a;
 		padding: 0 !important;
@@ -1881,6 +1956,22 @@ h2.price {
 	}
 }
 @media (max-width: 649px) and (min-width: 550px )   {
+        .prodmarg {
+    margin-top: 5%;
+}
+    .thumbnails{
+       margin-left: 0px; 
+    }
+    .kartheader{
+        margin-left: 0px; 
+    }
+    .description {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+    .descriptions {
+    padding-right: 4.9%;
+}
 	.div-email-style{
 		background-color: #26272a;
 		padding: 0 !important;

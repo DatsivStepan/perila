@@ -1,10 +1,10 @@
 <?php echo $header; ?>
 <div class="container">
-  <div class="row"><?php echo "<div class='hidden-sm'>",$column_left,"</div>"; ?>
+  <div class="row"><div class="hidden-sm hidden-xs"><?php echo $column_left; ?></div>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
-    <?php $class = 'col-sm-9'; ?>
+    <?php $class = 'col-sm-12'; ?>
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
@@ -13,7 +13,7 @@
     <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
-    <div id="content" class=" col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
+    <div id="content" class=" col-xs-12 col-md-9 <?php echo $class; ?>"><?php echo $content_top; ?>
      
       <?php 
            function array_random($arr, $num = 1) {
@@ -30,26 +30,27 @@
 
           if ($categories) { ?>
             <div class="row" style="    padding-bottom: 3%;">
-            <div class="col-sm-1"></div>
-   <div class="col-sm-4"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
+            <div class="col-md-1 hidden-sm hidden-xs"></div>
+   <div class="col-md-4 col-xs-12 col-sm-12 text-center"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
     text-transform: uppercase;"><?php echo $heading_title; ?></span></div>
-    <div class="col-sm-7">
+    <div class="col-sm-7 hidden-sm hidden-xs">
         <div class="col-sm-8 borderb"></div>
         <div class="col-sm-4 bordery"></div>
         
     </div></div>
             <?php foreach ($categories as $category) {  $aa =array_random($a); ?>
             
-            <div class="col-md-4 categoryshow" >
+            <div class="col-xs-6 col-md-4 categoryshow" >
             <a href="<?php echo $category['href']; ?>">
         
             <div class="col-md-12 cat-thumb  no-padding no-margin text-center categoryshow" style="background-color: <?php echo $b[$aa]; ?>">
-            <diw class="row spancat">
-                <h4><?php echo $category['name']; ?></h4>
-                
-                    <img src="<?php echo 'image/',$category['image']; ?>" style="margin-top: 25%;" alt="<?php echo $category['name']; ?>" class="img-responsive"/>
-                
-            </diw>
+            
+                <h4 style="padding: 5%;"><?php echo $category['name']; ?></h4>
+                <div style="position: relative;
+       top: 35px;
+    height: 205px; background-image: url(/../../<?php echo 'image/',$category['image']; ?>);">
+                </div>
+            
             
             </div>
             
@@ -79,10 +80,10 @@
       
       <?php if ($products) {    ?>
            <div class="row" style="    padding-bottom: 3%;">
-            <div class="col-sm-1"></div>
-   <div class="col-sm-4"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
+             <div class="col-md-1 hidden-sm hidden-xs"></div>
+   <div class="col-md-4 col-xs-12 col-sm-12 text-center"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
     text-transform: uppercase;"><?php echo $heading_title; ?></span></div>
-    <div class="col-sm-7">
+    <div class="col-sm-7 hidden-sm hidden-xs">
         <div class="col-sm-8 borderb"></div>
         <div class="col-sm-4 bordery"></div>
         

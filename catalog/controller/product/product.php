@@ -6,7 +6,7 @@ class ControllerProductProduct extends Controller {
 		$this->load->language('product/product');
 
 		$data['breadcrumbs'] = array();
-
+        
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('text_home'),
 			'href' => $this->url->link('common/home')
@@ -29,7 +29,7 @@ class ControllerProductProduct extends Controller {
 				}
 
 				$category_info = $this->model_catalog_category->getCategory($path_id);
-
+$data['catname'] = $category_info['name'];
 				if ($category_info) {
 					$data['breadcrumbs'][] = array(
 						'text' => $category_info['name'],
