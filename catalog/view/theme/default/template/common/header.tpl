@@ -76,9 +76,9 @@
             <ul class="nav navbar-nav" style="line-height: 30px">
               <a href="index.php?route=common/home"><li class="li-text-style">Главная</li></a>
                 <a href="index.php?route=information/about"><li class="li-text-style">О компании</li></a>
-                <a href=""><li class="li-text-style">Новости</li></a>
+                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
               <a href="index.php?route=information/gallery"><li class="li-text-style">Наши работы</li></a>
-              <a href=""><li class="li-text-style">Доставка и оплата</li></a>
+              <a href="index.php?route=information/delivery"><li class="li-text-style">Доставка и оплата</li></a>
               <a href="index.php?route=information/contact"><li class="li-text-style">Контакты</li></a>
             </ul>
         <!--  <?php if ($categories) { ?>
