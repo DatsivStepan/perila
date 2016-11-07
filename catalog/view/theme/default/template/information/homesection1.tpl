@@ -1,7 +1,7 @@
     <div id="prem" class="prem prem-home-style hidden-xs hidden-sm">
     
     <div class="prem_header">
-   <div class="col-md-8 col-sm-12 col-xs-12 no-padding" style="line-height: 2;"> <span><?php echo $heading_title; ?></span></div><div class="col-md-3 col-sm-12 col-xs-12 preim text-center no-padding"><button id="showallprem" class="btn-link">Развернуть все преимущества</button></div>
+   <div class="col-md-8 col-sm-12 col-xs-12 no-padding" style="line-height: 2;"> <span><?php echo $heading_title; ?></span></div><div class="col-md-3 col-sm-12 col-xs-12 preim text-center no-padding"><button id="showallprem" class="btn-link btn-link-style">Развернуть все преимущества</button></div>
     </div>
     <div class="row"></div>
     <div class="prem_content prem_content-style">
@@ -27,7 +27,7 @@
     </div>
     <div id="prem_opaciti_1" class="prem_opaciti"></div>
     <div class="col-md-3 col-sm-12 col-xs-12 preim text-center no-padding">
-        <button id="showallprem_1" class="btn-link">Развернуть все преимущества</button>
+        <button id="showallprem_1" class="btn-link btn-link-style">Развернуть все преимущества</button>
     </div>
 </div>
 </div>
