@@ -36,7 +36,6 @@
   <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
   <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
-  <script src="catalog/view/javascript/contact.js" type="text/javascript"></script>
   <?php foreach ($scripts as $script) { ?>
   <script src="<?php echo $script; ?>" type="text/javascript"></script>
   <?php } ?>
