@@ -30,6 +30,12 @@
 }
 @font-face {
     font-family: 'Helvetica Neue';
+    src: local('Helvetica Neue Cyr Medium'), local('HelveticaNeueCyr-Medium'), url('HelveticaNeueCyr-Medium.otf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
     src: local('Helvetica Neue Cyr Light'), local('HelveticaNeueCyr-Light'), url('HelveticaNeueCyr-Light.otf') format('truetype');
     font-weight: 200;
     font-style: normal;

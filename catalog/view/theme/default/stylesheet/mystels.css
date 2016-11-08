@@ -607,7 +607,7 @@ label.entry_email, label.entry_enquiry {
         display: block;
         max-width: 100%;
         height: auto;
-        margin: 65% 0 0 0;
+        margin: 0 0 0 0;
     }
 
     .email_adminy {
