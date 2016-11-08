@@ -12,9 +12,9 @@
     <ul class="hidden-sm hidden-xs breadcrumb">
    <?php foreach ($breadcrumbs as $breadcrumb) { ?> 
 		<?php if ($breadcrumb ['href']==('')){ ?> 
-		<li style="color: #8a8a8a;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;"><?php echo $breadcrumb['text']; ?></li> 
+		<li style="color: #8a8a8a;font-family: 'Helvetica';font-weight: 300;font-size: 17px;"><?php echo $breadcrumb['text']; ?></li>
 		<?php }else{ ?> 
-		<li style="color: #3e9fd6;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;"><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li> 
+		<li style="color: #3e9fd6;font-family: 'Helvetica';font-weight: 300;font-size: 17px;"><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
 		<?php } ?> 
 		<?php } ?>
   </ul>
