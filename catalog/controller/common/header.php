@@ -1,6 +1,8 @@
 <?php
-class ControllerCommonHeader extends Controller {
-	public function index() {
+class ControllerCommonHeader extends Controller
+{
+	public function index()
+	{
 
 		$data['title'] = $this->document->getTitle();
 
@@ -13,6 +15,7 @@ class ControllerCommonHeader extends Controller {
 
 		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
 		$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
+		$this->document->addScript('catalog/view/javascript/contact.js');
 
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
@@ -104,22 +107,22 @@ class ControllerCommonHeader extends Controller {
 
 				foreach ($children as $child) {
 					$filter_data = array(
-						'filter_category_id'  => $child['category_id'],
+						'filter_category_id' => $child['category_id'],
 						'filter_sub_category' => true
 					);
 
 					$children_data[] = array(
-						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
+						'name' => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+						'href' => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
 					);
 				}
 
 				// Level 1
 				$data['categories'][] = array(
-					'name'     => $category['name'],
+					'name' => $category['name'],
 					'children' => $children_data,
-					'column'   => $category['column'] ? $category['column'] : 1,
-					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+					'column' => $category['column'] ? $category['column'] : 1,
+					'href' => $this->url->link('product/category', 'path=' . $category['category_id'])
 				);
 			}
 		}
@@ -153,5 +156,45 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			return $this->load->view('default/template/common/header.tpl', $data);
 		}
+	}
+
+	public function contactForm(){
+		$user_query = $this->db->query("SELECT email FROM " . DB_PREFIX . "user WHERE username = 'admin' AND (user_group_id = '1') AND status = '1'");
+		if ($user_query->num_rows) {
+			$admin_email = $user_query->row['email'];
+		}
+		$mailContent = '
+            <table>
+                <tr>
+                    <td>Имя</td>
+                    <td>'.$_POST['userName'].'</td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td>'.$_POST['userPhone'].'</td>
+                </tr>
+            </table>
+        ';
+//		var_dump($_POST);
+		$mail = new Mail();
+		$mail->protocol = $this->config->get('config_mail')['protocol'];
+		$mail->parameter = $this->config->get('config_mail')['parameter'];
+		$mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
+		$mail->smtp_username = $this->config->get('config_mail_smtp_username');
+		$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
+		$mail->smtp_port = $this->config->get('config_mail_smtp_port');
+		$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
+
+
+//		$mail->setTo($this->config->get('config_email'));
+		$mail->setTo($admin_email);
+		$mail->setFrom('no-reply@perila.com');
+		$mail->setSender(html_entity_decode($this->request->post['userName'], ENT_QUOTES, 'UTF-8'));
+		$mail->setSubject(html_entity_decode('Обратный звонок',ENT_QUOTES, 'UTF-8'));
+		$mail->setText($mailContent);
+		$mail->send();
+		$this->response->redirect($this->url->link('information/contact/success'));
+
+
 	}
 }

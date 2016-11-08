@@ -111,4 +111,43 @@ $(document).ready(function () {
     }
     initMap();
 
+    <!-- /basic modal -->
+    $('#vuzvat').on('click', function(){
+        // if ($('#create-contact-form').valid()) {
+
+        var data = {
+            'to': 1,
+            'name':  $('input[name=name]').val(),
+            'phone': $('input[name=phone]').val()
+        };
+
+        $.ajax(
+            {
+                type: 'post',
+                url: 'index.php?route=email/email/send',
+                data: data
+            })
+            .fail(function() {
+                alert('Підключення');
+            })
+            .done(function(data) {
+
+                if (data.success){
+                    /*  new PNotify({
+                     title: 'Contact was updated',
+                     addclass: 'bg-success'
+                     });*/
+                    // window.history.back();
+                }
+                console.log(data);
+                //}
+            });
+
+        /*  else{
+         new PNotify({
+         title: 'You made a mistake when filling out forms',
+         addclass: 'bg-danger'
+         });
+         }*/
+    });
 });
