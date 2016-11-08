@@ -15,7 +15,7 @@
             <?php } ?>
             <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
                 <div class="breadcrumb">
-                    <ul class="breadcrumb text_breadcrumb_gallery hidden-xs col-sm-12 col-md-12 col-lg-12" id="row_text" style="font-family: 'Helvetica'; font-style: normal; font-size: 17px; color: #008fd1; margin: 15px 38px 0 0;">
+                    <ul class="breadcrumb text_breadcrumb_article hidden-xs col-sm-12 col-md-12 col-lg-12" id="row_text" style="font-family: 'Helvetica'; font-weight: 500; font-style: normal; font-size: 17px; color: #008fd1; margin: 15px 38px 0 0;">
                         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                         <?php if ($breadcrumb ['href']==('')){ ?>
                         <li><?php echo $breadcrumb['text']; ?></li>

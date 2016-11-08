@@ -350,6 +350,14 @@ label.entry_email, label.entry_enquiry {
         transform: translateY(12px);
         background: whitesmoke;
     }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        text-transform: uppercase;
+    }
 }
 
 @media (min-width: 500px) and  (max-width: 767px) {
@@ -562,6 +570,14 @@ label.entry_email, label.entry_enquiry {
         background: whitesmoke;
         padding-right: 30px;
     }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        text-transform: uppercase;
+    }
 }
 
 @media (min-width: 768px) {
@@ -670,7 +686,14 @@ label.entry_email, label.entry_enquiry {
         min-height: 22px;
         border-bottom: 1px solid #f8c828;
     }
-
+    .text_title_article{
+        !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        text-transform: uppercase;
+    }
 }
 
 @media (min-width: 992px) {
@@ -868,6 +891,15 @@ label.entry_email, label.entry_enquiry {
     .margin_prem2{
         margin-bottom: 50px;
     }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 22px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -1026,6 +1058,14 @@ label.entry_email, label.entry_enquiry {
         font-family: "Conv_pfdindisplaypro-reg";
         text-transform: uppercase;
     }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 22px;
+        color: #000000;
+        text-transform: uppercase;
+    }
 
 }
 
@@ -1056,10 +1096,47 @@ label.entry_email, label.entry_enquiry {
     font-size: 16px;
     color: #95c2e2;
 }
-{}
 .spanprod{
     display: none;
 }
 .container_spanprod:hover .spanprod{
     display: block;
+}
+.text_breadcrumb_article{
+
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    text-transform: lowercase;
+    !important;
+}
+.cat_text{
+    !important;
+    padding: 25px 0 25px 44px;
+    border-bottom: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+h4.style_heading_title{
+    !important;
+    padding: 0;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 400;
+}
+.style_description{
+    !important;
+    font-family: HelveticaNeueCyr;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+}
+.style_datecreate{
+!important;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    padding: 0;
 }
