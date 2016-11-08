@@ -23,7 +23,7 @@ html, body {
 }
 
 .bold {
-    font-family: 'HelveticaNeueCyr';
+    font-family: HelveticaNeueCyr;
     font-weight: 500;
     font-size: 24px;
     color: #000000;
@@ -201,7 +201,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -213,7 +213,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 25px;
         color: #000000;
@@ -305,7 +305,7 @@ label.entry_email, label.entry_enquiry {
         display: block;
     }
     .category_heading_title_1 {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 25px;
@@ -350,14 +350,7 @@ label.entry_email, label.entry_enquiry {
         transform: translateY(12px);
         background: whitesmoke;
     }
-    .text_title_article{
-    !important;
-        font-family: HelveticaNeueCyr;
-        font-weight: 500;
-        font-size: 24px;
-        color: #000000;
-        text-transform: uppercase;
-    }
+
 }
 
 @media (min-width: 500px) and  (max-width: 767px) {
@@ -414,7 +407,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -426,7 +419,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 36px;
         color: #000000;
@@ -532,7 +525,7 @@ label.entry_email, label.entry_enquiry {
         border-top: 10px solid #f8c828;
     }
     .category_heading_title_1 {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 37px;
@@ -658,7 +651,7 @@ label.entry_email, label.entry_enquiry {
         border-radius: 3px;
     }
     .category_heading_title_1 {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 37px;
@@ -675,7 +668,7 @@ label.entry_email, label.entry_enquiry {
     .text_span_1{
         font-size: 20px;
         color: #000000;
-        font-family: "Conv_pfdindisplaypro-reg";
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
     }
     .borderb {
@@ -742,7 +735,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -750,7 +743,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -762,7 +755,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -836,7 +829,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .category_heading_title {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 24px;
@@ -885,7 +878,7 @@ label.entry_email, label.entry_enquiry {
     .text_span {
         font-size: 22px;
         color: #000000;
-        font-family: "Conv_pfdindisplaypro-reg";
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
     }
     .margin_prem2{
@@ -923,7 +916,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -1055,7 +1048,7 @@ label.entry_email, label.entry_enquiry {
     .text_span {
         font-size: 22px;
         color: #000000;
-        font-family: "Conv_pfdindisplaypro-reg";
+        font-family: HelveticaNeueCyr;
         text-transform: uppercase;
     }
     .text_title_article{

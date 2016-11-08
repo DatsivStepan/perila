@@ -36,6 +36,7 @@
   <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
   <?php } ?>
   <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+  <script src="catalog/view/javascript/contact.js" type="text/javascript"></script>
   <?php foreach ($scripts as $script) { ?>
   <script src="<?php echo $script; ?>" type="text/javascript"></script>
   <?php } ?>
@@ -125,6 +126,7 @@
           <button type="button" class="btn nav-bar mobile-btn mobile-btn-style-2 ">Оформить заказ</button>
         </div>
         <div class="no-margin mobile-btn-div">
+
           <button type="button" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>Вызвать замерщика</span></button>
         </div>
       </div>
@@ -144,7 +146,7 @@
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin btn-header:hover">
-            <button type="button" class="btn nav-bar btn-xs btn-color width-btn">Вызвать замерщика</button>
+            <a href="" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn">Вызвать замерщика</a>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding-left: 0">
@@ -257,5 +259,35 @@
     <?php } ?>
   </div>
 </nav>
+<!-- Basic modal -->
+<div id="modal-window-vuzvat" class="modal fade">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom: none;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
+
+        <div class="form-group">
+          <label>Ваше имя:</label>
+          <input id="name" class="form-control" name="name">
+        </div>
+
+        <div class="form-group">
+          <label>Ваш телефон:</label>
+          <input id="phone" class="form-control" name="phone">
+        </div>
+      </div>
+      <div class="form-group text-center">
+        <button type="button" class="btn btnp" id="vuzvat">ОТПРАВИТЬ</button>
+      </div>
+      <div class="form-group">
+        <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+      </div>
+
+    </div>
+  </div>
+</div>
 
