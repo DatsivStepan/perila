@@ -312,10 +312,6 @@ div.required .control-label:before {
 		color: #fff;
 	}
 }
-/* content */
-#content {
-	min-height: 600px;
-}
 /* footer */
 footer {
 	margin-top: 0;
@@ -381,8 +377,7 @@ footer h5 {
     cursor: pointer;
     display: table;
     position: absolute;
-    bottom: 0px;
-    width: 100 %;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.47);
 
 }
@@ -567,9 +562,9 @@ footer h5 {
     padding-right: 3%;
     padding-left: 3%; 
 }
-.prem2 span {
+.prem2{
     font-size: 22px;
-    color: #000000;
+    color: #ffffff;
     font-family: "Conv_pfdindisplaypro-reg";
     text-transform: uppercase;
 }
@@ -798,10 +793,10 @@ padding-left: 0px;
     text-align: center;
     color: #fff;
     background: #666666;
-    -webkit-box-shadow: 3px 2px 4px rgba(0,0,0,.5);
-    -moz-box-shadow: 3px 2px 4px rgba(0,0,0,.5);
-    box-shadow: 3px 2px 4px rgba(0,0,0,.5);
-    z-index: 99999;}
+    z-index: 99999;
+	margin-left: 2px;
+}
+
 .ribbonright {
     border: 10px solid transparent;
     

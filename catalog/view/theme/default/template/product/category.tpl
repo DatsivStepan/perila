@@ -94,8 +94,7 @@
                                                 alt="<?php echo $product['name']; ?>"
                                                 title="<?php echo $product['name']; ?>" class="img-responsive"/></a>
                                 </div>
-                                <span class="ribbonright"
-                                      style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
+                                <span class="ribbonright" style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
                                 <div class="col-xs-6 col-sm-6 text-center prodright">
                                     <h4 class="text_zagoli"><a
                                                 href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
