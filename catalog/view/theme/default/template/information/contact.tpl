@@ -42,12 +42,12 @@
                 </div>
                 <div class="row  col-sm-12  col-md-12 col-lg-12" style="padding-right: 0; width: 100%;">
                     <div class="row  col-sm-12 col-md-7 col-lg-7">
-                        <div class="dani" style="width: 100%;">
+                        <div class="dani">
                             <div class="row row_text_store  col-sm-12 col-md-12 col-lg-12">
                                 <div class="block1 col-sm-2 col-md-2 col-lg-2 str1">
                                     <p class="str1" style="width: 100%;"><?php echo $text_store; ?></p>
                                 </div>
-                                <div class="col-sm-10 col-md-10 col-lg-10">
+                                <div class="col-sm-10 col-md-10 col-lg-10 border1">
                                 </div>
                             </div>
                             <br/>
@@ -57,10 +57,10 @@
                         </div>
                         <div class="dani">
                             <div class="row row_text_grafick col-sm-12 col-md-12 col-lg-12">
-                                <div class="block1 col-sm-6 col-md-6 col-lg-6 str2">
+                                <div class="block1 col-sm-6 col-md-7 col-lg-6 str2">
                                     <p class="str2" style="width: 100%;"><?php echo $text_grafick; ?></p>
                                 </div>
-                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="col-sm-6 col-md-5 col-lg-6 border2">
                                 </div>
                             </div>
                             <p class="texs2  col-sm-12 col-md-12 col-lg-12">
@@ -72,7 +72,7 @@
                                 <div class="block1 col-sm-6 col-md-3 col-lg-3 str3">
                                     <p class="str3" style="width: 100%;"><?php echo $text_telephone; ?></p>
                                 </div>
-                                <div class="col-sm-6 col-md-9 col-lg-9">
+                                <div class="col-sm-6 col-md-9 col-lg-9 border3">
                                 </div>
                             </div>
                             <p class="texs3 col-sm-12 col-md-12 col-lg-12">
@@ -81,10 +81,10 @@
                         </div>
                         <div class="dani ">
                             <div class="row row_text_email col-sm-12 col-md-12 col-lg-12">
-                                <div class="block1 col-sm-6 col-md-4 col-lg-4 str4">
+                                <div class="block1 col-sm-6 col-md-4 col-lg-4 str4 ">
                                     <p class="str4" style="width: 100%;"><?php echo $text_email; ?></p>
                                 </div>
-                                <div class="col-sm-6 col-md-8 col-lg-8">
+                                <div class="col-sm-6 col-md-8 col-lg-8 border4">
                                 </div>
                             </div>
                             <p class="texs4 col-sm-12 col-md-12 col-lg-12">

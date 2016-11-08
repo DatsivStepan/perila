@@ -56,6 +56,7 @@ $data['category_id'] = $category_id;
 			$articles_image_size=array($this->config->get('config_image_product_width'),$this->config->get('config_image_product_height'));
 	        $category_image_size=array($this->config->get('config_image_category_width'),$this->config->get('config_image_category_height'));
 			$date_format=$this->language->get('date_format_short');
+
 			if ($category_info['settings']) {
 				$settings=unserialize($category_info['settings']);
 	            $category_info=array_merge($category_info,$settings);
@@ -88,7 +89,7 @@ $data['category_id'] = $category_id;
 			// Set the last category breadcrumb
 			$data['breadcrumbs'][] = array(
 				'text' => $category_info['name'],
-				'href' => $this->url->link('newsblog/category', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'])
+				'href' => ''
 			);
 
 			if ($category_info['image']) {
@@ -114,7 +115,7 @@ $data['category_id'] = $category_id;
 				}
 
 				$data['categories'][] = array(
-					'name' 			=> $category['name'],
+					//'name' 			=> $category['name'],
 					'original_image'=> $original_image,
 					'thumb'			=> $thumb,
 					'href' 			=> $this->url->link('newsblog/category', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'] . '_' . $category['category_id'])
@@ -163,8 +164,8 @@ $data['category_id'] = $category_id;
 						'preview'     		=> html_entity_decode($result['preview'], ENT_QUOTES, 'UTF-8'),
 						'attributes'  		=> $result['attributes'],
 						'href'        		=> $this->url->link('newsblog/article', 'newsblog_category_id=' . $this->request->get['newsblog_category_id'] . '&newsblog_article_id=' . $result['article_id']),
-						'date'		  		=> ($date_format ? date($date_format, strtotime($result['date_available'])) : false),
-						'date_modified'		=> ($date_format ? date($date_format, strtotime($result['date_modified'])) : false),
+						'date'		  		=> ($date_format ? date('d.m.Y', strtotime($result['date_available'])) : false),
+						'date_modified'		=> ($date_format ? date('d.m.Y', strtotime($result['date_modified'])) : false),
 					);
 				}
 

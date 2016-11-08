@@ -11,6 +11,10 @@ class ControllerNewsBlogArticle extends Controller {
 			'text' => $this->language->get('text_home'),
 			'href' => $this->url->link('common/home')
 		);
+		$data['breadcrumbs'][] = array(
+			'text' => ('Новости'),
+			'href' => $this->url->link('newsblog/category&newsblog_category_id=1')
+		);
 
 		$this->load->model('newsblog/category');
 
@@ -37,7 +41,7 @@ class ControllerNewsBlogArticle extends Controller {
 				if ($category_info) {
 					$data['breadcrumbs'][] = array(
 						'text' => $category_info['name'],
-						'href' => $this->url->link('newsblog/category', 'newsblog_path=' . $newsblog_path)
+						'href' => ''
 					);
 				}
 			}
@@ -51,7 +55,7 @@ class ControllerNewsBlogArticle extends Controller {
 			if ($category_info) {
 				$data['breadcrumbs'][] = array(
 					'text' => $category_info['name'],
-					'href' => $this->url->link('newsblog/category', 'newsblog_path=' . $this->request->get['newsblog_path'])
+					'href' => ''
 				);
 
 	            //for no errors with versions < 20160920
@@ -74,7 +78,7 @@ class ControllerNewsBlogArticle extends Controller {
 
 		$article_info = $this->model_newsblog_article->getArticle($newsblog_article_id);
 
-        $data['datecreate'] = $article_info['date_modified'];
+        $data['datecreate'] = date('d-m-Y ', strtotime($article_info['date_modified']));
         $data['href'] = HTTP_SERVER.'index.php?route=newsblog/category&newsblog_category_id=1';
 		if ($article_info) {
 			$url = '';
@@ -89,7 +93,7 @@ class ControllerNewsBlogArticle extends Controller {
 
 			$data['breadcrumbs'][] = array(
 				'text' => $article_info['name'],
-				'href' => $this->url->link('newsblog/article', $url . '&newsblog_article_id=' . $newsblog_article_id)
+				'href' => ''
 			);
 
 			if ($article_info['meta_title']) {
@@ -126,8 +130,8 @@ class ControllerNewsBlogArticle extends Controller {
 
 			if ($article_info['image']) {
 				$data['original']	= HTTP_SERVER.'image/'.$article_info['image'];
-				$data['popup'] 		= $this->model_tool_image->resize($article_info['image'], $images_size_articles_big[0], $images_size_articles_big[1]);
-				$data['thumb'] 		= $this->model_tool_image->resize($article_info['image'], $images_size_articles_small[0], $images_size_articles_small[1]);
+				//$data['popup'] 		= $this->model_tool_image->resize();
+				/*$data['thumb'] 		= $this->model_tool_image->resize($article_info['image'], $images_size_articles_small[0], $images_size_articles_small[1]);*/
 			} else {
 				$data['original'] 	= '';
 				$data['popup'] 		= '';
@@ -166,7 +170,7 @@ $data['category_id'] = $resultsc['category_id'];
 
 				$data['articles'][] = array(
 					'article_id'  => $result['article_id'],
-					'date'		  => date($this->language->get('date_format_short'), strtotime($result['date_available'])),
+					'date'		  => date($this->language->get('date_format_long'), strtotime($result['date_available'])),
 					'thumb'       => $image,
 					'name'        => $result['name'],
 					'preview'     => html_entity_decode($result['preview'], ENT_QUOTES, 'UTF-8'),

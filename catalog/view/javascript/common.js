@@ -36,9 +36,22 @@ $(document).ready(function() {
         }
 	})
 
+	$('#showallprem_1').on('click', function(){
+		if(document.getElementById("prem_1").className == 'prema'){
+			document.getElementById("prem_1").className = 'prem';
+			document.getElementById("prem_opaciti_1").className = 'prem_opaciti';
+			document.getElementById("showallprem_1").innerHTML="Развернуть все преимущества";
+
+		}else{
+			document.getElementById("prem_1").className = 'prema';
+			document.getElementById("prem_opaciti_1").className = 'prem_opacitia';
+			document.getElementById("showallprem_1").innerHTML="Свернуть все преимущества";
+		}
+	})
+
 
 	// Adding the clear Fix
-	cols1 = $('#column-right, #column-left').length;
+	/*cols1 = $('#column-right, #column-left').length;
 	
 	if (cols1 == 2) {
 		$('#content .product-layout:nth-child(2n+2)').after('<div class="clearfix visible-md visible-sm"></div>');
@@ -46,7 +59,7 @@ $(document).ready(function() {
 		$('#content .product-layout:nth-child(3n+3)').after('<div class="visible-lg"></div>');
 	} else {
 		$('#content .product-layout:nth-child(4n+4)').after('<div class="clearfix"></div>');
-	}
+	}*/
 	
 	// Highlight any found errors
 	$('.text-danger').each(function() {
@@ -109,12 +122,12 @@ $(document).ready(function() {
 		$(document).on('click','.clickParentMenu',function(){
 		$(this).parent().find('.dropDownSubMenu').toggle();
 		
-		if($(this).parent().find('.fa-angle-up').length){
-			$(this).parent().find('.fa-angle-up').addClass('fa-angle-down');
-			$(this).parent().find('.fa-angle-down').removeClass('fa-angle-up');
+		if($(this).parent().find('.category-icon-style_1').length){
+			$(this).parent().find('.category-icon-style_1').addClass('category-icon-style');
+			$(this).parent().find('.category-icon-style').removeClass('category-icon-style_1');
 		}else{
-			$(this).parent().find('.fa-angle-down').addClass('fa-angle-up');
-			$(this).parent().find('.fa-angle-up').removeClass('fa-angle-down');
+			$(this).parent().find('.category-icon-style').addClass('category-icon-style_1');
+			$(this).parent().find('.category-icon-style_1').removeClass('category-icon-style');
 		}
 	});
 	

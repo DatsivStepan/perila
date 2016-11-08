@@ -69,6 +69,8 @@ $(document).ready(function () {
                 var $index = res[result].name;
                 arr[$index] = res[result].value;
             });
+            $('#userName').val('');
+            $('#userPhone').val('');
             $.ajax({
                 url: 'index.php?route=common/footer/contactForm',
                 type: 'post',

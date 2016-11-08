@@ -97,17 +97,57 @@ $(document).ready(function () {
     var map;
     function initMap() {
         map = new google.maps.Map(document.getElementById('mapa'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8,
+            center: {lat: 55.798732, lng: 37.394294},
+            zoom: 15,
             scrollwheel: false
         });
         var image = '../../../image/marker.png';
         var marker = new google.maps.Marker({
-            position: {lat: -34.397, lng: 150.644},
+            position: {lat: 55.798732, lng: 37.394294},
             map: map,
-            title: 'Наше место нахождения',
+            title: 'Таллинская улица дом 6, Москва, город Москва, Россия',
             icon: image
         });
     }
     initMap();
+
+    <!-- /basic modal -->
+    $('#vuzvat').on('click', function(){
+        // if ($('#create-contact-form').valid()) {
+
+        var data = {
+            'to': 1,
+            'name':  $('input[name=name]').val(),
+            'phone': $('input[name=phone]').val()
+        };
+
+        $.ajax(
+            {
+                type: 'post',
+                url: 'index.php?route=email/email/send',
+                data: data
+            })
+            .fail(function() {
+                alert('Підключення');
+            })
+            .done(function(data) {
+
+                if (data.success){
+                    /*  new PNotify({
+                     title: 'Contact was updated',
+                     addclass: 'bg-success'
+                     });*/
+                    // window.history.back();
+                }
+                console.log(data);
+                //}
+            });
+
+        /*  else{
+         new PNotify({
+         title: 'You made a mistake when filling out forms',
+         addclass: 'bg-danger'
+         });
+         }*/
+    });
 });

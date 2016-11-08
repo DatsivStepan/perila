@@ -3,9 +3,11 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 #map {
     height: 100%;
 }
+
 .fon {
     color: #f4f4f4;
 }
@@ -21,7 +23,7 @@ html, body {
 }
 
 .bold {
-    font-family: 'HelveticaNeueCyr';
+    font-family: HelveticaNeueCyr;
     font-weight: 500;
     font-size: 24px;
     color: #000000;
@@ -199,7 +201,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -211,7 +213,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 25px;
         color: #000000;
@@ -302,6 +304,53 @@ label.entry_email, label.entry_enquiry {
         margin-bottom: 25px;
         display: block;
     }
+    .category_heading_title_1 {
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 25px;
+        color: #000000;
+        margin: 0 0 49px 25px;
+        padding-right: 25px;
+        background: whitesmoke;
+    }
+    .prodright a{
+        font-family: HelveticaNeueCyr;
+        font-size: 12px;
+        font-weight: 500;
+        color: #000000;
+
+    }
+    .prodright p{
+        font-family: HelveticaNeueCyr;
+        font-size: 12px;
+        font-weight: 300;
+        color: #000000;
+
+    }
+    .text_span_1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #000000;
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+        background: whitesmoke;
+    }
+    .border_headergall{
+        border-bottom: 1px solid #f8c828;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        padding:0;
+        width: 94%;
+
+    }
+    .block_headergall {
+        display: inline-block;
+        position: relative;
+        transform: translateY(12px);
+        background: whitesmoke;
+    }
+
 }
 
 @media (min-width: 500px) and  (max-width: 767px) {
@@ -358,7 +407,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -370,7 +419,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 36px;
         color: #000000;
@@ -431,6 +480,7 @@ label.entry_email, label.entry_enquiry {
         margin: auto;
 
     }
+
     p.vopros {
         font-family: Bebas Neue;
         font-weight: 400;
@@ -474,6 +524,53 @@ label.entry_email, label.entry_enquiry {
         border-bottom: 10px solid #008fd1;
         border-top: 10px solid #f8c828;
     }
+    .category_heading_title_1 {
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 37px;
+        color: #000000;
+        margin: 0 0 49px 25px;
+        padding-right: 25px;
+        background: whitesmoke;
+    }
+    .prodleft {
+        background-color: #ffffff;
+        padding-bottom: 0;
+        padding-top: 6%;
+    }
+    .headergall {
+        !important;
+        margin: 0;
+       padding: 0;
+    }
+    .text_span_1 {
+        font-family: HelveticaNeueCyr;
+        font-weight: 600;
+        font-size: 30px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    .border_headergall{
+        border-bottom: 1px solid #f8c828;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    .block_headergall {
+        display: inline-block;
+        position: relative;
+        transform: translateY(12px);
+        background: whitesmoke;
+        padding-right: 30px;
+    }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        text-transform: uppercase;
+    }
 }
 
 @media (min-width: 768px) {
@@ -492,6 +589,21 @@ label.entry_email, label.entry_enquiry {
         margin-right: -31px;
     }
 
+    .bord1 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 169px;
+        margin-left: 194px;
+    }
+
+    .bord2 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 111px;
+        margin-left: auto;
+        margin-right: -31px;
+    }
+
     .light {
         font-family: HelveticaNeueCyr;
         font-size: 16.5px;
@@ -504,29 +616,29 @@ label.entry_email, label.entry_enquiry {
     .border1 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 307px;
-        margin-left: 15px;
+        width: 315px;
+        margin-left: 19px;
     }
 
     .border2 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 240px;
-        margin-left: -47px;
+        width: 244px;
+        margin-left: -44px;
     }
 
     .border3 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 288px;
-        margin-left: -98px;
+        width: 295px;
+        margin-left: -95px;
     }
 
     .border4 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 317px;
-        margin-left: -124px;
+        width: 323px;
+        margin-left: -123px;
     }
 
     .email_adminy {
@@ -538,9 +650,53 @@ label.entry_email, label.entry_enquiry {
         border: 1px solid #9a9a9a;
         border-radius: 3px;
     }
+    .category_heading_title_1 {
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 37px;
+        color: #000000;
+        margin: 0 0 49px 25px;
+        padding-right: 25px;
+        background: whitesmoke;
+    }
+    .prodleft {
+        background-color: #ffffff;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+    .text_span_1{
+        font-size: 20px;
+        color: #000000;
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+    }
+    .borderb {
+        min-height: 22px;
+        border-bottom: 1px solid #999999;
+    }
+    .bordery {
+        min-height: 22px;
+        border-bottom: 1px solid #f8c828;
+    }
+    .text_title_article{
+        !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        text-transform: uppercase;
+    }
 }
 
 @media (min-width: 992px) {
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+    }
+
     .email_adminy {
         width: 316px;
         min-height: 500px;
@@ -564,8 +720,22 @@ label.entry_email, label.entry_enquiry {
         margin-left: auto;
     }
 
+    .bord1 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 300px;
+        margin-left: 170px;
+    }
+
+    .bord2 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 142px;
+        margin-left: auto;
+    }
+
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -573,7 +743,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -585,7 +755,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -621,31 +791,31 @@ label.entry_email, label.entry_enquiry {
     .border1 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 246px;
-        margin-left: -29px;
+        width: 249px;
+        margin-left: -25px;
     }
 
     .border2 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 175px;
-        margin-left: -45px;
+        width: 180px;
+        margin-left: -68px;
 
     }
 
     .border3 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 228px;
-        margin-left: -33px;
+        width: 232px;
+        margin-left: -30px;
 
     }
 
     .border4 {
         border-bottom: 1px solid #f8c828;
         height: 17px;
-        width: 256px;
-        margin-left: -83px;
+        width: 258px;
+        margin-left: -79px;
 
     }
 
@@ -657,9 +827,82 @@ label.entry_email, label.entry_enquiry {
         margin: 6px 0 33px -54px;
         padding: 0;
     }
+
+    .category_heading_title {
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        margin: 0 0 57px 82px;
+    }
+    .prodright a{
+        font-family: HelveticaNeueCyr;
+        font-size: 13px;
+        font-weight: 500;
+        color: #000000;
+
+    }
+    .prodright p{
+        font-family: HelveticaNeueCyr;
+        font-size: 13px;
+        font-weight: 300;
+        color: #000000;
+
+    }
+    .border_h1 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(22px);
+        background: whitesmoke;
+    }
+    .row_border{
+        border-bottom: 1px solid #999999;
+        margin: 0 0 57px 82px;
+        padding: 0;
+    }
+    .border_2 {
+        border-bottom: 1px solid #f8c828;
+        width: 100px;
+        margin-left: 496px;
+        display: inline-block;
+        position: relative;
+        transform: translateY(5px);
+        background: whitesmoke;
+    }
+    .prodleft {
+        background-color: #ffffff;
+        padding-bottom: 16%;
+        padding-top: 16%;
+    }
+    .text_span {
+        font-size: 22px;
+        color: #000000;
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+    }
+    .margin_prem2{
+        margin-bottom: 50px;
+    }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 22px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
 }
 
 @media (min-width: 1200px) {
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+    }
+
     #row_text {
         font-family: 'HelveticaNeueCyr';
         font-style: italic;
@@ -673,7 +916,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: 'HelveticaNeueCyr';
+        font-family: HelveticaNeueCyr;
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -720,34 +963,50 @@ label.entry_email, label.entry_enquiry {
         margin-right: -31px;
     }
 
+    .bord1 {
+        border-bottom: 1px solid #999999;
+        height: 24px;
+        width: 405px;
+        margin-left: 140px;
+    }
+
+    .bord2 {
+        border-bottom: 1px solid #f8c828;
+        height: 24px;
+        width: 192px;
+
+        margin-right: -31px;
+    }
+
     .border1 {
         border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 275px;
-        margin-left: 15px;
+        height: 18px;
+        width: 337px;
+        margin-left: -40px;
     }
 
     .border2 {
         border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 197px;
-        margin-left: -23px;
+        height: 18px;
+        width: 267px;
+        margin-left: -89px;
+
 
     }
 
     .border3 {
         border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 246px;
-        margin-left: 15px;
+        height: 18px;
+        width: 318px;
+        margin-left: -51px;
 
     }
 
     .border4 {
         border-bottom: 1px solid #f8c828;
-        height: 16px;
-        width: 276px;
-        margin-left: -44px;
+        height: 18px;
+        width: 347px;
+        margin-left: -109px;
 
     }
 
@@ -756,6 +1015,121 @@ label.entry_email, label.entry_enquiry {
         font-weight: lighter;
         font-size: 17px;
         color: #737373;
-        margin: 6px 0 33px 0;
+        margin: 6px 0 33px -52px;
     }
+    .border_h1 {
+        display: inline-block;
+        position: relative;
+        transform: translateY(22px);
+        background: whitesmoke;
+    }
+    .row_border{
+        border-bottom: 1px solid #999999;
+        margin: 0 0 57px 82px;
+        padding: 0;
+    }
+    .border_2{
+        border-bottom: 1px solid #f8c828;
+        width: 166px;
+        margin-left: 566px;
+        display: inline-block;
+        position: relative;
+        transform: translateY(5px);
+        background: whitesmoke;
+    }
+    .prodleft {
+        background-color: #ffffff;
+        padding-bottom: 6%;
+        padding-top: 6%;
+    }
+    .margin_prem2{
+        margin-bottom: 50px;
+    }
+    .text_span {
+        font-size: 22px;
+        color: #000000;
+        font-family: HelveticaNeueCyr;
+        text-transform: uppercase;
+    }
+    .text_title_article{
+    !important;
+        font-family: HelveticaNeueCyr;
+        font-weight: 500;
+        font-size: 22px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+}
+
+.category_heading_title {
+    font-family: 'HelveticaNeueCyr';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+    padding-right: 25px;
+    background: whitesmoke;
+}.border_conteiner{
+     border-bottom: 1px solid #999999;
+     border-top: 1px solid #999999;
+     border-left: 1px solid #999999;
+ }
+ h4.text_zagolovok{
+     font-family: 'HelveticaNeueCyr';
+     font-weight: 500;
+     font-size: 16px;
+     color: #000000;
+ }
+.text_breadcrumb{
+    font-family: 'HelveticaNeueCyr';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    color: #95c2e2;
+}
+.spanprod{
+    display: none;
+}
+.container_spanprod:hover .spanprod{
+    display: block;
+}
+.text_breadcrumb_article{
+
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    text-transform: lowercase;
+    !important;
+}
+.cat_text{
+    !important;
+    padding: 25px 0 25px 44px;
+    border-bottom: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+h4.style_heading_title{
+    !important;
+    padding: 0;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 400;
+}
+.style_description{
+    !important;
+    font-family: HelveticaNeueCyr;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+}
+.style_datecreate{
+!important;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    padding: 0;
 }
