@@ -1801,9 +1801,13 @@ h2.price {
 }
 .a-category-child-style{
 	color: #808080;
+	outline: none !important;
+	text-decoration: none;
 }
-.a-category-child-style:hover{
+.a-category-child-style:hover, .a-category-child-style:active, .a-category-child-style:visited{
 	color: #008fd1;
+	outline: none !important;
+	text-decoration: none;
 }
 .li-category-child-style{
 	font-family: 'Helvetica';
@@ -1874,6 +1878,123 @@ h2.price {
 	font-size: 17px !important;
 	color: #000;
 }
+.carttov1-style{
+	border-left: 1px solid #008FD1 !important;
+	border-right: 1px solid #008FD1 !important;
+	padding: 5% !important;
+	background-color: #e0e0e0 !important;
+	border-top: 1px solid #008FD1 !important;
+	position: relative !important;
+}
+.carttov2-style{
+	border-left: 1px solid #008FD1 !important;
+	border-right: 1px solid #008FD1 !important;
+	padding: 6% !important;
+	background-color: #f0f0f0 !important;
+	border-top: none;
+	position: relative !important;
+}
+.carttov3-style{
+	border: none;
+	border-left: 1px solid #008FD1 !important;
+	border-right: 1px solid #008FD1 !important;
+	padding: 6%;
+	background-color: #ffffff;
+	position: relative !important;
+
+}
+.ribbon-bottom-1{
+	border: 10px solid transparent;
+	border-top: 10px solid #e0e0e0;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	z-index: 100;
+}
+.ribbon-bottom-2{
+	border: 10px solid transparent;
+	border-top: 10px solid #f0f0f0;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	z-index: 100;
+}
+.ribbon-bottom-3{
+	border: 10px solid transparent;
+	border-top: 10px solid #ffffff;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -10px;
+	z-index: 100;
+}
+.zakaz-style{
+	font-size: 22px;
+	color: #000000;
+	font-family: 'Helvetica';
+	font-weight: 700;
+	text-transform: uppercase;"
+}
+.carttov1-text-style{
+	font-family: 'Helvetica';
+	font-weight: 500;
+	color: #000000;
+	font-size: 21px;
+}
+.carttov1-prise-text-style{
+	font-family: 'Helvetica';
+	font-weight: 400;
+	font-size: 12px;
+	padding-top: 5px;
+}
+.carttov2-text-1-style{
+	font-family: 'Helvetica' !important;
+	font-weight: 700 !important;
+	font-size: 12px;
+}
+.carttov2-text-2-style{
+	font-family: 'Helvetica' !important;
+	font-weight: 200 !important;
+	font-size: 12px;
+}
+.carttov3a-style{
+	margin-top: 4% !important;
+	font-size: 17px !important;
+	font-family: 'Helvetica' !important;
+	font-weight: 500 !important;
+}
+.carttov4-btn-text-style{
+	font-family: 'Helvetica';
+	font-weight: 400;
+	font-size: 12px !important;
+	outline: none !important;
+}
+.navigation-style{
+	font-family: 'Helvetica' !important;
+	font-style: italic !important;
+	font-weight: 400;
+}
+.kartheader-text-style{
+	color: #008fd1;
+	font-size: 21px;
+	font-family: 'Helvetica' !important;
+	font-weight: 500;
+	display: block;
+}
+.descriptions-link-style{
+	font-family: 'Helvetica' !important;
+	font-weight: 300 !important;
+	font-style: italic !important;
+	font-size: 12px !important;
+}
+.descriptions-style{
+	font-family: 'Helvetica' !important;
+	font-weight: 200 !important;
+	font-size: 13px !important;
+}
+
 @media (max-width: 991px) and (min-width: 256px )   {
 	.prem-home-style{
 		max-height: inherit !important;

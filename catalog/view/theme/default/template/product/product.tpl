@@ -10,7 +10,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
-        <ul class="breadcrumb hidden-sm hidden-xs">
+        <ul class="breadcrumb hidden-sm hidden-xs navigation-style">
             <?php foreach ($breadcrumbs as $breadcrumb) { ?>
                 <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
             <?php } ?>
@@ -20,8 +20,7 @@
    <div class="col-md-4 col-xs-12 col-sm-12 text-center">
    <div class="row hidden-md hidden-lg"> <span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
        text-transform: uppercase;"><?php echo $catname; ?></span></div>
-   <div class="row"> <span name="zakaz" style="font-size: 22px;   color: #666666;  font-family: "Conv_pfdindisplaypro-reg";
-    text-transform: uppercase;"><?php echo $heading_title; ?></span></div>
+   <div class="row"> <span name="zakaz" class="zakaz-style"><?php echo $heading_title; ?></span></div>
   
     
    </div>
@@ -78,139 +77,117 @@
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
              <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-md hidden-lg">
-             <div class="row kartheader text-center" style="">
-            
-            
-             <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
-                 <div class="" style="    padding: 3%;
+                 <div class="row kartheader text-center" style="">
+                    <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">Технические характеристики</h3>
+                    <div class="" style="    padding: 3%;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px;
     column-gap: 50px;">
-
-                     <?php echo $description;  ?>
-                     <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
-                 </div>
-             </div>
+                        <?php echo $description;  ?>
+                            <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
+                    </div>
+                </div>
              </div>
 
             <?php } }?>
         <div class="col-xs-12 col-sm-12 col-md-6 karttovar">
-            <div class="carttov1 text-center">
-            <h3 class=" text-center no-margin">ЦЕНА ЗА 1 МЕТР:</h3>
-            <div class="row">
+            <div class="carttov1 text-center carttov1-style">
+                <div class="ribbon-bottom-1"></div>
+            <span class=" text-center no-margin carttov1-text-style">ЦЕНА ЗА 1 МЕТР:</span>
+            <div class="row" style="padding-top: 15px;">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                    <div class="row">
-                                          <input class="cartinput text-center" type="text" id="quantity" name="quantityq" value="<?php echo $price; ?>"
-                                           class="input_product text-center"/>
-                                           </div>
-                   <div class="row">рублей</div>
+                      <input class="cartinput text-center" type="text" id="quantity" name="quantityq" value="<?php echo $price; ?>" class="input_product text-center"/>
+                   </div>
+                   <div class="row carttov1-prise-text-style">рублей</div>
                 </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6">
-                   <div class="row"> 
-<span class="quont-plus">
-                                        <i class="fa fa-plus" id="plus"></i>
-                                    </span>
-                                    <input class="plusminusinp text-center" type="text"  name="quantity" value="1" size="2" id="input-quantity"
-                                           class="input_product text-center"/>
-<span class="quont-minus">
-                                        <i class="fa fa-minus" id="minus"></i>
-                                    </span>
-                                    
-                                    <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/></div>
-                   <div class="row">метров</div>
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                   <div class="row">
+                       <span class="quont-plus">
+                           <i class="fa fa-plus" id="plus"></i>
+                       </span>
+                       <input class="plusminusinp text-center" type="text"  name="quantity" value="1" size="2" id="input-quantity" class="input_product text-center"/>
+                       <span class="quont-minus">
+                           <i class="fa fa-minus" id="minus"></i>
+                       </span>
+                       <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/>
+                   </div>
+                   <div class="row carttov1-prise-text-style">метров</div>
                 </div>
-                
-                        
-                       
-                    </div>
-                      
-                    </div>
-            <div class="carttov2 text-center">
-                      <div class="row">
-                <div class="col-sm-6">
-                   <div class="row padtext"><b>Срок монтажа</b></div>
-                   <div class="row">от 3 дней</div>
-                </div>
-                  <div class="col-sm-6">
-                   <div class="row padtext"><b>Стоимость указана:</b></div>
-                   <div class="row">с учетом доставки и установки</div>
-                </div>
-                
-                        
-                       
-                    </div>
             </div>
-            <div class="carttov3 text-center">
-                      <div class="row">
+            </div>
+            <div class="carttov2 text-center carttov2-style">
+                <div class="ribbon-bottom-2"></div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                       <div class="row padtext "><span class="carttov2-text-1-style">Срок монтажа</span></div>
+                       <div class="row"><span class="carttov2-text-2-style">от 3 дней</span></div>
+                    </div>
+                      <div class="col-sm-6">
+                       <div class="row padtext"><span class="carttov2-text-1-style">Стоимость указана:</span></div>
+                       <div class="row"><span class="carttov2-text-2-style">с учетом доставки и установки</span></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="carttov3 text-center carttov3-style">
+              <div class="ribbon-bottom-3"></div>
+              <div class="row">
                 <div class="col-sm-6">
                    <div class="row"> <img src="image/kon.png" alt=" "></div>
-                   <div class="row carttov3a">
-                   <a href="" data-toggle="modal" data-target="#modal-window-vuzvat">
-                   вызвать замерщика
-                   </a>
+                   <div class="row carttov3a carttov3a-style">
+                    <a href="" data-toggle="modal" data-target="#modal-window-vuzvat">вызвать замерщика</a>
                    </div>
                 </div>
                   <div class="col-sm-6">
                    <div class="row"> <img src="image/woman93.png" alt=" "></div>
-                   <div class="row carttov3a">
-                    <a href="" data-toggle="modal" data-target="#modal-window-prok">
-
-                    проконсультироватся
-                    </a></div>
+                   <div class="row carttov3a carttov3a-style">
+                    <a href="" data-toggle="modal" data-target="#modal-window-prok">проконсультироватся</a>
+                   </div>
                 </div>
-                
-                        
-                       
-                    </div>
+              </div>
             </div>
             <div class="carttov4 text-center">
-                
-                  <div class="row">
-                                    <button  data-toggle="modal" data-target="#modal-window-zakaz" type="button" id="button-cart"
-                                            data-loading-text="<?php echo $text_loading; ?>"
-                                            class="btn button_cart button_cart_prod">Оформить заказ</button>
-                                </div>
-                
-            </div>
+                <div class="row">
+                    <button  data-toggle="modal" data-target="#modal-window-zakaz" type="button" id="button-cart"
+                             data-loading-text="<?php echo $text_loading; ?>"
+                             class="btn button_cart button_cart_prod carttov4-btn-text-style">Оформить заказ
+                    </button>
                 </div>
+            </div>
+        </div>
                 
             
            
  
         </div>
         <div class="clearfix"></div>
-            <?php
+        <?php
              if (strlen($description) !== 0)  {
-            if ($description !=='<p><br></p>') { ?>
-             <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-sm hidden-xs">
-             <div class="row kartheader text-center hidden-sm hidden-xs" style="">
-            
-            
-             <h3 class=" text-center orangedescription" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
-             </div>
-             </div>
-             <div class="col-sm-6 hidden-sm hidden-xs" style="    padding-right: 0px;
-    padding-left: 0;">
-                 <div style="    border-bottom: 1px solid #999999;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 30px;
-    margin-left: -16px;"></div>
-             </div>
-           
-            
-               <div class="col-sm-12 descriptions hidden-sm hidden-xs">
-                <div class="row description">
-                
-                <?php echo $description;  ?>
-                <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
-               </div>
-            </div>
-            <?php } }?>
-      </div>
+             if ($description !=='<p><br></p>') { ?>
+                 <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-sm hidden-xs">
+                 <div class="row kartheader text-center hidden-sm hidden-xs" style="">
+                    <h3 class=" text-center orangedescription kartheader-text-style" ><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические характеристики</h3>
+                 </div>
+                 </div>
+                 <div class="col-sm-6 hidden-sm hidden-xs" style="    padding-right: 0px;
+        padding-left: 0;">
+                     <div style="    border-bottom: 1px solid #999999;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 30px;
+        margin-left: -16px;"></div>
+                 </div>
+                 <div class="col-sm-12 descriptions hidden-sm hidden-xs">
+                    <div class="row description descriptions-style">
+                        <?php echo $description;  ?>
+                        <a href="" data-toggle="modal" class="descriptions-link-style" data-target="#modal-window-prok"> Подберем любую нужную вам конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
+                    </div>
+                 </div>
+        <?php } }?>
+    </div>
     </div>
 
       <?php echo $content_bottom; ?></div>
