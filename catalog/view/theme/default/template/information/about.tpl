@@ -2,21 +2,23 @@
 <div class="container">
     <div class="text_body">
         <div class="rows">
-            <?php echo $column_left; ?>
-            <?php if ($column_left && $column_right) { ?>
-            <?php $class = 'col-sm-6'; ?>
-            <?php } elseif ($column_left || $column_right) { ?>
-            <?php $class = 'col-sm-9'; ?>
-            <?php } else { ?>
-            <?php $class = 'col-sm-12'; ?>
-            <?php } ?>
+            <div class="hidden-sm hidden-xs">
+                <?php echo $column_left; ?>
+                <?php if ($column_left && $column_right) { ?>
+                <?php $class = 'col-sm-6'; ?>
+                <?php } elseif ($column_left || $column_right) { ?>
+                <?php $class = 'col-sm-9'; ?>
+                <?php } else { ?>
+                <?php $class = 'col-sm-12'; ?>
+                <?php } ?>
+            </div>
             <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
                 <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="margin: 40px 0 0 0;">
                     <a>
                         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-                        <a style="color: #3e9fd6;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+                        <a style="color: #3e9fd6;font-family: 'Helvetica';font-weight: 300;font-size: 17px;" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
                         <?php } ?>
-                        <a style="color: #8a8a8a;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;">/ О компании</a>
+                        <a style="color: #8a8a8a;font-family: 'Helvetica';font-weight: 300;font-size: 17px;">/ О компании</a>
                     </a>
                 </div>
                 <div class="row" style="padding-bottom: 3%;">
@@ -40,11 +42,11 @@
                         Мы уделяем постоянное внимание к нашим заказчикам, четко и профессионально выполняем
                         взятые обязательства.<br><br>
                     </p>
-                    <p class="hidden-xs">
+                    <p class="hidden-xs text_opus_about">
                         В работе с клиентами мы используем комплексный подход, который помогает экономить время и силы наших заказчиков, а
                         также значительно сократить срок выполнения имеющихся задач с учетом всех предъявленных к изделиям требований (как
                         во время разработки дизайн-проекта, так и во время изготовления и монтажа на объекте).<br><br>
-                    <p class="hidden-xs">
+                    <p class="hidden-xs text_opus_about">
                         Кроме того, мы проектируем и самостоятельно разрабатываем конструкторскую и технологическую документацию.
                         Конструкторская документация является наиважнейшей частью производства изделий из нержавеющей стали. Наши
                         опытные сотрудники самостоятельно подготовят всю необходимую конструкторскую документацию Ваше будущее изделие,

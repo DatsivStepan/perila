@@ -11,12 +11,12 @@
         <?php $class = 'col-sm-12'; ?>
         <?php } ?>
         <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-            <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="margin: 40px 0 0 0;">
+            <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="margin: 40px 0 0 0;font-style: italic;">
                 <a>
                     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-                    <a style="color: #3e9fd6;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+                    <a style="color: #3e9fd6;font-family: 'Helvetica';font-weight: 300;font-size: 17px;" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
                     <?php } ?>
-                    <a style="color: #8a8a8a;font-family: 'Helvetica Neue';font-weight: 300;font-size: 18px;">/ Доставка и оплата</a>
+                    <a style="color: #8a8a8a;font-family: 'Helvetica';font-weight: 300;font-size: 17px;">/ Доставка и оплата</a>
                 </a>
             </div>
             <div class="row" style="padding-bottom: 3%;">
