@@ -110,3 +110,53 @@ h2{
         margin: 15% 0 0 0;
     }
 }
+.border_news {
+	    min-height: 26px;
+		border-bottom: 1px solid #999999;
+}
+.border_news_2 {
+	    min-height: 26px;
+        border-bottom: 1px solid #f8c828;
+}
+.border_block {
+	padding: 10%;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+.perila_text_h4 {
+	font-family: 'Helvetica';
+    font-weight: 400 !important; 
+    font-size: 18px;
+    color: #000000;
+}
+.news_block_resp{
+	display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 !important;
+}
+.news_span_zaholovok{
+	font-family: 'Helvetica';
+	font-weight: 500;
+    font-size: 27px;
+	color: #000000;
+}
+.perila_text_opus{
+	font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+}
+.perila_podrobnee{
+	font-family: 'Helvetica';
+	color: #008fd1;
+	font-weight: 300;
+    font-size: 15px;
+}
+.perila_data{
+	font-family: 'Helvetica';
+	color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+}
