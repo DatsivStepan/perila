@@ -15,7 +15,6 @@ class ControllerCommonHeader extends Controller
 
 		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
 		$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
-		$this->document->addScript('catalog/view/javascript/contact.js');
 
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
