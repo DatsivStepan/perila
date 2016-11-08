@@ -56,6 +56,7 @@ $data['category_id'] = $category_id;
 			$articles_image_size=array($this->config->get('config_image_product_width'),$this->config->get('config_image_product_height'));
 	        $category_image_size=array($this->config->get('config_image_category_width'),$this->config->get('config_image_category_height'));
 			$date_format=$this->language->get('date_format_short');
+
 			if ($category_info['settings']) {
 				$settings=unserialize($category_info['settings']);
 	            $category_info=array_merge($category_info,$settings);

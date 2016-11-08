@@ -97,15 +97,15 @@ $(document).ready(function () {
     var map;
     function initMap() {
         map = new google.maps.Map(document.getElementById('mapa'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8,
+            center: {lat: 55.798732, lng: 37.394294},
+            zoom: 15,
             scrollwheel: false
         });
         var image = '../../../image/marker.png';
         var marker = new google.maps.Marker({
-            position: {lat: -34.397, lng: 150.644},
+            position: {lat: 55.798732, lng: 37.394294},
             map: map,
-            title: 'Наше место нахождения',
+            title: 'Таллинская улица дом 6, Москва, город Москва, Россия',
             icon: image
         });
     }
