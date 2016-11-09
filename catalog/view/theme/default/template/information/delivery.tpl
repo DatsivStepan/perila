@@ -1,15 +1,17 @@
 <?php echo $header; ?>
 <div class="container">
     <div class="text_dost">
-    <div class="rows">
-        <?php echo $column_left; ?>
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-sm-9'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-sm-12'; ?>
-        <?php } ?>
+        <div class="rows">
+            <div class="hidden-sm hidden-xs">
+            <?php echo $column_left; ?>
+            <?php if ($column_left && $column_right) { ?>
+            <?php $class = 'col-sm-6'; ?>
+            <?php } elseif ($column_left || $column_right) { ?>
+            <?php $class = 'col-sm-9'; ?>
+            <?php } else { ?>
+            <?php $class = 'col-sm-12'; ?>
+            <?php } ?>
+        </div>
         <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
             <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="margin: 40px 0 0 0;font-style: italic;">
                 <a>
@@ -31,7 +33,7 @@
                 </div>
 
             </div>
-            <div class="сol-xs-12">
+            <div class="сol-xs-12"style="margin: 0 0 0 10px;">
                 <p class="text_car">Комплектация, доставка и монтаж стандартного заказа осуществляется в течении двух недель (14 дней) со дня оплаты
                     аванса в размере 70% от общей стоимости заказа. Срок осуществления нестандартного заказа заказа с большим объемом
                     работ согласуется отдельно. Оформление платежа производится через Р/С банка ОАО "АЛЬФА-БАНК"  г. Москва.<br>
@@ -45,7 +47,7 @@
                     на 10 км от МКАД — 3 000 рублей + 15 рублей за километр от МКАД.<br>
                 </p>
             </div>
-            <div class="row">
+            <div class="row" style="margin: 0 0 0 -5px;">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 0;">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p class="hidden-sm hidden-xs text_car">
@@ -67,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding"style="margin: 0 0 0 10px;">
                 <p class="hidden-sm hidden-xs text_car">За более подробной информацией вы всегда можете обратиться к нашим менеджерам, которые ответят на интересующие
                     вас вопросы по телефону или электронной почте, указанным в разделе "Контакты". С нетерпением ждем ваших заказов!<br>
                 </p>
@@ -101,6 +103,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" style="padding: 0;">
+                    <div class="col-xs-12" style="padding: 0;margin: 0 0 0 10px;">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
                             <p class="col-sm-12 col-xs-12 text_money">
                                 <span class="text_mon">Внимание:</span> мы работаем по безналичному расчету
@@ -130,6 +133,7 @@
                                 <span class="text_light_money">КодОКОГУ:</span>КодОКОГУ: 460138
                             </p>
                     </div>
+                </div>
                 </div>
             </div>
 

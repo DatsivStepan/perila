@@ -36,7 +36,7 @@
 
      
       <?php if ($articles) { ?>
-		<div class="row">
+		<div class="row" style="margin: 0;">
 			<?php foreach ($articles as $article) { ?>
 			<div class="cat_pad product-list col-xs-12 col-sm-12 col-md-6" style="padding-top: 2px;">
 				<div class="product-thumb">
