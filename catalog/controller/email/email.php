@@ -107,12 +107,12 @@ class ControllerEmailEmail extends Controller {
 					$message .= '</html>' . "\n";
 						break;
 				}
-					
-					
 
-					
-						
-                            echo 'fsdf';
+
+
+
+
+
 							$mail = new Mail($this->config->get('config_mail'));
 							$mail->setTo($this->config->get('config_email'));
 							$mail->setFrom($this->config->get('config_email'));
