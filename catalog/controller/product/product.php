@@ -213,7 +213,7 @@ $data['catname'] = $category_info['name'];
 
 			$data['breadcrumbs'][] = array(
 				'text' => $product_info['name'],
-				'href' => $this->url->link('product/product', $url . '&product_id=' . $this->request->get['product_id'])
+				'href' => ''
 			);
 
 			$this->document->setTitle($product_info['meta_title']);

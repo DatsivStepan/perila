@@ -4,7 +4,7 @@
     <div class="product col-sm-6 col-md-6 col-lg-4">
     <div class="cat-thumb">
 		<div class="menunamecat text-center">
-			<span><?= $category['name'];?></span>
+			<span class="menunamecat-span-style"><?= $category['name'];?></span>
 		</div>
 		<div class="productimg">
 		<img src="<?= $category['thumb'];?>" alt="<?= $category['name'];?>" class="img-responsive">

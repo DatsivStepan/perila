@@ -15,10 +15,15 @@
             <?php } ?>
             <div id="content" class=" col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
                 <div class="breadcrumb">
-                    <ul class="breadcrumb text_breadcrumb hidden-xs col-sm-12 col-md-12 col-lg-12">
+                    <ul class="breadcrumb hidden-xs col-sm-12 col-md-12 col-lg-12" id="row_text">
                         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+                        <?php if ($breadcrumb ['href']==('')){ ?>
+                        <li><?php echo $breadcrumb['text']; ?></li>
+                        <?php }else{ ?>
                         <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
                         <?php } ?>
+                        <?php } ?>
+
                     </ul>
                 </div>
 
@@ -57,8 +62,8 @@
                         <div class="col-md-12 cat-thumb  no-padding no-margin text-center categoryshow"
                              style="background-color: <?php echo $b[$aa]; ?>">
                             <diw class="row spancat">
-                                <h4><?php echo $category['name']; ?></h4>
-                                <img src="<?php echo 'image/',$category['image']; ?>" style="margin-top: 25%;"
+                                <span class="category-title-style"><?php echo $category['name']; ?></span>
+                                <img src="<?php echo 'image/',$category['image']; ?>" style="margin-top:15px;"
                                      alt="<?php echo $category['name']; ?>" class="img-responsive"/>
                             </diw>
                         </div>

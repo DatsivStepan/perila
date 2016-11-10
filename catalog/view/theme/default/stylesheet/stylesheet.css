@@ -476,7 +476,7 @@ footer h5 {
     padding-bottom: 5%;
 }
 .prem_header span{
-    font-size: 20px;
+    font-size: 17px;
     color: #ffffff;
     font-family: "Helvetica";
 	font-weight: 700;
@@ -1010,7 +1010,7 @@ padding-left: 0px;
 	outline: none !important;
 	font-family: 'Helvetica' !important;
 	font-weight: 400 !important;
-	font-size: 15px;
+	font-size: 13px;
 }
 .btn-link-style:hover, .btn-link-style:focus {
 	color: #000000 !important;
@@ -1463,12 +1463,15 @@ h2.price {
 .ul-position{
 	width: 100%;
 }
-.li-text-style{
+.li-text-style:focus, .li-text-style:hover, .li-text-style:visited, .li-text-style:active, .li-text-style{
 	font-family: 'Helvetica';
 	font-weight: 400;
 	text-align: center;
 	background-color: transparent !important;
-
+	text-decoration: none !important;
+}
+.a-menu-style, .a-menu-style:focus{
+	text-decoration: none !important;
 }
 .div-li-border-right{
 	border-right: 1px solid #999999;
@@ -1800,12 +1803,12 @@ h2.price {
 	color: #000;
 }
 .a-category-child-style{
-	color: #808080;
+	color: inherit !important;
 	outline: none !important;
 	text-decoration: none;
 }
-.a-category-child-style:hover, .a-category-child-style:active, .a-category-child-style:visited{
-	color: #008fd1;
+.a-category-child-style:hover, .a-category-child-style:active, .a-category-child-style:focus{
+	color: #008fd1 !important;
 	outline: none !important;
 	text-decoration: none;
 }
@@ -1846,16 +1849,21 @@ h2.price {
 	font-family: 'Helvetica' !important;
 	font-weight: 700 !important;
 	padding-left: 15px !important;
+	color: #000 !important;
+	font-size: 20px !important;
 }
 .home-text-content-style{
 	font-family: 'Helvetica' !important;
 	font-weight: 200 !important;
 	color: #000;
+	font-size: 12px !important;
+	text-transform: none !important;
 }
 .seo-title-style{
 	font-family: 'Helvetica' !important;
 	font-weight: 700 !important;
 	font-size: 22px !important;
+	color: #0b0b0b !important;
 }
 .seo-text-style{
 	font-family: 'Helvetica' !important;
@@ -1863,6 +1871,7 @@ h2.price {
 	font-size: 12px !important;
 	color: #0b0b0b;
 	padding-bottom: 3%;
+	text-transform: none !important;
 }
 .work-text-style{
 	font-family: 'Helvetica';
@@ -1873,6 +1882,7 @@ h2.price {
 	padding-top: 1%;
 }
 .prem_content-style{
+	padding-left: 8%;
 	font-family: 'Helvetica';
 	font-weight: 200;
 	font-size: 17px !important;
@@ -1994,7 +2004,34 @@ h2.price {
 	font-weight: 200 !important;
 	font-size: 13px !important;
 }
-
+.menunamecat-span-style{
+	background-color: #fcfcfc !important;
+	color: #8a8a8a !important;
+	font-family: "Helvetica" !important;
+	font-weight: 200 !important;
+	font-size: 14px !important;
+}
+.menunamecat-span-style:hover, .menunamecat-span-style:focus, .menunamecat-span-style:active {
+	background-color: #fcfcfc !important;
+	color: #008fd1 !important;
+	font-family: "Helvetica" !important;
+	font-weight: 200 !important;
+	font-size: 14px !important;
+}
+.category-title-style{
+	text-transform: capitalize;
+	color: #8a8a8a !important;
+	font-family: "Helvetica" !important;
+	font-weight: 200 !important;
+	font-size: 14px !important;
+}
+.category-title-style:hover, .category-title-style:focus, .category-title-style:active {
+	text-transform: capitalize;
+	color: #008fd1 !important;
+	font-family: "Helvetica" !important;
+	font-weight: 200 !important;
+	font-size: 14px !important;
+}
 @media (max-width: 991px) and (min-width: 256px )   {
 	.prem-home-style{
 		max-height: inherit !important;
@@ -2027,6 +2064,26 @@ h2.price {
 		padding-bottom: 5%;
 		padding-right: 2%!important;
 		padding-left: 2%!important;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px )   {
+	.prem_content-style{
+		padding-left: 20%;
+		padding-right: 20%;
+		font-family: 'Helvetica';
+		font-weight: 200;
+		font-size: 17px !important;
+		color: #000;
+	}
+}
+@media (max-width: 767px) and (min-width: 256px )   {
+	.prem_content-style{
+		padding-left: 15%;
+		padding-right: 15%;
+		font-family: 'Helvetica';
+		font-weight: 200;
+		font-size: 17px !important;
+		color: #000;
 	}
 }
 @media (max-width: 767px) and (min-width: 256px )   {

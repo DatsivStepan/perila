@@ -3,7 +3,7 @@
 <!--[if IE 8 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie8"><![endif]-->
 <!--[if IE 9 ]><html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" class="ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
+<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" xmlns="http://www.w3.org/1999/html">
 <!--<![endif]-->
 <head>
   <meta charset="UTF-8" />
@@ -198,24 +198,24 @@
           <div class="navbar-default">
             <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=common/home"><li class="li-text-style">Главная</li></a>
+                <a href="index.php?route=common/home" class="a-menu-style"><li class="li-text-style">Главная</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/about"><li class="li-text-style">О компании</li></a>
+                <a href="index.php?route=information/about" class="a-menu-style"><li class="li-text-style">О компании</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                  <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
+                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li class="li-text-style">Новости</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/gallery"><li class="li-text-style">Наши работы</li></a>
+                <a href="index.php?route=information/gallery" style="a-menu-style"><li class="li-text-style">Наши работы</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                    <a href="index.php?route=information/delivery">
+                    <a href="index.php?route=information/delivery" class="a-menu-style">
                         <li class="li-text-style">Доставка и оплата</li>
                     </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
-                <a href="index.php?route=information/contact"><li class="li-text-style">Контакты</li></a>
+                <a href="index.php?route=information/contact" class="a-menu-style"><li class="li-text-style">Контакты</li></a>
               </div>
             </ul>
           </div>
@@ -268,7 +268,10 @@
       </div>
       <div class="modal-body">
         <h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
-
+        <form  action="" id="contactForm_1" method="post">
+          <ul  style="padding-left: 15px">
+            <code id="errorMasege" style="display: none" class="userName error-style">Некоректно заполнены данные</code>
+          </ul>
         <div class="form-group">
           <label>Ваше имя:</label>
           <input id="name" class="form-control" name="name">
@@ -280,8 +283,9 @@
         </div>
       </div>
       <div class="form-group text-center">
-        <button type="button" class="btn btnp" id="vuzvat">ОТПРАВИТЬ</button>
+        <button type="button" class="btn btnp" id="btn-vuzov">ОТПРАВИТЬ</button>
       </div>
+      </form>
       <div class="form-group">
         <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
       </div>

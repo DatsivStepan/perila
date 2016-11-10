@@ -1,5 +1,5 @@
 <footer style="padding-top: 0; border: 0">
-  <div class="hidden-xs footer-img">
+  <div class="hidden-xs footer-img" style="margin-top: 20px !important;">
     <div class="container hidden-xs">
       <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-padding" style="line-height: 20px">
           <spaan class="footer-text-style footer-tex-color-1">ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК</spaan><br>
@@ -7,9 +7,8 @@
       </div>
       <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 footer-form-div">
         <form action="" id="contactForm" method="post">
-          <ul id="errorMasege" style="padding-left: 15px">
-            <code style="display: none" class="userName error-style">Некоректно заполнено Имя</code>
-            <code style="display: none" class="userPhone error-style">Некоректно заполнен номер</code>
+          <ul  style="padding-left: 15px">
+            <code id="errorMasege" style="display: none" class="userName error-style">Некоректно заполнены данные</code>
           </ul>
           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
             <span class="form-text-style">Ваше имя:</span>
@@ -151,16 +150,16 @@
       </div>
       <div class=" footer-mobile-form-div">
         <form action="" id="contactForm-1" method="post">
-          <ul id="errorMasege" style="padding-left: 15px" >
-            <code style="display: none" class="error error-style">Некоректно заполненна информация</code>
+          <ul  style="padding-left: 15px" >
+            <code id="errorMasege_1" style="display: none" class="error error-style">Некоректно заполненна информация</code>
           </ul>
           <div class="input-footer-padding">
             <span class="form-mobile-text-style">Ваше имя:</span>
-            <input type="text" id="userName" name="userName" class="form-control input-style contactItem">
+            <input type="text" id="userName_1" name="userName_1" class="form-control input-style contactItem">
           </div>
           <div class="input-footer-padding">
             <span class="form-mobile-text-style">Ваш телефон:</span>
-            <input type="text" id="userPhone" name="userPhone" class="form-control input-style contactItem">
+            <input type="text" id="userPhone_1" name="userPhone_1" class="form-control input-style contactItem">
           </div>
           <div class="footer-btn-mobile-div">
             <button type="button" id="btn-contact-1" class="btn btn-primary footer-btn-mobile"><span class="footer-btn-text-style">ЗАКАЗАТЬ ЗВОНОК</span></button>
