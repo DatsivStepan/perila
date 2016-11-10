@@ -1,42 +1,45 @@
 <?php echo $header; ?>
 <div class="container">
     <div class="row">
-        <div class="hidden-sm hidden-xs"><?php echo $column_left; ?></div>
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-sm-6'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-sm-12 col-md-9'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-sm-12'; ?>
-        <?php } ?>
-        <div id="content" class="col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
-            <ul class="breadcrumb hidden-sm hidden-xs navigation-style">
-                <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-                <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-                <?php } ?>
-            </ul>
-            <div class="row" style="    padding-bottom: 3%;">
-                <div class="col-sm-1 hidden-sm hidden-xs"></div>
-                <div class="col-md-4 col-xs-12 col-sm-12 text-center">
-                    <div class="row hidden-md hidden-lg"><span name="zakaz"
-                                                               style="font-size: 22px;   color: #000000;  font-family: "
-                                                               Conv_pfdindisplaypro-reg";
-                        text-transform: uppercase;"><?php echo $catname; ?></span></div>
-                    <div class="row"><span name="zakaz" class="zakaz-style"><?php echo $heading_title; ?></span></div>
 
-
-                </div>
-                <div class="col-sm-7 hidden-sm hidden-xs">
-                    <div class="col-sm-8 borderb"></div>
-                    <div class="col-sm-4 bordery"></div>
-
-                </div>
-            </div>
-            <div class="product-wrapper">
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <?php if ($thumb || $images) { ?>
-                    <ul class="thumbnails text-center" style="border: 1px solid #999999;">
-                        <?php if ($thumb) { ?>
+    <div class="hidden-sm hidden-xs"><?php echo $column_left; ?></div>
+    <?php if ($column_left && $column_right) { ?>
+    <?php $class = 'col-sm-6'; ?>
+    <?php } elseif ($column_left || $column_right) { ?>
+    <?php $class = 'col-sm-12 col-md-9'; ?>
+    <?php } else { ?>
+    <?php $class = 'col-sm-12'; ?>
+    <?php } ?>
+    <div id="content" class="col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
+        <ul class="breadcrumb hidden-sm hidden-xs navigation-style" style="font-size: 15px">
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php if ($breadcrumb ['href']==('')){ ?>
+            <li><?php echo $breadcrumb['text']; ?></li>
+            <?php }else{ ?>
+            <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+            <?php } ?>
+            <?php } ?>
+        </ul>
+                    <div class="row" style="    padding-bottom: 3%;">
+            <div class="col-sm-1 hidden-sm hidden-xs"></div>
+   <div class="col-md-4 col-xs-12 col-sm-12 text-center">
+   <div class="row hidden-md hidden-lg"> <span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
+       text-transform: uppercase;"><?php echo $catname; ?></span></div>
+   <div class="row"> <span name="zakaz" class="zakaz-style"><?php echo $heading_title; ?></span></div>
+  
+    
+   </div>
+    <div class="col-sm-7 hidden-sm hidden-xs">
+        <div class="col-sm-8 borderb"></div>
+        <div class="col-sm-4 bordery"></div>
+        
+    </div></div>
+        <div class="product-wrapper">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <?php if ($thumb || $images) { ?>
+                <ul class="thumbnails text-center" style="border: 1px solid #999999;">
+                    <?php if ($thumb) { ?>
+>>>>>>> Change design and mobile contact form
                         <li style="overflow-y: hidden;">
                             <a class="product-img" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>">
                                 <img class="prodimggolov" src="<?php echo $thumb; ?>"

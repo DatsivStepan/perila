@@ -31,6 +31,9 @@ class ControllerCommonFooter extends Controller {
 		$data['instagram'] = $this->config->get('config_instagram');
 		$data['pinterest'] = $this->config->get('config_pinterest');
 
+        $this->document->addScript("https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.js");
+        $this->document->addStyle("https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.css");
+
 		$this->load->model('catalog/information');
 
 		$data['informations'] = array();
@@ -128,5 +131,46 @@ class ControllerCommonFooter extends Controller {
 
 
 	}
+
+    public function contactForm_1(){
+        $user_query = $this->db->query("SELECT email FROM " . DB_PREFIX . "user WHERE username = 'admin' AND (user_group_id = '1') AND status = '1'");
+        if ($user_query->num_rows) {
+            $admin_email = $user_query->row['email'];
+        }
+        $mailContent = '
+            <table>
+                <tr>
+                    <td>Имя</td>
+                    <td>'.$_POST['userName_1'].'</td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td>'.$_POST['userPhone_1'].'</td>
+                </tr>
+            </table>
+        ';
+//		var_dump($_POST);
+        $mail = new Mail();
+        $mail->protocol = $this->config->get('config_mail')['protocol'];
+        $mail->parameter = $this->config->get('config_mail')['parameter'];
+        $mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
+        $mail->smtp_username = $this->config->get('config_mail_smtp_username');
+        $mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
+        $mail->smtp_port = $this->config->get('config_mail_smtp_port');
+        $mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
+
+
+//		$mail->setTo($this->config->get('config_email'));
+        $mail->setTo($admin_email);
+        $mail->setFrom('no-reply@perila.com');
+        $mail->setSender(html_entity_decode($this->request->post['userName_1'], ENT_QUOTES, 'UTF-8'));
+        $mail->setSubject(html_entity_decode('Обратный звонок',ENT_QUOTES, 'UTF-8'));
+        $mail->setText($mailContent);
+        $mail->send();
+        $this->response->redirect($this->url->link('information/contact/success'));
+
+
+    }
+
 
 }

@@ -22,7 +22,7 @@ $c=0;
 				$data['banners'][] = array(
 					'title' => $result['title'],
 					'link' => $result['link'],
-					'image' => $this->model_tool_image->resize($result['image'], '272', '272')
+					'image' => $this->model_tool_image->resize($result['image'], '1000', '1000')
 				);
 
 			}

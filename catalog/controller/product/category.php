@@ -86,7 +86,8 @@ class ControllerProductCategory extends Controller {
 		} else {
 			$category_id = 0;
 		}
-		$data['parent_categorie'] = $category_info['name'];
+
+		$data['parent_categorie'] = '';
 		$category_info = $this->model_catalog_category->getCategory($category_id);
 
 		if ($category_info) {
@@ -119,7 +120,7 @@ class ControllerProductCategory extends Controller {
 			// Set the last category breadcrumb
 			$data['breadcrumbs'][] = array(
 				'text' => $category_info['name'],
-				'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'])
+				'href' => ''
 			);
 
 			if ($category_info['image']) {

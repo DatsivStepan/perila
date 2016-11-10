@@ -3,6 +3,14 @@ class ControllerCommonHeader extends Controller
 {
 	public function index()
 	{
+        $this->document->addScript('catalog/view/javascript/fancyapps-fancyBox-18d1712/lib/jquery.mousewheel-3.0.6.pack.js');
+        $this->document->addStyle('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css?v=2.1.5');
+        $this->document->addScript('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/jquery.fancybox.pack.js?v=2.1.5');
+        $this->document->addStyle('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-buttons.css?v=1.0.5');
+        $this->document->addScript('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-buttons.js?v=1.0.5');
+        $this->document->addScript('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-media.js?v=1.0.6');
+        $this->document->addStyle('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7');
+        $this->document->addScript('catalog/view/javascript/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7');
 
 		$data['title'] = $this->document->getTitle();
 
@@ -166,15 +174,15 @@ class ControllerCommonHeader extends Controller
             <table>
                 <tr>
                     <td>Имя</td>
-                    <td>'.$_POST['userName'].'</td>
+                    <td>'.$_POST['name'].'</td>
                 </tr>
                 <tr>
                     <td>Телефон</td>
-                    <td>'.$_POST['userPhone'].'</td>
+                    <td>'.$_POST['phone'].'</td>
                 </tr>
             </table>
         ';
-//		var_dump($_POST);
+
 		$mail = new Mail();
 		$mail->protocol = $this->config->get('config_mail')['protocol'];
 		$mail->parameter = $this->config->get('config_mail')['parameter'];
@@ -188,7 +196,7 @@ class ControllerCommonHeader extends Controller
 //		$mail->setTo($this->config->get('config_email'));
 		$mail->setTo($admin_email);
 		$mail->setFrom('no-reply@perila.com');
-		$mail->setSender(html_entity_decode($this->request->post['userName'], ENT_QUOTES, 'UTF-8'));
+		$mail->setSender(html_entity_decode($this->request->post['name'], ENT_QUOTES, 'UTF-8'));
 		$mail->setSubject(html_entity_decode('Обратный звонок',ENT_QUOTES, 'UTF-8'));
 		$mail->setText($mailContent);
 		$mail->send();

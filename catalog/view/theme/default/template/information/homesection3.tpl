@@ -1,3 +1,16 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox-button").fancybox({
+            prevEffect		: 'none',
+            nextEffect		: 'none',
+            closeBtn		: false,
+            helpers		: {
+                title	: { type : 'inside' },
+                buttons	: {}
+            }
+        });
+    });
+</script>
 <div class="row">
     <div class="hidden-md hidden-sm hidden-lg hidden-xl col-xs-12 text-center work-text-style">
         <span>НАШИ РАБОТЫ</span>
@@ -19,12 +32,12 @@
                                                                   alt="<?php echo $banner['title']; ?>"
                                                                   class="img-responsive"/></a>
                     <?php } else { ?>
-
-                    <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>"
-                         class="img-responsive"/>
+                        <a href="<?php echo $banner['image']; ?>" class="fancybox-button" rel="fancybox-button">
+                            <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive"/>
+                        </a>
                     <?php } ?>
                 </div>
                 <?php } ?>
     
      </div>
-     
+
