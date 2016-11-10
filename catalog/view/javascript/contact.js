@@ -7,7 +7,7 @@ $(document).ready(function () {
         }
         switch (id) {
             case 'email':
-                if (!($( '#'+id).val().match(/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i))) {
+                if (!($( '#'+id).val().match(/^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/i))) {
                     $('#errorMasege > .' + id).text('Некоректно вказана електроная почта');
                     $('#' + id).css('border', '1px solid red');
                     $('#errorMasege > .' + id).show();
@@ -30,7 +30,7 @@ $(document).ready(function () {
                 break;
             default:
                 var errorCount = 0;
-                if (!($('#email').val().match(/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i))) {
+                if (!($('#email').val().match(/^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/i))) {
                     $('#email').css('border', '1px solid red');
                     errorCount++;
                     $('#errorMasege > .email').show();

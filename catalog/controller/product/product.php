@@ -1,5 +1,6 @@
 <?php
 class ControllerProductProduct extends Controller {
+
 	private $error = array();
 
 	public function index() {
@@ -13,7 +14,8 @@ class ControllerProductProduct extends Controller {
 		);
 
 		$this->load->model('catalog/category');
-
+		$this->document->addScript("https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.js");
+		$this->document->addStyle("https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.css");
 		if (isset($this->request->get['path'])) {
 			$path = '';
 
