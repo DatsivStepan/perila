@@ -1,6 +1,8 @@
 <div class="listcat">
     <!--<div class="menuname text-center"><span><?= $heading_title; ?></span></div>-->
-    <div class="menuname text-center category-name-padding"><span class="category-name-style">КАТАЛОГ ПРОДУКЦИИ</span></div>
+    <div class="menuname text-center category-name-padding" style="padding-top: 30px !important;padding-bottom: 20px !important;">
+        <span class="category-name-style" style="font-size:18px !important;line-height: 0">КАТАЛОГ ПРОДУКЦИИ</span>
+    </div>
     <div class="imgborder text-center"><img src="/image/catalog/linecat.png" class="img-responsive category-img-style"></div>
     <ul class="customdrop ul-category-style">
                 <?php foreach ($categories as $category) { ?>
@@ -17,7 +19,7 @@
 
                     <li class='<?= $classes; ?> li-category-style' style="line-height: 19px;margin-bottom:5px;color: #8a8a8a !important;margin-bottom: 8px;">
                         <a href="<?php echo $category['href'];?>"   class='clickParentMenu '  title="<?php echo $category['name'];?>" style="display:block;">
-                            <div data-href="<?= $category['href']; ?>" style="float:left;color: #757575 !important;text-align: justify;float: left;" class="<?= $icon; ?> a-category-style">
+                            <div data-href="<?= $category['href']; ?>" style="float:left;font-family: 'Helvetica';font-weight: 600;float: left;color: #666666;font-size: 14px;" class="<?= $icon; ?> a-category-style">
                                 <?php echo $category['name']; ?>
                             </div>
                         </a>

@@ -92,34 +92,27 @@
                 </div>
                 <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <?php foreach ($products as $product) {
-         $aa =array_random($a);
-        ?>
+                        $aa = array_random($a);
+                    ?>
                     <div class="product-layout product-list col-xs-12 col-md-6 col-sm-12 col-lg-6">
                         <span class="ribbon"> от <?php echo $product['tax']; ?></span>
                         <div class="product-thumb cat-thumb" style="background-color: <?php echo $b[$aa]; ?>">
                             <div class="row " style="margin: 0;">
-                                <div class="col-xs-6 col-sm-6 prodleft border_conteiner" style="min-height:200px;background: url(<?php echo $product['thumb']; ?>) center no-repeat;background-size: cover;">
-                                    <a
-                                            href="<?php echo $product['href']; ?>">
-                                    <!--<img
-                                                src="<?php echo $product['thumb']; ?>"
-                                                alt="<?php echo $product['name']; ?>"
-                                                title="<?php echo $product['name']; ?>" class="img-responsive"/> --></a>
-                                </div>
+                                <a href="<?php echo $product['href']; ?>">
+                                    <div class="col-xs-6 col-sm-6 prodleft border_conteiner" style="min-height:200px;background: url(<?php echo $product['thumb']; ?>) center no-repeat;background-size: cover;">
+                                    </div>
+                                </a>
                                 <span class="ribbonright" style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
                                 <div class="col-xs-6 col-sm-6 text-center prodright" style="padding:0px;">
-                                    <h4 class="text_zagoli"><a
-                                                href="<?php echo $product['href']; ?>">
-                                        <b><?php echo $product['name']; ?></a></b>
+                                    <h4 class="text_zagoli">
+                                        <a href="<?php echo $product['href']; ?>">
+                                            <b><?php echo $product['name']; ?></b>
+                                        </a>
                                     </h4>
-                                    <!--<p><?php echo $product['description']; ?></p>-->
                                     <div class="row text-center">
-                                        <button style="background-color: <?php echo $c[$aa]; ?>" class="btncart"
-                                                type="button"
-                                                onclick="cart.add('<?php echo $product['product_id']; ?>');">
-                                            <span class=""
-                                                  style="color:<?php echo $d[$aa]; ?>"><?php echo $button_cart;?></span>
-                                        </button>
+                                        <a href="<?php echo $product['href']; ?>" style="background-color: <?php echo $c[$aa]; ?>;padding: 10px;" class="btncart" >
+                                            <span class="" style="color:<?php echo $d[$aa]; ?>"><?php echo $button_cart;?></span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
