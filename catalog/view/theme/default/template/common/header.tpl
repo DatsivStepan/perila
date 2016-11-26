@@ -126,7 +126,7 @@
         </div>
         <div class="no-margin mobile-btn-div">
 
-          <button type="button" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>Вызвать замерщика</span></button>
+          <button type="button" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>ВЫЗВАТЬ ЗАМЕРЩИКА</span></button>
         </div>
       </div>
     </div>
@@ -145,7 +145,7 @@
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin btn-header:hover">
-            <a href="" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn">Вызвать замерщика</a>
+            <a href="" style="font-size: 12px" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding-left: 0">
@@ -293,4 +293,3 @@
     </div>
   </div>
 </div>
-

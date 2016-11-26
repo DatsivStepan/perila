@@ -1,9 +1,9 @@
-            <div class="row prodctcathome hidden-xs">   
+<div class="row prodctcathome hidden-xs">   
             <?php foreach ($categories as $category) { ?>
              <a href="<?php echo $category['href'];?>" tabindex="-1" title="<?php echo $category['name'];?>" >
     <div class="product col-sm-6 col-md-6 col-lg-4">
     <div class="cat-thumb">
-		<div class="menunamecat text-center">
+		<div class="menunamecat text-center" style="padding:15px;">
 			<span class="menunamecat-span-style"><?= $category['name'];?></span>
 		</div>
 		<div class="productimg">
@@ -14,11 +14,3 @@
             <?php } ?>
         
 </div>
-
-
-        
-   
-
-
-
-

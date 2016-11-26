@@ -23,7 +23,7 @@ html, body {
 }
 
 .bold {
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-weight: 500;
     font-size: 24px;
     color: #000000;
@@ -32,7 +32,7 @@ html, body {
 }
 
 .light2 {
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-weight: lighter;
     font-size: 16px;
     color: #000000;
@@ -40,7 +40,7 @@ html, body {
 }
 
 p.str1, p.str2, p.str3, p.str4 {
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-weight: 300;
     font-size: 17px;
     color: #000000;
@@ -48,7 +48,7 @@ p.str1, p.str2, p.str3, p.str4 {
 }
 
 p.texs1, p.texs2, p.texs3, p.texs4 {
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-weight: lighter;
     font-size: 17px;
     color: #737373;
@@ -115,7 +115,7 @@ p.vopros {
 }
 
 label.entry_email, label.entry_enquiry {
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-weight: 300;
     font-size: 13px;
     color: #999999;
@@ -172,7 +172,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 20px;
         color: #008fd1;
         font-weight: 300;
@@ -201,7 +201,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -213,7 +213,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 25px;
         color: #000000;
@@ -223,7 +223,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.str1, p.str2, p.str3, p.str4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 300;
         font-size: 20px;
         color: #000000;
@@ -239,7 +239,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.texs1, p.texs2, p.texs3, p.texs4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 20px;
         color: #737373;
@@ -278,7 +278,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     label.entry_email, label.entry_enquiry {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 300;
         font-size: 15px;
         color: #999999;
@@ -305,7 +305,7 @@ label.entry_email, label.entry_enquiry {
         display: block;
     }
     .category_heading_title_1 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
         font-weight: 500;
         font-size: 25px;
@@ -315,14 +315,14 @@ label.entry_email, label.entry_enquiry {
         background: whitesmoke;
     }
     .prodright a{
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 12px;
         font-weight: 500;
         color: #000000;
 
     }
     .prodright p{
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 12px;
         font-weight: 300;
         color: #000000;
@@ -332,7 +332,7 @@ label.entry_email, label.entry_enquiry {
         font-size: 30px;
         font-weight: 600;
         color: #000000;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
         background: whitesmoke;
     }
@@ -378,7 +378,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 31.5px;
         color: #008fd1;
         font-weight: 300;
@@ -407,7 +407,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -419,7 +419,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 36px;
         color: #000000;
@@ -429,7 +429,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light2 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 16px;
         color: #000000;
@@ -437,7 +437,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.str1, p.str2, p.str3, p.str4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 300;
         font-size: 36px;
         color: #000000;
@@ -453,7 +453,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.texs1, p.texs2, p.texs3, p.texs4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 33px;
         color: #737373;
@@ -492,7 +492,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     label.entry_email, label.entry_enquiry {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 300;
         font-size: 29px;
         color: #999999;
@@ -525,7 +525,7 @@ label.entry_email, label.entry_enquiry {
         border-top: 10px solid #f8c828;
     }
     .category_heading_title_1 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
         font-weight: 500;
         font-size: 37px;
@@ -545,7 +545,7 @@ label.entry_email, label.entry_enquiry {
        padding: 0;
     }
     .text_span_1 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 600;
         font-size: 30px;
         color: #000000;
@@ -565,7 +565,7 @@ label.entry_email, label.entry_enquiry {
     }
     .text_title_article{
     !important;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -605,7 +605,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 16.5px;
         color: #008fd1;
         font-weight: 300;
@@ -651,7 +651,7 @@ label.entry_email, label.entry_enquiry {
         border-radius: 3px;
     }
     .category_heading_title_1 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
         font-weight: 500;
         font-size: 37px;
@@ -668,7 +668,7 @@ label.entry_email, label.entry_enquiry {
     .text_span_1{
         font-size: 20px;
         color: #000000;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
     }
     .borderb {
@@ -681,7 +681,7 @@ label.entry_email, label.entry_enquiry {
     }
     .text_title_article{
         !important;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -735,7 +735,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -743,7 +743,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -755,7 +755,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -764,7 +764,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light2 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 16px;
         color: #000000;
@@ -772,7 +772,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 23.5px;
         color: #008fd1;
         font-weight: 300;
@@ -780,7 +780,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.str1, p.str2, p.str3, p.str4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 300;
         font-size: 17px;
         color: #000000;
@@ -820,7 +820,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.texs1, p.texs2, p.texs3, p.texs4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 17px;
         color: #737373;
@@ -829,7 +829,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .category_heading_title {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
         font-weight: 500;
         font-size: 24px;
@@ -837,14 +837,14 @@ label.entry_email, label.entry_enquiry {
         margin: 0 0 57px 82px;
     }
     .prodright a{
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 13px;
         font-weight: 500;
         color: #000000;
 
     }
     .prodright p{
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 13px;
         font-weight: 300;
         color: #000000;
@@ -878,7 +878,7 @@ label.entry_email, label.entry_enquiry {
     .text_span {
         font-size: 22px;
         color: #000000;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
     }
     .margin_prem2{
@@ -886,7 +886,7 @@ label.entry_email, label.entry_enquiry {
     }
     .text_title_article{
     !important;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 22px;
         color: #000000;
@@ -904,7 +904,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     #row_text {
-        font-family: 'HelveticaNeueCyr';
+        font-family: 'Helvetica';
         font-style: italic;
         font-size: 17px;
         color: #008fd1;
@@ -916,7 +916,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .bold {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 24px;
         color: #000000;
@@ -925,7 +925,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light2 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 16px;
         color: #000000;
@@ -933,7 +933,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     .light {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-size: 23.5px;
         color: #008fd1;
         font-weight: 300;
@@ -941,7 +941,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.str1, p.str2, p.str3, p.str4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 300;
         font-size: 17px;
         color: #000000;
@@ -1011,7 +1011,7 @@ label.entry_email, label.entry_enquiry {
     }
 
     p.texs1, p.texs2, p.texs3, p.texs4 {
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: lighter;
         font-size: 17px;
         color: #737373;
@@ -1048,12 +1048,12 @@ label.entry_email, label.entry_enquiry {
     .text_span {
         font-size: 22px;
         color: #000000;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         text-transform: uppercase;
     }
     .text_title_article{
     !important;
-        font-family: HelveticaNeueCyr;
+        font-family: 'Helvetica';
         font-weight: 500;
         font-size: 22px;
         color: #000000;
@@ -1063,7 +1063,7 @@ label.entry_email, label.entry_enquiry {
 }
 
 .category_heading_title {
-    font-family: 'HelveticaNeueCyr';
+    font-family: 'Helvetica';
     text-transform: uppercase;
     font-weight: 500;
     font-size: 25px;
@@ -1077,13 +1077,13 @@ label.entry_email, label.entry_enquiry {
      border-left: 1px solid #999999;
  }
  h4.text_zagolovok{
-     font-family: 'HelveticaNeueCyr';
+     font-family: 'Helvetica';
      font-weight: 500;
      font-size: 16px;
      color: #000000;
  }
 .text_breadcrumb{
-    font-family: 'HelveticaNeueCyr';
+    font-family: 'Helvetica';
     font-style: italic;
     font-weight: 300;
     font-size: 16px;
@@ -1097,7 +1097,7 @@ label.entry_email, label.entry_enquiry {
 }
 .text_breadcrumb_article{
 
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-size: 18px;
     text-transform: lowercase;
     !important;
@@ -1113,13 +1113,13 @@ label.entry_email, label.entry_enquiry {
 h4.style_heading_title{
     !important;
     padding: 0;
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-size: 16px;
     font-weight: 400;
 }
 .style_description{
     !important;
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     color: #000000;
     font-size: 16px;
     font-weight: 300;
@@ -1127,7 +1127,7 @@ h4.style_heading_title{
 }
 .style_datecreate{
 !important;
-    font-family: HelveticaNeueCyr;
+    font-family: 'Helvetica';
     font-size: 16px;
     font-weight: 300;
     color: #000000;

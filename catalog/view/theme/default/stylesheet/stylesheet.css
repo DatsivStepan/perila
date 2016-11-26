@@ -10,7 +10,7 @@
 
 body {
     background-color: #f4f4f4;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: 400;
 	color: #666;
 	font-size: 12px;
@@ -331,7 +331,7 @@ footer a:hover {
 	color: #fff;
 }
 footer h5 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	color: #fff;
@@ -353,12 +353,13 @@ footer h5 {
     font-size: 20px;
 }
 .menunamecat{
+    padding: 5px;
     background-color: #fcfcfc;
     color: #8a8a8a;
 }
 .menunamecat span{
-    line-height: 4;
-    font-size: 100%;
+    
+    font-size: 15px;
 }
 .product {
     padding-bottom: 2%;
@@ -422,18 +423,18 @@ footer h5 {
 .prodright h4{
     font-size: 14px;
    
-    font-family: "Conv_pfdindisplaypro-reg";
+    font-family: 'Helvetica';
     text-transform: uppercase;
 }
 .prodright a{
-	font-family: HelveticaNeueCyr;
+	font-family: 'Helvetica';
 	font-size: 13px;
 	font-weight: 500;
     color: #000000;
     
 }
 .prodright p{
-	font-family: HelveticaNeueCyr;
+	font-family: 'Helvetica';
 	font-size: 15px;
 	font-weight: 300;
     color: #000000;
@@ -446,7 +447,7 @@ footer h5 {
     background-color: #008fd1;
     outline: none !important;
     width: 70%;
-	font-family: HelveticaNeueCyr;
+	font-family: 'Helvetica';
     font-size: 15px;
     vertical-align: bottom;
     padding: 0;
@@ -478,7 +479,7 @@ footer h5 {
 .prem_header span{
     font-size: 17px;
     color: #ffffff;
-    font-family: "Helvetica";
+    font-family: 'Helvetica';
 	font-weight: 700;
     text-transform: uppercase;
 }
@@ -563,7 +564,7 @@ footer h5 {
 .prem2{
     font-size: 22px;
     color: #ffffff;
-    font-family: "Conv_pfdindisplaypro-reg";
+    font-family: 'Helvetica';
     text-transform: uppercase;
 }
 .borderb{
@@ -760,14 +761,14 @@ padding-left: 0px;
 .bluegar span{
     font-size: 18px;
     color: #ffffff;
-    font-family: "Conv_pfdindisplaypro-reg";
+    font-family: 'Helvetica';
     text-transform: uppercase;
 }
 .bluegar p{
         margin-top: 25%;
     font-size: 14px;
     color: #000000;
-    font-family: "Conv_pfdindisplaypro-reg";
+    font-family: 'Helvetica';
     text-transform: uppercase;
     line-height: 2;
     border: 1px solid #000000;
@@ -776,7 +777,7 @@ padding-left: 0px;
     color: #000000!important;
 }
 .ribbon {
-	font-family: HelveticaNeueCyr;
+	font-family: 'Helvetica';
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
@@ -1236,7 +1237,10 @@ h2.price {
    
     background-repeat: no-repeat ;
 	border-radius: 10px;
-	background-image: url(/../../image/catalog/scroll.png);
+	background: url(/../../image/catalog/scroll.png) center no-repeat;
+	background-color:#f0f0f0;
+	border:1px solid #a3a3a3;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 .wrap li{
     padding: 15px;
@@ -1585,7 +1589,7 @@ h2.price {
 }
 .form-text-style{
 	font-size: 15px;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica' !important;
 	font-weight: 400;
 	color: #ffffff;
 }
@@ -1692,7 +1696,7 @@ h2.price {
 	background-color: transparent !important;
 }
 .footer-text-reklama{
-	padding: 16px 0 0;
+	padding: 20px 0 0;
 	text-align: right;
 }
 .footer-reklama-logo{
@@ -2402,6 +2406,10 @@ h2.price {
 		line-height: 40px;
 	}
 }
+input[name ="search"]::-webkit-input-placeholder {color:#000; !important}
+input[name ="search"]::-moz-placeholder          {color:#000; !important}/* Firefox 19+ */
+input[name ="search"]:-moz-placeholder           {color:#000; !important}/* Firefox 18- */
+input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
 
 /* fixed colum left + content + right*/
 @media (min-width: 768px) {
@@ -2417,4 +2425,78 @@ h2.price {
     #content + #column-right .product-layout .col-md-3{
        width: 100%;
     }
+}
+.banner-div-text{
+	background-size: cover;
+	background-image: url(/../../catalog/view/theme/default/image/banner-img.png);
+	padding-left: 2%;
+	position: absolute;
+	z-index: 100;
+	top: 31%;
+	left: 9%;
+	padding-right: 16%;
+	padding-bottom: 1%;
+}
+
+.slider-text-style_1{
+	font-family: 'HelveticaNeueCyr';
+	font-weight: 700;
+	font-size: 50px;
+	color: #fff;
+}
+.slider-text-style_2{
+	font-family: 'HelveticaNeueCyr';
+	font-weight: 700;
+	font-size: 40px;
+	color: #fff;
+}
+.slider-text-style_3{
+	font-family: 'HelveticaNeueCyr';
+	font-weight: 200;
+	font-size: 20px;
+	color: #fff;
+}
+.slider-text-style_4{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-image: url(/../../catalog/view/theme/default/image/text_img.png);
+	height: 25px;
+	width: 75%;
+	background-size: cover;
+}
+
+.CategoryName{
+    position:relative;
+    padding-left:15px;
+    padding-right:10px;
+}
+
+.CategoryNameActive{
+    position:relative;
+    padding-left:15px;
+    padding-right:10px;
+}
+
+.CategoryName:after{
+    content:'';
+    width:9px;
+    height:9px;
+    position:absolute;
+    left:0px;
+    background-color:white;
+    border:1px solid #c8c8c8;
+    border-radius:50%;
+    top:7px;
+}
+.CategoryNameActive:after{
+    content:'';
+    width:9px;
+    height:9px;
+    position:absolute;
+    left:0px;
+    background-color:white;
+    border:1px solid #c8c8c8;
+    border-radius:50%;
+    top:7px;
+    background-color:#008fd1;
 }

@@ -3,6 +3,12 @@
         <span>qwfwqf</span>
     </div>
 </div>-->
+<div class="banner-div-text" >
+  <span class="slider-text-style_1">Компания Dekorperila -</span></br>
+  <span class="slider-text-style_2">это опора вашего успеха</span></br>
+  <div class="slider-text-style_4"></div>
+  <span class="slider-text-style_3">Проектирование и изготовление перил</br>и лестничных ограждений</span>
+</div>
 <div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style" style="height: 445px; border: 0">
   <?php foreach ($banners as $banner) { ?>
   <div class="item">

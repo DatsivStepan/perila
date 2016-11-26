@@ -7,31 +7,28 @@
                     <?php
                         $classes = '';
                         $display = 'display:none;';
-                        $icon = ' category-icon-style_1 ';
+                        $icon = ' CategoryName ';
                         if ($category['category_id'] == $category_id) {
                             $classes .= 'active';
                             $display = '';
-                            $icon = ' category-icon-style ';
+                            $icon = ' CategoryNameActive ';
                         }
                     ?>
 
-                    <li class='<?= $classes; ?> li-category-style'>
-                        <a   class='clickParentMenu '  title="<?php echo $category['name'];?>">
-                         <!--  <i class='fa <?= $icon; ?>' style='cursor:pointer;font-size:18px;'></i>-->
-                            <div class="<?= $icon; ?>"></div>
-                         <!--  <a href="<?php echo $category['href'];?>"  class='clickParentMenu a-category-style'  title="<?php echo $category['name'];?>">-->
-                            <span data-href="<?= $category['href']; ?>" style="cursor:pointer;" class="clickCategoryName a-category-style">
+                    <li class='<?= $classes; ?> li-category-style' style="line-height: 19px;margin-bottom:5px;color: #8a8a8a !important;margin-bottom: 8px;">
+                        <a href="<?php echo $category['href'];?>"   class='clickParentMenu '  title="<?php echo $category['name'];?>" style="display:block;">
+                            <div data-href="<?= $category['href']; ?>" style="float:left;color: #757575 !important;text-align: justify;float: left;" class="<?= $icon; ?> a-category-style">
                                 <?php echo $category['name']; ?>
-                            </span>
-                          <!--  </a> -->
+                            </div>
                         </a>
+                        <div style="clear:both;"></div>
                         <?php if($category['children']) { ?>
                             <ul class="dropDownSubMenu" style='<?= $display; ?>'>
                                 <?php
                                     foreach ($category['children'] as $child)
                                     {
                                 ?>
-                                <li class="li-category-child-style">
+                                <li class="li-category-child-style" style="margin-top:7px;">
                                     <?php if ($child['category_id'] == $child_id) { ?>
                                         <a href="<?php echo $child['href'];?>" tabindex="-1" title="<?php echo $child['name'];?>" class="active "><?php echo $child['name'];?></a>
                                     <?php } else { ?>
@@ -41,32 +38,8 @@
                                 <?php } ?>
                              </ul>
                         <?php }  ?>
+                        <div style="clear:both;"></div>
+                    </li>
                 <?php } ?>
      </ul>
 </div>
-
-         
-
-                
-                
-                
-                  
-                       
-                        
-           
-          
-                
-    
-                       
-                  
-                
-         
-
-
-
-        
-   
-
-
-
-

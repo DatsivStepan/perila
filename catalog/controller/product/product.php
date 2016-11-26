@@ -1,10 +1,11 @@
 <?php
 class ControllerProductProduct extends Controller {
-
-	private $error = array();
+    private $error = array();
 
 	public function index() {
 		$this->load->language('product/product');
+
+
 
 		$data['breadcrumbs'] = array();
         
@@ -306,7 +307,7 @@ $data['catname'] = $category_info['name'];
 			}
 
 			if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
-				$data['price'] = $product_info['price'];
+				$data['price'] = (int)$this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
 			} else {
 				$data['price'] = false;
 			}
@@ -410,7 +411,7 @@ $data['catname'] = $category_info['name'];
 				} else {
 					$price = false;
 				}
-
+var_dump($price);exit;
 				if ((float)$result['special']) {
 					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
 				} else {

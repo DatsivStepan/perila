@@ -39,7 +39,6 @@
             <?php if ($thumb || $images) { ?>
                 <ul class="thumbnails text-center" style="border: 1px solid #999999;">
                     <?php if ($thumb) { ?>
->>>>>>> Change design and mobile contact form
                         <li style="overflow-y: hidden;">
                             <a class="product-img" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>">
                                 <img class="prodimggolov" src="<?php echo $thumb; ?>"
@@ -106,7 +105,7 @@
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="row">
                                     <input class="cartinput text-center" type="text" id="quantity" name="quantityq"
-                                           value="<?php echo $price; ?>" class="input_product text-center"/>
+                                           value="<?php echo $price; ?>" class="input_product text-center" disabled="disabled">
                                 </div>
                                 <div class="row carttov1-prise-text-style">рублей</div>
                             </div>
@@ -115,7 +114,7 @@
                        <span class="quont-plus">
                            <i class="fa fa-plus" id="plus"></i>
                        </span>
-                                    <input class="plusminusinp text-center" type="text" name="quantity" value="1"
+                                    <input class="plusminusinp text-center" type="text" name="quantity" min="1" value="1"
                                            size="2" id="input-quantity" class="input_product text-center"/>
                        <span class="quont-minus">
                            <i class="fa fa-minus" id="minus"></i>

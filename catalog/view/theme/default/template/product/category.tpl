@@ -61,11 +61,16 @@
                     <a href="<?php echo $category['href']; ?>">
                         <div class="col-md-12 cat-thumb  no-padding no-margin text-center categoryshow"
                              style="background-color: <?php echo $b[$aa]; ?>">
-                            <diw class="row spancat">
-                                <span class="category-title-style"><?php echo $category['name']; ?></span>
-                                <img src="<?php echo 'image/',$category['image']; ?>" style="margin-top:15px;"
+                            <div class="col-sm-12 spancat" style="padding:0px;">
+                                <div style="height: 70px !important;padding:10px;line-height: 19px;" class="category-title-style"><?php echo $category['name']; ?></div>
+                                <?php if($category['image'] != ''){ ?>
+                                <img src="<?php echo 'image/',$category['image']; ?>"
                                      alt="<?php echo $category['name']; ?>" class="img-responsive"/>
-                            </diw>
+                                <?php }else{ ?>
+                                <img src="../../image/catalog/perila_default.png"
+                                     alt="<?php echo $category['name']; ?>" class="img-responsive"/>
+                                <?php } ?>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -93,18 +98,21 @@
                         <span class="ribbon"> от <?php echo $product['tax']; ?></span>
                         <div class="product-thumb cat-thumb" style="background-color: <?php echo $b[$aa]; ?>">
                             <div class="row " style="margin: 0;">
-                                <div class="col-xs-6 col-sm-6 prodleft border_conteiner"><a
-                                            href="<?php echo $product['href']; ?>"><img
+                                <div class="col-xs-6 col-sm-6 prodleft border_conteiner" style="min-height:200px;background: url(<?php echo $product['thumb']; ?>) center no-repeat;background-size: cover;">
+                                    <a
+                                            href="<?php echo $product['href']; ?>">
+                                    <!--<img
                                                 src="<?php echo $product['thumb']; ?>"
                                                 alt="<?php echo $product['name']; ?>"
-                                                title="<?php echo $product['name']; ?>" class="img-responsive"/></a>
+                                                title="<?php echo $product['name']; ?>" class="img-responsive"/> --></a>
                                 </div>
                                 <span class="ribbonright" style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
-                                <div class="col-xs-6 col-sm-6 text-center prodright">
+                                <div class="col-xs-6 col-sm-6 text-center prodright" style="padding:0px;">
                                     <h4 class="text_zagoli"><a
-                                                href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+                                                href="<?php echo $product['href']; ?>">
+                                        <b><?php echo $product['name']; ?></a></b>
                                     </h4>
-                                    <p><?php echo $product['description']; ?></p>
+                                    <!--<p><?php echo $product['description']; ?></p>-->
                                     <div class="row text-center">
                                         <button style="background-color: <?php echo $c[$aa]; ?>" class="btncart"
                                                 type="button"
