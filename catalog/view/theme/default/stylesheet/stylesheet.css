@@ -1399,15 +1399,15 @@ h2.price {
 	color: #000000 !important;
 }
 .mobile-logo-padding{
-	padding-top: 9%;
-	padding-bottom: 9%;
-	padding-left: 13px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 0px;
 }
 .mobile-email-padding{
-	padding-left: 46px;
+	padding-left: 20px;
 }
 .mobile-phone-padding{
-	padding-right: 46px;
+	padding-right: 20px;
 }
 .mobile-phone-style{
 	font-family: 'Bebas Neue';
@@ -1446,14 +1446,14 @@ h2.price {
 	position: absolute;
 	top: 70px;
 	z-index: 100;
-	right: 0;
 }
 .email-padding{
-	padding-left: 20px;
-	padding-top: 6px;
+	padding-left: 10px;
+	padding-top: 4px;
 }
 .email-icon-padding{
-	padding-left: 35px;
+	padding-left: 30px;
+	padding-right: 0;
 }
 .width-btn{
 	width: 100%;
@@ -1473,6 +1473,7 @@ h2.price {
 	text-align: center;
 	background-color: transparent !important;
 	text-decoration: none !important;
+	padding-left: 20%;
 }
 .a-menu-style, .a-menu-style:focus{
 	text-decoration: none !important;
@@ -1522,16 +1523,16 @@ h2.price {
 	margin-top: 24% !important;
 }
 .mobile-btn-padding{
-	padding-top: 7% !important;
-	padding-bottom: 7% !important;
+	padding-right: 0;
+	padding-top: 0;
 	width: 15% !important;
 }
 .mobile-navbar-height{
 	height: 15% !important;
 }
 .email-style{
-	font-size: 90%;
-	font-family: 'Helvetica Neue';
+	font-size: 15px;
+	font-family: 'Helvetica';
 	font-weight: 400;
 	color: #000000;
 }
@@ -1542,10 +1543,10 @@ h2.price {
 	font-size: 18px;
 }
 .graph-style{
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica';
 	font-weight: 300;
 	line-height: 15px;
-	font-size: 10px;
+	font-size: 11px;
 	color: #fff;
 }
 .top-header-style{
@@ -2007,6 +2008,7 @@ h2.price {
 	font-family: 'Helvetica' !important;
 	font-weight: 200 !important;
 	font-size: 13px !important;
+	
 }
 .menunamecat-span-style{
 	background-color: #fcfcfc !important;
@@ -2035,6 +2037,14 @@ h2.price {
 	font-family: "Helvetica" !important;
 	font-weight: 200 !important;
 	font-size: 14px !important;
+}
+.btn-font-size{
+	font-size: 12px;
+}
+@media (max-width: 991px) and (min-width: 256px )   {
+	.btn-font-size{
+		font-size: 8px;
+	}
 }
 @media (max-width: 991px) and (min-width: 256px )   {
 	.prem-home-style{
@@ -2439,19 +2449,19 @@ input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
 }
 
 .slider-text-style_1{
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'Helvetica';
 	font-weight: 700;
 	font-size: 50px;
 	color: #fff;
 }
 .slider-text-style_2{
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'Helvetica';
 	font-weight: 700;
 	font-size: 40px;
 	color: #fff;
 }
 .slider-text-style_3{
-	font-family: 'HelveticaNeueCyr';
+	font-family: 'Helvetica';
 	font-weight: 200;
 	font-size: 20px;
 	color: #fff;

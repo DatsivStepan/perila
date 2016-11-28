@@ -9,7 +9,7 @@
   <div class="slider-text-style_4"></div>
   <span class="slider-text-style_3">Проектирование и изготовление перил</br>и лестничных ограждений</span>
 </div>
-<div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style" style="height: 445px; border: 0">
+<div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style" style="height: 445px; border: 0; position: relative">
   <?php foreach ($banners as $banner) { ?>
   <div class="item">
     <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive" style="width: 100%;" />
@@ -23,7 +23,7 @@
   </div>
   <?php } ?>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $('#slideshow<?php echo $module; ?>').owlCarousel({
 	items: 6,
 	autoPlay: 3000,
@@ -32,4 +32,4 @@ $('#slideshow<?php echo $module; ?>').owlCarousel({
 
 	pagination: true
 });
---></script>
+</script>
