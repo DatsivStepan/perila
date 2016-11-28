@@ -45,7 +45,7 @@
 <body class="<?php echo $class; ?>">
 <nav id="top" class="col-md-12 header-nav-style">
   <!--Mobile header begin-->
-  <div class="row hidden-md hidden-lg hidden-xl hidden-sm div-email-style" style="margin: 0;">
+  <div class="container hidden-md hidden-lg hidden-xl hidden-sm div-email-style" style="margin: 0;">
     <div class="col-xs-6 mobile-email-padding">
       <span class="email-color text-left mobile-email-style"><?php echo $email; ?></span>
     </div>
@@ -56,7 +56,7 @@
   <div class="row" style="margin: 0">
     <div class="hidden-lg hidden-md hidden-xl hidden-sm navbar navbar-default no-margin" style=" border-top-width: 0px !important;">
       <div class="container ">
-        <div class="navbar-header col-xs-12 mobile-navbar-height" style="margin: 0">
+        <div class="navbar-header col-xs-12 mobile-navbar-height no-padding" style="margin: 0">
           <div class="col-xs-9 no-margin mobile-logo-padding">
             <?php if ($logo) { ?>
             <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
-            <ul class="nav navbar-nav" style="line-height: 30px">
+            <ul class="nav navbar-nav" style="line-height: 30px; width: 95%">
               <a href="index.php?route=common/home"><li class="li-text-style">Главная</li></a>
                 <a href="index.php?route=information/about"><li class="li-text-style">О компании</li></a>
                 <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
@@ -122,11 +122,10 @@
           <span class="mobile-text-style">и лестничных ограждений</span>
         </div>
         <div class="no-margin mobile-btn-div">
-          <button type="button" class="btn nav-bar mobile-btn mobile-btn-style-2 ">Оформить заказ</button>
+          <button type="button" data-toggle="modal" data-target="#modal-window-vuzvat" class="btn nav-bar mobile-btn mobile-btn-style-2 ">Оформить заказ</button>
         </div>
         <div class="no-margin mobile-btn-div">
-
-          <button type="button" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>ВЫЗВАТЬ ЗАМЕРЩИКА</span></button>
+          <button type="button" data-toggle="modal" data-target="#modal-window-vuzvat" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>Вызвать замерщика</span></button>
         </div>
       </div>
     </div>
@@ -145,7 +144,7 @@
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin btn-header:hover">
-            <a href="" style="font-size: 12px" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
+            <a href="" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn btn-font-size">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding-left: 0">
@@ -153,6 +152,7 @@
             <?php echo $search; ?>
           </div>
           <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 " style="padding-right: 0">
+              <div style="position: relative">
             <div class="col-sm-6 col-md-6 col-lg-6 no-padding style-display-none">
               <div class="col-sm-4 col-md-4 col-lg-4 graph-icon-padding">
                 <img src="../../../admin/view/image/graphic.png">
@@ -161,8 +161,16 @@
                 <?php echo $open; ?>
               </div>
             </div>
+              <div class="row email-position">
+                  <div class="col-sm-3 col-md-3 col-lg-3 email-icon-padding" >
+                      <img src="../../../admin/view/image/Email-logo.png">
+                  </div>
+                  <div class="col-sm-9 col-md-8 col-lg-9 email-padding email-style">
+                      <?php echo $email; ?>
+                  </div>
+              </div>
+              </div>
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 no-margin phone-padding div-media-width">
-              <div style="position: relative">
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 phone-icon-padding" style="color: #008fd1">
                   <ul class="list-inline">
                     <li><a href="<?php echo $contact; ?>"><img src="../../../admin/view/image/phoneIcon.png"></a>
@@ -171,15 +179,6 @@
                       <span style="" class="phone-style"><?php echo $telephone; ?></span></li>
                   </ul>
                 </div>
-              </div>
-              <div class="row email-position">
-                <div class="col-sm-3 col-md-3 col-lg-3 email-icon-padding" >
-                  <img src="../../../admin/view/image/Email-logo.png">
-                </div>
-                <div class="col-sm-9 col-md-8 col-lg-9 email-padding email-style">
-                  <?php echo $email; ?>
-                </div>
-              </div>
             </div>
           </div>
         </div>
