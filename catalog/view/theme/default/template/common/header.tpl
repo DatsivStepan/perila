@@ -74,12 +74,12 @@
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
             <ul class="nav navbar-nav" style="line-height: 30px; width: 95%">
-              <a href="index.php?route=common/home"><li class="li-text-style">Главная</li></a>
-                <a href="index.php?route=information/about"><li class="li-text-style">О компании</li></a>
-                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
-              <a href="index.php?route=information/gallery"><li class="li-text-style">Наши работы</li></a>
-              <a href="index.php?route=information/delivery"><li class="li-text-style">Доставка и оплата</li></a>
-              <a href="index.php?route=information/contact"><li class="li-text-style">Контакты</li></a>
+              <a href="index.php?route=common/home"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Главная</li></a>
+                <a href="index.php?route=information/about"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">О компании</li></a>
+                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Новости</li></a>
+              <a href="index.php?route=information/gallery"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Наши работы</li></a>
+              <a href="index.php?route=information/delivery"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Доставка и оплата</li></a>
+              <a href="index.php?route=information/contact"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Контакты</li></a>
             </ul>
         <!--  <?php if ($categories) { ?>
           <ul class="nav navbar-nav no-margin">
@@ -110,13 +110,13 @@
     <div class="hidden-lg hidden-md hidden-xl hidden-sm  col-sm-12 col-xs-12 no-padding mobile-background-image" >
       <div class="container">
         <div class="">
-        <div class="col-xs-8 banner-text-padding" >
+        <div class="col-xs-8 banner-text-padding" style="padding-left: 0">
           <span class=" banner-text-style" style="display: block">Это опора вашего<br> успеха</br></span>
         </div>
         <div class="col-xs-3 div-banner-border" >
         </div>
         </div>
-        <div class="col-xs-12 mobile-text-div">
+        <div class="col-xs-12 mobile-text-div" style="padding-left: 0">
           <span class="mobile-text-style">Проектирование</span><br>
           <span class="mobile-text-style">и изготовление перил</span><br>
           <span class="mobile-text-style">и лестничных ограждений</span>
@@ -197,20 +197,20 @@
           <div class="navbar-default">
             <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=common/home" class="a-menu-style"><li class="li-text-style">Главная</li></a>
+                <a href="index.php?route=common/home" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">Главная</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/about" class="a-menu-style"><li class="li-text-style">О компании</li></a>
+                <a href="index.php?route=information/about" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">О компании</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li class="li-text-style">Новости</li></a>
+                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">Новости</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/gallery" style="a-menu-style"><li class="li-text-style">Наши работы</li></a>
+                <a href="index.php?route=information/gallery" style="a-menu-style"><li style="padding-left: 0" class="li-text-style">Наши работы</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                     <a href="index.php?route=information/delivery" class="a-menu-style">
-                        <li class="li-text-style">Доставка и оплата</li>
+                        <li style="padding-left: 0" class="li-text-style">Доставка и оплата</li>
                     </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
