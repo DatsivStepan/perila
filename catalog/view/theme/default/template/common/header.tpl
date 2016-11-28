@@ -74,12 +74,12 @@
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
             <ul class="nav navbar-nav" style="line-height: 30px; width: 95%">
-              <a href="index.php?route=common/home"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Главная</li></a>
-                <a href="index.php?route=information/about"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">О компании</li></a>
-                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Новости</li></a>
-              <a href="index.php?route=information/gallery"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Наши работы</li></a>
-              <a href="index.php?route=information/delivery"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Доставка и оплата</li></a>
-              <a href="index.php?route=information/contact"><li style="color: #fff; font-size: 25px; line-height: 50px" class="li-text-style">Контакты</li></a>
+              <a href="index.php?route=common/home"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Главная</li></a>
+                <a href="index.php?route=information/about"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">О компании</li></a>
+                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Новости</li></a>
+              <a href="index.php?route=information/gallery"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Наши работы</li></a>
+              <a href="index.php?route=information/delivery"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Доставка и оплата</li></a>
+              <a href="index.php?route=information/contact"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Контакты</li></a>
             </ul>
         <!--  <?php if ($categories) { ?>
           <ul class="nav navbar-nav no-margin">
@@ -175,7 +175,7 @@
                   <ul class="list-inline">
                     <li><a href="<?php echo $contact; ?>"><img src="../../../admin/view/image/phoneIcon.png"></a>
                 </div>
-                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding" >
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding div-span-padding" >
                       <span style="" class="phone-style"><?php echo $telephone; ?></span></li>
                   </ul>
                 </div>
