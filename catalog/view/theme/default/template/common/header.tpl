@@ -147,12 +147,12 @@
             <a href="" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn btn-font-size">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding-left: 0">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 header-search-padding">
           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 search-padding">
             <?php echo $search; ?>
           </div>
-          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 " style="padding-right: 0">
-              <div style="position: relative">
+          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 header-graph-div-padding">
+              <div class="header-div-graph-position">
             <div class="col-sm-6 col-md-6 col-lg-6 no-padding style-display-none">
               <div class="col-sm-4 col-md-4 col-lg-4 graph-icon-padding">
                 <img src="../../../admin/view/image/graphic.png">
@@ -171,12 +171,12 @@
               </div>
               </div>
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 no-margin phone-padding div-media-width">
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 phone-icon-padding" style="color: #008fd1">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 phone-icon-padding headre-phone-div-color">
                   <ul class="list-inline">
                     <li><a href="<?php echo $contact; ?>"><img src="../../../admin/view/image/phoneIcon.png"></a>
                 </div>
                 <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding div-span-padding" >
-                      <span style="" class="phone-style"><?php echo $telephone; ?></span></li>
+                      <span class="phone-style"><?php echo $telephone; ?></span></li>
                   </ul>
                 </div>
             </div>
@@ -191,26 +191,26 @@
       </div>
     </div>
 
-    <div class="row no-margin hidden-xs" style="background-color: #ffffff; padding-top: 10px">
+    <div class="row no-margin hidden-xs header-menu-div-style">
       <div class="container">
-        <nav class="navbar" style="margin: 0; border-radius:0; border: 0;">
+        <nav class="navbar header-navbar-style">
           <div class="navbar-default">
             <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="/" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">Главная</li></a>
+                <a href="/" class="a-menu-style"><li class="li-text-style li-padding-0">Главная</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/about" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">О компании</li></a>
+                <a href="index.php?route=information/about" class="a-menu-style"><li class="li-text-style li-padding-0">О компании</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">Новости</li></a>
+                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li class="li-text-style li-padding-0">Новости</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/gallery" style="a-menu-style"><li style="padding-left: 0" class="li-text-style">Наши работы</li></a>
+                <a href="index.php?route=information/gallery" class="a-menu-style"><li class="li-text-style li-padding-0">Наши работы</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                     <a href="index.php?route=information/delivery" class="a-menu-style">
-                        <li style="padding-left: 0" class="li-text-style">Доставка и оплата</li>
+                        <li class="li-text-style li-padding-0">Доставка и оплата</li>
                     </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
@@ -219,63 +219,25 @@
             </ul>
           </div>
         </nav>
-         <!-- <?php if ($categories) { ?>
-          <nav class="navbar" style="margin: 0; border-radius:0; border: 0;">
-            <div class="navbar-default">
-                <ul class="nav navbar-nav ul-position" >
-                  <?php $counter=0; ?>
-                  <?php foreach ($categories as $category) { $counter++;  ?>
-                  <?php if ($category['children']) { ?>
-                  <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-inner">
-                        <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-                        <ul class="list-unstyled">
-                          <?php foreach ($children as $child) { ?>
-                          <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
-                          <?php } ?>
-                        </ul>
-                        <?php } ?>
-                      </div>
-                      <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
-                  </li>
-                  <?php } else if($counter != count($categories)){ ?>
-                  <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                    <li class="li-text-style"><a class="a-color" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                  </div>
-                  <?php }else{  ?>
-                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
-                      <li class="li-text-style"><a class="a-color " href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                    </div>
-                  <?php } ?>
-                  <?php } ?>
-                </ul>
-            </div>
-          </nav>-->
-      </div>
-    </div>
-    <?php } ?>
   </div>
 </nav>
 <!-- Basic modal -->
 <div id="modal-window-vuzvat" class="modal fade">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <div class="modal-header" style="border-bottom: none;">
+      <div class="modal-header modal-close-div">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-
       </div>
       <div class="modal-body">
         <span class="text-center modal-contact-title">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
         <form  action="" id="contactForm_1" method="post">
-          <ul  style="padding-left: 15px">
-            <code id="errorMasege" style="display: none" class="userName error-style">Некоректно заполнены данные</code>
+          <ul  class="modal-ul-style">
+            <code id="errorMasege" class="userName modal-error-display error-style">Некоректно заполнены данные</code>
           </ul>
         <div class="form-group">
           <label>Ваше имя:</label>
           <input id="name" class="form-control" name="name">
         </div>
-
         <div class="form-group">
           <label>Ваш телефон:</label>
           <input id="phone" class="form-control" name="phone">
@@ -288,7 +250,6 @@
       <div class="form-group">
         <span class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
       </div>
-
     </div>
   </div>
 </div>

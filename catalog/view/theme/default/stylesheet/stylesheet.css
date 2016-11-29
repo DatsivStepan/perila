@@ -1544,7 +1544,7 @@ h2.price {
 	font-family: 'Bebas Neue' !important;
 	font-weight: 400;
 	color: #008fd1;
-	font-size: 23px;
+	font-size: 22px;
 }
 .graph-style{
 	font-family: 'Helvetica';
@@ -2614,4 +2614,37 @@ input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
 	padding: 5%;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+.header-search-padding{
+	padding-left: 0;
+}
+.header-graph-div-padding{
+	padding-right: 0;
+}
+.header-div-graph-position{
+	position: relative;
+}
+.headre-phone-div-color{
+	color: #008fd1;
+}
+.header-menu-div-style{
+	background-color: #ffffff;
+	padding-top: 10px;
+}
+.header-navbar-style{
+	margin: 0;
+	border-radius:0;
+	border: 0;
+}
+.li-padding-0{
+	padding-left: 0;
+}
+.modal-error-display{
+	display: none;
+}
+.modal-close-div{
+	border-bottom: none;
+}
+.modal-ul-style{
+	padding-left: 15px;
 }
