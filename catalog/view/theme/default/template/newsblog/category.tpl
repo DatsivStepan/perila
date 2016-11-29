@@ -44,7 +44,7 @@
 						<img src="<?php echo $article['original']; ?>" alt="<?= $article['name'];?>" class="img-responsive news_block_resp"/>
 					</div>
 					<div class="col-xs-12 cat_text border_block">
-						<h4 class="perila_text_h4"><?php echo $article['name']; ?></h4>
+						<span class="perila_text_h4"><a class="news-title-style" href="<?php echo $article['href'];?>"><?php echo $article['name']; ?></a></span>
 						<p class="perila_text_opus"><?php echo  $article['preview']; ?></p>
 						<p class="perila_data"><?php echo $article['date']; ?>&nbsp;/&nbsp; <a class="perila_podrobnee" href="<?php echo $article['href'];?>" tabindex="-1" title="<?php echo $article['name'];?>" >Подробнее </a></p>
 					</div>
