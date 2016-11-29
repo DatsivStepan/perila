@@ -45,18 +45,20 @@
 <body class="<?php echo $class; ?>">
 <nav id="top" class="col-md-12 header-nav-style">
   <!--Mobile header begin-->
-  <div class="container hidden-md hidden-lg hidden-xl hidden-sm div-email-style" style="margin: 0;">
+  <div class="container hidden-md hidden-lg hidden-xl hidden-sm div-email-style no-margin">
     <div class="col-xs-6 mobile-email-padding">
-      <span class="email-color text-left mobile-email-style"><?php echo $email; ?></span>
+      <span class="email-color text-left mobile-email-style">
+        <a class="email-linc-style-desktop" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+      </span>
     </div>
     <div class="col-xs-6 mobile-phone-padding">
-      <span style="" class="text-right mobile-phone-style"><?php echo $telephone; ?></span>
+      <span class="text-right mobile-phone-style"><?php echo $telephone; ?></span>
     </div>
   </div>
-  <div class="row" style="margin: 0">
-    <div class="hidden-lg hidden-md hidden-xl hidden-sm navbar navbar-default no-margin" style=" border-top-width: 0px !important;">
+  <div class="row no-margin">
+    <div class="hidden-lg hidden-md hidden-xl hidden-sm navbar navbar-default no-margin mobile-border-width">
       <div class="container ">
-        <div class="navbar-header col-xs-12 mobile-navbar-height no-padding" style="margin: 0">
+        <div class="navbar-header col-xs-12 mobile-navbar-height no-padding no-margin">
           <div class="col-xs-9 no-margin mobile-logo-padding">
             <?php if ($logo) { ?>
             <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -74,12 +76,12 @@
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
             <ul class="nav navbar-nav" style="line-height: 30px; width: 95%">
-              <a href="index.php?route=common/home"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Главная</li></a>
-                <a href="index.php?route=information/about"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">О компании</li></a>
-                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Новости</li></a>
-              <a href="index.php?route=information/gallery"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Наши работы</li></a>
-              <a href="index.php?route=information/delivery"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Доставка и оплата</li></a>
-              <a href="index.php?route=information/contact"><li style="color: #fff; font-size: 25px; line-height: 80px" class="li-text-style">Контакты</li></a>
+              <a href="index.php?route=common/home"><li class="mobile-li-style li-text-style">Главная</li></a>
+                <a href="index.php?route=information/about"><li class="mobile-li-style li-text-style">О компании</li></a>
+                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="mobile-li-style li-text-style">Новости</li></a>
+              <a href="index.php?route=information/gallery"><li class="mobile-li-style li-text-style">Наши работы</li></a>
+              <a href="index.php?route=information/delivery"><li class="mobile-li-style li-text-style">Доставка и оплата</li></a>
+              <a href="index.php?route=information/contact"><li class="mobile-li-style li-text-style">Контакты</li></a>
             </ul>
         <!--  <?php if ($categories) { ?>
           <ul class="nav navbar-nav no-margin">
@@ -110,13 +112,13 @@
     <div class="hidden-lg hidden-md hidden-xl hidden-sm  col-sm-12 col-xs-12 no-padding mobile-background-image" >
       <div class="container">
         <div class="">
-        <div class="col-xs-8 banner-text-padding" style="padding-left: 0">
-          <span class=" banner-text-style" style="display: block">Это опора вашего<br> успеха</br></span>
+        <div class="col-xs-8 banner-text-padding mobile-banner-text-padding">
+          <span class=" banner-text-style mobile-banner-text-span">Это опора вашего<br> успеха</br></span>
         </div>
         <div class="col-xs-3 div-banner-border" >
         </div>
         </div>
-        <div class="col-xs-12 mobile-text-div" style="padding-left: 0">
+        <div class="col-xs-12 mobile-text-div mobile-banner-text-padding">
           <span class="mobile-text-style">Проектирование</span><br>
           <span class="mobile-text-style">и изготовление перил</span><br>
           <span class="mobile-text-style">и лестничных ограждений</span>
@@ -166,7 +168,7 @@
                       <img src="../../../admin/view/image/Email-logo.png">
                   </div>
                   <div class="col-sm-9 col-md-8 col-lg-9 email-padding email-style">
-                      <?php echo $email; ?>
+                    <a class="email-linc-style" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                   </div>
               </div>
               </div>
