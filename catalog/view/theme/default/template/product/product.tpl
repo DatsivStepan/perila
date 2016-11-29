@@ -22,14 +22,12 @@
         </ul>
                     <div class="row" style="    padding-bottom: 3%;">
             <div class="col-sm-1 hidden-sm hidden-xs"></div>
-   <div class="col-md-4 col-xs-12 col-sm-12 text-center">
-   <div class="row hidden-md hidden-lg"> <span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
-       text-transform: uppercase;"><?php echo $catname; ?></span></div>
+   <div class="col-md-9 col-xs-12 col-sm-12 text-center">
    <div class="row"> <span name="zakaz" class="zakaz-style"><?php echo $heading_title; ?></span></div>
-  
+
     
    </div>
-    <div class="col-sm-7 hidden-sm hidden-xs">
+    <div class="col-sm-2 hidden-sm hidden-xs">
         <div class="col-sm-8 borderb"></div>
         <div class="col-sm-4 bordery"></div>
         
@@ -177,8 +175,7 @@
              if ($description !=='<p><br></p>') { ?>
             <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-sm hidden-xs">
                 <div class="row kartheader text-center hidden-sm hidden-xs" style="">
-                    <h3 class=" text-center orangedescription kartheader-text-style"><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические
-                        характеристики</h3>
+                    <span class=" text-center orangedescription kartheader-text-style"><img src="image/she.png" alt=" ">&nbsp;&nbsp;Описание</span>
                 </div>
             </div>
             <div class="col-sm-6 hidden-sm hidden-xs" style="    padding-right: 0px;
@@ -214,7 +211,7 @@
 
             </div>
             <div class="modal-body">
-                <h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
+                <span class="modal-contact-title text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
 
                 <div class="form-group">
                     <label>Ваше имя:</label>
@@ -230,7 +227,7 @@
                 <button type="button" class="btn btnp" id="vuzvat">ОТПРАВИТЬ</button>
             </div>
             <div class="form-group">
-                <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+                <span class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
             </div>
 
         </div>

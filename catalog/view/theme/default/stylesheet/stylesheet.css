@@ -1255,6 +1255,7 @@ h2.price {
 }
 .formh4{
     font-size: 85%;
+	display: block;
 }
 .modal-content{
      border-radius: 0px;  
@@ -2000,6 +2001,8 @@ h2.price {
 	font-family: 'Helvetica' !important;
 	font-weight: 500;
 	display: block;
+	margin-top: 14px;
+	margin-bottom: 14px;
 }
 .descriptions-link-style{
 	font-family: 'Helvetica' !important;
@@ -2595,4 +2598,20 @@ input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
     border-radius:50%;
     top:7px;
     background-color:#008fd1;
+}
+.modal-contact-title{
+	font-size: 15px;
+	display: block;
+}
+.news-title-style, .news-title-style:hover{
+	color: #0b0b0b;
+}
+.product-title-style{
+	display: block;
+	font-size: 14px;
+	font-family: 'Helvetica';
+	text-transform: uppercase;
+	padding: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

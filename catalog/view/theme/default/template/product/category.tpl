@@ -104,11 +104,11 @@
                                 </a>
                                 <span class="ribbonright" style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
                                 <div class="col-xs-6 col-sm-6 text-center prodright" style="padding:0px;">
-                                    <h4 class="text_zagoli">
+                                    <span class="product-title-style text_zagoli">
                                         <a href="<?php echo $product['href']; ?>">
                                             <b><?php echo $product['name']; ?></b>
                                         </a>
-                                    </h4>
+                                    </span>
                                     <div class="row text-center">
                                         <a href="<?php echo $product['href']; ?>" style="background-color: <?php echo $c[$aa]; ?>;padding: 10px;" class="btncart" >
                                             <span class="" style="color:<?php echo $d[$aa]; ?>"><?php echo $button_cart;?></span>

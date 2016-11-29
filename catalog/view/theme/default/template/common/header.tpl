@@ -132,15 +132,15 @@
   </div>
   <!--Mobile header end-->
 
-  <div class=" hidden-xs col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin top-header-style" style="">
+  <div class=" hidden-xs col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin top-header-style">
     <div class="container" >
       <div class="row no-margin">
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <div id="logo" class="col-sm-6 col-md-6 col-lg-6 col-xl-6 hidden-xs  logo-padding no-margin">
             <?php if ($logo) { ?>
-            <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+            <a href="/"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
             <?php } else { ?>
-            <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
+            <h1><a href="/"><?php echo $name; ?></a></h1>
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin btn-header:hover">
@@ -157,7 +157,7 @@
               <div class="col-sm-4 col-md-4 col-lg-4 graph-icon-padding">
                 <img src="../../../admin/view/image/graphic.png">
               </div>
-              <div class="col-sm-6 col-md-6 col-lg-6 no-padding text-center graph-padding graph-style " style="">
+              <div class="col-sm-6 col-md-6 col-lg-6 no-padding text-center graph-padding graph-style">
                 <?php echo $open; ?>
               </div>
             </div>
@@ -197,7 +197,7 @@
           <div class="navbar-default">
             <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=common/home" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">Главная</li></a>
+                <a href="/" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">Главная</li></a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                 <a href="index.php?route=information/about" class="a-menu-style"><li style="padding-left: 0" class="li-text-style">О компании</li></a>
@@ -266,7 +266,7 @@
 
       </div>
       <div class="modal-body">
-        <h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
+        <span class="text-center modal-contact-title">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
         <form  action="" id="contactForm_1" method="post">
           <ul  style="padding-left: 15px">
             <code id="errorMasege" style="display: none" class="userName error-style">Некоректно заполнены данные</code>
@@ -286,7 +286,7 @@
       </div>
       </form>
       <div class="form-group">
-        <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+        <span class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
       </div>
 
     </div>
