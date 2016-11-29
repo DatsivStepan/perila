@@ -35,11 +35,11 @@
         <div class="product-wrapper">
         <div class="col-xs-12 col-sm-12 col-md-6">
             <?php if ($thumb || $images) { ?>
-                <ul class="thumbnails text-center" style="border: 1px solid #999999;">
+                <ul class="thumbnails text-center product-ul-style">
                     <?php if ($thumb) { ?>
-                        <li style="overflow-y: hidden;">
+                        <li class="product-li-img">
                             <a class="product-img" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>">
-                                <img class="prodimggolov" src="<?php echo $thumb; ?>"
+                                <img class="prodimggolov product-img-style" src="<?php echo $thumb; ?>"
                                      title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/>
                             </a>
                         </li>

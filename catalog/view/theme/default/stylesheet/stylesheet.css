@@ -2636,7 +2636,7 @@ input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
 	border-radius:0;
 	border: 0;
 }
-.li-padding-0{
+.li-padding-0, .li-padding-0:hover{
 	padding-left: 0;
 }
 .modal-error-display{
@@ -2647,4 +2647,102 @@ input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
 }
 .modal-ul-style{
 	padding-left: 15px;
+}
+.mobile-banner-text-padding{
+	padding-left: 0;
+}
+.mobile-banner-text-span{
+	display: block;
+}
+.email-linc-style, .email-linc-style:hover, .email-linc-style:active, .email-linc-style:visited, .email-linc-style:focus{
+	font-family: 'Helvetica';
+	font-weight: 300;
+	color: #0b0b0b;
+	text-decoration: none;
+}
+.email-linc-style-desktop, .email-linc-style-desktop:hover, .email-linc-style-desktop:active,
+.email-linc-style-desktop:visited, .email-linc-style-desktop:focus{
+	font-family: 'Helvetica';
+	font-weight: 300;
+	color: #fff;
+	text-decoration: none;
+}
+.mobile-border-width{
+	border-top-width: 0px !important;
+}
+.mobile-li-style{
+	color: #fff;
+	font-size: 25px;
+	line-height: 80px;
+}
+.product-li-img{
+	overflow-y: hidden;
+	margin: 0 !important;
+}
+.product-img-style{
+	width: 100%;
+}
+.product-ul-style{
+	border: 1px solid #999999;
+	margin-bottom: 50px !important;
+}
+.footer-style{
+	padding-top: 0; border: 0;
+}
+.footer-img-div-style{
+	margin-top: 20px !important;
+}
+.footer-div-text-style{
+	line-height: 20px;
+}
+.footer-ul-error{
+	padding-left: 15px;
+}
+.footer-code-error{
+	display: none;
+}
+.footer-middle-div-style{
+	width: 100%;
+	background-color: #ffffff;
+}
+.footer-logo-div-style{
+	padding-bottom: 22px;
+	padding-left: 0;
+}
+.footer-phone-img-style{
+	padding-bottom: 5px;
+}
+.footer-phone-div-style{
+	padding-bottom: 5px;
+}
+.footer-email-div-style{
+	padding-bottom: 4px;
+}
+.footer-email-span-style{
+	padding-right: 0 !important;
+}
+.footer-adres-div-style{
+	padding-bottom: 14px;
+}
+.footer-li-div-style{
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.footer-ul-menu-style{
+	line-height: 30px;
+}
+.footer-reklama-div-style{
+	padding-left: 0;
+}
+.footer-reklama-span-style{
+	font-size: 12px;
+}
+.mobile-footer-text-style{
+	line-height: 20px;
+}
+.mobile-footer-ul-error{
+	padding-left: 15px;
+}
+.mobile-footer-code-error{
+	display: none;
 }
