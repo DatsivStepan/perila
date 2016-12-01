@@ -2746,3 +2746,23 @@ input[name ="search"]:-ms-input-placeholder      {color:#000; !important}
 .mobile-footer-code-error{
 	display: none;
 }
+.infodivtextcolor{
+    color: #0b0b0b !important;
+}
+.search-btn-style{
+    font-size: 15px;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    background-color: #008fd1 !important;
+    background-image: none !important;
+    text-shadow: none !important;
+}
+.search-text-style{
+    margin-top: 20px;
+    margin-bottom:  10px;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    display: block;
+}

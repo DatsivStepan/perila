@@ -85,12 +85,38 @@ class ControllerCommonFooter extends Controller {
 
 			$this->model_tool_online->whosonline($ip, $this->customer->getId(), $url, $referer);
 		}
+        if(!empty( $this->request->get['information_id'])){
+            $data['currentInformation'] = $this->request->get['route'].'_'.$this->request->get['information_id'];
+        }else{
+            $data['currentInformation'] = '';
+        }
+
+        if (isset($this->request->get['route'])) {
+            $data['currentRout'] = $this->request->get['route'];
+//            var_dump($data['currentRout']);
+////            exit;
+            if (isset($this->request->get['product_id'])) {
+                $class = '-' . $this->request->get['product_id'];
+            } elseif (isset($this->request->get['path'])) {
+                $class = '-' . $this->request->get['path'];
+            } elseif (isset($this->request->get['manufacturer_id'])) {
+                $class = '-' . $this->request->get['manufacturer_id'];
+            } else {
+                $class = '';
+            }
+            $data['class'] = str_replace('/', '-', $this->request->get['route']) . $class;
+        } else {
+            $data['currentRout'] = '';
+            $data['class'] = 'common-home';
+        }
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/footer.tpl', $data);
 		} else {
 			return $this->load->view('default/template/common/footer.tpl', $data);
 		}
+
+
 	}
 	public function contactForm(){
 		$user_query = $this->db->query("SELECT email FROM " . DB_PREFIX . "user WHERE username = 'admin' AND (user_group_id = '1') AND status = '1'");

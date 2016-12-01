@@ -142,24 +142,33 @@ class ControllerCommonHeader extends Controller
 		$data['content_top'] = $this->load->controller('common/content_top');
 
 		// For page specific css
-		if (isset($this->request->get['route'])) {
-			if (isset($this->request->get['product_id'])) {
-				$class = '-' . $this->request->get['product_id'];
-			} elseif (isset($this->request->get['path'])) {
-				$class = '-' . $this->request->get['path'];
-			} elseif (isset($this->request->get['manufacturer_id'])) {
-				$class = '-' . $this->request->get['manufacturer_id'];
-			} else {
-				$class = '';
-			}
+        if(!empty( $this->request->get['information_id'])){
+            $data['currentInformation'] = $this->request->get['route'].'_'.$this->request->get['information_id'];
+        }else{
+            $data['currentInformation'] = '';
+        }
 
-			$data['class'] = str_replace('/', '-', $this->request->get['route']) . $class;
-		} else {
-			$data['class'] = 'common-home';
-		}
+        if (isset($this->request->get['route'])) {
+            $data['currentRout'] = $this->request->get['route'];
+//            var_dump($data['currentRout']);
+////            exit;
+            if (isset($this->request->get['product_id'])) {
+                $class = '-' . $this->request->get['product_id'];
+            } elseif (isset($this->request->get['path'])) {
+                $class = '-' . $this->request->get['path'];
+            } elseif (isset($this->request->get['manufacturer_id'])) {
+                $class = '-' . $this->request->get['manufacturer_id'];
+            } else {
+                $class = '';
+            }
+            $data['class'] = str_replace('/', '-', $this->request->get['route']) . $class;
+        } else {
+            $data['currentRout'] = '';
+            $data['class'] = 'common-home';
+        }
 
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
-			return $this->load->view($this->config->get('config_template') . '/template/common/header.tpl', $data);
+        if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
+            return $this->load->view($this->config->get('config_template') . '/template/common/header.tpl', $data);
 		} else {
 			return $this->load->view('default/template/common/header.tpl', $data);
 		}

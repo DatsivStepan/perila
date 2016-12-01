@@ -411,7 +411,7 @@ $data['catname'] = $category_info['name'];
 				} else {
 					$price = false;
 				}
-var_dump($price);exit;
+//var_dump($price);exit;
 				if ((float)$result['special']) {
 					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
 				} else {

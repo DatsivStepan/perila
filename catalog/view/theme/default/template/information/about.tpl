@@ -31,7 +31,6 @@
                         <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs" style="min-height: 38px;border-bottom: 1px solid #999999;"></div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="min-height: 38px;border-bottom: 1px solid #f8c828;"></div>
                     </div>
-
                 </div>
                 <div class="col-lg-12 col-md-12" style="margin:0">
                     <div class="сol-xs-12" >
