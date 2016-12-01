@@ -92,7 +92,7 @@ $(document).ready(function() {
 	$('#search input[name=\'search\']').on('change', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';
 
-		var value = $('header input[name=\'search\']').val();
+		var value = $('#search input[name=\'search\']').val();
 
 		if (value) {
 			url += '&search=' + encodeURIComponent(value);
@@ -103,7 +103,7 @@ $(document).ready(function() {
 
 	$('#search input[name=\'search\']').on('keydown', function(e) {
 		if (e.keyCode == 13) {
-			$('header input[name=\'search\']').parent().find('button').trigger('click');
+			$('#search input[name=\'search\']').parent().find('button').trigger('click');
 		}
 	});
 

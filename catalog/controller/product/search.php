@@ -148,7 +148,7 @@ class ControllerProductSearch extends Controller {
 		$data['entry_description'] = $this->language->get('entry_description');
 
 		$data['button_search'] = $this->language->get('button_search');
-		$data['button_cart'] = $this->language->get('button_cart');
+		$data['button_cart'] = "Оформит заказ";
 		$data['button_wishlist'] = $this->language->get('button_wishlist');
 		$data['button_compare'] = $this->language->get('button_compare');
 		$data['button_list'] = $this->language->get('button_list');
@@ -433,6 +433,7 @@ class ControllerProductSearch extends Controller {
 		}
 
 		$data['search'] = $search;
+//        var_dump($data);exit;
 		$data['description'] = $description;
 		$data['category_id'] = $category_id;
 		$data['sub_category'] = $sub_category;
