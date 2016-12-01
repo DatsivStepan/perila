@@ -76,12 +76,54 @@
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
             <ul class="nav navbar-nav" style="line-height: 30px; width: 95%">
-              <a href="index.php?route=common/home"><li class="mobile-li-style li-text-style">Главная</li></a>
-                <a href="index.php?route=information/about"><li class="mobile-li-style li-text-style">О компании</li></a>
-                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="mobile-li-style li-text-style">Новости</li></a>
-              <a href="index.php?route=information/gallery"><li class="mobile-li-style li-text-style">Наши работы</li></a>
-              <a href="index.php?route=information/delivery"><li class="mobile-li-style li-text-style">Доставка и оплата</li></a>
-              <a href="index.php?route=information/contact"><li class="mobile-li-style li-text-style">Контакты</li></a>
+              <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Главная</li>
+              </a>
+              <?php if($currentInformation == 'information/information_10'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/about_info"';
+                 } ?>
+                <a <?=$about_rout;?> >
+                    <li class="mobile-li-style li-text-style">О компании</li>
+                </a>
+              <?php if($currentRout == 'newsblog/category'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/newsblog&newsblog_category_id=1"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                    <li class="mobile-li-style li-text-style">Новости</li>
+                </a>
+              <?php if($currentRout == 'information/gallery'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/gallery"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Наши работы</li>
+              </a>
+              <?php if($currentInformation == 'information/information_11'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/deliveri_info"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Доставка и оплата</li>
+              </a>
+              <?php if($currentRout == 'information/contact'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/contact"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Контакты</li>
+              </a>
             </ul>
         <!--  <?php if ($categories) { ?>
           <ul class="nav navbar-nav no-margin">
@@ -140,7 +182,14 @@
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <div id="logo" class="col-sm-6 col-md-6 col-lg-6 col-xl-6 hidden-xs  logo-padding no-margin">
             <?php if ($logo) { ?>
-            <a href="/"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+              <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+            <a <?=$about_rout;?> >
+                <img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />
+            </a>
             <?php } else { ?>
             <h1><a href="/"><?php echo $name; ?></a></h1>
             <?php } ?>
@@ -199,24 +248,64 @@
           <div class="navbar-default">
             <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="/" class="a-menu-style"><li class="li-text-style li-padding-0">Главная</li></a>
+                  <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+                <a <?=$about_rout;?> class="a-menu-style">
+                  <li class="li-text-style li-padding-0">Главная</li>
+                </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/about" class="a-menu-style"><li class="li-text-style li-padding-0">О компании</li></a>
+                <?php if($currentInformation == 'information/information_10'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/about_info"';
+                 } ?>
+                <a <?= $about_rout; ?> class="a-menu-style">
+                  <li class="li-text-style li-padding-0">О компании</li>
+                </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li class="li-text-style li-padding-0">Новости</li></a>
+                  <?php if($currentRout == 'newsblog/category'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/newsblog&newsblog_category_id=1"';
+                 } ?>
+                  <a <?=$about_rout;?> class="a-menu-style">
+                    <li class="li-text-style li-padding-0">Новости</li>
+                  </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/gallery" class="a-menu-style"><li class="li-text-style li-padding-0">Наши работы</li></a>
+                  <?php if($currentRout == 'information/gallery'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/gallery"';
+                 } ?>
+                <a <?=$about_rout;?> class="a-menu-style">
+                  <li class="li-text-style li-padding-0">Наши работы</li>
+                </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                    <a href="index.php?route=information/delivery" class="a-menu-style">
+                  <?php if($currentInformation == 'information/information_11'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/deliveri_info"';
+                 } ?>
+                    <a <?=$about_rout;?> class="a-menu-style">
                         <li class="li-text-style li-padding-0">Доставка и оплата</li>
                     </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
-                <a href="index.php?route=information/contact" class="a-menu-style"><li class="li-text-style">Контакты</li></a>
+                  <?php if($currentRout == 'information/contact'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/contact"';
+                 } ?>
+                <a <?=$about_rout;?> class="a-menu-style">
+                  <li class="li-text-style">Контакты</li>
+                </a>
               </div>
             </ul>
           </div>

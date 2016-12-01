@@ -18,7 +18,27 @@ class ControllerInformationInformation extends Controller {
 			$information_id = 0;
 		}
 
-		$information_info = $this->model_catalog_information->getInformation($information_id);
+        $data['information_id'] = $information_id;
+        if (isset($this->request->get['route'])) {
+
+            if (isset($this->request->get['product_id'])) {
+                $class = '-' . $this->request->get['product_id'];
+            } elseif (isset($this->request->get['path'])) {
+                $class = '-' . $this->request->get['path'];
+            } elseif (isset($this->request->get['manufacturer_id'])) {
+                $class = '-' . $this->request->get['manufacturer_id'];
+            } else {
+                $class = '';
+            }
+            $data['currentRout'] = $this->request->get['route'].'_'.$this->request->get['information_id'];
+
+            $data['class'] = str_replace('/', '-', $this->request->get['route']) . $class;
+        } else {
+            $data['currentRout'] = '';
+            $data['class'] = 'common-home';
+        }
+
+        $information_info = $this->model_catalog_information->getInformation($information_id);
 
 		if ($information_info) {
 			$this->document->setTitle($information_info['meta_title']);
@@ -27,10 +47,11 @@ class ControllerInformationInformation extends Controller {
 
 			$data['breadcrumbs'][] = array(
 				'text' => $information_info['title'],
-				'href' => $this->url->link('information/information', 'information_id=' .  $information_id)
+//				'href' => $this->url->link('information/information', 'information_id=' .  $information_id)
+				'href' => ''
 			);
 
-			$data['heading_title'] = $information_info['title'];
+			$data['heading_title'] = $information_info['meta_title'];
 
 			$data['button_continue'] = $this->language->get('button_continue');
 

@@ -30,7 +30,12 @@
       <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-div-border footer-logo-div-style">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 footer-div-logo ">
           <?php if ($logo) { ?>
-          <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+          <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+          <a <?=$about_rout;?> ><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
           <?php } else { ?>
           <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
           <?php } ?>
@@ -125,12 +130,54 @@
       <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
         <ul class="nav navbar-nav menu-style footer-ul-menu-style">
           <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="">Категории</a></li>
-          <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="index.php?route=common/home">Главная</a></li>
-          <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="index.php?route=information/about">О компании</a></li>
-          <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="">Новости</a></li>
-          <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="index.php?route=information/gallery">Наши работы</a></li>
-          <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="">Доставка и оплата</a></li>
-          <li class="li-text-style li-padding-0"><a class="footer-menu-style footer-a-style" href="index.php?route=information/contact">Контакты</a></li>
+          <li class="li-text-style li-padding-0">
+            <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+              <a class="footer-menu-style footer-a-style" <?=$about_rout?> >Главная</a>
+          </li>
+          <li class="li-text-style li-padding-0">
+            <?php if($currentInformation == 'information/information_10'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/about_info"';
+                 } ?>
+            <a class="footer-menu-style footer-a-style" <?=$about_rout?> >О компании</a>
+          </li>
+          <li class="li-text-style li-padding-0">
+              <?php if($currentRout == 'newsblog/category'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/newsblog&newsblog_category_id=1"';
+                 } ?>
+              <a class="footer-menu-style footer-a-style" <?=$about_rout;?> >Новости</a>
+          </li>
+          <li class="li-text-style li-padding-0">
+            <?php if($currentRout == 'information/gallery'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/gallery"';
+                 } ?>
+            <a class="footer-menu-style footer-a-style" <?=$about_rout?> >Наши работы</a>
+          </li>
+          <li class="li-text-style li-padding-0">
+            <?php if($currentInformation == 'information/information_11'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/deliveri_info"';
+                 } ?>
+            <a class="footer-menu-style footer-a-style" <?=$about_rout;?> >Доставка и оплата</a>
+          </li>
+          <li class="li-text-style li-padding-0">
+            <?php if($currentRout == 'information/contact'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/contact"';
+                 } ?>
+            <a class="footer-menu-style footer-a-style" <?=$about_rout;?> >Контакты</a>
+          </li>
         </ul>
       </div>
       <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 footer-reklama-div-style">

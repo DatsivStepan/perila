@@ -47,7 +47,7 @@
 
           if ($categories) { ?>
                 <div class="row hidden-md hidden-lg" style="width: 100%;">
-                    <h1 class="category_heading_title_1"><?php echo $parent_categorie.' '.$heading_title; ?></h1>
+                    <span class="category_heading_title_1"><?php echo $parent_categorie.' '.$heading_title; ?></span>
                 </div>
                 <div class="row row_border  hidden-xs hidden-sm col-md-12 col-lg-12" style="width: 70%;">
                     <div class="border_h1">
@@ -81,8 +81,8 @@
 
 
                 <?php if ($products) { ?>
-                <div class="row hidden-md hidden-lg" style="width: 100%;">
-                    <h1 class="category_heading_title_1"><?php echo $parent_categorie.' '.$heading_title; ?></h1>
+                <div class=" hidden-md hidden-lg" style="width: 100%;">
+                    <span class="category_heading_title_1"><?php echo $parent_categorie.' '.$heading_title; ?></span>
                 </div>
                 <div class="row row_border  hidden-xs hidden-sm col-md-12 col-lg-12" style="width: 70%;">
                     <div class="border_h1">
