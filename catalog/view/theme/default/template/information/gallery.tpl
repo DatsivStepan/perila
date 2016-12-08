@@ -50,7 +50,7 @@
                 <?php echo $column_right; ?></div>
         </div>
     </div>
-    <div class="row hidden-xs col-sm-12 col-md-12 col-lg-12" style="height: 100px; width: 100%; ">
+    <div class="row hidden-xs col-sm-12 col-md-12 col-lg-12 galery-div-bottom-style">
 
     </div>
 </div>
@@ -68,4 +68,3 @@
     });
 </script>
 <?php echo $footer; ?>
-

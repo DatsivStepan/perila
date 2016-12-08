@@ -45,18 +45,20 @@
 <body class="<?php echo $class; ?>">
 <nav id="top" class="col-md-12 header-nav-style">
   <!--Mobile header begin-->
-  <div class="row hidden-md hidden-lg hidden-xl hidden-sm div-email-style" style="margin: 0;">
+  <div class="container hidden-md hidden-lg hidden-xl hidden-sm div-email-style no-margin">
     <div class="col-xs-6 mobile-email-padding">
-      <span class="email-color text-left mobile-email-style"><?php echo $email; ?></span>
+      <span class="email-color text-left mobile-email-style">
+        <a class="email-linc-style-desktop" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+      </span>
     </div>
     <div class="col-xs-6 mobile-phone-padding">
-      <span style="" class="text-right mobile-phone-style"><?php echo $telephone; ?></span>
+      <span class="text-right mobile-phone-style"><?php echo $telephone; ?></span>
     </div>
   </div>
-  <div class="row" style="margin: 0">
-    <div class="hidden-lg hidden-md hidden-xl hidden-sm navbar navbar-default no-margin" style=" border-top-width: 0px !important;">
+  <div class="row no-margin">
+    <div class="hidden-lg hidden-md hidden-xl hidden-sm navbar navbar-default no-margin mobile-border-width">
       <div class="container ">
-        <div class="navbar-header col-xs-12 mobile-navbar-height" style="margin: 0">
+        <div class="navbar-header col-xs-12 mobile-navbar-height no-padding no-margin">
           <div class="col-xs-9 no-margin mobile-logo-padding">
             <?php if ($logo) { ?>
             <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -65,7 +67,7 @@
             <?php } ?>
           </div>
           <div class="xs-3">
-            <button type="button" style="border-color: transparent"  class="navbar-toggle no-margin mobile-btn-padding" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="header-btn-color-style navbar-toggle no-margin mobile-btn-padding" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar span-width"></span>
               <span class="icon-bar span-width"></span>
               <span class="icon-bar span-width"></span>
@@ -73,13 +75,55 @@
           </div>
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
-            <ul class="nav navbar-nav" style="line-height: 30px">
-              <a href="index.php?route=common/home"><li class="li-text-style">Главная</li></a>
-                <a href="index.php?route=information/about"><li class="li-text-style">О компании</li></a>
-                <a href="index.php?route=newsblog/category&newsblog_category_id=1"><li class="li-text-style">Новости</li></a>
-              <a href="index.php?route=information/gallery"><li class="li-text-style">Наши работы</li></a>
-              <a href="index.php?route=information/delivery"><li class="li-text-style">Доставка и оплата</li></a>
-              <a href="index.php?route=information/contact"><li class="li-text-style">Контакты</li></a>
+            <ul class="nav navbar-nav header-ul-style-new">
+              <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Главная</li>
+              </a>
+              <?php if($currentInformation == 'information/information_10'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/about_info"';
+                 } ?>
+                <a <?=$about_rout;?> >
+                    <li class="mobile-li-style li-text-style">О компании</li>
+                </a>
+              <?php if($currentRout == 'newsblog/category'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/newsblog&newsblog_category_id=1"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                    <li class="mobile-li-style li-text-style">Новости</li>
+                </a>
+              <?php if($currentRout == 'information/gallery'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/gallery"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Наши работы</li>
+              </a>
+              <?php if($currentInformation == 'information/information_11'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/deliveri_info"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Доставка и оплата</li>
+              </a>
+              <?php if($currentRout == 'information/contact'){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/contact"';
+                 } ?>
+              <a <?=$about_rout;?> >
+                  <li class="mobile-li-style li-text-style">Контакты</li>
+              </a>
             </ul>
         <!--  <?php if ($categories) { ?>
           <ul class="nav navbar-nav no-margin">
@@ -110,76 +154,82 @@
     <div class="hidden-lg hidden-md hidden-xl hidden-sm  col-sm-12 col-xs-12 no-padding mobile-background-image" >
       <div class="container">
         <div class="">
-        <div class="col-xs-8 banner-text-padding" >
-          <span class=" banner-text-style" style="display: block">Это опора вашего<br> успеха</br></span>
+        <div class="col-xs-8 banner-text-padding mobile-banner-text-padding">
+          <span class=" banner-text-style mobile-banner-text-span">Это опора вашего<br> успеха</br></span>
         </div>
         <div class="col-xs-3 div-banner-border" >
         </div>
         </div>
-        <div class="col-xs-12 mobile-text-div">
+        <div class="col-xs-12 mobile-text-div mobile-banner-text-padding">
           <span class="mobile-text-style">Проектирование</span><br>
           <span class="mobile-text-style">и изготовление перил</span><br>
           <span class="mobile-text-style">и лестничных ограждений</span>
         </div>
         <div class="no-margin mobile-btn-div">
-          <button type="button" class="btn nav-bar mobile-btn mobile-btn-style-2 ">Оформить заказ</button>
+          <button type="button" data-toggle="modal" data-target="#modal-window-vuzvat" class="btn nav-bar mobile-btn mobile-btn-style-2 ">Оформить заказ</button>
         </div>
         <div class="no-margin mobile-btn-div">
-
-          <button type="button" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>ВЫЗВАТЬ ЗАМЕРЩИКА</span></button>
+          <button type="button" data-toggle="modal" data-target="#modal-window-vuzvat" class="btn nav-bar mobile-btn btn-xs mobile-btn-style-1 "><span>Вызвать замерщика</span></button>
         </div>
       </div>
     </div>
   </div>
   <!--Mobile header end-->
 
-  <div class=" hidden-xs col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin top-header-style" style="">
+  <div class=" hidden-xs col-sm-12 col-md-12 col-lg-12 col-xl-12 no-padding no-margin top-header-style">
     <div class="container" >
       <div class="row no-margin">
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <div id="logo" class="col-sm-6 col-md-6 col-lg-6 col-xl-6 hidden-xs  logo-padding no-margin">
             <?php if ($logo) { ?>
-            <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+              <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+            <a <?=$about_rout;?> >
+                <img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" />
+            </a>
             <?php } else { ?>
-            <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
+            <h1><a href="/"><?php echo $name; ?></a></h1>
             <?php } ?>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 btn-padding no-margin btn-header:hover">
-            <a href="" style="font-size: 12px" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
+            <a href="" data-toggle="modal" data-target="#modal-window-vuzvat" id="button-cart" type="button" class="btn nav-bar btn-xs btn-color width-btn btn-font-size">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="padding-left: 0">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 header-search-padding">
           <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 search-padding">
             <?php echo $search; ?>
           </div>
-          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 " style="padding-right: 0">
+          <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 header-graph-div-padding">
+              <div class="header-div-graph-position">
             <div class="col-sm-6 col-md-6 col-lg-6 no-padding style-display-none">
               <div class="col-sm-4 col-md-4 col-lg-4 graph-icon-padding">
                 <img src="../../../admin/view/image/graphic.png">
               </div>
-              <div class="col-sm-6 col-md-6 col-lg-6 no-padding text-center graph-padding graph-style " style="">
+              <div class="col-sm-6 col-md-6 col-lg-6 no-padding text-center graph-padding graph-style">
                 <?php echo $open; ?>
               </div>
             </div>
+              <div class="row email-position">
+                  <div class="col-sm-3 col-md-3 col-lg-3 email-icon-padding" >
+                      <img src="../../../admin/view/image/Email-logo.png">
+                  </div>
+                  <div class="col-sm-9 col-md-8 col-lg-9 email-padding email-style">
+                    <a class="email-linc-style" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+                  </div>
+              </div>
+              </div>
             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 no-margin phone-padding div-media-width">
-              <div style="position: relative">
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 phone-icon-padding" style="color: #008fd1">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 phone-icon-padding headre-phone-div-color">
                   <ul class="list-inline">
                     <li><a href="<?php echo $contact; ?>"><img src="../../../admin/view/image/phoneIcon.png"></a>
                 </div>
-                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding" >
-                      <span style="" class="phone-style"><?php echo $telephone; ?></span></li>
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 phone-padding div-span-padding" >
+                      <span class="phone-style"><?php echo $telephone; ?></span></li>
                   </ul>
                 </div>
-              </div>
-              <div class="row email-position">
-                <div class="col-sm-3 col-md-3 col-lg-3 email-icon-padding" >
-                  <img src="../../../admin/view/image/Email-logo.png">
-                </div>
-                <div class="col-sm-9 col-md-8 col-lg-9 email-padding email-style">
-                  <?php echo $email; ?>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -192,91 +242,103 @@
       </div>
     </div>
 
-    <div class="row no-margin hidden-xs" style="background-color: #ffffff; padding-top: 10px">
+    <div class="row no-margin hidden-xs header-menu-div-style">
       <div class="container">
-        <nav class="navbar" style="margin: 0; border-radius:0; border: 0;">
+        <nav class="navbar header-navbar-style">
           <div class="navbar-default">
             <ul class="nav navbar-nav ul-position menu-style" >
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=common/home" class="a-menu-style"><li class="li-text-style">Главная</li></a>
+                  <?php if($currentRout == ''){
+                    $about_rout = '';
+                 }else{
+                    $about_rout = 'href="/"';
+                 } ?>
+                <a <?=$about_rout;?> class="a-menu-style">
+                  <li class="li-text-style li-padding-0">Главная</li>
+                </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/about" class="a-menu-style"><li class="li-text-style">О компании</li></a>
+                <?php if($currentInformation == 'information/information_10'){
+                    $linck_color = 'main-menu-activ-style';
+                    $about_rout = '';
+                 }else{
+                    $linck_color = '';
+                    $about_rout = 'href="/about_info"';
+                 } ?>
+                <a <?= $about_rout; ?> class="a-menu-style <?php echo $linck_color; ?>">
+                  <li class="li-text-style li-padding-0 ">О компании</li>
+                </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                  <a href="index.php?route=newsblog/category&newsblog_category_id=1" class="a-menu-style"><li class="li-text-style">Новости</li></a>
+                  <?php if($currentRout == 'newsblog/category'){
+                    $linck_color = 'main-menu-activ-style';
+                    $about_rout = '';
+                 }else{
+                    $linck_color = '';
+                    $about_rout = 'href="/newsblog&newsblog_category_id=1"';
+                 } ?>
+                  <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
+                    <li class="li-text-style li-padding-0">Новости</li>
+                  </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                <a href="index.php?route=information/gallery" style="a-menu-style"><li class="li-text-style">Наши работы</li></a>
+                  <?php if($currentRout == 'information/gallery'){
+                    $linck_color = 'main-menu-activ-style';
+                    $about_rout = '';
+                 }else{
+                    $linck_color = '';
+                    $about_rout = 'href="/gallery"';
+                 } ?>
+                <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
+                  <li class="li-text-style li-padding-0">Наши работы</li>
+                </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                    <a href="index.php?route=information/delivery" class="a-menu-style">
-                        <li class="li-text-style">Доставка и оплата</li>
+                  <?php if($currentInformation == 'information/information_11'){
+                    $linck_color = 'main-menu-activ-style';
+                    $about_rout = '';
+                 }else{
+                    $linck_color = '';
+                    $about_rout = 'href="/deliveri_info"';
+                 } ?>
+                    <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
+                        <li class="li-text-style li-padding-0">Доставка и оплата</li>
                     </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
-                <a href="index.php?route=information/contact" class="a-menu-style"><li class="li-text-style">Контакты</li></a>
+                  <?php if($currentRout == 'information/contact'){
+                    $linck_color = 'main-menu-activ-style';
+                    $about_rout = '';
+                 }else{
+                    $linck_color = '';
+                    $about_rout = 'href="/contact"';
+                 } ?>
+                <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
+                  <li class="li-text-style">Контакты</li>
+                </a>
               </div>
             </ul>
           </div>
         </nav>
-         <!-- <?php if ($categories) { ?>
-          <nav class="navbar" style="margin: 0; border-radius:0; border: 0;">
-            <div class="navbar-default">
-                <ul class="nav navbar-nav ul-position" >
-                  <?php $counter=0; ?>
-                  <?php foreach ($categories as $category) { $counter++;  ?>
-                  <?php if ($category['children']) { ?>
-                  <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-inner">
-                        <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-                        <ul class="list-unstyled">
-                          <?php foreach ($children as $child) { ?>
-                          <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
-                          <?php } ?>
-                        </ul>
-                        <?php } ?>
-                      </div>
-                      <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
-                  </li>
-                  <?php } else if($counter != count($categories)){ ?>
-                  <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
-                    <li class="li-text-style"><a class="a-color" href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                  </div>
-                  <?php }else{  ?>
-                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
-                      <li class="li-text-style"><a class="a-color " href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                    </div>
-                  <?php } ?>
-                  <?php } ?>
-                </ul>
-            </div>
-          </nav>-->
-      </div>
-    </div>
-    <?php } ?>
   </div>
 </nav>
 <!-- Basic modal -->
 <div id="modal-window-vuzvat" class="modal fade">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <div class="modal-header" style="border-bottom: none;">
+      <div class="modal-header modal-close-div">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-
       </div>
       <div class="modal-body">
-        <h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
+        <span class="text-center modal-contact-title">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
         <form  action="" id="contactForm_1" method="post">
-          <ul  style="padding-left: 15px">
-            <code id="errorMasege" style="display: none" class="userName error-style">Некоректно заполнены данные</code>
+          <ul  class="modal-ul-style">
+            <code id="errorMasege" class="userName modal-error-display error-style">Некорректно заполнены данные</code>
           </ul>
         <div class="form-group">
           <label>Ваше имя:</label>
           <input id="name" class="form-control" name="name">
         </div>
-
         <div class="form-group">
           <label>Ваш телефон:</label>
           <input id="phone" class="form-control" name="phone">
@@ -287,9 +349,8 @@
       </div>
       </form>
       <div class="form-group">
-        <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+        <span class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
       </div>
-
     </div>
   </div>
 </div>

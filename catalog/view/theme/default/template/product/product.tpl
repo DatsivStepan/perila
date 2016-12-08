@@ -10,8 +10,8 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="col-xs-12 <?php echo $class; ?>"><?php echo $content_top; ?>
-        <ul class="breadcrumb hidden-sm hidden-xs navigation-style" style="font-size: 15px">
+    <div id="content" class="col-xs-12 <?php echo $class; ?>">
+        <ul class="breadcrumb hidden-sm hidden-xs navigation-style">
             <?php foreach ($breadcrumbs as $breadcrumb) { ?>
             <?php if ($breadcrumb ['href']==('')){ ?>
             <li><?php echo $breadcrumb['text']; ?></li>
@@ -20,16 +20,17 @@
             <?php } ?>
             <?php } ?>
         </ul>
-                    <div class="row" style="    padding-bottom: 3%;">
+        <div class="product-text-div-top">
+            <?php echo $content_top; ?>
+        </div>
+                    <div class="row product-title-div-padding">
             <div class="col-sm-1 hidden-sm hidden-xs"></div>
-   <div class="col-md-4 col-xs-12 col-sm-12 text-center">
-   <div class="row hidden-md hidden-lg"> <span name="zakaz" style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
-       text-transform: uppercase;"><?php echo $catname; ?></span></div>
-   <div class="row"> <span name="zakaz" class="zakaz-style"><?php echo $heading_title; ?></span></div>
-  
+   <div class="col-md-9 col-xs-12 col-sm-12 text-center zakaz-style">
+   <div class="row"> <h1 name="zakaz" class=""><?php echo $heading_title; ?></h1></div>
+
     
    </div>
-    <div class="col-sm-7 hidden-sm hidden-xs">
+    <div class="col-sm-2 hidden-sm hidden-xs">
         <div class="col-sm-8 borderb"></div>
         <div class="col-sm-4 bordery"></div>
         
@@ -37,11 +38,11 @@
         <div class="product-wrapper">
         <div class="col-xs-12 col-sm-12 col-md-6">
             <?php if ($thumb || $images) { ?>
-                <ul class="thumbnails text-center" style="border: 1px solid #999999;">
+                <ul class="thumbnails text-center product-ul-style">
                     <?php if ($thumb) { ?>
-                        <li style="overflow-y: hidden;">
+                        <li class="product-li-img">
                             <a class="product-img" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>">
-                                <img class="prodimggolov" src="<?php echo $thumb; ?>"
+                                <img class="prodimggolov product-img-style" src="<?php echo $thumb; ?>"
                                      title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"/>
                             </a>
                         </li>
@@ -56,7 +57,7 @@
 
                         <div class="wrap" id="style-1">
 
-                            <ul>
+                            <ul class="product-scrol-margin">
                                 <?php foreach ($images as $image) { ?>
                                 <li>
                                     <a class="" href="<?php echo $image['popup']; ?>"
@@ -79,16 +80,9 @@
              if (strlen($description) !== 0)  {
             if ($description !=='<p><br></p>') { ?>
                 <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-md hidden-lg">
-                    <div class="row kartheader text-center" style="">
-                        <h3 class=" text-center orangedescription"><img src="image/she.png" alt=" ">Технические
-                            характеристики</h3>
-                        <div class="" style="    padding: 3%;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px;
-    column-gap: 50px;">
+                    <div class="row kartheader text-center">
+                        <h3 class=" text-center orangedescription"><img src="image/she.png" alt=" ">Описание</h3>
+                        <div class="description-div-padding-style">
                             <?php echo $description;  ?>
                             <a href="" data-toggle="modal" data-target="#modal-window-prok"> Подберем любую нужную вам
                                 конфигурацию, звоните!&nbsp;&nbsp;&nbsp;<img src="image/phone.png" alt=" "></a>
@@ -101,7 +95,7 @@
                     <div class="carttov1 text-center carttov1-style">
                         <div class="ribbon-bottom-1"></div>
                         <span class=" text-center no-margin carttov1-text-style">ЦЕНА ЗА 1 МЕТР:</span>
-                        <div class="row" style="padding-top: 15px;">
+                        <div class="row price-div-padding-style">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="row">
                                     <input class="cartinput text-center" type="text" id="quantity" name="quantityq"
@@ -176,18 +170,12 @@
              if (strlen($description) !== 0)  {
              if ($description !=='<p><br></p>') { ?>
             <div class="col-xs-12 col-sm-12 col-md-6 prodmarg hidden-sm hidden-xs">
-                <div class="row kartheader text-center hidden-sm hidden-xs" style="">
-                    <h3 class=" text-center orangedescription kartheader-text-style"><img src="image/she.png" alt=" ">&nbsp;&nbsp;Технические
-                        характеристики</h3>
+                <div class="row kartheader text-center hidden-sm hidden-xs">
+                    <span class=" text-center orangedescription kartheader-text-style"><img src="image/she.png" alt=" ">&nbsp;&nbsp;Описание</span>
                 </div>
             </div>
-            <div class="col-sm-6 hidden-sm hidden-xs" style="    padding-right: 0px;
-        padding-left: 0;">
-                <div style="    border-bottom: 1px solid #999999;
-        padding: 0;
-        margin: 0;
-        padding-bottom: 30px;
-        margin-left: -16px;"></div>
+            <div class="col-sm-6 hidden-sm hidden-xs product-description-div-padding">
+                <div class="product-description-div-padding-1"></div>
             </div>
             <div class="col-sm-12 descriptions hidden-sm hidden-xs">
                 <div class="row description descriptions-style">
@@ -198,10 +186,11 @@
                 </div>
             </div>
             <?php } }?>
+            <div class="product-text-div-top"> <?php echo $content_bottom; ?></div>
         </div>
     </div>
 
-    <?php echo $content_bottom; ?></div>
+   </div>
 <?php echo $column_right; ?></div>
 </div>
 
@@ -209,12 +198,12 @@
 <form id="modal-window-vuzvat" class="modal fade">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <div class="modal-header" style="border-bottom: none;">
+            <div class="modal-header modal-div-border-style">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
             </div>
             <div class="modal-body">
-                <h4 class="text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</h4>
+                <span class="modal-contact-title text-center">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
 
                 <div class="form-group">
                     <label>Ваше имя:</label>
@@ -230,7 +219,7 @@
                 <button type="button" class="btn btnp" id="vuzvat">ОТПРАВИТЬ</button>
             </div>
             <div class="form-group">
-                <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+                <span class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
             </div>
 
         </div>
@@ -241,12 +230,12 @@
 <form id="modal-window-prok" class="modal fade">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <div class="modal-header" style="border-bottom: none;">
+            <div class="modal-header modal-div-border-style">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
             </div>
             <div class="modal-body">
-                <h4 class="text-center"><b>ПРОКОНСУЛЬТИРОВАТСА</b></h4>
+                <span class="text-center modal-consult-title-style"><b>ПРОКОНСУЛЬТИРОВАТЬСЯ</b></span>
 
                 <div class="form-group">
                     <label>Ваше имя:</label>
@@ -262,7 +251,7 @@
                 <button type="button" class="btn btnp" id="prok">ОТПРАВИТЬ</button>
             </div>
             <div class="form-group">
-                <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+                <span class="formh4 modal-consult-bottom-style text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
             </div>
 
         </div>
@@ -273,12 +262,12 @@
 <form id="modal-window-zakaz" class="modal fade">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <div class="modal-header" style="border-bottom: none;">
+            <div class="modal-header modal-div-border-style">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
             </div>
             <div class="modal-body">
-                <h4 class="text-center"><b>ОФОРМИТЬ ЗАКАЗ</b></h4>
+                <span class="text-center modal-zakaz-title-style"><b>ОФОРМИТЬ ЗАКАЗ</b></span>
 
                 <div class="form-group">
                     <label>Ваше имя:</label>
@@ -306,14 +295,14 @@
                               name="zakaz"><?php echo $heading_title; ?></textarea>
                 </div>
 
-                <p class="text-center" style="color:#fe6100;">Общая сумма заказа: <span
+                <p class="text-center product-price-last-color">Общая сумма заказа: <span
                             id="summa"><?php echo $price; ?></span> рублей</p>
             </div>
             <div class="form-group text-center">
                 <button type="button" class="btn btnm" id="zakazat">ЗАКАЗАТЬ</button>
             </div>
             <div class="form-group">
-                <h4 class="formh4 text-center">Спасибо. Мы свяжемся с Вами в ближайшее время</h4>
+                <span class="formh4 text-center modal-zakaz-bottom-style">Спасибо. Мы свяжемся с Вами в ближайшее время</span>
             </div>
 
         </div>

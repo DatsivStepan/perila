@@ -25,13 +25,13 @@
         </thead>
         <tbody>
         <tr>
-          <td class="text-left" style="width: 50%;">
+          <td class="text-left recurring-info-width">
             <p><b><?php echo $text_recurring_id; ?></b> #<?php echo $recurring['order_recurring_id']; ?></p>
             <p><b><?php echo $text_date_added; ?></b> <?php echo $recurring['date_added']; ?></p>
             <p><b><?php echo $text_status; ?></b> <?php echo $status_types[$recurring['status']]; ?></p>
             <p><b><?php echo $text_payment_method; ?></b> <?php echo $recurring['payment_method']; ?></p>
           </td>
-          <td class="left" style="width: 50%; vertical-align: top;">
+          <td class="left recurring-info-td-style">
             <p><b><?php echo $text_product; ?></b><a href="<?php echo $recurring['product_link']; ?>"><?php echo $recurring['product_name']; ?></a></p>
             <p><b><?php echo $text_quantity; ?></b> <?php echo $recurring['product_quantity']; ?></p>
             <p><b><?php echo $text_order; ?></b><a href="<?php echo $recurring['order_link']; ?>">#<?php echo $recurring['order_id']; ?></a></p>
@@ -48,10 +48,10 @@
         </thead>
         <tbody>
         <tr>
-          <td class="text-left" style="width: 50%;">
-            <p style="margin:5px;"><?php echo $recurring['recurring_description']; ?></p></td>
-          <td class="text-left" style="width: 50%;">
-            <p style="margin:5px;"><?php echo $recurring['reference']; ?></p></td>
+          <td class="text-left recurring-info-width">
+            <p class="recurring-info-td-p-style"><?php echo $recurring['recurring_description']; ?></p></td>
+          <td class="text-left recurring-info-width">
+            <p class="recurring-info-td-p-style"><?php echo $recurring['reference']; ?></p></td>
         </tr>
         </tbody>
       </table>

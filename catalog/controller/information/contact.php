@@ -30,10 +30,10 @@ class ControllerInformationContact extends Controller {
 
 		$data['heading_title'] = $this->language->get('контакты');
 
-		$data['text_location'] = $this->language->get(' На данной странице вы можете увидеть наш адрес, наш телефон, адрес електронной пошты, график роботы, и наше местонахождение.');
+		$data['text_location'] = $this->language->get(' На данной странице вы можете увидеть наш адрес, наш телефон, адрес электронной почты, график работы, и наше местонахождение.');
 		$data['text_location2'] = $this->language->get(' Будем рады видеть вас в числе наших клиентов!');
 		$data['text_store'] = $this->language->get('Адрес:');
-		$data['text_grafick'] = $this->language->get('График роботы:');
+		$data['text_grafick'] = $this->language->get('График работы:');
 		$data['text_contact'] = $this->language->get('text_contact');
 		$data['text_address'] = $this->language->get('text_address');
 		$data['text_telephone'] = $this->language->get('text_telephone');
@@ -175,7 +175,7 @@ class ControllerInformationContact extends Controller {
 		$mailContent = '
             <table>
                 <tr>
-                    <td>Електроная почта:</td>
+                    <td>Электронная почта:</td>
                     <td>'.$this->request->post['email'].'</td>
                 </tr>
                 <tr>
@@ -209,4 +209,3 @@ class ControllerInformationContact extends Controller {
 
 	}
 }
-

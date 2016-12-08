@@ -13,27 +13,26 @@
                 <?php } ?>
             </div>
             <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-                <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="margin: 40px 0 0 0;">
+                <div class="col-lg-12 col-md-12 hidden-sm hidden-xs about-content-div-margin">
                     <a>
                         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-                        <a style="color: #3e9fd6;font-family: 'Helvetica';font-weight: 300;font-size: 17px;" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+                        <a class="about-a-style-new" href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
                         <?php } ?>
-                        <a style="color: #8a8a8a;font-family: 'Helvetica';font-weight: 300;font-size: 17px;">/ О компании</a>
+                        <a class="about-a-style-new-1">/ О компании</a>
                     </a>
                 </div>
-                <div class="row" style="padding-bottom: 3%;">
+                <div class="row about-title-sty-new" style="">
                     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8"style="padding: 0;">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 no-padding"style="">
                         <h1>О КОМПАНИИ</h1>
                     </div>
                     <div class="hidden-lg col-md-1 col-sm-1 col-xs-1"></div>
-                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-2" style="padding: 0;">
-                        <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs" style="min-height: 38px;border-bottom: 1px solid #999999;"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="min-height: 38px;border-bottom: 1px solid #f8c828;"></div>
+                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-2 no-padding" style="">
+                        <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs about-div-border-1" style=""></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 about-div-border-2" style=""></div>
                     </div>
-
                 </div>
-                <div class="col-lg-12 col-md-12" style="margin:0">
+                <div class="col-lg-12 col-md-12 no-margin" style="">
                     <div class="сol-xs-12" >
                         <p class="text"><span class="bolte">Наша производственная компания Dekorperila</span> специализируется на изготовлении лестниц и лестничных ограждений,
                             перил, навесов и козырьков а также других изделий из нержавеющей стали по индивидуальным проектам, осуществляя
@@ -62,14 +61,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding-bottom: 3%;">
+            <div class="row about-section-div-padding" style="">
                 <div class="col-lg-1 col-md-1 col-sm-1"></div>
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-9">
                     <h2 class="сol">НАШИ ОТДЕЛЫ</h2>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-3" style="padding: 0;">
-                    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs" style="min-height: 38px;border-bottom: 1px solid #999999;"></div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12" style="min-height: 38px;border-bottom: 1px solid #f8c828;"></div>
+                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-3 no-padding" style="">
+                    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs about-section-div-border-1"></div>
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 about-section-div-border-2"></div>
                 </div>
             </div>
         </div>
@@ -78,12 +77,12 @@
                 <img src="../../../catalog/view/theme/default/image/1.png"style="width: 100%;" >
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
                     <p class="col-sm-12 col-xs-12 zal" >ДЕМОКСТРАЦИОННЫЙ ЗАЛ</p>
-                    <p class="hidden-xs hidden-sm hidden-md text-zal" style="margin-left: 5%;">В работе с клиентами мы используем комплексный подход, который помогает экон
+                    <p class="hidden-xs hidden-sm hidden-md text-zal about-text-zal-style">В работе с клиентами мы используем комплексный подход, который помогает экон
                         время и силы наших заказчиков, а также значительно сократить срок выполнения
                         имеющихся задач с учетом всех предъявленных а также значительно сократить
                         а также значительно сократить срок.
                     </p>
-                    <p class="hidden-lg col-md-12 col-sm-12 col-xs-12  text-zal" style="margin-left: 2%;">
+                    <p class="hidden-lg col-md-12 col-sm-12 col-xs-12  text-zal about-text-zal-style-1">
                         В работе с клиентами мы используем комплексный
                         подход, который помогает время и силы
                         наших заказчиков.
@@ -91,7 +90,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0">
+                <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 gol" style="float: left;width: 50%;margin: 0% 0% 0% 2.3%;height: 100%;padding: 5% 0% 0% 1%;">
                         <div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
                             <h3 class="text-h3">ОТДЕЛ ПРОДАЖ</h3>

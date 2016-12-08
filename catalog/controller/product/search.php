@@ -148,7 +148,7 @@ class ControllerProductSearch extends Controller {
 		$data['entry_description'] = $this->language->get('entry_description');
 
 		$data['button_search'] = $this->language->get('button_search');
-		$data['button_cart'] = $this->language->get('button_cart');
+		$data['button_cart'] = "Оформит заказ";
 		$data['button_wishlist'] = $this->language->get('button_wishlist');
 		$data['button_compare'] = $this->language->get('button_compare');
 		$data['button_list'] = $this->language->get('button_list');
@@ -215,9 +215,11 @@ class ControllerProductSearch extends Controller {
 
 			foreach ($results as $result) {
 				if ($result['image']) {
-					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+                    $image = '../../image/'.$result['image'];
+//					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				} else {
-					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+                    $image = '';
+//					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				}
 
 				if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {

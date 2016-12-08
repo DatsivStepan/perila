@@ -21,9 +21,9 @@
                     <a style="color: #8a8a8a;font-family: 'Helvetica';font-weight: 300;font-size: 17px;">/ Доставка и оплата</a>
                 </a>
             </div>
-            <div class="row" style="padding-bottom: 3%;">
+            <div class="row delivery-content-info-padding">
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"style="padding: 0;">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5 "style="padding: 0;">
                     <h1 class="dost">ДОСТАВКА</h1>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
@@ -127,10 +127,10 @@
                                 <span class="text_light_money">ОГРН:</span> 4567746673178
                             </p>
                             <p class="col-sm-12 col-xs-12 text_kach">
-                                <span class="text_light_money">КодОКПО:</span> 56189043
+                                <span class="text_light_money">Код ОКПО:</span> 56189043
                             </p>
                             <p class="col-sm-12 col-xs-12 text_kach">
-                                <span class="text_light_money">КодОКОГУ:</span>КодОКОГУ: 460138
+                                <span class="text_light_money">Код ОКОГУ:</span> 460138
                             </p>
                     </div>
                 </div>
