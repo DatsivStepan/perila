@@ -14,7 +14,7 @@
         <span class="slider-btn-text">ОФОРМИТЬ ЗАКАЗ</span>
     </div>
 </div>
-<div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style" style="height: 445px; border: 0">
+<div id="slideshow<?php echo $module; ?>" class="owl-carousel slider-style">
     <?php foreach ($banners as $banner) { ?>
     <div class="item" style="background-image: url('<?php echo $banner['image']; ?>'); background-size: cover; height: 445px ">
 

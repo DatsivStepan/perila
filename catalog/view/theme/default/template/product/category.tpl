@@ -46,12 +46,12 @@
 
 
           if ($categories) { ?>
-                <div class="row hidden-md hidden-lg" style="width: 100%;">
+                <div class="row hidden-md hidden-lg width-100-style">
                     <span class="category_heading_title_1"><?php echo $parent_categorie.' '.$heading_title; ?></span>
                 </div>
-                <div class="row row_border  hidden-xs hidden-sm col-md-12 col-lg-12" style="width: 70%;">
-                    <div class="border_h1">
-                        <h1 class="category_heading_title"><?php echo $parent_categorie.' '.$heading_title; ?></h1>
+                <div class="row row_border  hidden-xs hidden-sm col-md-12 col-lg-12 category-width-div-style">
+                    <div class="border_h1 category_heading_title">
+                        <h1 class=""><?php echo $parent_categorie.' '.$heading_title; ?></h1>
                     </div>
                     <div class="border_2"></div>
                 </div>
@@ -61,8 +61,8 @@
                     <a href="<?php echo $category['href']; ?>">
                         <div class="col-md-12 cat-thumb  no-padding no-margin text-center categoryshow"
                              style="background-color: <?php echo $b[$aa]; ?>">
-                            <div class="col-sm-12 spancat" style="padding:0px;">
-                                <div style="height: 70px !important;padding:10px;line-height: 19px;" class="category-title-style"><?php echo $category['name']; ?></div>
+                            <div class="col-sm-12 spancat no-padding">
+                                <div class="category-title-style"><?php echo $category['name']; ?></div>
                                 <?php if($category['image'] != ''){ ?>
                                 <img src="<?php echo 'image/',$category['image']; ?>"
                                      alt="<?php echo $category['name']; ?>" class="img-responsive"/>
@@ -81,12 +81,12 @@
 
 
                 <?php if ($products) { ?>
-                <div class=" hidden-md hidden-lg" style="width: 100%;">
+                <div class=" hidden-md hidden-lg width-100-style">
                     <span class="category_heading_title_1"><?php echo $parent_categorie.' '.$heading_title; ?></span>
                 </div>
-                <div class="row row_border  hidden-xs hidden-sm col-md-12 col-lg-12" style="width: 70%;">
-                    <div class="border_h1">
-                        <h1 class="category_heading_title"><?php echo $parent_categorie.' '.$heading_title; ?></h1>
+                <div class="row row_border  hidden-xs hidden-sm col-md-12 col-lg-12 category-width-div-style">
+                    <div class="border_h1 category_heading_title">
+                        <h1 class=""><?php echo $parent_categorie.' '.$heading_title; ?></h1>
                     </div>
                     <div class="border_2"></div>
                 </div>
@@ -97,20 +97,20 @@
                     <div class="product-layout product-list col-xs-12 col-md-6 col-sm-12 col-lg-6">
                         <span class="ribbon"> от <?php echo $product['tax']; ?></span>
                         <div class="product-thumb cat-thumb" style="background-color: <?php echo $b[$aa]; ?>">
-                            <div class="row " style="margin: 0;">
+                            <div class="row no-margin">
                                 <a href="<?php echo $product['href']; ?>">
-                                    <div class="col-xs-6 col-sm-6 prodleft border_conteiner" style="min-height:200px;background: url(<?php echo $product['thumb']; ?>) center no-repeat;background-size: cover;">
+                                    <div class="col-xs-6 col-sm-6 prodleft border_conteiner product-mi-height-style" style="background: url(<?php echo $product['thumb']; ?>) center no-repeat;">
                                     </div>
                                 </a>
                                 <span class="ribbonright" style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
-                                <div class="col-xs-6 col-sm-6 text-center prodright" style="padding:0px;">
+                                <div class="col-xs-6 col-sm-6 text-center prodright no-padding">
                                     <span class="product-title-style text_zagoli">
                                         <a href="<?php echo $product['href']; ?>">
                                             <b><?php echo $product['name']; ?></b>
                                         </a>
                                     </span>
                                     <div class="row text-center">
-                                        <a href="<?php echo $product['href']; ?>" style="background-color: <?php echo $c[$aa]; ?>;padding: 10px;" class="btncart" >
+                                        <a href="<?php echo $product['href']; ?>" style="background-color: <?php echo $c[$aa]; ?>;" class="btncart product-a-padding-style" >
                                             <span class="" style="color:<?php echo $d[$aa]; ?>"><?php echo $button_cart;?></span>
                                         </a>
                                     </div>
@@ -128,9 +128,10 @@
                                                class="btn btn-primary"><?php echo $button_continue;?></a></div>
                 </div>
                 <?php } ?>
-                <?php echo $content_bottom; ?></div>
+                </div>
         </div>
     </div>
 </div>
+<div class="container"><?php echo $content_bottom; ?></div>
 <?php echo $column_right; ?></div>
 <?php echo $footer; ?>

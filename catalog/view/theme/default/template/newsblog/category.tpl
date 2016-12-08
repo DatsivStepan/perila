@@ -8,20 +8,20 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-	<div class="hidden-xs hidden-sm col-md-8 col-lg-8"style="margin: 1% 0 0 0;">
+	<div class="hidden-xs hidden-sm col-md-8 col-lg-8 newsblog-breadcrumb-div-style">
     <ul class="hidden-sm hidden-xs breadcrumb">
    <?php foreach ($breadcrumbs as $breadcrumb) { ?> 
 		<?php if ($breadcrumb ['href']==('')){ ?> 
-		<li style="color: #8a8a8a;font-family: 'Helvetica';font-weight: 300;font-size: 17px;"><?php echo $breadcrumb['text']; ?></li>
+		<li class="newsblog-breadcrumb-div-style-1"><?php echo $breadcrumb['text']; ?></li>
 		<?php }else{ ?> 
-		<li style="color: #3e9fd6;font-family: 'Helvetica';font-weight: 300;font-size: 17px;"><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+		<li class="newsblog-breadcrumb-div-style-2"><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
 		<?php } ?> 
 		<?php } ?>
   </ul>
   </div>
    <?php if ($category_id==1){?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-    <div class="row" style="padding-bottom: 3%;">
+    <div class="row newsblog-content-info-padding">
 		<div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
 		<div class="col-md-2 col-sm-2 col-xs-4">
 			<span class ="news_span_zaholovok"><?php echo $heading_title; ?></span>
@@ -36,7 +36,7 @@
 
      
       <?php if ($articles) { ?>
-		<div class="row" style="margin: 0;">
+		<div class="row no-margin">
 			<?php foreach ($articles as $article) { ?>
 			<div class="cat_pad product-list col-xs-12 col-sm-12 col-md-6" style="padding-top: 2px;">
 				<div class="product-thumb">
@@ -56,10 +56,9 @@
       <?php } ?>
          <?php if ($category_id==2){?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-                          <div class="row" style="    padding-bottom: 3%;">
+                          <div class="row newsblog-content-info-padding">
             <div class="col-sm-1 col-xs-1"></div>
-   <div class="col-sm-4 col-xs-4"><span style="font-size: 22px;   color: #000000;  font-family: "Conv_pfdindisplaypro-reg";
-    text-transform: uppercase;"><?php echo $heading_title; ?></span></div>
+   <div class="col-sm-4 col-xs-4"><span class="newsblog-content-info-fonts"><?php echo $heading_title; ?></span></div>
     <div class="col-sm-7 col-xs-7 hidden-sm hidden-xs">
         <div class="col-sm-4 col-xs-4 borderb"></div>
         <div class="col-sm-8 col-xs-8 bordery"></div>

@@ -110,7 +110,7 @@ class ControllerProductCategory extends Controller {
 			$data['text_sort'] = $this->language->get('text_sort');
 			$data['text_limit'] = $this->language->get('text_limit');
 
-			$data['button_cart'] = ('Оформить заказ');
+			$data['button_cart'] = ('Купить');
 			$data['button_wishlist'] = $this->language->get('button_wishlist');
 			$data['button_compare'] = $this->language->get('button_compare');
 			$data['button_continue'] = $this->language->get('button_continue');

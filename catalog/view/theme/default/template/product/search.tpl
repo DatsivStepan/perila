@@ -129,20 +129,20 @@
         <div class="col-xs-12 col-md-6 col-sm-12 col-lg-6">
           <span class="ribbon"> от <?php echo $product['tax']; ?></span>
           <div class="product-thumb cat-thumb" style="background-color: <?php echo $b[$aa]; ?>">
-            <div class="row " style="margin: 0;">
+            <div class="row no-margin">
               <a href="<?php echo $product['href']; ?>">
-                <div class="col-xs-6 col-sm-6 prodleft border_conteiner" style="min-height:200px;background: url(<?php echo $product['thumb']; ?>) center no-repeat;background-size: cover;">
+                <div class="col-xs-6 col-sm-6 prodleft border_conteiner product-tax-div-style" style="background: url(<?php echo $product['thumb']; ?>) center no-repeat;">
                 </div>
               </a>
               <span class="ribbonright" style="border-right: 10px solid <?php echo $b[$aa]; ?> "></span>
-              <div class="col-xs-6 col-sm-6 text-center prodright" style="padding:0px;">
+              <div class="col-xs-6 col-sm-6 text-center prodright no-padding">
                                     <span class="product-title-style text_zagoli">
                                         <a href="<?php echo $product['href']; ?>">
                                             <b><?php echo $product['name']; ?></b>
                                         </a>
                                     </span>
                 <div class="row text-center">
-                  <a href="<?php echo $product['href']; ?>" style="background-color: <?php echo $c[$aa]; ?>;padding: 10px;" class="btncart" >
+                  <a href="<?php echo $product['href']; ?>" style="background-color: <?php echo $c[$aa]; ?>;" class="product-btncart-style btncart" >
                     <span class="" style="color:<?php echo $d[$aa]; ?>"><?php echo $button_cart;?></span>
                   </a>
                 </div>
@@ -209,4 +209,4 @@ $('select[name=\'category_id\']').on('change', function() {
 
 $('select[name=\'category_id\']').trigger('change');
 --></script> 
-<?php echo $footer; ?> 
+<?php echo $footer; ?>

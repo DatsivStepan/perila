@@ -30,7 +30,7 @@
             <li><a href="#tab-data" data-toggle="tab"><?php echo $tab_data; ?></a></li>
             <li><a href="#tab-links" data-toggle="tab"><?php echo $tab_links; ?></a></li>
             <li><a href="#tab-attribute" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
-            <li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
+            <!--<li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>-->
             <li><a href="#tab-design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
           </ul>
           <div class="tab-content">
@@ -277,7 +277,7 @@
                 </table>
               </div>
             </div>
-            <div class="tab-pane" id="tab-image">
+            <!--<div class="tab-pane" id="tab-image">
               <div class="table-responsive">
                 <table id="images" class="table table-striped table-bordered table-hover">
                   <thead>
@@ -306,7 +306,7 @@
                   </tfoot>
                 </table>
               </div>
-            </div>
+            </div>-->
             <div class="tab-pane" id="tab-design">
               <div class="table-responsive">
                 <table class="table table-bordered table-hover">

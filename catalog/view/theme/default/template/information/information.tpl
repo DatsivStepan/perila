@@ -21,18 +21,18 @@
           <?php } ?>
         </ul>
       </div>
-      <div class="row" style="padding-bottom: 3%;">
+      <div class="row delivery-content-info-padding">
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 no-padding"">
           <h1><?php echo $heading_title; ?></h1>
         </div>
         <div class="hidden-lg col-md-1 col-sm-1 col-xs-1"></div>
-        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-2" style="padding: 0;">
-          <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs" style="min-height: 38px;border-bottom: 1px solid #999999;"></div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="min-height: 38px;border-bottom: 1px solid #f8c828;"></div>
+        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-2 no-padding" >
+          <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs delivery-content-info-border-2"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 delivery-content-info-border-1"></div>
         </div>
       </div>
-      <div class="col-lg-12 col-md-12" style="margin:0">
+      <div class="col-lg-12 col-md-12 no-margin">
         <?php echo $description; ?>
       </div>
     </div>

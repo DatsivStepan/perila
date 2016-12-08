@@ -67,7 +67,7 @@
             <?php } ?>
           </div>
           <div class="xs-3">
-            <button type="button" style="border-color: transparent"  class="navbar-toggle no-margin mobile-btn-padding" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="header-btn-color-style navbar-toggle no-margin mobile-btn-padding" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar span-width"></span>
               <span class="icon-bar span-width"></span>
               <span class="icon-bar span-width"></span>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="collapse navbar-collapse col-xs-12 col-sm-12 dropdown-position no-padding no-margin">
-            <ul class="nav navbar-nav" style="line-height: 30px; width: 95%">
+            <ul class="nav navbar-nav header-ul-style-new">
               <?php if($currentRout == ''){
                     $about_rout = '';
                  }else{
@@ -259,51 +259,61 @@
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                 <?php if($currentInformation == 'information/information_10'){
+                    $linck_color = 'main-menu-activ-style';
                     $about_rout = '';
                  }else{
+                    $linck_color = '';
                     $about_rout = 'href="/about_info"';
                  } ?>
-                <a <?= $about_rout; ?> class="a-menu-style">
-                  <li class="li-text-style li-padding-0">О компании</li>
+                <a <?= $about_rout; ?> class="a-menu-style <?php echo $linck_color; ?>">
+                  <li class="li-text-style li-padding-0 ">О компании</li>
                 </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                   <?php if($currentRout == 'newsblog/category'){
+                    $linck_color = 'main-menu-activ-style';
                     $about_rout = '';
                  }else{
+                    $linck_color = '';
                     $about_rout = 'href="/newsblog&newsblog_category_id=1"';
                  } ?>
-                  <a <?=$about_rout;?> class="a-menu-style">
+                  <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
                     <li class="li-text-style li-padding-0">Новости</li>
                   </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                   <?php if($currentRout == 'information/gallery'){
+                    $linck_color = 'main-menu-activ-style';
                     $about_rout = '';
                  }else{
+                    $linck_color = '';
                     $about_rout = 'href="/gallery"';
                  } ?>
-                <a <?=$about_rout;?> class="a-menu-style">
+                <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
                   <li class="li-text-style li-padding-0">Наши работы</li>
                 </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-border-right div-li-position">
                   <?php if($currentInformation == 'information/information_11'){
+                    $linck_color = 'main-menu-activ-style';
                     $about_rout = '';
                  }else{
+                    $linck_color = '';
                     $about_rout = 'href="/deliveri_info"';
                  } ?>
-                    <a <?=$about_rout;?> class="a-menu-style">
+                    <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
                         <li class="li-text-style li-padding-0">Доставка и оплата</li>
                     </a>
               </div>
               <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 div-li-position">
                   <?php if($currentRout == 'information/contact'){
+                    $linck_color = 'main-menu-activ-style';
                     $about_rout = '';
                  }else{
+                    $linck_color = '';
                     $about_rout = 'href="/contact"';
                  } ?>
-                <a <?=$about_rout;?> class="a-menu-style">
+                <a <?=$about_rout;?> class="a-menu-style <?php echo $linck_color; ?>">
                   <li class="li-text-style">Контакты</li>
                 </a>
               </div>
@@ -323,7 +333,7 @@
         <span class="text-center modal-contact-title">ВЫЗВАТЬ ЗАМЕРЩИКА</span>
         <form  action="" id="contactForm_1" method="post">
           <ul  class="modal-ul-style">
-            <code id="errorMasege" class="userName modal-error-display error-style">Некоректно заполнены данные</code>
+            <code id="errorMasege" class="userName modal-error-display error-style">Некорректно заполнены данные</code>
           </ul>
         <div class="form-group">
           <label>Ваше имя:</label>

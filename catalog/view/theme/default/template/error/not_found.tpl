@@ -1,10 +1,17 @@
 <?php echo $header; ?>
 <div class="container">
-  <ul class="breadcrumb">
+  <ul class="breadcrumb error-page-breadcrumb-ul">
+      <?php $n=1; ?>
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
+    <?php if($n != count($breadcrumbs)){ ?>
+        <li class="error-page-breadcrumb-li"><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <?php }else{ ?>
+    <li><?php echo $breadcrumb['text']; ?></li>
+    <?php }
+     $n +=1;
+    } ?>
   </ul>
+  
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -17,7 +24,7 @@
       <h1><?php echo $heading_title; ?></h1>
       <p><?php echo $text_error; ?></p>
       <div class="buttons">
-        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
+        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary">На главную</a></div>
       </div>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
